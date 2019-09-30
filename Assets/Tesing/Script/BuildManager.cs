@@ -16,17 +16,18 @@ public class BuildManager : MonoBehaviour
         instance = this;
     }
 
-    [SerializeField] GameObject defaultBuilding;
-
-    void Start()
-    {
-        buildingChoice = defaultBuilding;
-    }
+    public GameObject Building1;
+    public GameObject Building2;
 
     private GameObject buildingChoice;
 
     public GameObject getBuildingChoice()
     {
         return buildingChoice;
+    }
+
+    public void setBuildingChoice(GameObject building)
+    {
+        buildingChoice = building;
     }
 }
