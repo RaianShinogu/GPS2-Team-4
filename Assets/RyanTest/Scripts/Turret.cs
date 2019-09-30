@@ -13,6 +13,9 @@ public class Turret : MonoBehaviour
     public float fireRate = 1f;
     private float fireCountDown = 0f;
 
+    public bool isSlow = false;
+    public bool isDamage = true;
+
 
     [Header("Unity Setup Fields")]
 
@@ -76,7 +79,7 @@ public class Turret : MonoBehaviour
 
         if(bullet != null)
         {
-            bullet.Seek(target);
+            bullet.Seek(target, isDamage, isSlow);
         }
     }
 
