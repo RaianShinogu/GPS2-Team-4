@@ -11,29 +11,29 @@ public class WaveSpawnRyan : MonoBehaviour
     private float countdown = 2f;
 
     //private int waveIndex = 0;
-    private int waveNumber = 1;
+    public int waveNumber = 1;
 
     void Update ()
     {
         if(countdown <= 0f)
         {
-            //StartCoroutine(SpawnWave());
-            SpawnWave();
+            StartCoroutine(SpawnWaveMulti());
+            //SpawnWave();
             countdown = timeBetweenWaves;
         }
 
         countdown -= Time.deltaTime;
     }
 
-    /*IEnumerator SpawnWave()
+    IEnumerator SpawnWaveMulti()
     {
         //waveIndex++;
-        for (int i=0; i< waveIndex; i++)
+        for (int i=0; i< waveNumber; i++)
         {
             SpawnEnemy();
             yield return new WaitForSeconds(0.5f);
         }
-    }*/
+    }
 
     void SpawnWave()
     {

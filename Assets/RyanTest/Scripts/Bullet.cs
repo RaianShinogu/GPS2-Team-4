@@ -9,6 +9,7 @@ public class Bullet : MonoBehaviour
     public int damage = 20;
 
     public float speed = 70f;
+    public float explosionRadius = 0f;
 
     public void Seek(Transform _target, bool _isDamage, bool _isSlow)
     {
@@ -37,14 +38,35 @@ public class Bullet : MonoBehaviour
         }
 
         transform.Translate(dir.normalized * distanceThisFrame, Space.World);
-
+        //transform.LookAt(target);
     }
 
     private void HitTarget()
     {
-        Damage(target);
+        if(explosionRadius > 0f)
+        {
+            Explode();
+        }
+        else
+        {
+            Damage(target);
+        }
+
+        
         
         Destroy(gameObject);       
+    }
+
+    private void Explode()
+    {
+        Collider[] colliders = Physics.OverlapSphere(transform.position, explosionRadius);
+        foreach(Collider collider in colliders)
+        {
+            if(collider.tag == "Enemy")
+            {
+                Damage(collider.transform);
+            }
+        }
     }
 
     void Damage(Transform enemy)
