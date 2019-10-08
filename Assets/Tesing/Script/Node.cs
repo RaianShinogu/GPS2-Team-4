@@ -10,7 +10,9 @@ public class Node : MonoBehaviour
     [SerializeField] private Vector3 positionOffset;
 
     private GameObject building;
-    
+
+    private GameObject buildingChoice;
+
     private Renderer rend;
     private Color startColor;
 
@@ -42,12 +44,14 @@ public class Node : MonoBehaviour
 
     void OnMouseDown()
     {
+        buildingChoice = buildManager.getBuildingChoice();
+
         if (EventSystem.current.IsPointerOverGameObject())
         {
             return;
         }
 
-        if (buildManager.getBuildingChoice() == null)
+        if (buildingChoice == null)
         {
             return;
         }
@@ -55,10 +59,18 @@ public class Node : MonoBehaviour
         if(building != null)
         {
             // if there is already a building on it
+            if (buildingChoice == buildManager.demolish)
+            {
+                Destroy(building);
+                building = null;
+            }
             return;
         }
-
-        GameObject buildingChoice = buildManager.getBuildingChoice();
+        
+        if (buildingChoice == buildManager.demolish)
+        {
+            return;
+        }
 
         building = (GameObject)Instantiate(buildingChoice, transform.position + positionOffset, transform.rotation);
     }
