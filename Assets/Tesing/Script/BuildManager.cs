@@ -5,10 +5,7 @@ using UnityEngine;
 public class BuildManager : MonoBehaviour
 {
     public static BuildManager instance;
-    public int StageCount;
-    public GameObject BuildingUI;
-
-
+    
     void Awake()
     {
         if(instance != null)
@@ -21,6 +18,7 @@ public class BuildManager : MonoBehaviour
 
     public GameObject Building1;
     public GameObject Building2;
+    public GameObject demolish;
 
     private GameObject buildingChoice;
 
@@ -34,14 +32,8 @@ public class BuildManager : MonoBehaviour
         buildingChoice = building;
     }
 
-    public void EndStage()
+    public void setDemolishMode()
     {
-        if (StageCount >=    1)
-        {
-            buildingChoice = null;
-            BuildingUI.SetActive(false) ;
-        }
-        StageCount++;
-        
+        buildingChoice = demolish;
     }
 }
