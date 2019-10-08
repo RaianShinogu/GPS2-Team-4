@@ -18,6 +18,7 @@ public class BuildManager : MonoBehaviour
 
     public GameObject Building1;
     public GameObject Building2;
+    public GameObject demolish;
 
     private GameObject buildingChoice;
 
@@ -29,5 +30,10 @@ public class BuildManager : MonoBehaviour
     public void setBuildingChoice(GameObject building)
     {
         buildingChoice = building;
+    }
+
+    public void setDemolishMode()
+    {
+        buildingChoice = demolish;
     }
 }

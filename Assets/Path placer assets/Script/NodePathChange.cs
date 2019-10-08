@@ -12,6 +12,7 @@ public class NodePathChange : MonoBehaviour
    
     public int pathID;
     bool changedPath = false;
+    bool isPathStage = true;
     UIPath uiPath;
 
     private void Awake()
@@ -25,19 +26,29 @@ public class NodePathChange : MonoBehaviour
 
     private void OnMouseOver()
     {
+
        if (Input.GetMouseButtonDown(0) && !changedPath)
        {
-            if(nodePathManager.pathID > 3)
-            {
-                Instantiate(nodePathManager.currentPathChose, instantiatePos, Quaternion.Euler(new Vector3(0,180,0)));
+            
+                if (nodePathManager.pathID > 3)
+                {
+                    Instantiate(nodePathManager.currentPathChose, instantiatePos, Quaternion.Euler(new Vector3(0, 180, 0)));
+                    changedPath = true;
+                }
+                else
+
+                Instantiate(nodePathManager.currentPathChose, instantiatePos, Quaternion.identity);
                 changedPath = true;
             }
-            else
-
-            Instantiate(nodePathManager.currentPathChose, instantiatePos,Quaternion.identity);
-            changedPath = true;
-       }
+            
+       
     }
+
+    public void EndStage()
+    {
+        isPathStage = false;
+    }
+
 
    
 }
