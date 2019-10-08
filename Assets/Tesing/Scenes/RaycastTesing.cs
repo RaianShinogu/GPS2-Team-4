@@ -32,14 +32,14 @@ public class RaycastTesing : MonoBehaviour
         RaycastHit leftHit;
         RaycastHit rightHit;
         RaycastHit forwardHit;
-        Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.back) * 2f, Color.red);
+        Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.back) * 1f /2, Color.red);
         //Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.left) * 5f, Color.red); //(back of the object)
-        Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.right) * 2f, Color.red);
-        Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 2f, Color.red);
+        Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.right) * 1f/2, Color.red);
+        Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 1f/2, Color.red);
 
 
         //trun left
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.right), out forwardHit, 2f) && Physics.Raycast(transform.position, transform.TransformDirection(Vector3.back), out rightHit, 2f))
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.right), out forwardHit, 1f) && Physics.Raycast(transform.position, transform.TransformDirection(Vector3.back), out rightHit, 1f))
         { 
             if (forwardHit.transform.CompareTag("Enemy") && rightHit.transform.CompareTag("Enemy"))
             {
@@ -50,7 +50,7 @@ public class RaycastTesing : MonoBehaviour
             }
         }
         //turn right
-        else if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.right), out forwardHit, 2f) && Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out leftHit, 2f))
+        else if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.right), out forwardHit, 1f) && Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out leftHit, 1f))
         {
             if (forwardHit.transform.CompareTag("Enemy") && leftHit.transform.CompareTag("Enemy"))
             {
@@ -66,7 +66,7 @@ public class RaycastTesing : MonoBehaviour
 
 
         // right of the object
-        else if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.back), out rightHit, 2f))
+        else if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.back), out rightHit, 1f))
         {
 
             if (rightHit.transform.CompareTag("Enemy"))
@@ -78,7 +78,7 @@ public class RaycastTesing : MonoBehaviour
 
         }
         // front of the object
-        else if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.right), out forwardHit, 2f))
+        else if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.right), out forwardHit, 1f))
         {
             if (forwardHit.transform.CompareTag("Enemy"))
             {
@@ -89,7 +89,7 @@ public class RaycastTesing : MonoBehaviour
 
         }
         // left of the object
-        else if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out leftHit, 2f))
+        else if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out leftHit, 1f))
         {
             if (leftHit.transform.CompareTag("Enemy"))
             {
