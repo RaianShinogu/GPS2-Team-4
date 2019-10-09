@@ -19,8 +19,10 @@ public class BuildManager : MonoBehaviour
     public GameObject Building1;
     public GameObject Building2;
     public GameObject demolish;
+    public GameObject buildUI;
 
     private GameObject buildingChoice;
+    private int StageCount = 0;
 
     public GameObject getBuildingChoice()
     {
@@ -32,6 +34,15 @@ public class BuildManager : MonoBehaviour
         buildingChoice = building;
     }
 
+    public void EndStage()
+    {
+        if(StageCount >= 1)
+        {
+            buildingChoice = null;
+            buildUI.SetActive(false);
+        }
+        StageCount++;
+    }
     public void setDemolishMode()
     {
         buildingChoice = demolish;

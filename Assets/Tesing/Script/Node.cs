@@ -22,7 +22,7 @@ public class Node : MonoBehaviour
         startColor = rend.material.color;
         buildManager = BuildManager.instance;
     }
-
+    
     void OnMouseEnter()
     {
         if(EventSystem.current.IsPointerOverGameObject())
@@ -36,6 +36,7 @@ public class Node : MonoBehaviour
         }
         rend.material.color = hoverColor;
     }
+    
 
     void OnMouseExit()
     {
@@ -74,4 +75,6 @@ public class Node : MonoBehaviour
 
         building = (GameObject)Instantiate(buildingChoice, transform.position + positionOffset, transform.rotation);
     }
+
+  
 }

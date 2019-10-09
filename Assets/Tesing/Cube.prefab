@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3588588425285776445}
   - component: {fileID: 5969587093490893565}
   - component: {fileID: 796133031636807366}
-  - component: {fileID: -1473332271468750052}
   - component: {fileID: 2575845222859902197}
   m_Layer: 0
   m_Name: Cube
@@ -67,6 +66,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -79,19 +79,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &-1473332271468750052
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6614350050443344449}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 593c934383cf9a44fa614b860573336c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  grid: 6.65
 --- !u!65 &2575845222859902197
 BoxCollider:
   m_ObjectHideFlags: 0

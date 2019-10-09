@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/GPS 2/GPS Week 5.unity
+    guid: 8baea342b353c5c4d8d87cf5072c6198
   m_configObjects: {}
