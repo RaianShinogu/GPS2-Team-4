@@ -3,12 +3,10 @@ using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
+   
     public float speed = 10f;
-
     private Transform target;
     private int wavepointIndex = 0;
-   
-
     [Header("Unity Stuff")]
     public Image scareMeter;
     public float ScareMeter = 0;

@@ -15,6 +15,7 @@ public class UIPath : MonoBehaviour
 
     public GameObject lastNode;
     public GameObject currentNode;
+    public GameObject extraTurnPath;
 
     public bool activatePathChange = false;
 
@@ -24,7 +25,10 @@ public class UIPath : MonoBehaviour
     Shader shader;
     Texture texture;
     Color color;
-    bool clickedOn = false;
+    bool leftClickedOn = false;
+    bool rightClickedOn = false;
+    public bool isTurnPath;
+    public int touchCount = 0;
 
 
 
@@ -39,33 +43,53 @@ public class UIPath : MonoBehaviour
 
     void Update()
     {
-
+        ExtraUI();
     }
 
     void OnMouseOver()
     {
-        if (Input.GetMouseButtonDown(0) && !clickedOn)
+        if (Input.GetMouseButtonDown(0) && !leftClickedOn)
         {
+            touchCount++;
             uiPathManager.pickedNode = this.gameObject;
             uiPathManager.changecolorclick();
-
             nodePath = this.gameObject.GetComponent<Renderer>().sharedMaterial;
             thisObjectsMaterial.color = Color.gray;
-            clickedOn = true;
+            leftClickedOn = true;
             nodePathManager.pathID = nodePathID;
             activatePathChange = true;
 
         }
-        else if (Input.GetMouseButtonDown(0) && clickedOn)
+        else if (Input.GetMouseButtonDown(0) && leftClickedOn)
         {
+            touchCount++;
             nodePath = null;
             thisObjectsMaterial.color = Color.white;
-            clickedOn = false;
+            leftClickedOn = false;
             nodePathManager.pathID = 0;
+                
+            
+            
         }
+        
+        
 
     }
 
+    void ExtraUI()
+    {
+        if(touchCount == 2)
+        {
+            extraTurnPath.SetActive(true);
+        }
+
+        else if(touchCount ==4)
+        {
+            extraTurnPath.SetActive(false);
+            touchCount = 0;
+        }
+        
+    }
    
 
    /* void changeColorBackClicked()
