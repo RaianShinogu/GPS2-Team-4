@@ -12,6 +12,7 @@ public class BuildingEndPoint : MonoBehaviour
     private string InverseTurnRightPath = "Inverse Turn Right";
     private string InverseTurnLeftPath = "Inverse Turn Left";
     public GameObject nextStageButton;
+    private int count;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,8 +28,19 @@ public class BuildingEndPoint : MonoBehaviour
         {
             if (leftHit.transform.CompareTag(InverseTurnRightPath) || leftHit.transform.CompareTag(InverseTurnLeftPath) || leftHit.transform.CompareTag(VerticalPath))
             {
-                nextStageButton.SetActive(true);
+                NextStageButton();
             }
         }
+    }
+
+    void NextStageButton()
+    {
+        if(count == 0)
+        {
+            nextStageButton.SetActive(true);
+            count++;
+        }
+        return;
+        
     }
 }
