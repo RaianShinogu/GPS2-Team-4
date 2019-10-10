@@ -20,6 +20,7 @@ public class BuildManager : MonoBehaviour
     public GameObject Building2;
     public GameObject demolish;
     public GameObject buildUI;
+    public GameObject endStageButton;
 
     private GameObject buildingChoice;
     private int StageCount = 0;
@@ -40,6 +41,7 @@ public class BuildManager : MonoBehaviour
         {
             buildingChoice = null;
             buildUI.SetActive(false);
+            endStageButton.SetActive(false);
         }
         StageCount++;
     }

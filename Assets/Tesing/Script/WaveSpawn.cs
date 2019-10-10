@@ -11,14 +11,20 @@ public class WaveSpawn : MonoBehaviour
     private float countdown = 2f;
 
     private int waveIndex = 0;
-
+    public bool gameStart = false;
+    int StageCount;
+    public GameObject buildUI;
     void Update ()
     {
-        if(countdown <= 0f)
+        if(gameStart == true)
         {
-            StartCoroutine(SpawnWave());
-            countdown = timeBetweenWaves;
+            if (countdown <= 0f)
+            {
+                StartCoroutine(SpawnWave());
+                countdown = timeBetweenWaves;
+            }
         }
+        
 
         countdown -= Time.deltaTime;
     }
@@ -29,7 +35,7 @@ public class WaveSpawn : MonoBehaviour
         for (int i=0; i< waveIndex; i++)
         {
             SpawnEnemy();
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(1f);
         }
         
     }
@@ -37,5 +43,14 @@ public class WaveSpawn : MonoBehaviour
     void SpawnEnemy()
     {
         Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+    }
+
+    public void StartGame()
+    {
+        if (StageCount >= 1)
+        {
+            gameStart = true;
+        }
+        StageCount++;
     }
 }

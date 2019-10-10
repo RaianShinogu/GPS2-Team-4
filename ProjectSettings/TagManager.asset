@@ -9,9 +9,12 @@ TagManager:
   - Turn Left
   - Turn Right
   - Inverse Turn Left
-  - Inverse Tunr Right
   - Vertical Path
   - Horizontal Path
+  - Inverse Turn Right
+  - EnemyTurnRight
+  - EnemyTurnLeft
+  - TurnLeft(RP)
   layers:
   - Default
   - TransparentFX

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2636619633349198383}
   - component: {fileID: 8581154178399582913}
   m_Layer: 0
-  m_Name: J_Path_UI
+  m_Name: Inverse Right Path
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,13 +27,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2663030491940410750}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 35.6, y: -8.669384, z: -17.5}
-  m_LocalScale: {x: 8.21, y: 1, z: 7.64}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.25, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8344328511989175049
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -59,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1c9d7c27c5ea3db4ba773b7772c948f8, type: 2}
+  - {fileID: 2100000, guid: 188add94f1c51da408f906eaa490e67f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -105,6 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99b366099b2326842bd4123623e4cf41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodePathID: 5
-  getNodePathID: 0
+  nodePathID: 8
+  lastNode: {fileID: 0}
+  currentNode: {fileID: 0}
   activatePathChange: 0
