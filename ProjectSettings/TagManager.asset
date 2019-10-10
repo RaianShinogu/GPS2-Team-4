@@ -8,6 +8,10 @@ TagManager:
   - Node
   - Turn Left
   - Turn Right
+  - Inverse Turn Left
+  - Inverse Tunr Right
+  - Vertical Path
+  - Horizontal Path
   layers:
   - Default
   - TransparentFX
