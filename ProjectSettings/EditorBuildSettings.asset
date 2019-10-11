@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/GPS 2/GPS Week 5.unity
-    guid: 8baea342b353c5c4d8d87cf5072c6198
+    path: Assets/Scenes/Main Menu.unity
+    guid: 765e3525b9f3e5b4799eaa4124e289d1
   - enabled: 1
-    path: Assets/RyanTest/Scenes/Attacking.unity
-    guid: 157d876067359cb4d986c6f0f1f23c54
+    path: Assets/Tesing/Scenes/Building.unity
+    guid: cca9e71c763a03e4ebc37e1f65ca2c8d
   m_configObjects: {}
