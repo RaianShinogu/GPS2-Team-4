@@ -14,17 +14,51 @@ public class EnemyRyan : MonoBehaviour
 
     private Transform target;
     private int wavepointindex = 0;
+
+    public Color outlineColor;
+
+    Renderer rend;
+    private int enemyLeft;
+
+
+    public static bool finalDeath = false;
+    
     // Start is called before the first frame update
     void Start()
     {
-        target = Waypoints.points[0];
+        GameObject gameMaster = GameObject.Find("GameMaster");
+        WaveSpawnRyan waveSpawnRyan = gameMaster.GetComponent<WaveSpawnRyan>();
+        enemyLeft = waveSpawnRyan.totalEnemies;
+
+        target = Waypoints.points[0];        
+        rend = GetComponent<Renderer>();
+        rend.material.SetColor("_FirstOutlineColor", Color.green);
     }
 
     public void TakeDamage(float amount)
     {
         Debug.Log("damaged");
         health += amount;
-        scareMeter.fillAmount = health/maxHealth;
+
+
+        if(health >= 0 && health <= 20)
+        {
+            rend.material.SetColor("_FirstOutlineColor", Color.green);
+        }
+        else if(health > 20 && health <= 40)
+        {
+            rend.material.SetColor("_FirstOutlineColor", Color.blue);
+        }
+        else
+        {
+            rend.material.SetColor("_FirstOutlineColor", Color.red);
+        }
+
+        
+        
+
+
+        //scareMeter.fillAmount = health/maxHealth;
 
         if(health >= maxHealth)
         {
@@ -68,11 +102,37 @@ public class EnemyRyan : MonoBehaviour
     {
         if(wavepointindex >= Waypoints.points.Length - 1)
         {
-            Destroy(gameObject);
+            EndPath();
             return;
         }
 
         wavepointindex++;
         target = Waypoints.points[wavepointindex];
+    }
+
+    void EndPath()
+    {        
+        Debug.Log("Enemies left = " + enemyLeft);
+        if (health >= 0 && health <= 20)
+        {
+            PlayerStats.spookPoint += 1;
+        }
+        else if (health > 20 && health <= 40)
+        {
+            PlayerStats.spookPoint += 2;
+        }
+        else
+        {
+            PlayerStats.spookPoint += 3;
+        }
+        
+        Destroy(gameObject);
+
+        if(enemyLeft <= 0)
+        {
+            finalDeath = true;
+            Debug.Log("Final enemy died");
+        }
+        enemyLeft--;
     }
 }

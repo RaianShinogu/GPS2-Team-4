@@ -12,12 +12,20 @@ public class WaveSpawnRyan : MonoBehaviour
 
     //private int waveIndex = 0;
     public int waveNumber = 1;
+    public int totalEnemies = 10;
+
+    private void Start()
+    {
+        Debug.Log("Total enemies (start) = " + totalEnemies);
+    }
 
     void Update ()
     {
-        if(countdown <= 0f)
+        if(countdown <= 0f && totalEnemies > 0)
         {
+            Debug.Log("Total enmies = " + totalEnemies);
             StartCoroutine(SpawnWaveMulti());
+            totalEnemies--;
             //SpawnWave();
             countdown = timeBetweenWaves;
         }
@@ -48,5 +56,6 @@ public class WaveSpawnRyan : MonoBehaviour
     void SpawnEnemy()
     {
         Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+        
     }
 }
