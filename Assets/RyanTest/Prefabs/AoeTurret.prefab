@@ -105,11 +105,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e6665da2d03cf94c849200ac84be10b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 8
+  range: 3
   fireRate: 1
   isSlow: 0
   isDamage: 1
-  enemyTag: Enemy
+  enemyTag: Visitor
   bulletPrefab: {fileID: 1634809021488462296, guid: 1a9bc45c70247354282c26f9ff64fb52,
     type: 3}
   firePoint: {fileID: 8284311272065996309}

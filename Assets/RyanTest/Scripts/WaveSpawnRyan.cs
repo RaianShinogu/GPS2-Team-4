@@ -10,9 +10,14 @@ public class WaveSpawnRyan : MonoBehaviour
     public float timeBetweenWaves = 5f;
     private float countdown = 2f;
 
+    public bool gameStart = false;
+    int StageCount;
+
     //private int waveIndex = 0;
     public int waveNumber = 1;
     public int totalEnemies = 10;
+
+    public GameObject buildUI;
 
     private void Start()
     {
@@ -21,14 +26,19 @@ public class WaveSpawnRyan : MonoBehaviour
 
     void Update ()
     {
-        if(countdown <= 0f && totalEnemies > 0)
+        if (gameStart == true)
         {
-            Debug.Log("Total enmies = " + totalEnemies);
-            StartCoroutine(SpawnWaveMulti());
-            totalEnemies--;
-            //SpawnWave();
-            countdown = timeBetweenWaves;
+            if (countdown <= 0f && totalEnemies > 0)
+            {
+                //Debug.Log("Total enmies = " + totalEnemies);
+                StartCoroutine(SpawnWaveMulti());
+                totalEnemies--;
+                //SpawnWave();
+                countdown = timeBetweenWaves;
+            }
         }
+
+        
 
         countdown -= Time.deltaTime;
     }
@@ -57,5 +67,14 @@ public class WaveSpawnRyan : MonoBehaviour
     {
         Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
         
+    }
+
+    public void StartGame()
+    {
+        if (StageCount >= 1)
+        {
+            gameStart = true;
+        }
+        StageCount++;
     }
 }

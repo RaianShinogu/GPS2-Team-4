@@ -19,7 +19,7 @@ public class Turret : MonoBehaviour
 
     [Header("Unity Setup Fields")]
 
-    public string enemyTag = "Enemy";
+    public string enemyTag = "Visitor";
 
     public GameObject bulletPrefab;
     public Transform firePoint;

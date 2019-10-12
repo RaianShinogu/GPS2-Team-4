@@ -87,9 +87,10 @@ GameObject:
   - component: {fileID: 2547239038095807968}
   - component: {fileID: 2547239038095807975}
   - component: {fileID: 1785562148849831790}
+  - component: {fileID: 5003585256334116525}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Enemy
+  m_TagString: Visitor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -103,7 +104,7 @@ Transform:
   m_GameObject: {fileID: 2547239038095807974}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 44.5, y: 2, z: 19.5}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 827059007518483019}
   m_Father: {fileID: 0}
@@ -181,10 +182,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scareMeter: {fileID: 6117190741181966174}
-  speed: 10
+  speed: 5
+  turnLeft: -90
+  turnRight: 90
+  rotation: 0
   health: 0
   maxHealth: 100
   outlineColor: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &5003585256334116525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2547239038095807974}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55c4421b501218e44ba4b01205dc8b7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  turnLeft: -90
+  turnRight: 90
+  rotation: 0
 --- !u!1 &3422572954522001347
 GameObject:
   m_ObjectHideFlags: 0

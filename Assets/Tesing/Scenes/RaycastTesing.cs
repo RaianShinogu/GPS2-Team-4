@@ -16,7 +16,7 @@ public class RaycastTesing : MonoBehaviour
     // Update is called once per frame
     void Update()
     {       
-         Raycast();
+        Raycast();
         transform.Translate(speed * Time.deltaTime, 0, 0);
     }
 

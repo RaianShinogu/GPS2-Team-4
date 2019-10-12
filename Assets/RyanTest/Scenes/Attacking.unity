@@ -2259,8 +2259,10 @@ MonoBehaviour:
     type: 3}
   spawnPoint: {fileID: 1903160106}
   timeBetweenWaves: 5
+  gameStart: 1
   waveNumber: 1
   totalEnemies: 3
+  buildUI: {fileID: 0}
 --- !u!114 &390058509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5973,7 +5975,7 @@ PrefabInstance:
     - target: {fileID: 8284311272065996309, guid: b7fdb364a961ae94eb6d68e2fa926b87,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 25.06
+      value: 40.05
       objectReference: {fileID: 0}
     - target: {fileID: 8284311272065996309, guid: b7fdb364a961ae94eb6d68e2fa926b87,
         type: 3}
@@ -5983,7 +5985,7 @@ PrefabInstance:
     - target: {fileID: 8284311272065996309, guid: b7fdb364a961ae94eb6d68e2fa926b87,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10.85
+      value: -16.3
       objectReference: {fileID: 0}
     - target: {fileID: 8284311272065996309, guid: b7fdb364a961ae94eb6d68e2fa926b87,
         type: 3}
