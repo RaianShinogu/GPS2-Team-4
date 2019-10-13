@@ -1633,7 +1633,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   simulateMouse: 0
-  dragSensitivity: 50
+  dragSensitivity: 300
 --- !u!1001 &131892583
 PrefabInstance:
   m_ObjectHideFlags: 0
