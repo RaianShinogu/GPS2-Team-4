@@ -15,6 +15,7 @@ TagManager:
   - EnemyTurnRight
   - EnemyTurnLeft
   - TurnLeft(RP)
+  - Visitor
   layers:
   - Default
   - TransparentFX
