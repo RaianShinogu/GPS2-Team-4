@@ -16,9 +16,10 @@ public class NodePathManager : MonoBehaviour
     public GameObject currentPathChose;
     public GameObject PathUI;
     public GameObject BuildingUI;
+    public GameObject PathCounter;
     public int pathID;
     public int maxCount;
-    private int count;
+    public int count;
     public bool isStage;
 
     private void Update()
@@ -83,8 +84,11 @@ public class NodePathManager : MonoBehaviour
             isStage = false;
             PathUI.SetActive(false);
             BuildingUI.SetActive(true);
-    
-        
+        PathCounter.SetActive(false);
+
+
+
+
     }
 
     public void Count()

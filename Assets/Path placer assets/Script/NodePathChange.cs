@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NodePathChange : MonoBehaviour
 {
@@ -12,9 +13,12 @@ public class NodePathChange : MonoBehaviour
 
     
     private int lastPathID;
+    private int MaxCount , CurrentCount;
+    
     bool changedPath = false;
     bool isPathStage = true;
     public bool allowPath ;
+    public GameObject Counter;
     UIPath uiPath;
 
     private string VerticalPath = "Vertical Path";
@@ -67,6 +71,9 @@ public class NodePathChange : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && !changedPath)
         {
+            CurrentCount = nodePathManager.count;
+            MaxCount = nodePathManager.maxCount;
+            Counter.GetComponent<Text>().text = MaxCount - CurrentCount + "/ 25";
             if (allowPath == true)
             {
                 Instantiate(nodePathManager.currentPathChose, instantiatePos, Quaternion.identity);
