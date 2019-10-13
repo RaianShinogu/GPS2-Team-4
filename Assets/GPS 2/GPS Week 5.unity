@@ -9287,9 +9287,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cef87919da765d043adf44a020b020ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Building1: {fileID: 8284311272065996305, guid: b7fdb364a961ae94eb6d68e2fa926b87,
+  Building1: {fileID: 5255680957570395961, guid: 0d1d328af241360469c948469b9bf360,
     type: 3}
-  Building2: {fileID: 8284311272065996305, guid: cc6fe4767a7fa6843802ff752c24b125,
+  Building2: {fileID: 6388959303795363438, guid: 27180a8b7c8313045aabc1bf80bacb7b,
     type: 3}
   demolish: {fileID: 0}
   buildUI: {fileID: 1439022194}
@@ -10517,7 +10517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe115670fcbcaf34a9ac66f76e7a24d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 2203361286996064603, guid: f170318a7c63dc14199f732ea5144b6e,
+  enemyPrefab: {fileID: 2547239038095807970, guid: b72a3255ed0ac5643a9534c18d11c1f7,
     type: 3}
   spawnPoint: {fileID: 1350387605}
   timeBetweenWaves: 5
