@@ -13,8 +13,12 @@ public class Node : MonoBehaviour
 
     private GameObject buildingChoice;
 
+    private string buildingType;
+
     private Renderer rend;
     private Color startColor;
+
+    private int gold;
 
     void Start()
     {
@@ -46,6 +50,8 @@ public class Node : MonoBehaviour
     void OnMouseDown()
     {
         buildingChoice = buildManager.getBuildingChoice();
+        buildingType = buildManager.type;
+        gold = buildManager.gold;
 
         if (EventSystem.current.IsPointerOverGameObject())
         {
@@ -73,7 +79,28 @@ public class Node : MonoBehaviour
             return;
         }
 
-        building = (GameObject)Instantiate(buildingChoice, transform.position + positionOffset, transform.rotation);
+        if(buildingType == "Building1")
+        {
+            if(gold>= 10)
+            {
+                building = (GameObject)Instantiate(buildingChoice, transform.position + positionOffset, transform.rotation);
+                buildManager.Building1Cost();
+            }
+            
+ 
+        }
+
+        else if (buildingType == "Building2")
+        {
+            if (gold >= 20)
+            {
+                building = (GameObject)Instantiate(buildingChoice, transform.position + positionOffset, transform.rotation);
+                buildManager.Building2Cost();
+            }
+
+
+        }
+
     }
 
   

@@ -43,7 +43,11 @@ public class UIPath : MonoBehaviour
 
     void Update()
     {
-        ExtraUI();
+        if(isTurnPath)
+        {
+            ExtraUI();
+        }
+        
     }
 
     void OnMouseOver()

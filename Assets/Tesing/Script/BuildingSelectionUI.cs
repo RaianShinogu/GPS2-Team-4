@@ -21,8 +21,7 @@ public class BuildingSelectionUI : MonoBehaviour
     {
         Debug.Log("Sphere selected!");
         buildManager.setBuildingChoice(buildManager.Building1);
-
-        actor1button.color = Color.green;
+        buildManager.BuildingType("Building1");
         actor2button.color = Color.white;
         demolishbutton.color = Color.black;
     }
@@ -31,10 +30,11 @@ public class BuildingSelectionUI : MonoBehaviour
     {
         Debug.Log("Cube selected!");
         buildManager.setBuildingChoice(buildManager.Building2);
-
+        buildManager.BuildingType("Building2");
         actor1button.color = Color.white;
         actor2button.color = Color.green;
         demolishbutton.color = Color.black;
+
     }
 
     public void DemolishBuilding()
@@ -46,4 +46,8 @@ public class BuildingSelectionUI : MonoBehaviour
         actor2button.color = Color.white;
         demolishbutton.color = Color.red;
     }
+
+  
+
+
 }

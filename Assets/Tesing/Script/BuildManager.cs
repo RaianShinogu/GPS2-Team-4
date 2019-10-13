@@ -23,7 +23,9 @@ public class BuildManager : MonoBehaviour
     public GameObject endStageButton;
 
     private GameObject buildingChoice;
+    public string type;
     private int StageCount = 0;
+    public int gold = 100;
 
     public GameObject getBuildingChoice()
     {
@@ -33,6 +35,11 @@ public class BuildManager : MonoBehaviour
     public void setBuildingChoice(GameObject building)
     {
         buildingChoice = building;
+    }
+
+    public void BuildingType(string buildingType)
+    {
+        type = buildingType;
     }
 
     public void EndStage()
@@ -48,5 +55,15 @@ public class BuildManager : MonoBehaviour
     public void setDemolishMode()
     {
         buildingChoice = demolish;
+    }
+
+    public void Building1Cost()
+    {
+        gold -= 10;
+    }
+
+    public void Building2Cost()
+    {
+        gold -= 20;
     }
 }

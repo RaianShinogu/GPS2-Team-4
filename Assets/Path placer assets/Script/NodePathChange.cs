@@ -216,7 +216,8 @@ public class NodePathChange : MonoBehaviour
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.left), out leftHit, 1.3f))
         {
 
-            if (leftHit.transform.CompareTag(VerticalPath) || leftHit.transform.CompareTag("Enemy"))
+            if (leftHit.transform.CompareTag(VerticalPath) || leftHit.transform.CompareTag("Enemy") || leftHit.transform.CompareTag(InverseTurnRightPath) || leftHit.transform.CompareTag(InverseTurnLeftPath))
+                
             {
                 if (nodePathManager.pathID == 6)
                 {
@@ -229,7 +230,7 @@ public class NodePathChange : MonoBehaviour
             else if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.back), out backHit, 1.3f))
             {
 
-                if (backHit.transform.CompareTag(HorizontalPath))
+                if (backHit.transform.CompareTag(HorizontalPath) || backHit.transform.CompareTag(InverseTurnRightPath) || backHit.transform.CompareTag(TurnLeftPath ))
                 {
                     if (nodePathManager.pathID == 6)
                     {
@@ -245,7 +246,7 @@ public class NodePathChange : MonoBehaviour
         if (Physics.Raycast(transform.position , transform.TransformDirection(Vector3.left), out leftHit, 1.3f))
         {
 
-            if (leftHit.transform.CompareTag(VerticalPath) || leftHit.transform.CompareTag("Enemy"))
+            if (leftHit.transform.CompareTag(VerticalPath) || leftHit.transform.CompareTag("Enemy") || leftHit.transform.CompareTag(InverseTurnRightPath) || leftHit.transform.CompareTag(InverseTurnLeftPath))
             {
                 if (nodePathManager.pathID == 5)
                 {
@@ -258,7 +259,7 @@ public class NodePathChange : MonoBehaviour
             else if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out forwardHit, 1.3f))
             {
 
-                if (forwardHit.transform.CompareTag(HorizontalPath))
+                if (forwardHit.transform.CompareTag(HorizontalPath) || forwardHit.transform.CompareTag(InverseTurnLeftPath) || forwardHit.transform.CompareTag(TurnRightPath))
                 {
                     if (nodePathManager.pathID == 5)
                     {
@@ -274,7 +275,7 @@ public class NodePathChange : MonoBehaviour
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.right), out rightHit, 1.3f))
         {
 
-            if (rightHit.transform.CompareTag(VerticalPath))
+            if (rightHit.transform.CompareTag(VerticalPath) || rightHit.transform.CompareTag(TurnRightPath) || rightHit.transform.CompareTag(TurnLeftPath))
             {
                 if (nodePathManager.pathID == 7)
                 {
@@ -287,7 +288,7 @@ public class NodePathChange : MonoBehaviour
             else if (Physics.Raycast(transform.position , transform.TransformDirection(Vector3.back), out backHit, 1.3f))
             {
 
-                if (backHit.transform.CompareTag(HorizontalPath))
+                if (backHit.transform.CompareTag(HorizontalPath) || backHit.transform.CompareTag(TurnLeftPath) || backHit.transform.CompareTag(InverseTurnLeftPath))
                 {
                     if (nodePathManager.pathID == 7)
                     {
@@ -303,7 +304,7 @@ public class NodePathChange : MonoBehaviour
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.right), out rightHit, 1.3f))
         {
 
-            if (rightHit.transform.CompareTag(VerticalPath))
+            if (rightHit.transform.CompareTag(VerticalPath) || rightHit.transform.CompareTag(TurnLeftPath) || rightHit.transform.CompareTag(TurnRightPath))
             {
                 if (nodePathManager.pathID == 8)
                 {
@@ -316,7 +317,7 @@ public class NodePathChange : MonoBehaviour
             else if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out forwardHit, 1.3f))
             {
 
-                if (forwardHit.transform.CompareTag(HorizontalPath))
+                if (forwardHit.transform.CompareTag(HorizontalPath) || forwardHit.transform.CompareTag(InverseTurnLeftPath) || forwardHit.transform.CompareTag(TurnRightPath))
                 {
                     if (nodePathManager.pathID == 8)
                     {
