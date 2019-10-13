@@ -35,6 +35,7 @@ public class EnemyRyan : MonoBehaviour
         WaveSpawnRyan waveSpawnRyan = gameMaster.GetComponent<WaveSpawnRyan>();
         enemyLeft = waveSpawnRyan.totalEnemies;
 
+        transform.eulerAngles = new Vector3(80, 0, 0);
         //target = Waypoints.points[0];        
         rend = GetComponent<Renderer>();
         rend.material.SetColor("_FirstOutlineColor", Color.green);
@@ -163,14 +164,14 @@ public class EnemyRyan : MonoBehaviour
             {
                 Debug.Log("turn left");
                 rotation += turnLeft;
-                transform.eulerAngles = new Vector3(0, rotation, 0);
+                transform.eulerAngles = new Vector3(80, rotation, 0);
             }
 
             else if (rightHit.transform.CompareTag("EnemyTurnRight"))
             {
                 Debug.Log("turn right");
                 rotation += turnRight;
-                transform.eulerAngles = new Vector3(0, rotation, 0);
+                transform.eulerAngles = new Vector3(80, rotation, 0);
             }
 
             else if (rightHit.transform.CompareTag("Finish"))
