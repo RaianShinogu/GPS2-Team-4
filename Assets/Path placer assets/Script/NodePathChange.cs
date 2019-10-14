@@ -4,22 +4,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class NodePathChange : MonoBehaviour
 {
 
     NodePathManager nodePathManager;
     Vector3 originalPos;
+    Vector3 originalScale;
     Vector3 instantiatePos;
+    Vector3 shrinkPos;
+    Vector3 shrinkScale;
 
-    
     private int lastPathID;
-    private int MaxCount , CurrentCount;
-    
-    bool changedPath = false;
+    public bool changedPath = false;
     bool isPathStage = true;
     public bool allowPath ;
-    public GameObject Counter;
     UIPath uiPath;
+    
 
     private string VerticalPath = "Vertical Path";
     private string HorizontalPath = "Horizontal Path";
@@ -33,7 +34,7 @@ public class NodePathChange : MonoBehaviour
     RaycastHit rightHit;
     RaycastHit forwardHit;
 
-    Renderer renderer;
+    //Renderer renderer;
 
     void Update()
     {
@@ -64,6 +65,9 @@ public class NodePathChange : MonoBehaviour
         instantiatePos = new Vector3(originalPos.x, originalPos.y , originalPos.z);
         nodePathManager = transform.parent.GetComponent<NodePathManager>();
 
+        originalScale = this.transform.localScale;
+        shrinkPos = new Vector3(originalPos.x, originalPos.y - 2f, originalPos.z);
+        shrinkScale = new Vector3(0.5f, 0.5f, 0f);
     }
 
     private void OnMouseOver()
@@ -71,15 +75,17 @@ public class NodePathChange : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && !changedPath)
         {
-            CurrentCount = nodePathManager.count;
-            MaxCount = nodePathManager.maxCount;
-            Counter.GetComponent<Text>().text = MaxCount - CurrentCount + "/ 25";
+
+            
             if (allowPath == true)
             {
-                Instantiate(nodePathManager.currentPathChose, instantiatePos, Quaternion.identity);
+                this.transform.position = shrinkPos;
+                this.transform.localScale = shrinkScale;
+                nodePathManager.madeNodePaths[nodePathManager.count] = Instantiate(nodePathManager.currentPathChose, instantiatePos, Quaternion.identity)as GameObject;
+                nodePathManager.changedNodePaths[nodePathManager.count] = this.gameObject;
                 changedPath = true;
                 nodePathManager.Count();
-                Destroy(gameObject);
+               // Destroy(gameObject);
             }  
         }
     }
@@ -89,6 +95,42 @@ public class NodePathChange : MonoBehaviour
         isPathStage = false;
     }
 
+    public void undo()
+    {
+        if (nodePathManager.madeNodePaths[nodePathManager.count-1] !=null)
+        {
+            nodePathManager.count--;
+            Destroy(nodePathManager.madeNodePaths[nodePathManager.count]);
+            nodePathManager.changedNodePaths[nodePathManager.count].GetComponent<NodePathChange>().allowPath = false;
+            nodePathManager.changedNodePaths[nodePathManager.count].GetComponent<NodePathChange>().changeBackNode();         
+            nodePathManager.changedNodePaths[nodePathManager.count] = null;
+            
+        }
+    
+    }
+    public void undoComplete()
+    {
+        for (int i = 0; i < nodePathManager.count; i++)
+        {
+            Destroy(nodePathManager.madeNodePaths[i]);
+            nodePathManager.changedNodePaths[i].GetComponent<NodePathChange>().allowPath = false;
+            nodePathManager.changedNodePaths[i].GetComponent<NodePathChange>().changeBackNode();                     
+            nodePathManager.changedNodePaths[i] = null;
+            nodePathManager.madeNodePaths[i] = null;
+            
+        }
+        nodePathManager.count = 0;
+
+    }
+
+    public void changeBackNode()
+    {
+        
+        this.transform.position = originalPos;
+        this.transform.localScale = originalScale;
+        changedPath = false;
+        
+    }
 
     void verticalPath() //Vertical
     {
@@ -295,7 +337,7 @@ public class NodePathChange : MonoBehaviour
             else if (Physics.Raycast(transform.position , transform.TransformDirection(Vector3.back), out backHit, 1.3f))
             {
 
-                if (backHit.transform.CompareTag(HorizontalPath) || backHit.transform.CompareTag(TurnLeftPath) || backHit.transform.CompareTag(InverseTurnLeftPath))
+                if (backHit.transform.CompareTag(HorizontalPath) || backHit.transform.CompareTag(TurnLeftPath) || backHit.transform.CompareTag(InverseTurnRightPath))
                 {
                     if (nodePathManager.pathID == 7)
                     {

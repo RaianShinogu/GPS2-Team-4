@@ -2,10 +2,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIPath : MonoBehaviour
 {
-    [SerializeField] private int nodePathID = 0;
+    public int nodePathID = 0;
    
     UIPathManager uiPathManager;
 
@@ -29,14 +30,16 @@ public class UIPath : MonoBehaviour
     bool rightClickedOn = false;
     public bool isTurnPath;
     public int touchCount = 0;
-
+    //
+    ColorBlock buttonColor;
+    
 
 
     // Update is called once per frame
 
     void Start()
     {
-        thisObjectsMaterial = this.gameObject.GetComponent<Renderer>().material;
+        //thisObjectsMaterial = this.gameObject.GetComponent<Renderer>().material;
         uiPathManager = transform.parent.GetComponentInParent<UIPathManager>();
         nodePathManager = uiPathManager.nodePathManager.GetComponent<NodePathManager>();
     }
@@ -50,33 +53,35 @@ public class UIPath : MonoBehaviour
         
     }
 
-    void OnMouseOver()
+    public void OnMouseOver()
     {
-        if (Input.GetMouseButtonDown(0) && !leftClickedOn)
+        if (!leftClickedOn)
         {
             touchCount++;
             uiPathManager.pickedNode = this.gameObject;
             uiPathManager.changecolorclick();
-            nodePath = this.gameObject.GetComponent<Renderer>().sharedMaterial;
-            thisObjectsMaterial.color = Color.gray;
+
+            GetComponent<Image>().color = Color.grey;
+           // thisObjectsMaterial.color = Color.gray;
             leftClickedOn = true;
             nodePathManager.pathID = nodePathID;
             activatePathChange = true;
-
+            //transform.parent.GetComponentInChildren<rotationPanelPopUp>().reducePanel();
         }
-        else if (Input.GetMouseButtonDown(0) && leftClickedOn)
+        else if (leftClickedOn)
         {
             touchCount++;
             nodePath = null;
-            thisObjectsMaterial.color = Color.white;
+            GetComponent<Image>().color = Color.white;
             leftClickedOn = false;
             nodePathManager.pathID = 0;
-                
-            
-            
+            activatePathChange = false;
+            //nodePathManager.demolish = false;
+
+
         }
-        
-        
+
+
 
     }
 
@@ -94,33 +99,42 @@ public class UIPath : MonoBehaviour
         }
         
     }
-   
 
-   /* void changeColorBackClicked()
+    public void manuelChangeNodeBack()
     {
-       if (lastNode!= currentNode)
-        {
-            nodePath = null;
-            lastNode.GetComponent<Renderer>().material.color = Color.white;
-        }
+        nodePath = null;
+        GetComponent<Image>().color = Color.white;
+        leftClickedOn = false;
+        nodePathManager.pathID = 0;
+        //nodePathManager.demolish = false;
+        activatePathChange = false;
+    }
 
-    }*/
+    /* void changeColorBackClicked()
+     {
+        if (lastNode!= currentNode)
+         {
+             nodePath = null;
+             lastNode.GetComponent<Renderer>().material.color = Color.white;
+         }
 
-   /* void raycastCameraChangeColor()
-    {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
+     }*/
 
-        if (Physics.Raycast(ray, out hit, 100.0F))
-        {
-            if (hit.collider.gameObject.name == )
-            {
-                changeColorBackClicked();
-            }
+    /* void raycastCameraChangeColor()
+     {
+         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+         RaycastHit hit;
 
-        }
+         if (Physics.Raycast(ray, out hit, 100.0F))
+         {
+             if (hit.collider.gameObject.name == )
+             {
+                 changeColorBackClicked();
+             }
 
-    }*/
+         }
+
+     }*/
 
 
 

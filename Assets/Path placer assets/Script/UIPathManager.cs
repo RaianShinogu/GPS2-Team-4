@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class UIPathManager : MonoBehaviour
 {
@@ -14,8 +16,8 @@ public class UIPathManager : MonoBehaviour
     {
         if (lastNode != currentNode)
         {
-            
-            lastNode.GetComponent<Renderer>().material.color = Color.white;
+            lastNode.GetComponent<Image>().color = Color.white;
+            //lastNode.GetComponent<Renderer>().material.color = Color.white;
         }
 
     }

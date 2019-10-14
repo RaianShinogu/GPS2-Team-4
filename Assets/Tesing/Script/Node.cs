@@ -68,6 +68,7 @@ public class Node : MonoBehaviour
             // if there is already a building on it
             if (buildingChoice == buildManager.demolish)
             {
+                
                 Destroy(building);
                 building = null;
             }

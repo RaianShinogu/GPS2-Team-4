@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class BuildManager : MonoBehaviour
 {
@@ -22,9 +21,10 @@ public class BuildManager : MonoBehaviour
     public GameObject demolish;
     public GameObject buildUI;
     public GameObject endStageButton;
-    public GameObject Currency;
 
-    private GameObject buildingChoice;
+    public GameObject uiCanvas;
+
+    [SerializeField]private GameObject buildingChoice;
     public string type;
     private int StageCount = 0;
     public int gold = 100;
@@ -46,27 +46,29 @@ public class BuildManager : MonoBehaviour
 
     public void EndStage()
     {
-        if(StageCount >= 1)
+        uiCanvas.SetActive(false);
+        if (StageCount >= 1)
         {
             buildingChoice = null;
+            buildUI.SetActive(false);
             endStageButton.SetActive(false);
+           
         }
         StageCount++;
     }
     public void setDemolishMode()
     {
+        
         buildingChoice = demolish;
     }
 
     public void Building1Cost()
     {
         gold -= 10;
-        Currency.GetComponent<Text>().text = "Currency: " + (gold - 10);
     }
 
     public void Building2Cost()
     {
         gold -= 20;
-        Currency.GetComponent<Text>().text = "Currency: " + (gold - 20);
     }
 }

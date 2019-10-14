@@ -22,6 +22,7 @@ public class BuildingSelectionUI : MonoBehaviour
         Debug.Log("Sphere selected!");
         buildManager.setBuildingChoice(buildManager.Building1);
         buildManager.BuildingType("Building1");
+        actor1button.color = Color.green;
         actor2button.color = Color.white;
         demolishbutton.color = Color.black;
     }

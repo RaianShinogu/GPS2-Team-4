@@ -16,11 +16,23 @@ public class NodePathManager : MonoBehaviour
     public GameObject currentPathChose;
     public GameObject PathUI;
     public GameObject BuildingUI;
-    public GameObject PathCounter;
+
     public int pathID;
     public int maxCount;
     public int count;
     public bool isStage;
+
+    //
+    public GameObject[] madeNodePaths;
+    public GameObject[] changedNodePaths;
+
+    public int numberOfPaths = 0;
+
+    private void Awake()
+    {
+        madeNodePaths = new GameObject[maxCount];
+        changedNodePaths = new GameObject[maxCount];
+    }
 
     private void Update()
     {
@@ -64,8 +76,9 @@ public class NodePathManager : MonoBehaviour
                 {
                     currentPathChose = inverseTurnRight;
                 }
-                else
+                else 
                 {
+                
                     currentPathChose = null;
                 }               
             }   
@@ -77,6 +90,8 @@ public class NodePathManager : MonoBehaviour
         else { currentPathChose = null; }
        
     }
+    
+  
 
     public void EndStage()
     {
@@ -84,11 +99,8 @@ public class NodePathManager : MonoBehaviour
             isStage = false;
             PathUI.SetActive(false);
             BuildingUI.SetActive(true);
-        PathCounter.SetActive(false);
-
-
-
-
+    
+        
     }
 
     public void Count()
