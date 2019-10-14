@@ -37,8 +37,8 @@ public class CameraDrag : MonoBehaviour
     {
         if (Input.touchCount > 0)
         {
-            dragDirection.x = Input.GetTouch(0).deltaPosition.x / (float)Screen.width;
-            dragDirection.y = Input.GetTouch(0).deltaPosition.y / (float)Screen.height;
+            dragDirection.x = Input.GetTouch(0).deltaPosition.x / (float)-Screen.width;
+            dragDirection.y = Input.GetTouch(0).deltaPosition.y / (float)-Screen.height;
         }
     }
 

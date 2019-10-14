@@ -12120,9 +12120,9 @@ MonoBehaviour:
   star1: {fileID: 416370821}
   star2: {fileID: 342787268}
   star3: {fileID: 840211611}
-  oneStar: 0
+  oneStar: 5
   twoStar: 10
-  threeStar: 20
+  threeStar: 15
 --- !u!114 &1519003777
 MonoBehaviour:
   m_ObjectHideFlags: 0
