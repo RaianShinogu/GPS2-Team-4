@@ -32,9 +32,9 @@ public class changeRotationIcon : MonoBehaviour
             thisRotation = takeRotation;
             transform.rotation = Quaternion.Euler(0f, 0f, thisRotation);
             thisNodePathID = takePathID;
-
-
+        
             panelPopUp.activePanel();
-                                
+        buttonUIScript.GetButtonActive(); 
+
     }
 }

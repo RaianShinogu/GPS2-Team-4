@@ -17,6 +17,7 @@ public class UIPathManager : MonoBehaviour
         if (lastNode != currentNode)
         {
             lastNode.GetComponent<Image>().color = Color.white;
+            lastNode.GetComponent<UIPath>().leftClickDeactive();
             //lastNode.GetComponent<Renderer>().material.color = Color.white;
         }
 
