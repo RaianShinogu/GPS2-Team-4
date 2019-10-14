@@ -26,7 +26,7 @@ public class UIPath : MonoBehaviour
     Shader shader;
     Texture texture;
     Color color;
-    bool leftClickedOn = false;
+   [SerializeField] bool leftClickedOn = false;
     bool rightClickedOn = false;
     public bool isTurnPath;
     public int touchCount = 0;
@@ -57,16 +57,7 @@ public class UIPath : MonoBehaviour
     {
         if (!leftClickedOn)
         {
-            touchCount++;
-            uiPathManager.pickedNode = this.gameObject;
-            uiPathManager.changecolorclick();
-
-            GetComponent<Image>().color = Color.grey;
-           // thisObjectsMaterial.color = Color.gray;
-            leftClickedOn = true;
-            nodePathManager.pathID = nodePathID;
-            activatePathChange = true;
-            //transform.parent.GetComponentInChildren<rotationPanelPopUp>().reducePanel();
+            ActivateButton();
         }
         else if (leftClickedOn)
         {
@@ -85,6 +76,24 @@ public class UIPath : MonoBehaviour
 
     }
 
+    void ActivateButton()
+    {
+        touchCount++;
+        uiPathManager.pickedNode = this.gameObject;
+        uiPathManager.changecolorclick();
+
+        GetComponent<Image>().color = Color.grey;
+        // thisObjectsMaterial.color = Color.gray;
+        leftClickedOn = true;
+        nodePathManager.pathID = nodePathID;
+        activatePathChange = true;
+        transform.parent.GetComponentInChildren<rotationPanelPopUp>().reducePanel();
+    }
+
+    public void GetButtonActive()
+    {
+        ActivateButton();
+    }
     void ExtraUI()
     {
         if(touchCount == 2)
@@ -110,6 +119,11 @@ public class UIPath : MonoBehaviour
         activatePathChange = false;
     }
 
+    public void leftClickDeactive()
+    {
+        leftClickedOn = false;
+        activatePathChange = false;
+    }
     /* void changeColorBackClicked()
      {
         if (lastNode!= currentNode)
