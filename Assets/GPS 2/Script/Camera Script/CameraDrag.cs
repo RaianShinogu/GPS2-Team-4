@@ -9,6 +9,11 @@ public class CameraDrag : MonoBehaviour
     [SerializeField] float dragSensitivity = 50f;
     Vector3 dragDirection = Vector3.zero; //The direction of our drag input
     float decayRate = 5f;
+    public float maxZ;
+    public float mixZ;
+
+    public float maxX;
+    public float mixX;
 
     Vector3 lastMousePosition = Vector3.zero;
     Vector3 mouseDelta = Vector3.zero;
@@ -27,7 +32,25 @@ public class CameraDrag : MonoBehaviour
         Vector3 remappedDirection = Vector3.zero;
         remappedDirection.x = dragDirection.x;
         remappedDirection.z = dragDirection.y;
+        Vector3 initPosition = new Vector3(transform.position.x, transform.position.y, transform.position.z);
 
+        if(this.transform.position.x >= maxX )
+        {
+            this.transform.position = new Vector3(maxX, initPosition.y, initPosition.z);
+            
+        }
+        else if (this.transform.position.x <= mixX)
+        {
+            this.transform.position = new Vector3(mixX , initPosition.y, initPosition.z);
+        }
+        else if (this.transform.position.z >= maxZ)
+        {
+            this.transform.position = new Vector3(initPosition.x, initPosition.y, maxZ);
+        }
+        else if (this.transform.position.z <= mixZ)
+        {
+            this.transform.position = new Vector3(initPosition.x, initPosition.y, mixZ);
+        }
         transform.Translate(remappedDirection * Time.deltaTime * dragSensitivity, Space.World);
 
         dragDirection = Vector3.Lerp(dragDirection, Vector3.zero, Time.deltaTime * decayRate);

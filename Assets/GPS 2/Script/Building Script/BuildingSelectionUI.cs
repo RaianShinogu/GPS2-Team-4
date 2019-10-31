@@ -12,9 +12,9 @@ public class BuildingSelectionUI : MonoBehaviour
     void Start()
     {
         buildManager = BuildManager.instance;
-        actor1button = actor1.GetComponent<Image>();
-        actor2button = actor2.GetComponent<Image>();
-        demolishbutton = demolish.GetComponent<Image>();
+        //actor1button = actor1.GetComponent<Image>();
+        //actor2button = actor2.GetComponent<Image>();
+        //demolishbutton = demolish.GetComponent<Image>();
     }
 
     public void Slot1Building()
@@ -22,9 +22,9 @@ public class BuildingSelectionUI : MonoBehaviour
         Debug.Log("Sphere selected!");
         buildManager.setBuildingChoice(buildManager.Building1);
         buildManager.BuildingType("Building1");
-        actor1button.color = Color.green;
-        actor2button.color = Color.white;
-        demolishbutton.color = Color.black;
+        //actor1button.color = Color.green;
+        //actor2button.color = Color.white;
+        //demolishbutton.color = Color.black;
     }
 
     public void Slot2Building()
@@ -32,9 +32,9 @@ public class BuildingSelectionUI : MonoBehaviour
         Debug.Log("Cube selected!");
         buildManager.setBuildingChoice(buildManager.Building2);
         buildManager.BuildingType("Building2");
-        actor1button.color = Color.white;
-        actor2button.color = Color.green;
-        demolishbutton.color = Color.black;
+        //actor1button.color = Color.white;
+        //actor2button.color = Color.green;
+        //demolishbutton.color = Color.black;
 
     }
 
@@ -45,7 +45,7 @@ public class BuildingSelectionUI : MonoBehaviour
 
         actor1button.color = Color.white;
         actor2button.color = Color.white;
-        demolishbutton.color = Color.red;
+        //demolishbutton.color = Color.red;
     }
 
   

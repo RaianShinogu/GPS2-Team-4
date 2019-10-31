@@ -6,6 +6,7 @@ public class WaveSpawnRyan : MonoBehaviour
     public Transform enemyPrefab;
 
     public Transform spawnPoint;
+    public GameObject Startwave;
 
     public float timeBetweenWaves = 5f;
     private float countdown = 2f;
@@ -16,6 +17,7 @@ public class WaveSpawnRyan : MonoBehaviour
     //private int waveIndex = 0;
     public int waveNumber = 1;
     public int totalEnemies = 10;
+    public bool isOpen;
 
     public GameObject buildUI;
 
@@ -77,4 +79,12 @@ public class WaveSpawnRyan : MonoBehaviour
         }
         StageCount++;
     }
+
+    public void StartWave()
+    {
+        gameStart = true;
+        Startwave.SetActive(false);
+    }
+
+    
 }

@@ -6,14 +6,27 @@ using UnityEngine.AI;
 public class Navigation : MonoBehaviour
 {
 
-    [SerializeField] Transform target;
+     GameObject target;
     [SerializeField] NavMeshAgent agent;
-    [SerializeField] LineRenderer line;
 
+
+    void Awake()
+    {
+        target = GameObject.Find("Cube");
+    }
     void Start()
     {
-        agent.SetDestination(target.position);
+        agent.SetDestination(target.transform.position);
         StartCoroutine(RecalculatePathRotine());
+    }
+
+    void OnCollisionEnter(Collision other)
+    {
+        if(other.gameObject.CompareTag("Finish"))
+        {
+            Debug.Log("Gay");
+            Destroy(gameObject);
+        }
     }
 
     /// <summary>
@@ -25,9 +38,10 @@ public class Navigation : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(0.1f);
-            agent.SetDestination(target.position);
+            agent.SetDestination(target.transform.position);
         }
     }
 
+    
    
 }
