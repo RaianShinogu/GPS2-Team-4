@@ -32,7 +32,7 @@ public class BuildingManager2 : MonoBehaviour
                 
                 if (isOpen == false)
                 {
-                    Debug.Log("Button Clicked");
+                    Debug.Log(Hit.collider.gameObject.name);
                     OnClick.Invoke();
                     isOpen = true;
                 }

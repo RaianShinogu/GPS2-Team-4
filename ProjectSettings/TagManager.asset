@@ -14,7 +14,6 @@ TagManager:
   - Inverse Turn Right
   - EnemyTurnRight
   - EnemyTurnLeft
-  - TurnLeft(RP)
   - Visitor
   layers:
   - Default
