@@ -15,6 +15,9 @@ public class Turret : MonoBehaviour
 
     public bool isSlow = false;
     public bool isDamage = true;
+    public Animator building1;
+    [SerializeField] GameObject hand;
+    [SerializeField] Transform handPosition;
 
 
     [Header("Unity Setup Fields")]
@@ -28,6 +31,7 @@ public class Turret : MonoBehaviour
     void Start()
     {
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
+        building1 = gameObject.GetComponent<Animator>();
     }
 
     void UpdateTarget()
@@ -59,6 +63,7 @@ public class Turret : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if (target == null)
             return;
 
@@ -70,6 +75,9 @@ public class Turret : MonoBehaviour
 
         fireCountDown -= Time.deltaTime;
 
+       
+        
+
     }
 
     private void Shoot()
@@ -80,6 +88,8 @@ public class Turret : MonoBehaviour
         if(bullet != null)
         {
             bullet.Seek(target, isDamage, isSlow);
+            building1.Play("Attack", 0, 0.25f);
+            Instantiate(hand, handPosition.position + Vector3.up + Vector3.back, hand.transform.rotation);
         }
     }
 

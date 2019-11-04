@@ -7,6 +7,8 @@ public class undoNode : MonoBehaviour
     UIPathManager uiPathManager;
     NodePathManager nodePathManager;
     NodePathChange nodePathChange;
+    public GameObject gameManager;
+    public GameObject Instruction;
 
     private void Start()
     {
@@ -19,10 +21,8 @@ public class undoNode : MonoBehaviour
     public void undoOne()
     {
         nodePathChange.undo();
-        
+        Instruction.SetActive(true);
+        gameManager.GetComponent<tutorialManager>().isFirstStep = 2;
     }
-    public void undoAll()
-    {
-        nodePathChange.undoComplete();
-    }
+    
 }

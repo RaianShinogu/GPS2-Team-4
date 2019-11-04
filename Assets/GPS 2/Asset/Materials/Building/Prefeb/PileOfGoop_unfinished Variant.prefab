@@ -16,6 +16,7 @@ MonoBehaviour:
   fireRate: 1
   isSlow: 0
   isDamage: 1
+  building1: {fileID: 0}
   enemyTag: Visitor
   bulletPrefab: {fileID: 1634809021488462296, guid: 174a704de5d785a4e93ad2b67edc1f65,
     type: 3}

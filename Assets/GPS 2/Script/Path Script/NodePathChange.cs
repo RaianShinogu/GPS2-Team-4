@@ -19,7 +19,12 @@ public class NodePathChange : MonoBehaviour
     public bool changedPath = false;
     bool isPathStage = true;
     public bool allowPath ;
+    public int tutorial = 0;
+    public bool isFirst;
+    public bool tutorialUndoAll;
+    bool allow = false;
     UIPath uiPath;
+    [SerializeField] GameObject gameManager;
     
 
     private string VerticalPath = "Vertical Path";
@@ -81,10 +86,26 @@ public class NodePathChange : MonoBehaviour
             {
                 this.transform.position = shrinkPos;
                 this.transform.localScale = shrinkScale;
+                tutorial = 1;
+                Debug.Log(tutorial);
                 nodePathManager.madeNodePaths[nodePathManager.count] = Instantiate(nodePathManager.currentPathChose, instantiatePos, Quaternion.identity)as GameObject;
                 nodePathManager.changedNodePaths[nodePathManager.count] = this.gameObject;
                 changedPath = true;
                 nodePathManager.Count();
+                if(isFirst == true)
+                {
+                    gameManager.GetComponent<tutorialManager>().isFirstStep = 1;
+                    allow = true;
+                }
+                if (tutorialUndoAll == true)
+                {
+                    gameManager.GetComponent<tutorialManager>().undoTutorial = 1;
+                }
+                
+                
+               
+
+
                // Destroy(gameObject);
             }  
         }
@@ -104,7 +125,14 @@ public class NodePathChange : MonoBehaviour
             nodePathManager.changedNodePaths[nodePathManager.count].GetComponent<NodePathChange>().allowPath = false;
             nodePathManager.changedNodePaths[nodePathManager.count].GetComponent<NodePathChange>().changeBackNode();         
             nodePathManager.changedNodePaths[nodePathManager.count] = null;
-            
+            tutorial = 2;
+
+
+        }
+
+        else
+        {
+            return;
         }
     
     }

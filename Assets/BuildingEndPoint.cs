@@ -12,6 +12,7 @@ public class BuildingEndPoint : MonoBehaviour
     private string InverseTurnRightPath = "Inverse Turn Right";
     private string InverseTurnLeftPath = "Inverse Turn Left";
     public GameObject nextStageButton;
+    public GameObject gameManager;
     private int count;
     // Start is called before the first frame update
     void Start()
@@ -38,6 +39,7 @@ public class BuildingEndPoint : MonoBehaviour
         if(count == 0)
         {
             nextStageButton.SetActive(true);
+            gameManager.GetComponent<tutorialManager>().startGame = 1;
             count++;
         }
         return;

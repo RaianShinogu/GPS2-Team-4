@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class UndoNode : MonoBehaviour
 {
+    public GameObject gameManager;
     UIPathManager uiPathManager;
     NodePathManager nodePathManager;
     NodePathChange nodePathChange;
+    
+    
 
     private void Start()
     {
@@ -19,10 +22,12 @@ public class UndoNode : MonoBehaviour
     public void undoOne()
     {
         nodePathChange.undo();
-        
+        gameManager.GetComponent<tutorialManager>().isFirstStep = 2;
+
     }
     public void undoAll()
     {
         nodePathChange.undoComplete();
+        gameManager.GetComponent<tutorialManager>().isFirstStep = 3;
     }
 }
