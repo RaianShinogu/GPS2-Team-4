@@ -6,10 +6,11 @@ using UnityEngine.EventSystems;
 public class Node : MonoBehaviour
 {
     BuildManager buildManager;
+    NodeUI nodeUI;
     [SerializeField] private Color hoverColor;
-    [SerializeField] private Vector3 positionOffset;
+    public Vector3 positionOffset;
 
-    private GameObject building;
+    [HideInInspector]public GameObject building;
 
     private GameObject buildingChoice;
 
@@ -25,6 +26,7 @@ public class Node : MonoBehaviour
         rend = GetComponent<Renderer>();
         startColor = rend.material.color;
         buildManager = BuildManager.instance;
+        nodeUI = NodeUI.instance;
     }
     
     void OnMouseEnter()
@@ -58,6 +60,18 @@ public class Node : MonoBehaviour
             return;
         }
 
+        //
+        if(building != null)
+        {
+            nodeUI.ShowUpDemUI(this);
+            return;
+        }
+
+        nodeUI.ShowBuildUI(this);
+
+
+
+        /*
         if (buildingChoice == null)
         {
             return;
@@ -101,8 +115,31 @@ public class Node : MonoBehaviour
 
 
         }
-
+        */
     }
 
-  
+    public void selectedBuilding1()
+    {
+        if (gold >= 10)
+        {
+            building = (GameObject)Instantiate(buildManager.Building1, transform.position + positionOffset, transform.rotation);
+            buildManager.Building1Cost();
+        }
+    }
+
+    public void selectedBuilding2()
+    {
+        if (gold >= 20)
+        {
+            building = (GameObject)Instantiate(buildManager.Building2, transform.position + positionOffset, transform.rotation);
+            buildManager.Building2Cost();
+        }
+    }
+
+    public void Demolish()
+    {
+        Destroy(building);
+        building = null;
+    }
+
 }
