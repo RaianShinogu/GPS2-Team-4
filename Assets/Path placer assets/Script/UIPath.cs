@@ -87,7 +87,7 @@ public class UIPath : MonoBehaviour
         leftClickedOn = true;
         nodePathManager.pathID = nodePathID;
         activatePathChange = true;
-        transform.parent.GetComponentInChildren<rotationPanelPopUp>().reducePanel();
+        //transform.parent.GetComponentInChildren<rotationPanelPopUp>().reducePanel();
     }
 
     public void GetButtonActive()

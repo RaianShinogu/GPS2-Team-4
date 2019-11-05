@@ -15,6 +15,7 @@ public class CameraDrag : MonoBehaviour
     public float maxX;
     public float mixX;
 
+    public bool cameraLimit;
     Vector3 lastMousePosition = Vector3.zero;
     Vector3 mouseDelta = Vector3.zero;
 
@@ -34,23 +35,27 @@ public class CameraDrag : MonoBehaviour
         remappedDirection.z = dragDirection.y;
         Vector3 initPosition = new Vector3(transform.position.x, transform.position.y, transform.position.z);
 
-        if(this.transform.position.x >= maxX )
+        if(cameraLimit == true)
         {
-            this.transform.position = new Vector3(maxX, initPosition.y, initPosition.z);
-            
+            if (this.transform.position.x >= maxX)
+            {
+                this.transform.position = new Vector3(maxX, initPosition.y, initPosition.z);
+
+            }
+            else if (this.transform.position.x <= mixX)
+            {
+                this.transform.position = new Vector3(mixX, initPosition.y, initPosition.z);
+            }
+            else if (this.transform.position.z >= maxZ)
+            {
+                this.transform.position = new Vector3(initPosition.x, initPosition.y, maxZ);
+            }
+            else if (this.transform.position.z <= mixZ)
+            {
+                this.transform.position = new Vector3(initPosition.x, initPosition.y, mixZ);
+            }
         }
-        else if (this.transform.position.x <= mixX)
-        {
-            this.transform.position = new Vector3(mixX , initPosition.y, initPosition.z);
-        }
-        else if (this.transform.position.z >= maxZ)
-        {
-            this.transform.position = new Vector3(initPosition.x, initPosition.y, maxZ);
-        }
-        else if (this.transform.position.z <= mixZ)
-        {
-            this.transform.position = new Vector3(initPosition.x, initPosition.y, mixZ);
-        }
+        
         transform.Translate(remappedDirection * Time.deltaTime * dragSensitivity, Space.World);
 
         dragDirection = Vector3.Lerp(dragDirection, Vector3.zero, Time.deltaTime * decayRate);

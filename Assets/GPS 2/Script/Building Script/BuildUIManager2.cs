@@ -15,7 +15,7 @@ public class BuildUIManager2: MonoBehaviour
         if(isBuild == false)
         {
             Debug.Log("Im gay1");
-            Instantiate(Building1, node.position + Vector3.up + Vector3.up/2 + Vector3.back, Building1.transform.rotation);
+            Instantiate(Building1, node.position , Building1.transform.rotation);
             isBuild = true;
             
         }
