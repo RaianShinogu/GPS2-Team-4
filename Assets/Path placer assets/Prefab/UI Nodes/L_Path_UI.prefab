@@ -59,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ffdd253164a8b784cbc797e0df682e31, type: 2}
+  - {fileID: 2100000, guid: cccd5ca9b0f47ca40aad6167533c6779, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -108,4 +108,8 @@ MonoBehaviour:
   nodePathID: 1
   lastNode: {fileID: 0}
   currentNode: {fileID: 0}
+  extraTurnPath: {fileID: 0}
   activatePathChange: 0
+  leftClickedOn: 0
+  isTurnPath: 0
+  touchCount: 0

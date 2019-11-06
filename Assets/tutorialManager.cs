@@ -18,7 +18,7 @@ public class tutorialManager : MonoBehaviour
     
     void Start()
     {
-        dialog.text = "Hello";
+        dialog.text = "Welcome, to your very own haunted theme park!";
         
     }
     void Update()
@@ -29,26 +29,26 @@ public class tutorialManager : MonoBehaviour
             
             if(stage == 0)
             {
-                dialog.text = "First Dialog";
+                dialog.text = "Where everyone's nightmares come true.Scare your visitors to be the spookiest park in town!";
                 stage++;
             }
 
             else if(stage == 1)
             {
-                dialog.text = "Second Dialog";
+                dialog.text = "Let me help you get a head start on how to build your park!";
                 stage++;
             }
 
             else if (stage == 2 && isFirstStep == 0)
             {
-                dialog.text = "Third Dialog";
+                dialog.text = "First, tap on a tile next to the path and choose what you want to build. ";
                 instruction.SetActive(false);
                 pathUI.SetActive(true);
             }
 
             else if(stage == 2 && isFirstStep == 1)
             {
-                dialog.text = "Fourth Dialog";                
+                dialog.text = "If you ever make a mistake you can demolish it. Just click on the building then the demolish button. ";                
                 Undo.SetActive(true);
                 
                 
@@ -92,12 +92,12 @@ public class tutorialManager : MonoBehaviour
 
         else if (stage == 5 && startGame == 1)
         {
-            dialog.text = "Nineth Dialog";
+            dialog.text = "Now that you know what to do, here are some places you can place your buildings on. ";
         }
 
          else if(stage == 6 && startGame == 1)
         {
-            dialog.text = "Tenth Dialog";
+            dialog.text = "Now just press that button on the bottom right and visitors will come flooding in! ";
         }
     }
 
