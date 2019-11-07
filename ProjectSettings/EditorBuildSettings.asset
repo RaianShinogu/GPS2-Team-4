@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/GPS 2/Tutorial Level.unity
+    path: Assets/GPS 2/Scenes/Tutorial Level.unity
     guid: e98652ca8883d6b4aacaab14965eb40d
   m_configObjects: {}
