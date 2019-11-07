@@ -12,7 +12,7 @@ public class Navigation : MonoBehaviour
 
     void Awake()
     {
-        target = GameObject.Find("Cube");
+        target = GameObject.Find("End");
     }
     void Start()
     {
