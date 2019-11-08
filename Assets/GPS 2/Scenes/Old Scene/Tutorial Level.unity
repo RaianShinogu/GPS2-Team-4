@@ -235,6 +235,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &3025286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -368,6 +369,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &21120302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -703,6 +705,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &56299876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -836,6 +839,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &60189986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -987,6 +991,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!1001 &68392352
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1102,6 +1107,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &68392356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1253,6 +1259,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!1001 &77034225
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1368,6 +1375,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &77034229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1600,6 +1608,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &86979212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1733,6 +1742,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &101439405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1872,6 +1882,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &109204857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2005,6 +2016,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &126293597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2242,6 +2254,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &131892587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2375,6 +2388,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &156749149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2526,6 +2540,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!1 &192628792
 GameObject:
   m_ObjectHideFlags: 0
@@ -2886,6 +2901,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!1001 &237875051
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3001,6 +3017,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &237875055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3140,6 +3157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &273069392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3273,6 +3291,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &278508232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3406,6 +3425,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &281616071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3539,6 +3559,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &286535422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3672,6 +3693,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &290838829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3896,6 +3918,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &318636814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4029,6 +4052,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &322027737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4168,6 +4192,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &374027415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4301,6 +4326,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &383068269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4537,6 +4563,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &433709285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5078,6 +5105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!1 &544911808
 GameObject:
   m_ObjectHideFlags: 0
@@ -5414,6 +5442,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &559286509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5547,6 +5576,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &560826399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5680,6 +5710,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &564878502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5825,6 +5856,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &605930553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5958,6 +5990,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &607550853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6091,6 +6124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &616791697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6224,6 +6258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &620249287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6578,6 +6613,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!1 &727769527
 GameObject:
   m_ObjectHideFlags: 0
@@ -6776,6 +6812,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &745834705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7070,6 +7107,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!1001 &829510670
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7185,6 +7223,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &829510674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7348,6 +7387,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!1 &864968291 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5282963469008855452, guid: bc4b28c68d2f3984d936f9291ed1f26e,
@@ -7499,6 +7539,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!1001 &956569534
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7614,6 +7655,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &956569538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7765,6 +7807,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!1001 &981051886
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7880,6 +7923,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &981051890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8013,6 +8057,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &996763314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8158,6 +8203,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &1003785756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8492,6 +8538,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &1081720108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8703,6 +8750,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &1095241236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8836,6 +8884,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &1098128645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8969,6 +9018,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &1102898158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9102,6 +9152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &1129655551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9235,6 +9286,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &1144158412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9368,6 +9420,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &1167795027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9629,6 +9682,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &1212082971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9762,6 +9816,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &1214372476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9989,6 +10044,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &1225518506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10140,6 +10196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!1001 &1235472191
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10255,6 +10312,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &1235472195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10406,6 +10464,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!1 &1259364932
 GameObject:
   m_ObjectHideFlags: 0
@@ -10777,6 +10836,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &1276956225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10910,6 +10970,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &1278575078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11043,6 +11104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &1282378864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11176,6 +11238,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &1296108271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11309,6 +11372,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &1297704106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11460,6 +11524,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!1 &1319036493
 GameObject:
   m_ObjectHideFlags: 0
@@ -11749,6 +11814,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &1368622081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11900,6 +11966,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!1 &1419050666
 GameObject:
   m_ObjectHideFlags: 0
@@ -12381,6 +12448,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &1518202871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12514,6 +12582,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &1518914401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12872,6 +12941,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &1521928854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13111,6 +13181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &1527919743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13318,6 +13389,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &1557977212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13451,6 +13523,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &1564050314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13584,6 +13657,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &1595062310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13786,6 +13860,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!1001 &1652964202
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13919,6 +13994,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!1001 &1658889974
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14034,6 +14110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &1658889978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14185,6 +14262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!1001 &1692846120
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14318,6 +14396,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!1001 &1698336166
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14451,6 +14530,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!1001 &1704716000
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14566,6 +14646,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &1704716004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14883,6 +14964,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!1001 &1758760191
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14998,6 +15080,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &1758760195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15170,6 +15253,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &1780561075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15303,6 +15387,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &1784017274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15436,6 +15521,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &1785175514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15587,6 +15673,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!1 &1802495056
 GameObject:
   m_ObjectHideFlags: 0
@@ -15878,6 +15965,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &1819772345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16191,6 +16279,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!1001 &1838248773
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16245,6 +16334,56 @@ PrefabInstance:
       propertyPath: Instruction
       value: 
       objectReference: {fileID: 300078636}
+    - target: {fileID: 1269287789, guid: bc4b28c68d2f3984d936f9291ed1f26e, type: 3}
+      propertyPath: m_Name
+      value: Top Panel Panel
+      objectReference: {fileID: 0}
+    - target: {fileID: 5282963467548468811, guid: bc4b28c68d2f3984d936f9291ed1f26e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5282963467548468811, guid: bc4b28c68d2f3984d936f9291ed1f26e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5282963467548468811, guid: bc4b28c68d2f3984d936f9291ed1f26e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5282963467548468811, guid: bc4b28c68d2f3984d936f9291ed1f26e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 10.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 5282963467548468811, guid: bc4b28c68d2f3984d936f9291ed1f26e,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -66.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5282963467548468811, guid: bc4b28c68d2f3984d936f9291ed1f26e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5282963467548468811, guid: bc4b28c68d2f3984d936f9291ed1f26e,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -85.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5282963467548468822, guid: bc4b28c68d2f3984d936f9291ed1f26e,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c2d4e79059eff5441b1b1a7ade82bea9,
+        type: 3}
+    - target: {fileID: 5282963467644673469, guid: bc4b28c68d2f3984d936f9291ed1f26e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5282963467680300170, guid: bc4b28c68d2f3984d936f9291ed1f26e,
         type: 3}
       propertyPath: m_IsActive
@@ -16390,104 +16529,10 @@ PrefabInstance:
       propertyPath: nodePathManager
       value: 
       objectReference: {fileID: 1078283565}
-    - target: {fileID: 5282963469008855453, guid: bc4b28c68d2f3984d936f9291ed1f26e,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -8.099976
-      objectReference: {fileID: 0}
-    - target: {fileID: 5282963469008855455, guid: bc4b28c68d2f3984d936f9291ed1f26e,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5282963469008855455, guid: bc4b28c68d2f3984d936f9291ed1f26e,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5282963469008855455, guid: bc4b28c68d2f3984d936f9291ed1f26e,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5282963469008855455, guid: bc4b28c68d2f3984d936f9291ed1f26e,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 864968293}
-    - target: {fileID: 5282963469008855455, guid: bc4b28c68d2f3984d936f9291ed1f26e,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: undoAll
-      objectReference: {fileID: 0}
-    - target: {fileID: 5282963469008855455, guid: bc4b28c68d2f3984d936f9291ed1f26e,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 5282963469397810773, guid: bc4b28c68d2f3984d936f9291ed1f26e,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 5.000366
-      objectReference: {fileID: 0}
-    - target: {fileID: 5282963469427599997, guid: bc4b28c68d2f3984d936f9291ed1f26e,
-        type: 3}
-      propertyPath: holdTimeToActivate
-      value: 0.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1269287789, guid: bc4b28c68d2f3984d936f9291ed1f26e, type: 3}
-      propertyPath: m_Name
-      value: Top Panel Panel
-      objectReference: {fileID: 0}
     - target: {fileID: 5282963467696392894, guid: bc4b28c68d2f3984d936f9291ed1f26e,
         type: 3}
       propertyPath: m_MatchWidthOrHeight
       value: 0.45
-      objectReference: {fileID: 0}
-    - target: {fileID: 5282963469380137518, guid: bc4b28c68d2f3984d936f9291ed1f26e,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -5.0005493
-      objectReference: {fileID: 0}
-    - target: {fileID: 5282963467644673469, guid: bc4b28c68d2f3984d936f9291ed1f26e,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5282963469342644891, guid: bc4b28c68d2f3984d936f9291ed1f26e,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5282963469342644891, guid: bc4b28c68d2f3984d936f9291ed1f26e,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 147.41
-      objectReference: {fileID: 0}
-    - target: {fileID: 5282963469342644891, guid: bc4b28c68d2f3984d936f9291ed1f26e,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: -294.83002
-      objectReference: {fileID: 0}
-    - target: {fileID: 5282963469342644891, guid: bc4b28c68d2f3984d936f9291ed1f26e,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5282963469342644891, guid: bc4b28c68d2f3984d936f9291ed1f26e,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -114
-      objectReference: {fileID: 0}
-    - target: {fileID: 5282963469342644891, guid: bc4b28c68d2f3984d936f9291ed1f26e,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 243
-      objectReference: {fileID: 0}
-    - target: {fileID: 5282963469342644890, guid: bc4b28c68d2f3984d936f9291ed1f26e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5282963468043207258, guid: bc4b28c68d2f3984d936f9291ed1f26e,
         type: 3}
@@ -16524,41 +16569,58 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: -120.7
       objectReference: {fileID: 0}
-    - target: {fileID: 5282963467548468811, guid: bc4b28c68d2f3984d936f9291ed1f26e,
+    - target: {fileID: 5282963468043207269, guid: bc4b28c68d2f3984d936f9291ed1f26e,
         type: 3}
-      propertyPath: m_LocalRotation.z
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1def82c638ddcc345a4d4c7ca157f6d2,
+        type: 3}
+    - target: {fileID: 5282963468941666681, guid: bc4b28c68d2f3984d936f9291ed1f26e,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5282963467548468811, guid: bc4b28c68d2f3984d936f9291ed1f26e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5282963467548468811, guid: bc4b28c68d2f3984d936f9291ed1f26e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5282963467548468811, guid: bc4b28c68d2f3984d936f9291ed1f26e,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 10.375
-      objectReference: {fileID: 0}
-    - target: {fileID: 5282963467548468811, guid: bc4b28c68d2f3984d936f9291ed1f26e,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: -66.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5282963467548468811, guid: bc4b28c68d2f3984d936f9291ed1f26e,
+    - target: {fileID: 5282963469008855453, guid: bc4b28c68d2f3984d936f9291ed1f26e,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 30
+      value: -8.099976
       objectReference: {fileID: 0}
-    - target: {fileID: 5282963467548468811, guid: bc4b28c68d2f3984d936f9291ed1f26e,
+    - target: {fileID: 5282963469008855455, guid: bc4b28c68d2f3984d936f9291ed1f26e,
         type: 3}
-      propertyPath: m_SizeDelta.y
-      value: -85.4
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5282963469008855455, guid: bc4b28c68d2f3984d936f9291ed1f26e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5282963469008855455, guid: bc4b28c68d2f3984d936f9291ed1f26e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5282963469008855455, guid: bc4b28c68d2f3984d936f9291ed1f26e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 864968293}
+    - target: {fileID: 5282963469008855455, guid: bc4b28c68d2f3984d936f9291ed1f26e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: undoAll
+      objectReference: {fileID: 0}
+    - target: {fileID: 5282963469008855455, guid: bc4b28c68d2f3984d936f9291ed1f26e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5282963469201575602, guid: bc4b28c68d2f3984d936f9291ed1f26e,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 15edc82ff83ef8143894dc8984ef2da1,
+        type: 3}
     - target: {fileID: 5282963469201575607, guid: bc4b28c68d2f3984d936f9291ed1f26e,
         type: 3}
       propertyPath: m_LocalRotation.z
@@ -16594,33 +16656,60 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: -66.4
       objectReference: {fileID: 0}
-    - target: {fileID: 5282963467548468822, guid: bc4b28c68d2f3984d936f9291ed1f26e,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: c2d4e79059eff5441b1b1a7ade82bea9,
-        type: 3}
-    - target: {fileID: 5282963468043207269, guid: bc4b28c68d2f3984d936f9291ed1f26e,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 1def82c638ddcc345a4d4c7ca157f6d2,
-        type: 3}
-    - target: {fileID: 5282963469201575602, guid: bc4b28c68d2f3984d936f9291ed1f26e,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 15edc82ff83ef8143894dc8984ef2da1,
-        type: 3}
-    - target: {fileID: 5282963468941666681, guid: bc4b28c68d2f3984d936f9291ed1f26e,
+    - target: {fileID: 5282963469342644890, guid: bc4b28c68d2f3984d936f9291ed1f26e,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5282963469342644891, guid: bc4b28c68d2f3984d936f9291ed1f26e,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5282963469342644891, guid: bc4b28c68d2f3984d936f9291ed1f26e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 147.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 5282963469342644891, guid: bc4b28c68d2f3984d936f9291ed1f26e,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -294.83002
+      objectReference: {fileID: 0}
+    - target: {fileID: 5282963469342644891, guid: bc4b28c68d2f3984d936f9291ed1f26e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5282963469342644891, guid: bc4b28c68d2f3984d936f9291ed1f26e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -114
+      objectReference: {fileID: 0}
+    - target: {fileID: 5282963469342644891, guid: bc4b28c68d2f3984d936f9291ed1f26e,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 243
+      objectReference: {fileID: 0}
+    - target: {fileID: 5282963469380137518, guid: bc4b28c68d2f3984d936f9291ed1f26e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -5.0005493
+      objectReference: {fileID: 0}
+    - target: {fileID: 5282963469397810773, guid: bc4b28c68d2f3984d936f9291ed1f26e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 5.000366
       objectReference: {fileID: 0}
     - target: {fileID: 5282963469427599984, guid: bc4b28c68d2f3984d936f9291ed1f26e,
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5282963469427599997, guid: bc4b28c68d2f3984d936f9291ed1f26e,
+        type: 3}
+      propertyPath: holdTimeToActivate
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 8343252494353345118, guid: bc4b28c68d2f3984d936f9291ed1f26e,
         type: 3}
@@ -16755,6 +16844,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &1863677654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16906,6 +16996,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!1001 &1897309325
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17021,6 +17112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &1897309329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17154,6 +17246,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &1939566257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17461,6 +17554,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &1987754895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17600,6 +17694,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &2022992006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17739,6 +17834,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &2034800594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18018,6 +18114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!1001 &2078370335
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18133,6 +18230,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &2078370339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18284,6 +18382,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!4 &2119272584 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1789305843758236677, guid: ec6618d90a231f6418d51eda64948bb8,
@@ -18405,6 +18504,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 1, z: 0}
+  building: {fileID: 0}
 --- !u!114 &2143314890
 MonoBehaviour:
   m_ObjectHideFlags: 0
