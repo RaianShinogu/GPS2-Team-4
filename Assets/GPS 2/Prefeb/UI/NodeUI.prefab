@@ -865,4 +865,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildUI: {fileID: 2054757160123889944}
   upgradeDemolishUI: {fileID: 0}
+  tutorialUI: {fileID: 0}
+  tutorialVistor: {fileID: 0}
+  wave: {fileID: 0}
   uiOffset: {x: 0, y: 2.4, z: 0}
+  Blink: {fileID: 0}

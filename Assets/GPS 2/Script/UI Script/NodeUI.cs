@@ -6,9 +6,14 @@ public class NodeUI : MonoBehaviour
 {
     public GameObject buildUI;
     public GameObject upgradeDemolishUI;
+    public GameObject tutorialUI;
+    public GameObject tutorialVistor;
+    public GameObject wave;
     public static NodeUI instance;
     [SerializeField] private Vector3 uiOffset;
     public GameObject Blink;
+    bool isTutorial = false;
+    public bool inTutorialLevel;
     Node node;
 
     void Awake()
@@ -25,6 +30,16 @@ public class NodeUI : MonoBehaviour
     {
         buildUI.SetActive(true);
         buildUI.transform.position = node.transform.position + uiOffset;
+        if(inTutorialLevel == true)
+        {
+            if (node.name == "Node (116)")
+            {
+                Destroy(Blink);
+                tutorialUI.SetActive(true);
+                isTutorial = true;
+            }
+        }
+        
         this.node = node;
         upgradeDemolishUI.SetActive(false);
     }
@@ -37,25 +52,49 @@ public class NodeUI : MonoBehaviour
     public void BuildBuilding1()
     {
         node.selectedBuilding1();
+        if(inTutorialLevel == true)
+        {
+            if (isTutorial == true)
+            {
+                tutorialUI.SetActive(false);
+                tutorialVistor.SetActive(true);
+                wave.SetActive(true);
+                isTutorial = false;
+                inTutorialLevel = false;
+
+            }
+        }
+       
+        
         HideBuildUI();
     }
 
     public void BuildBuilding2()
     {
         node.selectedBuilding2();
+        if(inTutorialLevel == true)
+        {
+            if (isTutorial == true)
+            {
+                tutorialUI.SetActive(false);
+                tutorialVistor.SetActive(true);
+                wave.SetActive(true);
+                isTutorial = false;
+                inTutorialLevel = false;
+            }
+        }
+        
         HideBuildUI();
     }
 
     public void ShowUpDemUI(Node node)
     {
         upgradeDemolishUI.SetActive(true);
+       
         upgradeDemolishUI.transform.position = node.transform.position + uiOffset;
         this.node = node;
         buildUI.SetActive(false);
-        if(node.name == "Node (116)")
-        {
-            Destroy(Blink);
-        }
+        isTutorial = false;
     }
 
     public void HideUpDemUI()

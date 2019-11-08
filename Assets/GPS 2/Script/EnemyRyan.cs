@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.AI;
+using System.Collections;
 
 public class EnemyRyan : MonoBehaviour
 {
@@ -11,6 +14,8 @@ public class EnemyRyan : MonoBehaviour
     public int turnLeft = -90;
     public int turnRight = 90;
     public int rotation;
+    GameObject targetEnd;
+    [SerializeField] NavMeshAgent agent;
 
     //public float speed = 10f;
 
@@ -28,19 +33,26 @@ public class EnemyRyan : MonoBehaviour
 
     public static bool finalDeath = false;
     
+
     // Start is called before the first frame update
     void Start()
     {
+        agent.SetDestination(targetEnd.transform.position);
+        StartCoroutine(RecalculatePathRotine());
         GameObject gameMaster = GameObject.Find("GameMaster");
         WaveSpawnRyan waveSpawnRyan = gameMaster.GetComponent<WaveSpawnRyan>();
         enemyLeft = waveSpawnRyan.totalEnemies;
 
-        transform.eulerAngles = new Vector3(80, 0, 0);
+        //transform.eulerAngles = new Vector3(80, 0, 0);
         //target = Waypoints.points[0];        
         rend = GetComponent<Renderer>();
         rend.material.SetColor("_FirstOutlineColor", Color.green);
     }
 
+    void Awake()
+    {
+        targetEnd = GameObject.Find("End");
+    }
     public void TakeDamage(float amount)
     {
         Debug.Log("damaged");
@@ -73,6 +85,16 @@ public class EnemyRyan : MonoBehaviour
         }
     }
 
+    IEnumerator RecalculatePathRotine()
+    {
+        WaitForSeconds delay = new WaitForSeconds(0.1f);
+        while (true)
+        {
+            yield return new WaitForSeconds(0.1f);
+            agent.SetDestination(target.transform.position);
+        }
+    }
+
     public void BecomeSlowed()
     {
         Debug.Log("slowed");
@@ -83,7 +105,7 @@ public class EnemyRyan : MonoBehaviour
     void Update()
     {
         Raycast();
-        transform.Translate(speed * Time.deltaTime, 0, 0);
+        //transform.Translate(speed * Time.deltaTime, 0, 0);
 
         /*Vector3 dir = target.position - transform.position;
         transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
@@ -234,5 +256,7 @@ public class EnemyRyan : MonoBehaviour
 
 
         }*/
+
+       
     }
 }

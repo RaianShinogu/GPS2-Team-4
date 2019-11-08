@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5764773289117743257}
   - component: {fileID: 3191064109156847723}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: smol clown 1b_lines
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,8 @@ GameObject:
   - component: {fileID: 2333830006776386895}
   - component: {fileID: 2333830006776386864}
   - component: {fileID: 4750446374547145434}
-  m_Layer: 0
+  - component: {fileID: 3818767263374616502}
+  m_Layer: 8
   m_Name: Vistor (1)
   m_TagString: Visitor
   m_Icon: {fileID: 0}
@@ -184,7 +185,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2333830006776386865}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 87e7d2ed2aaa85d4b923674755045d26, type: 3}
   m_Name: 
@@ -228,6 +229,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &3818767263374616502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2333830006776386865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e465b3de9dffe148ab6e578ad85ffa4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scareMeter: {fileID: 0}
+  speed: 10
+  turnLeft: -90
+  turnRight: 90
+  rotation: 0
+  agent: {fileID: 2333830006776386864}
+  health: 0
+  maxHealth: 100
+  outlineColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &2333830008023623642
 GameObject:
   m_ObjectHideFlags: 0
@@ -238,7 +260,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2333830008023623641}
   - component: {fileID: 2333830008023623640}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: visitor1_BOY_yELLOW
   m_TagString: Untagged
   m_Icon: {fileID: 0}
