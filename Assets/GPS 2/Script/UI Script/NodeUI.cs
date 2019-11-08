@@ -8,6 +8,7 @@ public class NodeUI : MonoBehaviour
     public GameObject upgradeDemolishUI;
     public static NodeUI instance;
     [SerializeField] private Vector3 uiOffset;
+    public GameObject Blink;
     Node node;
 
     void Awake()
@@ -51,6 +52,10 @@ public class NodeUI : MonoBehaviour
         upgradeDemolishUI.transform.position = node.transform.position + uiOffset;
         this.node = node;
         buildUI.SetActive(false);
+        if(node.name == "Node (116)")
+        {
+            Destroy(Blink);
+        }
     }
 
     public void HideUpDemUI()
