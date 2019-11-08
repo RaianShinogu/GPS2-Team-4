@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8397199482894911535}
   - component: {fileID: 1360874040569970075}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: visitor1_BOY_3c
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5515756970557885230}
   - component: {fileID: 6387273675103383608}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: visitor1_BOY_lines_red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5371593902709926184}
   - component: {fileID: 8370555355134737692}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: visitor1_BOY_lines_yellow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,10 +260,9 @@ GameObject:
   - component: {fileID: 1959920827984648995}
   - component: {fileID: 4944566430195908038}
   - component: {fileID: -9106911618537900921}
-  - component: {fileID: 8194134048871977567}
   - component: {fileID: 244434511770948275}
   - component: {fileID: -728008757661306473}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Visitor new
   m_TagString: Visitor
   m_Icon: {fileID: 0}
@@ -312,7 +311,7 @@ NavMeshAgent:
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
-  m_AngularSpeed: 120
+  m_AngularSpeed: 0
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -321,22 +320,6 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!54 &8194134048871977567
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7821387858139305634}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 0
 --- !u!114 &244434511770948275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -380,7 +363,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4016268445219044453}
   - component: {fileID: 2692673756080854973}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: visitor1_BOY_lines_Orange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -507,6 +490,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1019692296631477934, guid: 73e8e9b0a703b4a4a988260d20fe49f8,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -527,10 +514,25 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 969617370301345954, guid: 73e8e9b0a703b4a4a988260d20fe49f8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5125873859494057817, guid: 73e8e9b0a703b4a4a988260d20fe49f8,
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5125873859494057817, guid: 73e8e9b0a703b4a4a988260d20fe49f8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6752846973180034309, guid: 73e8e9b0a703b4a4a988260d20fe49f8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}

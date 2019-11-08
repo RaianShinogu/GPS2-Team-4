@@ -23,13 +23,14 @@ public class EnemyRyan : MonoBehaviour
     public float maxHealth = 100;
     public GameObject health1, health2, health3;
 
-    private Transform target;
+    //private Transform target;
     private int wavepointindex = 0;
 
     public Color outlineColor;
 
     Renderer rend;
     private int enemyLeft;
+   
 
 
     public static bool finalDeath = false;
@@ -48,7 +49,7 @@ public class EnemyRyan : MonoBehaviour
         //target = Waypoints.points[0];        
         //rend = GetComponent<Renderer>();
         //rend.material.SetColor("_FirstOutlineColor", Color.green);
-        health1.SetActive(true);
+       
     }
 
     void Awake()
@@ -102,7 +103,7 @@ public class EnemyRyan : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(0.1f);
-            agent.SetDestination(target.transform.position);
+            agent.SetDestination(targetEnd.transform.position);
         }
     }
 
