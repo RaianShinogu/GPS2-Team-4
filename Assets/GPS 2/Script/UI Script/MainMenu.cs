@@ -11,7 +11,7 @@ public class MainMenu : MonoBehaviour
         Global.audiomanager.stopAllSFX();
         Global.audiomanager.getBGM("pause_screen").stop();
         Global.audiomanager.getBGM("main_BGM").stop();
-        Global.audiomanager.getBGM("main_menu").play();
+        //Global.audiomanager.getBGM("main_menu").play();
      
     }
     public void Play()

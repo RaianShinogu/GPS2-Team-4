@@ -19,8 +19,8 @@ public class WaveSpawnRyan : MonoBehaviour
 
     //private int waveIndex = 0;
     public int waveNumber = 1;
-    public int totalEnemies = 10;
-    public bool isOpen;
+    public int totalEnemies = 5;
+ 
 
     public GameObject buildUI;
 
@@ -53,7 +53,7 @@ public class WaveSpawnRyan : MonoBehaviour
         //waveIndex++;
         for (int i=0; i< waveNumber; i++)
         {
-            visitorType = Random.Range(0, 3);
+            //visitorType = Random.Range(0, 3);
             SpawnEnemy();
             yield return new WaitForSeconds(0.5f);
         }
@@ -71,22 +71,22 @@ public class WaveSpawnRyan : MonoBehaviour
 
     void SpawnEnemy()
     {
-        if(visitorType == 0)
+        /*if(visitorType == 0)
         {
             Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
         }
         else if (visitorType == 1)
         {
             Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
-            Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+            //Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
         }
         else if (visitorType == 2)
         {
             Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
-            Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
-            Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
-        }
-
+            //Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+            //Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+        }*/
+        Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
 
     }
 
@@ -104,7 +104,7 @@ public class WaveSpawnRyan : MonoBehaviour
         wave.SetActive(false);
         tutorialVistor.SetActive(false);
         gameStart = true;
-        Startwave.SetActive(false);
+        //Startwave.SetActive(false);
         
 
     }

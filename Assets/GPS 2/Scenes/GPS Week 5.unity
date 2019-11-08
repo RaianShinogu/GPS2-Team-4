@@ -11671,11 +11671,12 @@ MonoBehaviour:
     type: 3}
   spawnPoint: {fileID: 1350387605}
   Startwave: {fileID: 0}
+  tutorialVistor: {fileID: 0}
+  wave: {fileID: 0}
   timeBetweenWaves: 5
   gameStart: 0
   waveNumber: 1
   totalEnemies: 5
-  isOpen: 0
   buildUI: {fileID: 0}
 --- !u!4 &1519003774
 Transform:
@@ -17332,7 +17333,7 @@ PrefabInstance:
     - target: {fileID: 6069271090003304839, guid: a9a69d1dd04420c4db660f1f1a970b4f,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6069271090003304835, guid: a9a69d1dd04420c4db660f1f1a970b4f,
         type: 3}
@@ -17513,12 +17514,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7839310093855427204, guid: 805fe6c50285d334d94ba198c0350da5,
+    - target: {fileID: 7839310092345317787, guid: 805fe6c50285d334d94ba198c0350da5,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1370827245}
-    - target: {fileID: 7839310092345317787, guid: 805fe6c50285d334d94ba198c0350da5,
+    - target: {fileID: 7839310093855427204, guid: 805fe6c50285d334d94ba198c0350da5,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

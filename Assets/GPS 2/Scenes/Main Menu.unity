@@ -2168,6 +2168,6 @@ PrefabInstance:
         type: 3}
       propertyPath: sfx.Array.data[0].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 724270f85970bcf4fba412db0f8f4793, type: 3}
+      objectReference: {fileID: 8300000, guid: 5d883b57ae956a3478eea8c107d98221, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1cda6f8b2025034db9937f57d4f83d8, type: 3}

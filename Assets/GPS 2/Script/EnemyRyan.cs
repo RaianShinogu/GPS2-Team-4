@@ -41,15 +41,15 @@ public class EnemyRyan : MonoBehaviour
     {
         agent.SetDestination(targetEnd.transform.position);
         StartCoroutine(RecalculatePathRotine());
-        GameObject gameMaster = GameObject.Find("GameMaster");
+        GameObject gameMaster = GameObject.Find("Game Manager");
         WaveSpawnRyan waveSpawnRyan = gameMaster.GetComponent<WaveSpawnRyan>();
         enemyLeft = waveSpawnRyan.totalEnemies;
-
+        
         //transform.eulerAngles = new Vector3(80, 0, 0);
         //target = Waypoints.points[0];        
         //rend = GetComponent<Renderer>();
         //rend.material.SetColor("_FirstOutlineColor", Color.green);
-       
+
     }
 
     void Awake()
