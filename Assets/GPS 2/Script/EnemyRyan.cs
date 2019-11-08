@@ -21,6 +21,7 @@ public class EnemyRyan : MonoBehaviour
 
     public float health = 0;
     public float maxHealth = 100;
+    public GameObject health1, health2, health3;
 
     private Transform target;
     private int wavepointindex = 0;
@@ -45,8 +46,9 @@ public class EnemyRyan : MonoBehaviour
 
         //transform.eulerAngles = new Vector3(80, 0, 0);
         //target = Waypoints.points[0];        
-        rend = GetComponent<Renderer>();
-        rend.material.SetColor("_FirstOutlineColor", Color.green);
+        //rend = GetComponent<Renderer>();
+        //rend.material.SetColor("_FirstOutlineColor", Color.green);
+        health1.SetActive(true);
     }
 
     void Awake()
@@ -61,15 +63,24 @@ public class EnemyRyan : MonoBehaviour
 
         if(health >= 0 && health <= 20)
         {
-            rend.material.SetColor("_FirstOutlineColor", Color.green);
+            //rend.material.SetColor("_FirstOutlineColor", Color.green);
+            health1.SetActive(true);
+            health2.SetActive(false);
+            health3.SetActive(false);
         }
         else if(health > 20 && health <= 40)
         {
-            rend.material.SetColor("_FirstOutlineColor", Color.blue);
+            //rend.material.SetColor("_FirstOutlineColor", Color.blue);
+            health1.SetActive(false);
+            health2.SetActive(true);
+            health3.SetActive(false);
         }
-        else
+        else if(health > 40)
         {
-            rend.material.SetColor("_FirstOutlineColor", Color.red);
+            //rend.material.SetColor("_FirstOutlineColor", Color.red);
+            health1.SetActive(false);
+            health2.SetActive(false);
+            health3.SetActive(true);
         }
 
         
