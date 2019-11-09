@@ -4,9 +4,19 @@ using UnityEngine;
 
 public class OptionsMenu : MonoBehaviour
 {
-  public void SetVolume(float volume)
+  public void SetMasterVolume(float volume)
     {
         Global.audiomanager.setMasterVolume(volume);
+
+    }
+    public void SetBGMvolume(float volume)
+    {
+        Global.audiomanager.setBGMVolume(volume);
+
+    }
+    public void SetSFXvolume(float volume)
+    {
+        Global.audiomanager.setSFXVolume(volume);
 
     }
 }

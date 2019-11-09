@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
+    public bool pause;
     public GameObject pauseMenuUI;
     // Start is called before the first frame update
     void Start()
@@ -17,6 +18,7 @@ public class PauseMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        pause = GameIsPaused;
         if (GameIsPaused == true)
         {
             Pause();
@@ -37,6 +39,19 @@ public class PauseMenu : MonoBehaviour
         Global.audiomanager.getBGM("main_menu").stop();
         Global.audiomanager.getBGM("pause_screen").stop();
         Global.audiomanager.getBGM("main_BGM").play();
+       
+    }
+
+    public void Restart()
+    {
+        pauseMenuUI.SetActive(false);
+        Time.timeScale = 1f;
+        GameIsPaused = false;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Global.audiomanager.stopAllSFX();
+        Global.audiomanager.getBGM("main_menu").stop();
+        Global.audiomanager.getBGM("pause_screen").stop();
+        Global.audiomanager.getBGM("main_BGM").play();
     }
 
     void Pause()
@@ -50,6 +65,7 @@ public class PauseMenu : MonoBehaviour
         Global.audiomanager.getBGM("main_menu").stop();
         Global.audiomanager.getBGM("main_BGM").stop();
         Global.audiomanager.getBGM("pause_screen").play();
+       
     }
 
     public void backToMenu()
@@ -67,6 +83,7 @@ public class PauseMenu : MonoBehaviour
 
     public void GamePause()
     {
+        
         GameIsPaused = !GameIsPaused;
     }
 }

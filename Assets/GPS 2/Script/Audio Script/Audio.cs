@@ -1,7 +1,10 @@
 ﻿using UnityEngine;
+using UnityEngine.Audio;
 
 [System.Serializable]
 public class Audio {
+
+    public AudioMixerGroup audioMixerGroup;
 
     private AudioSource controller;
 
@@ -21,12 +24,14 @@ public class Audio {
         this.controller = controller;
 
         this.controller.clip = clip;
+        //this.controller.volume = volume * masterVolume;
 
         this.controller.volume = volume * masterVolume;
         this.controller.pitch = pitch;
 
         this.controller.loop = loop;
 
+        this.controller.outputAudioMixerGroup = audioMixerGroup;
     }
 
     public void play() {
@@ -70,6 +75,7 @@ public class Audio {
     public void setVolume(float masterVolume) {
         controller.volume = volume * masterVolume;
     }
+
 
     public string getName() { return name; }
 

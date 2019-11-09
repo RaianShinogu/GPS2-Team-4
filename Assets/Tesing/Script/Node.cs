@@ -136,6 +136,15 @@ public class Node : MonoBehaviour
         }
     }
 
+    public void selectedBuilding3()
+    {
+        if (gold >= 30)
+        {
+            building = (GameObject)Instantiate(buildManager.Building3, transform.position + positionOffset, buildManager.Building3.transform.rotation);
+            buildManager.Building3Cost();
+        }
+    }
+
     public void Demolish()
     {
         Destroy(building);
