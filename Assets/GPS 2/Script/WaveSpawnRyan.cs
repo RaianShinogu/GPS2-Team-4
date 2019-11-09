@@ -101,9 +101,10 @@ public class WaveSpawnRyan : MonoBehaviour
 
     public void StartWave()
     {
+        gameStart = true;
         wave.SetActive(false);
         tutorialVistor.SetActive(false);
-        gameStart = true;
+        
         //Startwave.SetActive(false);
         
 

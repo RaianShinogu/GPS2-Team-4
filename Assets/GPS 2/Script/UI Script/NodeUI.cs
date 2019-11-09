@@ -6,8 +6,8 @@ public class NodeUI : MonoBehaviour
 {
     public GameObject buildUI;
     public GameObject upgradeDemolishUI;
-    public GameObject tutorialUI;
-    public GameObject tutorialVistor;
+    //public GameObject tutorialUI;
+    //public GameObject tutorialVistor;
     public GameObject wave;
     public static NodeUI instance;
     [SerializeField] private Vector3 uiOffset;
@@ -28,6 +28,7 @@ public class NodeUI : MonoBehaviour
 
     public void ShowBuildUI(Node node)
     {
+        
         buildUI.SetActive(true);
         buildUI.transform.position = node.transform.position + uiOffset;
         if(inTutorialLevel == true)
@@ -35,7 +36,6 @@ public class NodeUI : MonoBehaviour
             if (node.name == "Node (116)")
             {
                 Destroy(Blink);
-                tutorialUI.SetActive(true);
                 isTutorial = true;
             }
         }
@@ -56,9 +56,9 @@ public class NodeUI : MonoBehaviour
         {
             if (isTutorial == true)
             {
-                tutorialUI.SetActive(false);
-                tutorialVistor.SetActive(true);
-                wave.SetActive(true);
+                //tutorialUI.SetActive(false);
+                //tutorialVistor.SetActive(true);
+                //wave.SetActive(true);
                 isTutorial = false;
                 inTutorialLevel = false;
 
@@ -76,9 +76,9 @@ public class NodeUI : MonoBehaviour
         {
             if (isTutorial == true)
             {
-                tutorialUI.SetActive(false);
-                tutorialVistor.SetActive(true);
-                wave.SetActive(true);
+                //tutorialUI.SetActive(false);
+                //tutorialVistor.SetActive(true);
+                //wave.SetActive(true);
                 isTutorial = false;
                 inTutorialLevel = false;
             }

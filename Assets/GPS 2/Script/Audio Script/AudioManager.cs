@@ -79,7 +79,7 @@ public class AudioManager : MonoBehaviour {
         for ( ; counter < bgm.Length; counter++) {
 
             if (bgm[counter].getName() == name) {
-                Debug.Log("play");
+                //Debug.Log("play");
                 break;
             }
 
