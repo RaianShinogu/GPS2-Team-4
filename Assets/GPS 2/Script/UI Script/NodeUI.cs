@@ -94,8 +94,8 @@ public class NodeUI : MonoBehaviour
         {
             if (isTutorial == true)
             {
-                tutorialUI.SetActive(false);
-                tutorialVistor.SetActive(true);
+                //tutorialUI.SetActive(false);
+                //tutorialVistor.SetActive(true);
                 wave.SetActive(true);
                 isTutorial = false;
                 inTutorialLevel = false;

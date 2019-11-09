@@ -9548,6 +9548,7 @@ MonoBehaviour:
     type: 3}
   Building2: {fileID: 7150598697077799287, guid: ae034188334c98d41b29c45b05cc3520,
     type: 3}
+  Building3: {fileID: 0}
   demolish: {fileID: 811662295}
   buildUI: {fileID: 0}
   endStageButton: {fileID: 0}
