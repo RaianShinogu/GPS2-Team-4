@@ -11,7 +11,7 @@ public class Turret : MonoBehaviour
 
     public float range = 5f;
     public float fireRate = 1f;
-    private float fireCountDown = 0f;
+    public float fireCountDown = 0f;
 
     public bool isSlow = false;
     public bool isDamage = true;
@@ -88,8 +88,13 @@ public class Turret : MonoBehaviour
         if(bullet != null)
         {
             bullet.Seek(target, isDamage, isSlow);
-            building1.Play("Attack", 0, 0.25f);
-            Instantiate(hand, handPosition.position + Vector3.up + Vector3.back, hand.transform.rotation);
+            //subject to change
+            if (building1 != null)
+            {
+                building1.Play("Attack", 0, 0.25f);
+                Instantiate(hand, handPosition.position + Vector3.up + Vector3.back, hand.transform.rotation);
+            }
+            
         }
     }
 

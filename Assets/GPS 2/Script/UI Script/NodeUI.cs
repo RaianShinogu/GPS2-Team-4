@@ -86,6 +86,24 @@ public class NodeUI : MonoBehaviour
         
         HideBuildUI();
     }
+    //n
+    public void BuildBuilding3()
+    {
+        node.selectedBuilding3();
+        if (inTutorialLevel == true)
+        {
+            if (isTutorial == true)
+            {
+                tutorialUI.SetActive(false);
+                tutorialVistor.SetActive(true);
+                wave.SetActive(true);
+                isTutorial = false;
+                inTutorialLevel = false;
+            }
+        }
+
+        HideBuildUI();
+    }
 
     public void ShowUpDemUI(Node node)
     {

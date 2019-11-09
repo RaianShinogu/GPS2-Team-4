@@ -18,6 +18,7 @@ public class BuildManager : MonoBehaviour
 
     public GameObject Building1;
     public GameObject Building2;
+    public GameObject Building3;
     public GameObject demolish;
     public GameObject buildUI;
     public GameObject endStageButton;
@@ -70,5 +71,9 @@ public class BuildManager : MonoBehaviour
     public void Building2Cost()
     {
         gold -= 20;
+    }
+    public void Building3Cost()
+    {
+        gold -= 30;
     }
 }

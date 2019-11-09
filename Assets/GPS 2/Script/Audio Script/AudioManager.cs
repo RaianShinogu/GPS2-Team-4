@@ -1,13 +1,18 @@
 ﻿using UnityEngine;
-
+using UnityEngine.Audio;
 using System;
 
 public class AudioManager : MonoBehaviour {
+
+    public AudioMixer audiomixer;
 
     [SerializeField] private Audio[] sfx;
     [SerializeField] private Audio[] bgm;
 
     private float masterVolume = 0.7f;
+    private float putSFXvolume = 0.7f;
+    private float putBGMvolume = 0.7f;
+
 
     public void Awake() {
 
@@ -19,13 +24,13 @@ public class AudioManager : MonoBehaviour {
 
         for(int i = 0; i < sfx.Length; i++) {
 
-            sfx[i].init(gameObject.AddComponent<AudioSource>(), masterVolume);
+            sfx[i].init(gameObject.AddComponent<AudioSource>(), putSFXvolume);
 
         }
 
         for (int i = 0; i < bgm.Length; i++) {
 
-            bgm[i].init(gameObject.AddComponent<AudioSource>(), masterVolume);
+            bgm[i].init(gameObject.AddComponent<AudioSource>(), putBGMvolume);
 
         }
 
@@ -79,7 +84,7 @@ public class AudioManager : MonoBehaviour {
         for ( ; counter < bgm.Length; counter++) {
 
             if (bgm[counter].getName() == name) {
-                Debug.Log("play");
+
                 break;
             }
 
@@ -111,5 +116,29 @@ public class AudioManager : MonoBehaviour {
         }
 
     }
+    public void setBGMVolume(float BGMVolume)
+    {
+        //audiomixer.SetFloat("BGMVolume", BGMVolume);
 
-}
+        for (int i = 0; i < bgm.Length; i++)
+        {
+
+            bgm[i].setVolume(BGMVolume);
+
+        }
+    }
+
+    public void setSFXVolume(float SFXVolume)
+    {
+       // audiomixer.SetFloat("SFXVolume", SFXVolume);
+        for (int i = 0; i < sfx.Length; i++)
+        {
+
+            sfx[i].setVolume(SFXVolume);
+
+
+        }
+
+    }
+
+    }

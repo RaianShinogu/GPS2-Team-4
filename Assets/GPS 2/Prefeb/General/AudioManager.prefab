@@ -43,29 +43,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ab2614a97a830c4eba6c2b240b814ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audiomixer: {fileID: 24100000, guid: d8d78b55bbb1d3745ab3eee74b01ce19, type: 2}
   sfx:
-  - clip: {fileID: 8300000, guid: 5d883b57ae956a3478eea8c107d98221, type: 3}
+  - audioMixerGroup: {fileID: -8593793819107023816, guid: d8d78b55bbb1d3745ab3eee74b01ce19,
+      type: 2}
+    clip: {fileID: 8300000, guid: 724270f85970bcf4fba412db0f8f4793, type: 3}
+    name: arp
+    volume: 0.5
+    pitch: 1
+    spatialBlend: 0
+    loop: 0
+    mute: 0
+  - audioMixerGroup: {fileID: -8593793819107023816, guid: d8d78b55bbb1d3745ab3eee74b01ce19,
+      type: 2}
+    clip: {fileID: 0}
     name: 
     volume: 0
     pitch: 0
     spatialBlend: 0
     loop: 0
     mute: 0
-  - clip: {fileID: 0}
+  - audioMixerGroup: {fileID: -8593793819107023816, guid: d8d78b55bbb1d3745ab3eee74b01ce19,
+      type: 2}
+    clip: {fileID: 0}
     name: 
     volume: 0
     pitch: 0
     spatialBlend: 0
     loop: 0
     mute: 0
-  - clip: {fileID: 0}
-    name: 
-    volume: 0
-    pitch: 0
-    spatialBlend: 0
-    loop: 0
-    mute: 0
-  - clip: {fileID: 0}
+  - audioMixerGroup: {fileID: -8593793819107023816, guid: d8d78b55bbb1d3745ab3eee74b01ce19,
+      type: 2}
+    clip: {fileID: 0}
     name: 
     volume: 0
     pitch: 0
@@ -73,28 +82,36 @@ MonoBehaviour:
     loop: 0
     mute: 0
   bgm:
-  - clip: {fileID: 8300000, guid: 5d883b57ae956a3478eea8c107d98221, type: 3}
+  - audioMixerGroup: {fileID: 2632607539690071209, guid: d8d78b55bbb1d3745ab3eee74b01ce19,
+      type: 2}
+    clip: {fileID: 8300000, guid: 5d883b57ae956a3478eea8c107d98221, type: 3}
     name: main_menu
     volume: 0.5
     pitch: 1
     spatialBlend: 0.5
     loop: 1
     mute: 0
-  - clip: {fileID: 8300000, guid: 724270f85970bcf4fba412db0f8f4793, type: 3}
+  - audioMixerGroup: {fileID: 2632607539690071209, guid: d8d78b55bbb1d3745ab3eee74b01ce19,
+      type: 2}
+    clip: {fileID: 8300000, guid: 724270f85970bcf4fba412db0f8f4793, type: 3}
     name: main_BGM
     volume: 0.5
     pitch: 1
     spatialBlend: 0
     loop: 1
     mute: 0
-  - clip: {fileID: 8300000, guid: 5d883b57ae956a3478eea8c107d98221, type: 3}
+  - audioMixerGroup: {fileID: 2632607539690071209, guid: d8d78b55bbb1d3745ab3eee74b01ce19,
+      type: 2}
+    clip: {fileID: 8300000, guid: 5d883b57ae956a3478eea8c107d98221, type: 3}
     name: pause_screen
     volume: 0.5
     pitch: 1
     spatialBlend: 0
     loop: 1
     mute: 0
-  - clip: {fileID: 0}
+  - audioMixerGroup: {fileID: 2632607539690071209, guid: d8d78b55bbb1d3745ab3eee74b01ce19,
+      type: 2}
+    clip: {fileID: 0}
     name: lose_bgm
     volume: 0
     pitch: 0
