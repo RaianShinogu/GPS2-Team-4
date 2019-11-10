@@ -756,6 +756,27 @@ Transform:
   m_Father: {fileID: 2046207644}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &54510116 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2054757161275943264, guid: d16a55713261c224787a525df5056bd7,
+    type: 3}
+  m_PrefabInstance: {fileID: 416137236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &54510117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54510116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bc5db2c8c3b40f4f9cc78ad61799bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildUI: {fileID: 264793693}
+  upgradeDemolishUI: {fileID: 2013560817}
+  uiOffset: {x: 0, y: 0, z: 0}
 --- !u!1001 &58879525
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2915,6 +2936,12 @@ MonoBehaviour:
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
   building: {fileID: 0}
+--- !u!1 &264793693 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2054757160123889944, guid: d16a55713261c224787a525df5056bd7,
+    type: 3}
+  m_PrefabInstance: {fileID: 416137236}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &279662323 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 986105821164099215, guid: 16c9f4ff8324cfc40b7b2deea7fc851d,
@@ -3795,7 +3822,7 @@ PrefabInstance:
     - target: {fileID: 2054757160997160432, guid: d16a55713261c224787a525df5056bd7,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2054757160997160432, guid: d16a55713261c224787a525df5056bd7,
         type: 3}
@@ -3821,11 +3848,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054757160997160432, guid: d16a55713261c224787a525df5056bd7,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 54510117}
+    - target: {fileID: 2054757160997160432, guid: d16a55713261c224787a525df5056bd7,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BuildBuilding2
       objectReference: {fileID: 0}
     - target: {fileID: 2054757160997383695, guid: d16a55713261c224787a525df5056bd7,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2054757160997383695, guid: d16a55713261c224787a525df5056bd7,
         type: 3}
@@ -3841,16 +3878,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 54510117}
     - target: {fileID: 2054757160997383695, guid: d16a55713261c224787a525df5056bd7,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: Stage
+      value: BuildBuilding2
       objectReference: {fileID: 0}
     - target: {fileID: 2054757160997383695, guid: d16a55713261c224787a525df5056bd7,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054757160997383695, guid: d16a55713261c224787a525df5056bd7,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 54510117}
+    - target: {fileID: 2054757160997383695, guid: d16a55713261c224787a525df5056bd7,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BuildBuilding1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d16a55713261c224787a525df5056bd7, type: 3}
@@ -9214,6 +9261,7 @@ MonoBehaviour:
     type: 3}
   Building2: {fileID: 7150598697077799287, guid: ae034188334c98d41b29c45b05cc3520,
     type: 3}
+  Building3: {fileID: 0}
   demolish: {fileID: 811662295}
   buildUI: {fileID: 0}
   endStageButton: {fileID: 0}
@@ -11047,7 +11095,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 416137236}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 54510116}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd710fe01fa95ee4d9790d7b7bf95070, type: 3}
@@ -17426,6 +17474,12 @@ Transform:
   m_Father: {fileID: 1200410525}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2013560817 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7839310092842451287, guid: 805fe6c50285d334d94ba198c0350da5,
+    type: 3}
+  m_PrefabInstance: {fileID: 547922849}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2014248617
 PrefabInstance:
   m_ObjectHideFlags: 0

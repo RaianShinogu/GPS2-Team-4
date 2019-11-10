@@ -7,6 +7,9 @@ public class NodeUI : MonoBehaviour
     public GameObject buildUI;
     public GameObject upgradeDemolishUI;
     public static NodeUI instance;
+    bool isTutorial = false;
+    public GameObject Blink;
+    public bool inTutorialLevel;
     [SerializeField] private Vector3 uiOffset;
     Node node;
 
@@ -25,6 +28,14 @@ public class NodeUI : MonoBehaviour
         buildUI.SetActive(false);   // reset any opened UI, if any
         buildUI.SetActive(true);
         buildUI.transform.position = node.transform.position + uiOffset;
+        if (inTutorialLevel == true)
+        {
+            if (node.name == "Node (116)")
+            {
+                Destroy(Blink);
+                isTutorial = true;
+            }
+        }
         this.node = node;
         upgradeDemolishUI.SetActive(false);
     }
@@ -37,15 +48,56 @@ public class NodeUI : MonoBehaviour
     public void BuildBuilding1()
     {
         node.selectedBuilding1();
+        if (inTutorialLevel == true)
+        {
+            if (isTutorial == true)
+            {
+                //tutorialUI.SetActive(false);
+                //tutorialVistor.SetActive(true);
+                //wave.SetActive(true);
+                isTutorial = false;
+                inTutorialLevel = false;
+
+            }
+        }
         HideBuildUI();
     }
 
     public void BuildBuilding2()
     {
         node.selectedBuilding2();
+        if (inTutorialLevel == true)
+        {
+            if (isTutorial == true)
+            {
+                //tutorialUI.SetActive(false);
+                //tutorialVistor.SetActive(true);
+                //wave.SetActive(true);
+                isTutorial = false;
+                inTutorialLevel = false;
+
+            }
+        }
         HideBuildUI();
     }
 
+    public void BuildBuilding3()
+    {
+        node.selectedBuilding3();
+        if (inTutorialLevel == true)
+        {
+            if (isTutorial == true)
+            {
+                //tutorialUI.SetActive(false);
+                //tutorialVistor.SetActive(true);
+                //wave.SetActive(true);
+                isTutorial = false;
+                inTutorialLevel = false;
+            }
+        }
+
+        HideBuildUI();
+    }
     public void ShowUpDemUI(Node node)
     {
         upgradeDemolishUI.SetActive(false);
@@ -53,6 +105,7 @@ public class NodeUI : MonoBehaviour
         upgradeDemolishUI.transform.position = node.transform.position + uiOffset;
         this.node = node;
         buildUI.SetActive(false);
+        isTutorial = false;
     }
 
     public void HideUpDemUI()
