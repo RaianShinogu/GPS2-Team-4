@@ -9,6 +9,9 @@ public class Node : MonoBehaviour
     NodeUI nodeUI;
     [SerializeField] private Color hoverColor;
     public Vector3 positionOffset;
+    bool isDragging = false;
+    private float delayTime = 0.5f;
+    private float counterTime = 0.0f;
 
     [HideInInspector]public GameObject building;
 
@@ -47,6 +50,44 @@ public class Node : MonoBehaviour
     void OnMouseExit()
     {
         rend.material.color = startColor;
+    }    
+
+    void OnMouseDrag()
+    {
+        counterTime += Time.deltaTime;
+        if(counterTime >= delayTime)
+        {
+            isDragging = true;
+        }
+
+        else
+        {            
+            isDragging = false;
+        }
+    }
+
+    void OnMouseUp()
+    {
+        counterTime = 0.0f;
+        if (EventSystem.current.IsPointerOverGameObject())
+        {
+            return;
+        }
+
+        if (isDragging == true)
+        {
+            isDragging = false;
+            return;
+        }
+        
+        //
+        if (building != null)
+        {
+            nodeUI.ShowUpDemUI(this);
+            return;
+        }
+
+        nodeUI.ShowBuildUI(this);
     }
 
     void OnMouseDown()
@@ -55,8 +96,15 @@ public class Node : MonoBehaviour
         buildingType = buildManager.type;
         gold = buildManager.gold;
 
+        /*
         if (EventSystem.current.IsPointerOverGameObject())
         {
+            return;
+        }
+
+        if(isDragging)
+        {
+            isDragging = false;
             return;
         }
 
@@ -68,7 +116,7 @@ public class Node : MonoBehaviour
         }
 
         nodeUI.ShowBuildUI(this);
-
+        */
 
 
         /*
