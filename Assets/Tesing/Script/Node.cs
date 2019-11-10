@@ -10,7 +10,7 @@ public class Node : MonoBehaviour
     [SerializeField] private Color hoverColor;
     public Vector3 positionOffset;
     bool isDragging = false;
-    private float delayTime = 0.5f;
+    private float delayTime = 0.2f;
     private float counterTime = 0.0f;
 
     [HideInInspector]public GameObject building;

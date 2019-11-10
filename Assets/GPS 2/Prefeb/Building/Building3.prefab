@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2395920447578775424}
   - component: {fileID: 3565233561523510294}
+  - component: {fileID: 7630005211826734891}
   m_Layer: 0
   m_Name: Building3
   m_TagString: Untagged
@@ -80,3 +81,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7630005211826734891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944420826933608318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e6665da2d03cf94c849200ac84be10b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 5
+  fireRate: 0.5
+  fireCountDown: 0
+  isSlow: 0
+  isDamage: 1
+  building1: {fileID: 0}
+  hand: {fileID: 0}
+  handPosition: {fileID: 0}
+  enemyTag: Visitor
+  bulletPrefab: {fileID: 1602084178116780069, guid: 2cce4cf3dd99cf24ab717c281bb989ff,
+    type: 3}
+  firePoint: {fileID: 2395920447578775424}

@@ -44,7 +44,7 @@ public class TutoriaUpdated : MonoBehaviour
 
         if (stage == 1)
         {
-            blink.SetActive(true);
+            //blink.SetActive(true);
             textBox.text = "Let me help you get a head start on how to build your park! First, tap on a tile next to the path and choose what you want to build. Remember, buildings cost money so  spend wisely! ";
             //stage++;
         }

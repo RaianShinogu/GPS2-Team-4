@@ -55,18 +55,18 @@ public class WaveSpawnRyan : MonoBehaviour
         {
             //visitorType = Random.Range(0, 3);
             SpawnEnemy();
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(1.0f);
         }
     }
 
     void SpawnWave()
     {
-        for (int i = 0; i < waveNumber; i++)
+        /*for (int i = 0; i < waveNumber; i++)
         {
             SpawnEnemy();
-        }
+        }*/
         //waveNumber++;
-
+        SpawnEnemy();
     }
 
     void SpawnEnemy()

@@ -8,6 +8,7 @@ public class tutorialGuy : MonoBehaviour
     public GameObject tutorialGame;
     public GameObject guyWalking;
     public float speed = 5.0f;
+    public GameObject pressToContinue;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,8 +21,14 @@ public class tutorialGuy : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
         if(transform.position == target.transform.position)
         {
-            tutorialGame.SetActive(true);
-            guyWalking.SetActive(false);
+            pressToContinue.SetActive(true);
+            if (Input.GetMouseButtonDown(0))
+            {
+                tutorialGame.SetActive(true);
+                guyWalking.SetActive(false);
+                pressToContinue.SetActive(false);
+            }
+            
 
         }
     }
