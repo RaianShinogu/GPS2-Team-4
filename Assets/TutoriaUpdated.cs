@@ -28,7 +28,7 @@ public class TutoriaUpdated : MonoBehaviour
             if(stage == 1)
             {
                 blink.SetActive(true);
-                textBox.text = "Let me help you get a head start on how to build your park! First, tap on a tile next to the path and choose what you want to build. ";
+                textBox.text = "Let me help you get a head start on how to build your park! First, tap on a tile next to the path and choose what you want to build. Remember, buildings cost money so  spend wisely! ";
                 //stage++;
             }
             else if( stage == 4)
@@ -61,7 +61,7 @@ public class TutoriaUpdated : MonoBehaviour
 
          else if(stage == 5)
         {
-            textBox.text = "The more you scare visitors, the higher your park's rating will go! But visitors will get bored over time if they don't get scared.   ";
+            textBox.text = "The more you scare visitors, the higher your park's rating will go! But visitors will get bored over time if they don't get scared. Good luck! ";
             tapToContinue.SetActive(true);
             stage++;
         }
