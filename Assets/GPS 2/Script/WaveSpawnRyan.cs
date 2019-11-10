@@ -78,13 +78,13 @@ public class WaveSpawnRyan : MonoBehaviour
         else if (visitorType == 1)
         {
             Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
-            //Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+            Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
         }
         else if (visitorType == 2)
         {
             Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
-            //Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
-            //Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+            Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+            Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
         }*/
         Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
 
