@@ -25,20 +25,15 @@ public class TutoriaUpdated : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if(stage == 1)
-            {
-                blink.SetActive(true);
-                textBox.text = "Let me help you get a head start on how to build your park! First, tap on a tile next to the path and choose what you want to build. Remember, buildings cost money so  spend wisely! ";
-                //stage++;
-            }
-            else if( stage == 4)
+           
+             if( stage == 4)
             {
                 tapToContinue.SetActive(false);
                 textBox.text = "Now just press that button on the bottom right and visitors will come flooding in!";
                 startWave.SetActive(true);
             }
 
-            if(stage == 6)
+            else if(stage == 6)
             {
                 tapToContinue.SetActive(false);
                 GuyTalking.SetActive(false);
@@ -47,7 +42,14 @@ public class TutoriaUpdated : MonoBehaviour
             
         }
 
-         if (stage == 2)
+        if (stage == 1)
+        {
+            blink.SetActive(true);
+            textBox.text = "Let me help you get a head start on how to build your park! First, tap on a tile next to the path and choose what you want to build. Remember, buildings cost money so  spend wisely! ";
+            //stage++;
+        }
+
+        else if (stage == 2)
         {
             textBox.text = "If you ever make a mistake you can demolish it. Just click on the building then the demolish button. ";
             
