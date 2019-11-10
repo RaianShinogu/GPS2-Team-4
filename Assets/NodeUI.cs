@@ -100,7 +100,7 @@ public class NodeUI : MonoBehaviour
     }
     public void ShowUpDemUI(Node node)
     {
-        upgradeDemolishUI.SetActive(false);
+        upgradeDemolishUI.SetActive(false); // reset any opened UI, if any
         upgradeDemolishUI.SetActive(true);
         upgradeDemolishUI.transform.position = node.transform.position + uiOffset;
         this.node = node;
