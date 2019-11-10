@@ -245,6 +245,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &21120298
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -370,6 +374,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1 &34242533
 GameObject:
   m_ObjectHideFlags: 0
@@ -826,6 +834,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &60189982
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -951,6 +963,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &62904603
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1061,6 +1077,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!114 &62904607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1201,6 +1221,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &71620976
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1311,6 +1335,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!114 &71620980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1451,6 +1479,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &86979208
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1576,6 +1608,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &101439401
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1701,6 +1737,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &109204853
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1826,6 +1866,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &126293593
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1951,6 +1995,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1 &127114370
 GameObject:
   m_ObjectHideFlags: 0
@@ -2054,6 +2102,7 @@ MonoBehaviour:
   mixZ: 0
   maxX: 0
   mixX: 0
+  cameraLimit: 0
 --- !u!1001 &131892583
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2179,6 +2228,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1 &152294509
 GameObject:
   m_ObjectHideFlags: 0
@@ -2433,6 +2486,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &164234516
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2543,6 +2600,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!114 &164234520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2796,6 +2857,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!114 &214643436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2936,6 +3001,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!4 &269018945 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7563526556468543371, guid: 5137470d95f57ae48bd399398993eee4,
@@ -3067,6 +3136,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &278508228
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3192,6 +3265,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &281616067
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3317,6 +3394,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &286535418
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3442,6 +3523,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &290838825
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3567,6 +3652,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &318636810
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3692,6 +3781,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &322027733
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3817,6 +3910,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1 &342787268 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6069271088585661233, guid: a9a69d1dd04420c4db660f1f1a970b4f,
@@ -3948,6 +4045,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &383068265
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4073,6 +4174,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1 &416370821 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6069271088776187760, guid: a9a69d1dd04420c4db660f1f1a970b4f,
@@ -4204,6 +4309,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &444789910
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4960,6 +5069,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!114 &522418026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5228,6 +5341,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &560826395
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5353,6 +5470,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &564878498
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5478,6 +5599,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1 &569572389 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5282963467680300170, guid: bc4b28c68d2f3984d936f9291ed1f26e,
@@ -5496,6 +5621,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 889ada5e816b86f499695e90110dc54b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  Instruction: {fileID: 0}
 --- !u!1001 &605930549
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5621,6 +5748,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &607550849
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5746,6 +5877,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &616791693
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5871,6 +6006,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &620249283
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5996,6 +6135,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1 &621374261
 GameObject:
   m_ObjectHideFlags: 0
@@ -6463,6 +6606,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!114 &725004989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6603,6 +6750,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1 &759535459
 GameObject:
   m_ObjectHideFlags: 0
@@ -6856,6 +7007,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!114 &765851805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6996,6 +7151,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1 &832024741 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5282963467696392892, guid: bc4b28c68d2f3984d936f9291ed1f26e,
@@ -7118,6 +7277,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!114 &858389796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7251,6 +7414,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 889ada5e816b86f499695e90110dc54b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  Instruction: {fileID: 0}
 --- !u!1001 &917948488
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7361,6 +7526,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!114 &917948492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7501,6 +7670,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &971175149
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7611,6 +7784,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!114 &971175153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7751,6 +7928,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &996763310
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7876,6 +8057,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &1003785752
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8001,6 +8186,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1 &1039101843 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6614350050443344449, guid: 1862bbf3b539f934583ecf783f2b9a5d,
@@ -8020,6 +8209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextStageButton: {fileID: 1828202172}
+  gameManager: {fileID: 0}
 --- !u!4 &1060994740 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7563526556468543371, guid: 8d58ba4c99413aa4e89e6f89365f2346,
@@ -8326,6 +8516,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1 &1084382959
 GameObject:
   m_ObjectHideFlags: 0
@@ -8529,6 +8723,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &1098128641
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8654,6 +8852,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &1102898154
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8779,6 +8981,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &1129655547
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8904,6 +9110,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &1144158408
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9029,6 +9239,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &1167795023
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9154,6 +9368,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1 &1207523054
 GameObject:
   m_ObjectHideFlags: 0
@@ -9407,6 +9625,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &1214372472
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9532,6 +9754,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1 &1218796705
 GameObject:
   m_ObjectHideFlags: 0
@@ -9751,6 +9977,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &1226135151
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9861,6 +10091,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!114 &1226135155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10001,6 +10235,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &1248677726
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10111,6 +10349,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!114 &1248677730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10507,6 +10749,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &1278575074
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10632,6 +10878,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &1282378860
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10757,6 +11007,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &1296108267
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10882,6 +11136,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &1297704102
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11007,6 +11265,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &1308152391
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11117,6 +11379,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!114 &1308152395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11462,6 +11728,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1 &1370827243
 GameObject:
   m_ObjectHideFlags: 0
@@ -11619,6 +11889,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!114 &1406866050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12279,6 +12553,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &1518914397
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12404,6 +12682,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1 &1519003772
 GameObject:
   m_ObjectHideFlags: 0
@@ -12733,6 +13015,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1 &1527605598
 GameObject:
   m_ObjectHideFlags: 0
@@ -12964,6 +13250,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1 &1555579526
 GameObject:
   m_ObjectHideFlags: 0
@@ -13163,6 +13453,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &1564050310
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13288,6 +13582,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &1595062306
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13413,6 +13711,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1 &1615027453
 GameObject:
   m_ObjectHideFlags: 0
@@ -13933,6 +14235,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!114 &1641622537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14058,6 +14364,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!114 &1652964206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14198,6 +14508,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &1669616691
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14308,6 +14622,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!114 &1669616695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14433,6 +14751,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!114 &1692846124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14558,6 +14880,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!114 &1698336170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14698,6 +15024,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &1727030736
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14897,6 +15227,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!114 &1747319980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15114,6 +15448,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!4 &1770956862 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7563526556468543371, guid: 4abfbd62b7d9d06428c693430eeb8109,
@@ -15278,6 +15616,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &1784017270
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15403,6 +15745,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &1785175510
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15528,6 +15874,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &1791603612
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15638,6 +15988,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!114 &1791603616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15954,6 +16308,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1 &1828202172
 GameObject:
   m_ObjectHideFlags: 0
@@ -16215,6 +16573,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!114 &1829427260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16436,6 +16798,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Top Panel Panel
       objectReference: {fileID: 0}
+    - target: {fileID: 1269287789, guid: bc4b28c68d2f3984d936f9291ed1f26e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5282963467696392894, guid: bc4b28c68d2f3984d936f9291ed1f26e,
         type: 3}
       propertyPath: m_MatchWidthOrHeight
@@ -16444,7 +16810,7 @@ PrefabInstance:
     - target: {fileID: 5282963469380137518, guid: bc4b28c68d2f3984d936f9291ed1f26e,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -5.00058
+      value: -5.0005493
       objectReference: {fileID: 0}
     - target: {fileID: 5282963467644673469, guid: bc4b28c68d2f3984d936f9291ed1f26e,
         type: 3}
@@ -16609,6 +16975,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 048e93ff5047b36419765a5ae05dba76,
         type: 3}
+    - target: {fileID: 1655026645, guid: bc4b28c68d2f3984d936f9291ed1f26e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5282963469008855454, guid: bc4b28c68d2f3984d936f9291ed1f26e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: bc4b28c68d2f3984d936f9291ed1f26e, type: 3}
@@ -16737,6 +17107,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &1870473313
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16847,6 +17221,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!114 &1870473317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16987,6 +17365,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1 &1919180492
 GameObject:
   m_ObjectHideFlags: 0
@@ -17241,6 +17623,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1 &1949712943
 GameObject:
   m_ObjectHideFlags: 0
@@ -17557,6 +17943,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!4 &1996932176 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7563526556468543371, guid: bc615dd4f04179c4d9f65261b730562a,
@@ -17765,6 +18155,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!4 &2034702544 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3588588425285776445, guid: 1862bbf3b539f934583ecf783f2b9a5d,
@@ -17896,6 +18290,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1 &2066084898
 GameObject:
   m_ObjectHideFlags: 0
@@ -18134,6 +18532,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!114 &2074333950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18274,6 +18676,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &2089163965
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18384,6 +18790,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!114 &2089163969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18530,6 +18940,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changedPath: 0
   allowPath: 0
+  tutorial: 0
+  isFirst: 0
+  tutorialUndoAll: 0
+  gameManager: {fileID: 0}
 --- !u!1001 &6069271088387121141
 PrefabInstance:
   m_ObjectHideFlags: 0

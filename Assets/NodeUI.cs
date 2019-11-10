@@ -22,6 +22,7 @@ public class NodeUI : MonoBehaviour
 
     public void ShowBuildUI(Node node)
     {
+        buildUI.SetActive(false);   // reset any opened UI, if any
         buildUI.SetActive(true);
         buildUI.transform.position = node.transform.position + uiOffset;
         this.node = node;
@@ -47,6 +48,7 @@ public class NodeUI : MonoBehaviour
 
     public void ShowUpDemUI(Node node)
     {
+        upgradeDemolishUI.SetActive(false);
         upgradeDemolishUI.SetActive(true);
         upgradeDemolishUI.transform.position = node.transform.position + uiOffset;
         this.node = node;
