@@ -8,6 +8,6 @@ public class SpookLevelUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        spookLvlText.text = "(Debug) Spook level: " + PlayerStats.spookPoint.ToString();
+        spookLvlText.text = "Profit: " + PlayerStats.spookPoint.ToString();
     }
 }

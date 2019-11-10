@@ -14,4 +14,10 @@ public class GameOver : MonoBehaviour
         Debug.Log("Go to menu");
         SceneManager.LoadScene(0);
     }
+
+    public void Next()
+    {
+        Debug.Log("Go next level");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
 }
