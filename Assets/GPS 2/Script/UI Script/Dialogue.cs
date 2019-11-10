@@ -17,9 +17,9 @@ public class Dialogue : MonoBehaviour
     void Start()
     {
         
-        uiPathManager = transform.parent.GetComponentInParent<UIPathManager>();
-        nodePathManager = uiPathManager.nodePathManager.GetComponent<NodePathManager>();
-        mytext.text = (nodePathManager.maxCount-nodePathManager.count).ToString() + "/" + nodePathManager.maxCount.ToString();
+        //uiPathManager = transform.parent.GetComponentInParent<UIPathManager>();
+        //nodePathManager = uiPathManager.nodePathManager.GetComponent<NodePathManager>();
+       // mytext.text = (nodePathManager.maxCount-nodePathManager.count).ToString() + "/" + nodePathManager.maxCount.ToString();
 
     }
 
@@ -27,7 +27,7 @@ public class Dialogue : MonoBehaviour
     void Update()
     {
         if(GoldText != null) GoldText.text = buildmanager.GetComponent<BuildManager>().gold.ToString();
-        if(mytext != null) mytext.text = (nodePathManager.maxCount - nodePathManager.count).ToString() + "/" + nodePathManager.maxCount.ToString();
+        //if(mytext != null) mytext.text = (nodePathManager.maxCount - nodePathManager.count).ToString() + "/" + nodePathManager.maxCount.ToString();
         if(spookText != null) spookText.text = PlayerStats.spookPoint.ToString();
 
     }

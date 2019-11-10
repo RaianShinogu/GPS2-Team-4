@@ -35,7 +35,7 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         GameIsPaused = false;
         //temp
-        Global.audiomanager.stopAllSFX();
+       // Global.audiomanager.stopAllSFX();
         Global.audiomanager.getBGM("main_menu").stop();
         Global.audiomanager.getBGM("pause_screen").stop();
         Global.audiomanager.getBGM("main_BGM").play();
@@ -48,7 +48,8 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         GameIsPaused = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        Global.audiomanager.stopAllSFX();
+
+       // Global.audiomanager.stopAllSFX();
         Global.audiomanager.getBGM("main_menu").stop();
         Global.audiomanager.getBGM("pause_screen").stop();
         Global.audiomanager.getBGM("main_BGM").play();
@@ -61,7 +62,7 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = true;
         //
         //temp audio
-        Global.audiomanager.stopAllSFX();
+        //Global.audiomanager.stopAllSFX();
         Global.audiomanager.getBGM("main_menu").stop();
         Global.audiomanager.getBGM("main_BGM").stop();
         Global.audiomanager.getBGM("pause_screen").play();
