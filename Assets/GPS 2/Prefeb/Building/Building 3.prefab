@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 7881146545138447092}
   - component: {fileID: 3981121953417456851}
   m_Layer: 0
-  m_Name: Bush_withAnimation
-  m_TagString: Untagged
+  m_Name: Building 3
+  m_TagString: Wolf
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -117,6 +117,7 @@ MonoBehaviour:
   isSlow: 0
   isDamage: 1
   building: {fileID: 0}
+  BuildingType: 
   hand: {fileID: 0}
   handPosition: {fileID: 0}
   enemyTag: Visitor

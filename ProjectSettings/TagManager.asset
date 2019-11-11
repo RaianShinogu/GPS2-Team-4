@@ -15,6 +15,13 @@ TagManager:
   - EnemyTurnRight
   - EnemyTurnLeft
   - Visitor
+  - Toggle Bg
+  - OnText
+  - Off Text
+  - Handle
+  - Cave
+  - PileOfGoop
+  - Wolf
   layers:
   - Default
   - TransparentFX
