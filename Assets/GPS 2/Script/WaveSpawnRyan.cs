@@ -14,24 +14,18 @@ public class WaveSpawnRyan : MonoBehaviour
     public float timeBetweenWaves = 5f;
     private float countdown = 2f;
 
-    private bool gameStart = false;
-    public bool isTutorial;
+    public bool gameStart = false;
     int StageCount;
 
     //private int waveIndex = 0;
-    private int waveNumber = 1;
-    [HideInInspector] public int totalEnemies;
-    public int totalEnemiesEachWave;
-    public int incomingWave ;
-    int totalEnemy;
+    public int waveNumber = 1;
+    public int totalEnemies = 5;
  
 
     public GameObject buildUI;
 
     private void Start()
     {
-        totalEnemies = incomingWave * totalEnemiesEachWave;
-        totalEnemy = totalEnemies;
         Debug.Log("Total enemies (start) = " + totalEnemies);
     }
 
@@ -39,31 +33,14 @@ public class WaveSpawnRyan : MonoBehaviour
     {
         if (gameStart == true)
         {
-            if(incomingWave+1 >= 0)
+            if (countdown <= 0f && totalEnemies > 0)
             {
-
-              if (countdown <= 0f && totalEnemies > 0)
-              {
-                 //Debug.Log("Total enmies = " + totalEnemies);
-                   StartCoroutine(SpawnWaveMulti());
-                   totalEnemies--;
-                   totalEnemiesEachWave--;
-                    Debug.Log("Gayy");
-                   //SpawnWave();
-                   countdown = timeBetweenWaves;
-                    if(totalEnemies == totalEnemy / 2)
-                    {
-                        wave.SetActive(true);
-                        gameStart = false;
-                        incomingWave--;
-                    }
-              }
-               
-                 
-
-
+                //Debug.Log("Total enmies = " + totalEnemies);
+                StartCoroutine(SpawnWaveMulti());
+                totalEnemies--;
+                //SpawnWave();
+                countdown = timeBetweenWaves;
             }
-           
         }
 
         
@@ -126,13 +103,9 @@ public class WaveSpawnRyan : MonoBehaviour
     {
         gameStart = true;
         wave.SetActive(false);
-        if(isTutorial == true)
-        {
-            tutorialVistor.SetActive(false);
-        }
+        tutorialVistor.SetActive(false);
         
-        
-        
+        //Startwave.SetActive(false);
         
 
     }
