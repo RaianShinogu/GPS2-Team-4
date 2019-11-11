@@ -15,7 +15,8 @@ public class Turret : MonoBehaviour
 
     public bool isSlow = false;
     public bool isDamage = true;
-    public Animator building1;
+    public Animator building;
+    public string BuildingType;
     [SerializeField] GameObject hand;
     [SerializeField] Transform handPosition;
 
@@ -31,7 +32,7 @@ public class Turret : MonoBehaviour
     void Start()
     {
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
-        building1 = gameObject.GetComponent<Animator>();
+        building = gameObject.GetComponent<Animator>();
     }
 
     void UpdateTarget()
@@ -89,10 +90,14 @@ public class Turret : MonoBehaviour
         {
             bullet.Seek(target, isDamage, isSlow);
             //subject to change
-            if (building1 != null)
+            if (building != null)
             {
-                building1.Play("Attack", 0, 0.25f);
-                Instantiate(hand, handPosition.position + Vector3.up + Vector3.back, hand.transform.rotation);
+                building.Play("Attack", 0, 0.25f);
+                if(BuildingType == "Building 1")
+                {
+                    Instantiate(hand, handPosition.position + Vector3.up + Vector3.back, hand.transform.rotation);
+                }
+
             }
             
         }

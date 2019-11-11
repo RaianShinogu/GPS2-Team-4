@@ -1700,7 +1700,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 127114370}
   m_LocalRotation: {x: 0.6427876, y: 0, z: 0, w: 0.7660445}
-  m_LocalPosition: {x: 4.34, y: 9.7, z: -19.52}
+  m_LocalPosition: {x: 4.34, y: 12.65, z: -19.52}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1720,9 +1720,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   simulateMouse: 1
   dragSensitivity: 400
-  maxZ: -6.26
+  maxZ: -2.78
   mixZ: -19.52
-  maxX: 14.12
+  maxX: 14.16
   mixX: 4.34
   cameraLimit: 1
 --- !u!1001 &131544470
@@ -4294,6 +4294,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -50
       objectReference: {fileID: 0}
+    - target: {fileID: 2054757160503379418, guid: d16a55713261c224787a525df5056bd7,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054757160503379418, guid: d16a55713261c224787a525df5056bd7,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BuildBuilding1
+      objectReference: {fileID: 0}
     - target: {fileID: 2054757160128453484, guid: d16a55713261c224787a525df5056bd7,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -4323,16 +4333,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2054757160503379418, guid: d16a55713261c224787a525df5056bd7,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2054757160503379418, guid: d16a55713261c224787a525df5056bd7,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: BuildBuilding1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d16a55713261c224787a525df5056bd7, type: 3}
@@ -7834,8 +7834,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 717158032}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.9463148, y: 5.4284487, z: 0.11518669}
-  m_LocalScale: {x: 2.4013333, y: 2.7226, z: 2.395888}
+  m_LocalPosition: {x: -0.94631, y: 5.4284487, z: 0.11518669}
+  m_LocalScale: {x: 4.450871, y: 5.046339, z: 4.440779}
   m_Children: []
   m_Father: {fileID: 1200410525}
   m_RootOrder: 1
@@ -9846,7 +9846,7 @@ MonoBehaviour:
     type: 3}
   Building2: {fileID: 7150598697077799287, guid: ae034188334c98d41b29c45b05cc3520,
     type: 3}
-  Building3: {fileID: 1944420826933608318, guid: 9990376fafc83734ba48e47ea14be371,
+  Building3: {fileID: 3859073743381097885, guid: 30e93d62462e4c94ab6675bc02c466bc,
     type: 3}
   demolish: {fileID: 0}
   buildUI: {fileID: 0}
@@ -18512,6 +18512,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tutorial Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 5471019197120505632, guid: bf32d5b4f806bb3448406577d991e674,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5471019196675291440, guid: bf32d5b4f806bb3448406577d991e674,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18550,7 +18555,7 @@ PrefabInstance:
     - target: {fileID: 5471019196675291440, guid: bf32d5b4f806bb3448406577d991e674,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5471019196675291440, guid: bf32d5b4f806bb3448406577d991e674,
         type: 3}
@@ -18635,11 +18640,6 @@ PrefabInstance:
     - target: {fileID: 5471019197120505633, guid: bf32d5b4f806bb3448406577d991e674,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5471019197120505632, guid: bf32d5b4f806bb3448406577d991e674,
-        type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5471019197120505635, guid: bf32d5b4f806bb3448406577d991e674,
@@ -20034,7 +20034,7 @@ Transform:
   - {fileID: 622087088}
   - {fileID: 1981652956}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2035127349
 PrefabInstance:

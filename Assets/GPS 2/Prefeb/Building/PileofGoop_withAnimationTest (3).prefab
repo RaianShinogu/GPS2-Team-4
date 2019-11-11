@@ -224,9 +224,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 5
   fireRate: 1
+  fireCountDown: 0
   isSlow: 0
   isDamage: 1
-  building1: {fileID: 0}
+  building: {fileID: 0}
+  BuildingType: Building 1
   hand: {fileID: 6750208485344850193, guid: 038e9224e92247248a5a3820fa89d936, type: 3}
   handPosition: {fileID: 5386453083311064950}
   enemyTag: Visitor

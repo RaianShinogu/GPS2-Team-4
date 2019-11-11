@@ -188,7 +188,7 @@ public class Node : MonoBehaviour
     {
         if (gold >= 30)
         {
-            building = (GameObject)Instantiate(buildManager.Building3, transform.position + positionOffset, buildManager.Building3.transform.rotation);
+            building = (GameObject)Instantiate(buildManager.Building3, transform.position + Vector3.down/2, buildManager.Building3.transform.rotation);
             buildManager.Building3Cost();
         }
     }
