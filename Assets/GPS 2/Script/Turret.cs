@@ -92,11 +92,23 @@ public class Turret : MonoBehaviour
             //subject to change
             if (building != null)
             {
-                building.Play("Attack", 0, 0.25f);
-                if(BuildingType == "Building 1")
+                if(BuildingType == "Building 2")
                 {
+                    building.Play("Attack", 0, 0.25f);
+                }
+                
+                else if(BuildingType == "Building 1")
+                {
+                    building.Play("Attack", 0, 0.25f);
                     Instantiate(hand, handPosition.position + Vector3.up + Vector3.back, hand.transform.rotation);
                 }
+
+                else if (BuildingType == "Building 3")
+                {
+                    building.Play("Attack", 0, 0.25f);
+                }
+
+
 
             }
             

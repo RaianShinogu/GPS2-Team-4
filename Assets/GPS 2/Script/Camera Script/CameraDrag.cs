@@ -9,11 +9,11 @@ public class CameraDrag : MonoBehaviour
     [SerializeField] float dragSensitivity = 50f;
     Vector3 dragDirection = Vector3.zero; //The direction of our drag input
     float decayRate = 5f;
-    public float maxZ;
-    public float mixZ;
+    private float maxZ = -5.0f;
+    private float mixZ = -19.52f;
 
-    public float maxX;
-    public float mixX;
+    private float maxX = 15.8f;
+    private float mixX = 4.34f;
 
     public bool cameraLimit;
     Vector3 lastMousePosition = Vector3.zero;

@@ -26,8 +26,6 @@ public class WaveSpawnRyan : MonoBehaviour
     int totalEnemy;
  
 
-    public GameObject buildUI;
-
     private void Start()
     {
         totalEnemies = incomingWave * totalEnemiesEachWave;
@@ -39,7 +37,7 @@ public class WaveSpawnRyan : MonoBehaviour
     {
         if (gameStart == true)
         {
-            if(incomingWave+1 >= 0)
+            if(incomingWave >= 0)
             {
 
               if (countdown <= 0f && totalEnemies > 0)
@@ -51,7 +49,7 @@ public class WaveSpawnRyan : MonoBehaviour
                     Debug.Log("Gayy");
                    //SpawnWave();
                    countdown = timeBetweenWaves;
-                    if(totalEnemies == totalEnemy / 2)
+                    if(totalEnemies == totalEnemy / 2 && incomingWave >= 2)
                     {
                         wave.SetActive(true);
                         gameStart = false;
@@ -94,21 +92,7 @@ public class WaveSpawnRyan : MonoBehaviour
 
     void SpawnEnemy()
     {
-        /*if(visitorType == 0)
-        {
-            Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
-        }
-        else if (visitorType == 1)
-        {
-            Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
-            Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
-        }
-        else if (visitorType == 2)
-        {
-            Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
-            Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
-            Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
-        }*/
+        
         Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
 
     }

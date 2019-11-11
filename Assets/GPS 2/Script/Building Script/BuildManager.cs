@@ -19,11 +19,11 @@ public class BuildManager : MonoBehaviour
     public GameObject Building1;
     public GameObject Building2;
     public GameObject Building3;
-    public GameObject demolish;
-    public GameObject buildUI;
-    public GameObject endStageButton;
+    //public GameObject demolish;
+    ///public GameObject buildUI;
+    //public GameObject endStageButton;
 
-    public GameObject uiCanvas;
+    //public GameObject uiCanvas;
 
     [SerializeField]private GameObject buildingChoice;
     public string type;
@@ -47,12 +47,12 @@ public class BuildManager : MonoBehaviour
 
     public void EndStage()
     {
-        uiCanvas.SetActive(false);
+        //uiCanvas.SetActive(false);
         if (StageCount >= 1)
         {
             buildingChoice = null;
-            buildUI.SetActive(false);
-            endStageButton.SetActive(false);
+            //buildUI.SetActive(false);
+            //endStageButton.SetActive(false);
            
         }
         StageCount++;
@@ -60,7 +60,7 @@ public class BuildManager : MonoBehaviour
     public void setDemolishMode()
     {
         
-        buildingChoice = demolish;
+        //buildingChoice = demolish;
     }
 
     public void Building1Cost()
