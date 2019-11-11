@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4870927153998076430}
   m_Layer: 0
   m_Name: Cave
-  m_TagString: Untagged
+  m_TagString: Cave
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108,8 +108,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 5
   fireRate: 1
+  fireCountDown: 0
   isSlow: 0
   isDamage: 1
+  building: {fileID: 0}
+  BuildingType: 
+  hand: {fileID: 0}
+  handPosition: {fileID: 0}
   enemyTag: Visitor
   bulletPrefab: {fileID: 1634809021488462296, guid: 174a704de5d785a4e93ad2b67edc1f65,
     type: 3}
