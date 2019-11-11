@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class NodeUI : MonoBehaviour
 {
@@ -14,8 +13,6 @@ public class NodeUI : MonoBehaviour
     public bool inTutorialLevel;
     [SerializeField] private Vector3 uiOffset;
     Node node;
-
-    public Text sellPriceDisplay;
 
     void Awake()
     {
@@ -115,11 +112,10 @@ public class NodeUI : MonoBehaviour
 
         HideBuildUI();
     }
-    public void ShowUpDemUI(Node node, string sellPrice)
+    public void ShowUpDemUI(Node node)
     {
         if(isOpenBuildingUI == false)
         {
-            sellPriceDisplay.text = sellPrice;
             upgradeDemolishUI.SetActive(false); // reset any opened UI, if any
             upgradeDemolishUI.SetActive(true);
             upgradeDemolishUI.transform.position = node.transform.position + uiOffset;

@@ -12,7 +12,6 @@ public class Node : MonoBehaviour
     bool isDragging = false;
     private float delayTime = 0.2f;
     private float counterTime = 0.0f;
-    string sellPrice;
 
     [HideInInspector]public GameObject building;
 
@@ -84,21 +83,7 @@ public class Node : MonoBehaviour
         //
         if (building != null)
         {
-            if(building.tag == buildManager.Building1.tag)
-            {
-                sellPrice = "$ 5";
-            }
-
-            else if (building.tag == buildManager.Building2.tag)
-            {
-                sellPrice = "$ 7";
-            }
-
-            else
-            {
-                sellPrice = "$ 10";
-            }
-            nodeUI.ShowUpDemUI(this, sellPrice);
+            nodeUI.ShowUpDemUI(this);
             return;
         }
 
@@ -211,22 +196,6 @@ public class Node : MonoBehaviour
     public void Demolish()
     {
         Destroy(building);
-
-        if (building.tag == buildManager.Building1.tag)
-        {
-            buildManager.SellBuilding1Gold();
-        }
-
-        else if (building.tag == buildManager.Building2.tag)
-        {
-            buildManager.SellBuilding2Gold();
-        }
-
-        else
-        {
-            buildManager.SellBuilding3Gold();
-        }
-
         building = null;
     }
 

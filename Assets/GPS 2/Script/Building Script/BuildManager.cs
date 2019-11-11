@@ -76,19 +76,4 @@ public class BuildManager : MonoBehaviour
     {
         gold -= 30;
     }
-
-    public void SellBuilding1Gold()
-    {
-        gold += 5;
-    }
-
-    public void SellBuilding2Gold()
-    {
-        gold += 7;
-    }
-
-    public void SellBuilding3Gold()
-    {
-        gold += 10;
-    }
 }
