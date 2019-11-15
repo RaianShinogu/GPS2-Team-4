@@ -55,6 +55,7 @@ public class EnemyRyan : MonoBehaviour
     void Awake()
     {
         targetEnd = GameObject.Find("End");
+        
     }
     public void TakeDamage(float amount)
     {
@@ -212,6 +213,8 @@ public class EnemyRyan : MonoBehaviour
             {
                 EndPath();
                 Debug.Log("Spook point = " + PlayerStats.spookPoint);
+                Debug.Log("EnemyRyan" + enemyLeft);
+                Debug.Log("EnemyRyan" + finalDeath);
             }
         }
 

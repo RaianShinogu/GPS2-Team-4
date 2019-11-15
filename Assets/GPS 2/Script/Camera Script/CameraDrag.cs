@@ -22,6 +22,7 @@ public class CameraDrag : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
         if (simulateMouse) DragWithMouse();
         else DragWithTouch();
 
@@ -33,27 +34,30 @@ public class CameraDrag : MonoBehaviour
         Vector3 remappedDirection = Vector3.zero;
         remappedDirection.x = dragDirection.x;
         remappedDirection.z = dragDirection.y;
+
+       // remappedDirection.x = Mathf.Clamp(dragDirection.x, mixX, maxX);
+       // remappedDirection.z = Mathf.Clamp(dragDirection.y, mixZ, maxZ);
         Vector3 initPosition = new Vector3(transform.position.x, transform.position.y, transform.position.z);
 
         if(cameraLimit == true)
         {
-            if (this.transform.position.x >= maxX)
+            if (remappedDirection.x >= maxX)
             {
                 this.transform.position = new Vector3(maxX, initPosition.y, initPosition.z);
 
             }
-            else if (this.transform.position.x <= mixX)
+            /*else if (remappedDirection.x <= mixX)
             {
                 this.transform.position = new Vector3(mixX, initPosition.y, initPosition.z);
             }
-            else if (this.transform.position.z >= maxZ)
+            else if (remappedDirection.z >= maxZ)
             {
                 this.transform.position = new Vector3(initPosition.x, initPosition.y, maxZ);
             }
-            else if (this.transform.position.z <= mixZ)
+            else if (remappedDirection.z <= mixZ)
             {
                 this.transform.position = new Vector3(initPosition.x, initPosition.y, mixZ);
-            }
+            }*/
         }
         
         transform.Translate(remappedDirection * Time.deltaTime * dragSensitivity, Space.World);
@@ -65,8 +69,43 @@ public class CameraDrag : MonoBehaviour
     {
         if (Input.touchCount > 0)
         {
-            dragDirection.x = Input.GetTouch(0).deltaPosition.x / (float)-Screen.width;
-            dragDirection.y = Input.GetTouch(0).deltaPosition.y / (float)-Screen.height;
+            
+           //dragDirection.x = Input.GetTouch(0).deltaPosition.x / (float)-Screen.width;
+           //dragDirection.y = Input.GetTouch(0).deltaPosition.y / (float)-Screen.height;
+           Vector3 touchPosition = Input.GetTouch(0).position;
+            touchPosition = Camera.main.ScreenToWorldPoint(touchPosition);
+           if(touchPosition.x < mixX )
+            {
+                dragDirection.x = 0;
+                this.transform.position = new Vector3 (transform.position.x + 0.01f, transform.position.y, transform.position.z);
+            }
+            else if (touchPosition.x > maxX)
+            {
+                dragDirection.x = 0;
+                this.transform.position = new Vector3(transform.position.x - 0.01f, transform.position.y, transform.position.z);
+            }
+            else
+            {
+                dragDirection.x = Input.GetTouch(0).deltaPosition.x / (float)-Screen.width;
+            }
+
+            if (touchPosition.z < mixZ)
+            {
+                dragDirection.y = 0;
+                this.transform.position = new Vector3(transform.position.x , transform.position.y, transform.position.z + 0.01f);
+            }
+            else if (touchPosition.z > maxZ)
+            {
+                dragDirection.y = 0;
+                this.transform.position = new Vector3(transform.position.x , transform.position.y, transform.position.z - 0.01f);
+            }
+
+            else
+            {
+                dragDirection.y = Input.GetTouch(0).deltaPosition.y / (float)-Screen.height;
+            }
+
+
         }
     }
 
