@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 2547239038095807968}
   - component: {fileID: 2547239038095807975}
   - component: {fileID: 1785562148849831790}
-  - component: {fileID: 5003585256334116525}
+  - component: {fileID: 8201577837304347295}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Visitor
@@ -182,29 +182,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scareMeter: {fileID: 6117190741181966174}
-  speed: 5
-  turnLeft: -90
-  turnRight: 90
-  rotation: 0
+  speed: 20
+  agent: {fileID: 0}
   health: 0
   maxHealth: 100
+  health1: {fileID: 0}
+  health2: {fileID: 0}
+  health3: {fileID: 0}
   outlineColor: {r: 0, g: 0, b: 0, a: 0}
---- !u!114 &5003585256334116525
-MonoBehaviour:
+--- !u!195 &8201577837304347295
+NavMeshAgent:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2547239038095807974}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55c4421b501218e44ba4b01205dc8b7a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  turnLeft: -90
-  turnRight: 90
-  rotation: 0
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0.5
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &3422572954522001347
 GameObject:
   m_ObjectHideFlags: 0

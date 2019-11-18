@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7561924492687153256}
   - component: {fileID: 7450447449613289225}
   m_Layer: 0
-  m_Name: New Building 3
+  m_Name: Building 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,13 +27,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3467772106693134081}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0, y: -0.7596148, z: 0}
-  m_LocalScale: {x: 0.9373467, y: 1.0668411, z: 1.0668411}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: -0.7071068, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 270, y: 0, z: 180}
 --- !u!33 &8872195978768813860
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -90,7 +90,7 @@ Animator:
   m_GameObject: {fileID: 3467772106693134081}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 195d43821f212b141a503f9504d16fff, type: 3}
-  m_Controller: {fileID: 9100000, guid: 92d12f37877681c4c8b81a92e8b0df07, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0967fffbe35966e449a9d7b785beeb1d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -111,9 +111,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e6665da2d03cf94c849200ac84be10b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 5
+  range: 2000
   fireRate: 1
-  fireCountDown: 0
+  fireCountDown: 1
+  inputAnimationCountDown: 0
   isSlow: 0
   isDamage: 1
   building: {fileID: 7561924492687153256}

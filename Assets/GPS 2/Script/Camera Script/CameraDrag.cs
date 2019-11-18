@@ -6,16 +6,16 @@ using UnityEngine;
 public class CameraDrag : MonoBehaviour
 {
     [SerializeField] bool simulateMouse = false;
-    [SerializeField] float dragSensitivity = 50f;
+    [SerializeField] float dragSensitivity ;
     Vector3 dragDirection = Vector3.zero; //The direction of our drag input
     float decayRate = 5f;
-    private float maxZ = -5.0f;
-    private float mixZ = -19.52f;
+    public float maxZ = -5.0f;
+    public float mixZ = -19.52f;
 
-    private float maxX = 15.8f;
-    private float mixX = 4.34f;
+    public float maxX = 64.3f;
+    public float mixX = -35.1f;
 
-    public bool cameraLimit;
+    bool canDrag = true;
     Vector3 lastMousePosition = Vector3.zero;
     Vector3 mouseDelta = Vector3.zero;
 
@@ -39,73 +39,42 @@ public class CameraDrag : MonoBehaviour
        // remappedDirection.z = Mathf.Clamp(dragDirection.y, mixZ, maxZ);
         Vector3 initPosition = new Vector3(transform.position.x, transform.position.y, transform.position.z);
 
-        if(cameraLimit == true)
-        {
-            if (remappedDirection.x >= maxX)
-            {
-                this.transform.position = new Vector3(maxX, initPosition.y, initPosition.z);
+       
 
-            }
-            /*else if (remappedDirection.x <= mixX)
-            {
-                this.transform.position = new Vector3(mixX, initPosition.y, initPosition.z);
-            }
-            else if (remappedDirection.z >= maxZ)
-            {
-                this.transform.position = new Vector3(initPosition.x, initPosition.y, maxZ);
-            }
-            else if (remappedDirection.z <= mixZ)
-            {
-                this.transform.position = new Vector3(initPosition.x, initPosition.y, mixZ);
-            }*/
-        }
-        
         transform.Translate(remappedDirection * Time.deltaTime * dragSensitivity, Space.World);
-
         dragDirection = Vector3.Lerp(dragDirection, Vector3.zero, Time.deltaTime * decayRate);
     }
 
     private void DragWithTouch()
     {
+        
         if (Input.touchCount > 0)
         {
             
-           //dragDirection.x = Input.GetTouch(0).deltaPosition.x / (float)-Screen.width;
-           //dragDirection.y = Input.GetTouch(0).deltaPosition.y / (float)-Screen.height;
            Vector3 touchPosition = Input.GetTouch(0).position;
-            touchPosition = Camera.main.ScreenToWorldPoint(touchPosition);
-           if(touchPosition.x < mixX )
+           touchPosition = Camera.main.ScreenToWorldPoint(touchPosition);
+            dragDirection.x = Input.GetTouch(0).deltaPosition.x / (float)-Screen.width;
+            //dragDirection.y = Input.GetTouch(0).deltaPosition.y / (float)-Screen.height;
+            if (this.transform.position.x < mixX && dragDirection.x < 0)
             {
                 dragDirection.x = 0;
-                this.transform.position = new Vector3 (transform.position.x + 0.01f, transform.position.y, transform.position.z);
             }
-            else if (touchPosition.x > maxX)
+
+            if (this.transform.position.x > maxX && dragDirection.x > 0)
             {
                 dragDirection.x = 0;
-                this.transform.position = new Vector3(transform.position.x - 0.01f, transform.position.y, transform.position.z);
-            }
-            else
-            {
-                dragDirection.x = Input.GetTouch(0).deltaPosition.x / (float)-Screen.width;
             }
 
-            if (touchPosition.z < mixZ)
+            /*if (this.transform.position.z < mixZ && dragDirection.y < 0)
             {
                 dragDirection.y = 0;
-                this.transform.position = new Vector3(transform.position.x , transform.position.y, transform.position.z + 0.01f);
             }
-            else if (touchPosition.z > maxZ)
+
+            if (this.transform.position.z > maxZ && dragDirection.y > 0)
             {
-                dragDirection.y = 0;
-                this.transform.position = new Vector3(transform.position.x , transform.position.y, transform.position.z - 0.01f);
-            }
-
-            else
-            {
-                dragDirection.y = Input.GetTouch(0).deltaPosition.y / (float)-Screen.height;
-            }
-
-
+                dragDirection.y  = 0;
+            }*/
+            
         }
     }
 

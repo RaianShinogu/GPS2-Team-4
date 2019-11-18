@@ -46,7 +46,7 @@ public class WaveSpawnRyan : MonoBehaviour
                    StartCoroutine(SpawnWaveMulti());
                    totalEnemies--;
                    totalEnemiesEachWave--;
-                    Debug.Log("Gayy");
+                   
                    //SpawnWave();
                    countdown = timeBetweenWaves;
                     if(totalEnemies == totalEnemy / 2 && incomingWave >= 2)
@@ -93,7 +93,7 @@ public class WaveSpawnRyan : MonoBehaviour
     void SpawnEnemy()
     {
         
-        Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+        Instantiate(enemyPrefab, spawnPoint.position + Vector3.up*2, spawnPoint.rotation);
 
     }
 

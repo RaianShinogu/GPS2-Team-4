@@ -12,6 +12,9 @@ public class Turret : MonoBehaviour
     public float range = 5f;
     public float fireRate = 1f;
     public float fireCountDown = 0f;
+    float totalFireCountDown;
+    public float inputAnimationCountDown;
+    float animationCountDown;
 
     public bool isSlow = false;
     public bool isDamage = true;
@@ -27,12 +30,15 @@ public class Turret : MonoBehaviour
 
     public GameObject bulletPrefab;
     public Transform firePoint;
+    bool coolDown = false;
 
     // Start is called before the first frame update
     void Start()
     {
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
         building = gameObject.GetComponent<Animator>();
+        totalFireCountDown = fireCountDown;
+        animationCountDown = inputAnimationCountDown;
     }
 
     void UpdateTarget()
@@ -70,8 +76,32 @@ public class Turret : MonoBehaviour
 
         if(fireCountDown <= 0f)
         {
-            Shoot();
-            fireCountDown = 1f / fireRate;
+            
+            //fireCountDown = 1f / fireRate;
+            if(BuildingType == "Building 2" || BuildingType == "Building 1")
+            {
+                if(coolDown == false)
+                {
+                    building.SetBool("isAttacking", true);
+                    Shoot();
+                    coolDown = true;
+                    animationCountDown = inputAnimationCountDown; 
+                }   
+                if(animationCountDown <= 0f)
+                {
+                    building.SetBool("isAttacking", false);
+                    fireCountDown = totalFireCountDown;
+                    coolDown = false;
+                    
+                }
+                animationCountDown -= Time.deltaTime;
+            }
+            else
+            {
+                Shoot();
+                fireCountDown = totalFireCountDown;
+            }
+            
         }
 
         fireCountDown -= Time.deltaTime;
@@ -94,7 +124,7 @@ public class Turret : MonoBehaviour
             {
                 if(BuildingType == "Building 2")
                 {
-                    building.Play("Attack", 0, 0.25f);
+                    
                 }
                 
                 else if(BuildingType == "Building 1")

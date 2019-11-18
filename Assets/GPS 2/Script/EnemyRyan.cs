@@ -10,10 +10,8 @@ public class EnemyRyan : MonoBehaviour
     public Image scareMeter;
 
     [Header("RaycastTesing")]
-    public float speed = 10f;
-    public int turnLeft = -90;
-    public int turnRight = 90;
-    public int rotation;
+    public float speed = 5f;
+   
     GameObject targetEnd;
     [SerializeField] NavMeshAgent agent;
 
@@ -30,7 +28,7 @@ public class EnemyRyan : MonoBehaviour
 
     Renderer rend;
     private int enemyLeft;
-   
+    private Transform target;
 
 
     public static bool finalDeath = false;
@@ -39,14 +37,14 @@ public class EnemyRyan : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        agent.SetDestination(targetEnd.transform.position);
-        StartCoroutine(RecalculatePathRotine());
+        //agent.SetDestination(targetEnd.transform.position);
+        //StartCoroutine(RecalculatePathRotine());
         GameObject gameMaster = GameObject.Find("Game Manager");
         WaveSpawnRyan waveSpawnRyan = gameMaster.GetComponent<WaveSpawnRyan>();
         enemyLeft = waveSpawnRyan.totalEnemies;
         
         //transform.eulerAngles = new Vector3(80, 0, 0);
-        //target = Waypoints.points[0];        
+        target = WayPoint.points[0];        
         //rend = GetComponent<Renderer>();
         //rend.material.SetColor("_FirstOutlineColor", Color.green);
 
@@ -54,7 +52,7 @@ public class EnemyRyan : MonoBehaviour
 
     void Awake()
     {
-        targetEnd = GameObject.Find("End");
+        //targetEnd = GameObject.Find("End");
         
     }
     public void TakeDamage(float amount)
@@ -98,7 +96,7 @@ public class EnemyRyan : MonoBehaviour
         }
     }
 
-    IEnumerator RecalculatePathRotine()
+    /*IEnumerator RecalculatePathRotine()
     {
         WaitForSeconds delay = new WaitForSeconds(0.1f);
         while (true)
@@ -106,7 +104,7 @@ public class EnemyRyan : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
             agent.SetDestination(targetEnd.transform.position);
         }
-    }
+    }*/
 
     public void BecomeSlowed()
     {
@@ -120,7 +118,7 @@ public class EnemyRyan : MonoBehaviour
         Raycast();
         //transform.Translate(speed * Time.deltaTime, 0, 0);
 
-        /*Vector3 dir = target.position - transform.position;
+        Vector3 dir = target.position - transform.position;
         transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
 
         if(Vector3.Distance(transform.position, target.position) <= 0.2f)
@@ -128,7 +126,7 @@ public class EnemyRyan : MonoBehaviour
             GetNextWaypoint();
         }
 
-        if(speed >= 10)
+        /*if(speed >= 10)
         {
             speed = 10;
         }
@@ -142,17 +140,17 @@ public class EnemyRyan : MonoBehaviour
         }*/
     }
 
-    /*private void GetNextWaypoint()
+    private void GetNextWaypoint()
     {
-        if(wavepointindex >= Waypoints.points.Length - 1)
+        if(wavepointindex >= WayPoint.points.Length - 1)
         {
             EndPath();
             return;
         }
 
         wavepointindex++;
-        target = Waypoints.points[wavepointindex];
-    }*/
+        target = WayPoint.points[wavepointindex];
+    }
 
     void EndPath()
     {        
@@ -195,7 +193,7 @@ public class EnemyRyan : MonoBehaviour
         //straight
         if (Physics.Raycast(transform.position + Vector3.down / 2, transform.TransformDirection(Vector3.right), out rightHit, 0.2f))
         {
-            if (rightHit.transform.CompareTag("EnemyTurnLeft"))
+            /*if (rightHit.transform.CompareTag("EnemyTurnLeft"))
             {
                 Debug.Log("turn left");
                 rotation += turnLeft;
@@ -207,9 +205,9 @@ public class EnemyRyan : MonoBehaviour
                 Debug.Log("turn right");
                 rotation += turnRight;
                 transform.eulerAngles = new Vector3(80, rotation, 0);
-            }
+            }*/
 
-            else if (rightHit.transform.CompareTag("Finish"))
+             if (rightHit.transform.CompareTag("Finish"))
             {
                 EndPath();
                 Debug.Log("Spook point = " + PlayerStats.spookPoint);
@@ -220,57 +218,7 @@ public class EnemyRyan : MonoBehaviour
 
 
 
-        //turn right
-        /*
-        else if (Physics.Raycast(transform.position + Vector3.down / 2, transform.TransformDirection(Vector3.forward), out forwardHit, 0.7f))
-        {
-            if (forwardHit.transform.CompareTag(TurnLeftPath))
-            {
-                Debug.Log("turn left");
-                rotation += turnLeft;
-                transform.eulerAngles = new Vector3(0, rotation, 0);
-                
-            }
-
-
-        }
-
-
-
-        // right of the object
-        else if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.back), out rightHit, 2f))
-        {
-
-            if (rightHit.transform.CompareTag("Enemy"))
-            {
-                //Debug.Log("Hit right");
-               
-            }
-
-
-        }
-        // front of the object
-        else if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.right), out forwardHit, 2f))
-        {
-            if (forwardHit.transform.CompareTag("Enemy"))
-            {
-                //Debug.Log("Hit front");
-                
-            }
-
-
-        }
-        // left of the object
-        else if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out leftHit, 2f))
-        {
-            if (leftHit.transform.CompareTag("Enemy"))
-            {
-                //Debug.Log("Hit left");
-                
-            }
-
-
-        }*/
+        
 
        
     }
