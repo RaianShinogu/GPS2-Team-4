@@ -19,9 +19,9 @@ TagManager:
   - OnText
   - Off Text
   - Handle
-  - Cave
   - PileOfGoop
   - Wolf
+  - JackInBox
   layers:
   - Default
   - TransparentFX

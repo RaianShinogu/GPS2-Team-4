@@ -13,6 +13,8 @@ public class Node : MonoBehaviour
     private float delayTime = 0.2f;
     private float counterTime = 0.0f;
     string sellPrice;
+    string upgradePrice;
+    bool canUpgrade;
 
     [HideInInspector]public GameObject building;
 
@@ -87,18 +89,27 @@ public class Node : MonoBehaviour
             if(building.tag == buildManager.Building1.tag)
             {
                 sellPrice = "$ 5";
+                upgradePrice = "$ 5";
             }
 
             else if (building.tag == buildManager.Building2.tag)
             {
                 sellPrice = "$ 7";
+                upgradePrice = "$ 10";
             }
 
             else
             {
                 sellPrice = "$ 10";
+                upgradePrice = "$ 15";
             }
-            nodeUI.ShowUpDemUI(this, sellPrice);
+
+            if(canUpgrade == false)
+            {
+                upgradePrice = "N/A";
+            }
+
+            nodeUI.ShowUpDemUI(this, sellPrice, upgradePrice);
             return;
         }
 
@@ -187,6 +198,7 @@ public class Node : MonoBehaviour
         {
             building = (GameObject)Instantiate(buildManager.Building1, transform.position + Vector3.down, buildManager.Building1.transform.rotation);
             buildManager.Building1Cost();
+            canUpgrade = true;
         }
     }
 
@@ -196,6 +208,7 @@ public class Node : MonoBehaviour
         {
             building = (GameObject)Instantiate(buildManager.Building2, transform.position + positionOffset, buildManager.Building2.transform.rotation);
             buildManager.Building2Cost();
+            canUpgrade = true;
         }
     }
 
@@ -205,6 +218,7 @@ public class Node : MonoBehaviour
         {
             building = (GameObject)Instantiate(buildManager.Building3, transform.position + Vector3.down/2, buildManager.Building3.transform.rotation);
             buildManager.Building3Cost();
+            canUpgrade = true;
         }
     }
 
@@ -226,8 +240,38 @@ public class Node : MonoBehaviour
         {
             buildManager.SellBuilding3Gold();
         }
-
+        
         building = null;
+    }
+
+    public void Upgrade()
+    {
+        if (canUpgrade)
+        {    
+            Destroy(building);
+
+            if (building.tag == buildManager.Building1.tag && gold >= 5)
+            {
+                building = null;
+                building = (GameObject)Instantiate(buildManager.UpBuilding1, transform.position + Vector3.down, buildManager.Building1.transform.rotation);
+                buildManager.UpgradeBuilding1Cost();            
+            }
+
+            if (building.tag == buildManager.Building2.tag && gold >= 10)
+            {
+                building = null;
+                building = (GameObject)Instantiate(buildManager.UpBuilding2, transform.position + Vector3.down, buildManager.Building2.transform.rotation);
+                buildManager.UpgradeBuilding2Cost();
+            }
+
+            if (building.tag == buildManager.Building3.tag && gold >= 15)
+            {
+                building = null;
+                building = (GameObject)Instantiate(buildManager.UpBuilding3, transform.position + Vector3.down, buildManager.Building3.transform.rotation);
+                buildManager.UpgradeBuilding3Cost();
+            }
+            canUpgrade = false;
+        }
     }
 
 }

@@ -173,8 +173,9 @@ MonoBehaviour:
   isOpenBuildingUI: 0
   Blink: {fileID: 0}
   inTutorialLevel: 0
-  uiOffset: {x: 0, y: 3, z: 0}
+  uiOffset: {x: 0, y: 6, z: 0}
   sellPriceDisplay: {fileID: 354729237}
+  upgradePriceDisplay: {fileID: 1622740807}
 --- !u!1001 &81472026
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2836,6 +2837,12 @@ MonoBehaviour:
     type: 3}
   Building3: {fileID: 3467772106693134081, guid: f11bc5e131626ba4089fe666a4bd2d81,
     type: 3}
+  UpBuilding1: {fileID: 8908209715866045734, guid: 51a3f6def574c5244af62bfc9e1d4580,
+    type: 3}
+  UpBuilding2: {fileID: 5646126045520176458, guid: 22a8c5bea92664a458f4b690f7f2dd8a,
+    type: 3}
+  UpBuilding3: {fileID: 3467772106693134081, guid: d5600f434c263fb44a3f7015c34357cb,
+    type: 3}
   buildingChoice: {fileID: 0}
   type: 
   gold: 100
@@ -4426,6 +4433,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1512520486}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1622740807 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8100096370875804268, guid: 5c8cb41558714084eacc5f002406bc55,
+    type: 3}
+  m_PrefabInstance: {fileID: 1015660080400897190}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1625577828 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3991052059632090206, guid: 0f92943cc3129694d92fcd05f0a7e1d7,
@@ -5947,6 +5966,21 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1015660080755091891, guid: 5c8cb41558714084eacc5f002406bc55,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.8392157
+      objectReference: {fileID: 0}
+    - target: {fileID: 1015660080755091891, guid: 5c8cb41558714084eacc5f002406bc55,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.07376599
+      objectReference: {fileID: 0}
+    - target: {fileID: 1015660080755091891, guid: 5c8cb41558714084eacc5f002406bc55,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5171635056801022111, guid: 5c8cb41558714084eacc5f002406bc55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6096,6 +6130,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5171635057776756920, guid: 5c8cb41558714084eacc5f002406bc55,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 54510117}
+    - target: {fileID: 5171635057776756920, guid: 5c8cb41558714084eacc5f002406bc55,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Upgrade
+      objectReference: {fileID: 0}
+    - target: {fileID: 8100096370875804268, guid: 5c8cb41558714084eacc5f002406bc55,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.0072695957
+      objectReference: {fileID: 0}
+    - target: {fileID: 8100096370875804268, guid: 5c8cb41558714084eacc5f002406bc55,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.8396226
+      objectReference: {fileID: 0}
+    - target: {fileID: 8100096370875804268, guid: 5c8cb41558714084eacc5f002406bc55,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c8cb41558714084eacc5f002406bc55, type: 3}

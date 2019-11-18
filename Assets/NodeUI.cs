@@ -16,6 +16,7 @@ public class NodeUI : MonoBehaviour
     Node node;
 
     public Text sellPriceDisplay;
+    public Text upgradePriceDisplay;
 
     void Awake()
     {
@@ -115,11 +116,12 @@ public class NodeUI : MonoBehaviour
 
         HideBuildUI();
     }
-    public void ShowUpDemUI(Node node, string sellPrice)
+    public void ShowUpDemUI(Node node, string sellPrice, string upgradePrice)
     {
         if(isOpenBuildingUI == false)
         {
             sellPriceDisplay.text = sellPrice;
+            upgradePriceDisplay.text = upgradePrice;
             upgradeDemolishUI.SetActive(false); // reset any opened UI, if any
             upgradeDemolishUI.SetActive(true);
             upgradeDemolishUI.transform.position = node.transform.position + uiOffset;
@@ -140,6 +142,13 @@ public class NodeUI : MonoBehaviour
     public void Demolish()
     {
         node.Demolish();
+        HideUpDemUI();
+        isOpenBuildingUI = false;
+    }
+
+    public void Upgrade()
+    {
+        node.Upgrade();
         HideUpDemUI();
         isOpenBuildingUI = false;
     }

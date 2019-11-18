@@ -19,6 +19,9 @@ public class BuildManager : MonoBehaviour
     public GameObject Building1;
     public GameObject Building2;
     public GameObject Building3;
+    public GameObject UpBuilding1;
+    public GameObject UpBuilding2;
+    public GameObject UpBuilding3;
     //public GameObject demolish;
     ///public GameObject buildUI;
     //public GameObject endStageButton;
@@ -90,5 +93,20 @@ public class BuildManager : MonoBehaviour
     public void SellBuilding3Gold()
     {
         gold += 10;
+    }
+
+    public void UpgradeBuilding1Cost()
+    {
+        gold -= 5;
+    }
+
+    public void UpgradeBuilding2Cost()
+    {
+        gold -= 10;
+    }
+
+    public void UpgradeBuilding3Cost()
+    {
+        gold -= 15;
     }
 }
