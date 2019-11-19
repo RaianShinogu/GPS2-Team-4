@@ -11,6 +11,13 @@ public class Bullet : MonoBehaviour
     public float speed = 70f;
     public float explosionRadius = 0f;
 
+    public Transform originPos;
+    
+    private void Awake()
+    {
+        
+    }
+
     public void Seek(Transform _target, bool _isDamage, bool _isSlow)
     {
         target = _target;
@@ -25,6 +32,7 @@ public class Bullet : MonoBehaviour
         if(target == null)
         {
             Destroy(gameObject);
+            
             return;
         }
 
@@ -41,6 +49,15 @@ public class Bullet : MonoBehaviour
         //transform.LookAt(target);
     }
 
+    private void BulletEnqueue()
+    {
+        this.transform.position = this.originPos.position;
+        this.gameObject.SetActive(false);
+
+    }
+
+    public void BulletActive() { if(this.gameObject.activeSelf == false)this.gameObject.SetActive(true); }
+
     private void HitTarget()
     {
         if(explosionRadius > 0f)
@@ -52,9 +69,9 @@ public class Bullet : MonoBehaviour
             Damage(target);
         }
 
-        
-        
-        Destroy(gameObject);       
+
+        BulletEnqueue();
+        //Destroy(gameObject);       
     }
 
     private void Explode()

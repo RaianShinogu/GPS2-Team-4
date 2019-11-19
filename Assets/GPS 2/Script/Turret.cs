@@ -23,7 +23,8 @@ public class Turret : MonoBehaviour
     [SerializeField] GameObject hand;
     [SerializeField] Transform handPosition;
 
-
+    //
+    private Queue<Bullet> bulletPool = new Queue<Bullet>();
     [Header("Unity Setup Fields")]
 
     public string enemyTag = "Visitor";
@@ -43,20 +44,25 @@ public class Turret : MonoBehaviour
 
     void UpdateTarget()
     {
+   
         GameObject[] enemies = GameObject.FindGameObjectsWithTag(enemyTag);
         float shortestDistance = Mathf.Infinity;
         GameObject nearestEnemy = null;
 
-        foreach(GameObject enemy in enemies)
+        foreach (GameObject enemy in enemies)
         {
-            float distanceToEnemy = Vector3.Distance(transform.position, enemy.transform.position);
-            if(distanceToEnemy < shortestDistance)
+            if (enemy.GetComponent<EnemyRyan>().health < 40)//a
             {
-                shortestDistance = distanceToEnemy;
-                nearestEnemy = enemy;
+                float distanceToEnemy = Vector3.Distance(transform.position, enemy.transform.position);
+                if (distanceToEnemy < shortestDistance)
+                {
+                    shortestDistance = distanceToEnemy;
+                    nearestEnemy = enemy;
+
+                }
             }
         }
-
+        //---
         if(nearestEnemy != null && shortestDistance <= range)
         {
             target = nearestEnemy.transform;
@@ -112,37 +118,47 @@ public class Turret : MonoBehaviour
     }
 
     private void Shoot()
-    {
-        GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-        Bullet bullet = bulletGO.GetComponent<Bullet>();
-
-        if(bullet != null)
+    {//pool
+        if (bulletPool.Count < 10)
         {
-            bullet.Seek(target, isDamage, isSlow);
-            //subject to change
-            if (building != null)
+            GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+            
+            Bullet bullet = bulletGO.GetComponent<Bullet>();
+            bullet.originPos = this.firePoint.transform;
+            bulletPool.Enqueue(bullet);
+        }
+        foreach (Bullet bullet in bulletPool) 
+        {
+            if (bullet != null)
             {
-                if(BuildingType == "Building 2")
+                bullet.BulletActive();
+                bullet.Seek(target, isDamage, isSlow);
+                //subject to change
+                if (building != null)
                 {
-                    
-                }
-                
-                else if(BuildingType == "Building 1")
-                {
-                    building.Play("Attack", 0, 0.25f);
-                    Instantiate(hand, handPosition.position + Vector3.up + Vector3.back, hand.transform.rotation);
-                }
+                    if (BuildingType == "Building 2")
+                    {
 
-                else if (BuildingType == "Building 3")
-                {
-                    building.Play("Attack", 0, 0.25f);
+                    }
+
+                    else if (BuildingType == "Building 1")
+                    {
+                        building.Play("Attack", 0, 0.25f);
+                        Instantiate(hand, handPosition.position + Vector3.up + Vector3.back, hand.transform.rotation);
+                    }
+
+                    else if (BuildingType == "Building 3")
+                    {
+                        building.Play("Attack", 0, 0.25f);
+                    }
+
+
+
                 }
-
-
 
             }
-            
         }
+        
     }
 
     private void OnDrawGizmosSelected()
