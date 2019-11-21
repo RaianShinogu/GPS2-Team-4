@@ -22,6 +22,7 @@ public class Turret : MonoBehaviour
     public string BuildingType;
     [SerializeField] GameObject hand;
     [SerializeField] Transform handPosition;
+    [SerializeField] GameObject towerRange;
 
     //
     private Queue<Bullet> bulletPool = new Queue<Bullet>();
@@ -76,7 +77,8 @@ public class Turret : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //towerRange.transform.localScale = Vector3.one * range * 2.0f;
+
         if (target == null)
             return;
 
@@ -156,11 +158,13 @@ public class Turret : MonoBehaviour
         }
         
     }
-
+    [ExecuteInEditMode]
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, range);
+
+        towerRange.transform.localScale = Vector3.one * range * 2.0f;
     }
 
 }

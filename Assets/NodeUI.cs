@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class NodeUI : MonoBehaviour
 {
+    Node prevNode;
     public GameObject buildUI;
     public GameObject upgradeDemolishUI;
     public static NodeUI instance;
@@ -13,6 +14,9 @@ public class NodeUI : MonoBehaviour
     public GameObject Blink;
     public bool inTutorialLevel;
     [SerializeField] private Vector3 uiOffset;
+    bool conformSelectBuilding1 = false;
+    bool conformSelectBuilding2 = false;
+    bool conformSelectBuilding3 = false;
     Node node;
 
     public Text sellPriceDisplay;
@@ -31,11 +35,12 @@ public class NodeUI : MonoBehaviour
     private void Start()
     {
         isOpenBuildingUI = false;
+        this.prevNode = null;
+        
     }
     public void ShowBuildUI(Node node)
     {
-        if(isOpenBuildingUI == false)
-        {
+        
             isOpenBuildingUI = true;
             //buildUI.SetActive(false);   // reset any opened UI, if any
             buildUI.SetActive(true);
@@ -50,19 +55,50 @@ public class NodeUI : MonoBehaviour
             }
             this.node = node;
             upgradeDemolishUI.SetActive(false);
+            node.DestroyGhosh();
+       
+        if (this.prevNode != node)
+        {
+            //! reset prev node stuff here
+            Debug.Log("prevNode" + this.prevNode);
+            this.prevNode = FindObjectOfType<Node>();
+            prevNode.DestroyGhosh();
+            this.prevNode = node;
+            Debug.Log("prevNode" + this.prevNode);
         }
+        else if (prevNode == null)
+        {
+            this.prevNode = node;
+        }
+
         
+        //Debug.Log("Node" + node);
+        //Debug.Log("this.Node" + this.node);
+        conformSelectBuilding1 = false;
+        conformSelectBuilding2 = false;
+        conformSelectBuilding3 = false;
+
+
     }
 
     public void HideBuildUI()
     {
         buildUI.SetActive(false);
         isOpenBuildingUI = false;
+        prevNode = null;
     }
 
     public void BuildBuilding1()
     {
        // isOpenBuildingUI = false;
+       if(!conformSelectBuilding1)
+        {
+           node.selectedBuilding1Ghosh();
+            conformSelectBuilding1 = true;
+            conformSelectBuilding2 = false;
+            conformSelectBuilding3 = false;
+           return;
+        }
         node.selectedBuilding1();
         if (inTutorialLevel == true)
         {
@@ -73,7 +109,11 @@ public class NodeUI : MonoBehaviour
                 //wave.SetActive(true);
                 isTutorial = false;
                 inTutorialLevel = false;
-                
+                conformSelectBuilding1 = false;
+                conformSelectBuilding2 = false;
+                conformSelectBuilding3 = false;
+
+
             }
         }
         HideBuildUI();
@@ -81,7 +121,15 @@ public class NodeUI : MonoBehaviour
 
     public void BuildBuilding2()
     {
-       // isOpenBuildingUI = false;
+        if (!conformSelectBuilding2)
+        {
+            node.selectedBuilding2Ghosh();
+            conformSelectBuilding1 = false;
+            conformSelectBuilding2 = true;
+            conformSelectBuilding3 = false;
+            return;
+        }
+        // isOpenBuildingUI = false;
         node.selectedBuilding2();
         if (inTutorialLevel == true)
         {
@@ -92,7 +140,9 @@ public class NodeUI : MonoBehaviour
                 //wave.SetActive(true);
                 isTutorial = false;
                 inTutorialLevel = false;
-                
+                conformSelectBuilding1 = false;
+                conformSelectBuilding2 = false;
+                conformSelectBuilding3 = false;
             }
         }
         HideBuildUI();
@@ -100,7 +150,15 @@ public class NodeUI : MonoBehaviour
 
     public void BuildBuilding3()
     {
-       // isOpenBuildingUI = false;
+        if (!conformSelectBuilding3)
+        {
+            node.selectedBuilding3Ghosh();
+            conformSelectBuilding1 = false;
+            conformSelectBuilding2 = false;
+            conformSelectBuilding3 = true;
+            return;
+        }
+        // isOpenBuildingUI = false;
         node.selectedBuilding3();
         if (inTutorialLevel == true)
         {
@@ -111,6 +169,9 @@ public class NodeUI : MonoBehaviour
                 //wave.SetActive(true);
                 isTutorial = false;
                 inTutorialLevel = false;
+                conformSelectBuilding1 = false;
+                conformSelectBuilding2 = false;
+                conformSelectBuilding3 = false;
             }
         }
 
@@ -152,5 +213,7 @@ public class NodeUI : MonoBehaviour
         HideUpDemUI();
         isOpenBuildingUI = false;
     }
+
+    
 
 }

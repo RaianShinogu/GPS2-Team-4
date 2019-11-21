@@ -91,10 +91,8 @@ public class WaveSpawnRyan : MonoBehaviour
     }
 
     void SpawnEnemy()
-    {
-        
+    {        
         Instantiate(enemyPrefab, spawnPoint.position + Vector3.up*2, spawnPoint.rotation);
-
     }
 
     public void StartGame()

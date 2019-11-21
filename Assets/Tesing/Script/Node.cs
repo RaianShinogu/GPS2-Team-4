@@ -18,6 +18,7 @@ public class Node : MonoBehaviour
     bool canUpgrade;
 
     [HideInInspector]public GameObject building;
+    [HideInInspector] public GameObject buildingGhosh;
 
     private GameObject buildingChoice;
 
@@ -115,7 +116,6 @@ public class Node : MonoBehaviour
             
             return;
         }
-
         nodeUI.ShowBuildUI(this);
        
     }
@@ -200,30 +200,51 @@ public class Node : MonoBehaviour
     {
         if (gold >= 10)
         {
-            building = (GameObject)Instantiate(buildManager.Building1, transform.position + Vector3.down, buildManager.Building1.transform.rotation);
+            Destroy(buildingGhosh);
+            building = (GameObject)Instantiate(buildManager.Building1, transform.position , buildManager.Building1.transform.rotation);
             buildManager.Building1Cost();
             canUpgrade = true;
         }
+    }
+
+    public void selectedBuilding1Ghosh()
+    {
+         
+        buildingGhosh = (GameObject)Instantiate(buildManager.Building1Ghosh, transform.position, buildManager.Building1Ghosh.transform.rotation);
     }
 
     public void selectedBuilding2()
     {
         if (gold >= 20)
         {
+            Destroy(buildingGhosh);
             building = (GameObject)Instantiate(buildManager.Building2, transform.position + positionOffset, buildManager.Building2.transform.rotation);
             buildManager.Building2Cost();
             canUpgrade = true;
         }
     }
 
+    public void selectedBuilding2Ghosh()
+    {
+        Destroy(buildingGhosh);
+        buildingGhosh = (GameObject)Instantiate(buildManager.Building2Ghosh, transform.position, buildManager.Building2Ghosh.transform.rotation);
+    }
+
     public void selectedBuilding3()
     {
         if (gold >= 30)
         {
-            building = (GameObject)Instantiate(buildManager.Building3, transform.position + Vector3.down/2, buildManager.Building3.transform.rotation);
+            Destroy(buildingGhosh);
+            building = (GameObject)Instantiate(buildManager.Building3, transform.position , buildManager.Building3.transform.rotation);
             buildManager.Building3Cost();
             canUpgrade = true;
         }
+    }
+
+    public void selectedBuilding3Ghosh()
+    {
+        Destroy(buildingGhosh);
+        buildingGhosh = (GameObject)Instantiate(buildManager.Building3Ghosh, transform.position, buildManager.Building3Ghosh.transform.rotation);
     }
 
     public void Demolish()
@@ -276,6 +297,11 @@ public class Node : MonoBehaviour
             }
             canUpgrade = false;
         }
+    }
+
+    public void DestroyGhosh()
+    {
+        Destroy(buildingGhosh);
     }
 
 }

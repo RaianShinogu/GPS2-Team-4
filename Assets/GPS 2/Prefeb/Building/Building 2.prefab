@@ -170,7 +170,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10abce6631534e14b9239bb90ce578a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Animation: 
   building: {fileID: 1624193766553156131}
 --- !u!1 &7033084344096759783
 GameObject:
@@ -229,7 +228,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 013fea5cb8bba5940be74ac853dec594, type: 2}
+  - {fileID: 2100000, guid: 4fb64ca29446777479064271d8f50b29, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
