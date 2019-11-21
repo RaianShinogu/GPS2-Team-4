@@ -49,7 +49,7 @@ MeshRenderer:
   m_GameObject: {fileID: 177895117048079329}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -57,7 +57,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 670224309865224971, guid: 5dfee25b683e0df4e83f61e9df5ee101, type: 3}
+  - {fileID: 2100000, guid: 575ed9db3fa96784f8d97836dd47165b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -89,6 +89,7 @@ GameObject:
   - component: {fileID: 8646990869151962969}
   - component: {fileID: 1624193766553156131}
   - component: {fileID: 652065624502336883}
+  - component: {fileID: 6109196581879704694}
   m_Layer: 0
   m_Name: Building 2
   m_TagString: PileOfGoop
@@ -103,7 +104,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5646126045520176458}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -111,7 +112,7 @@ Transform:
   - {fileID: 1373170620814029344}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &1624193766553156131
 Animator:
   serializedVersion: 3
@@ -143,7 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e6665da2d03cf94c849200ac84be10b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 1000
+  range: 20
   fireRate: 1
   fireCountDown: 1
   inputAnimationCountDown: 1
@@ -157,6 +158,20 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1634809021488462296, guid: 1a9bc45c70247354282c26f9ff64fb52,
     type: 3}
   firePoint: {fileID: 8646990869151962969}
+--- !u!114 &6109196581879704694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5646126045520176458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10abce6631534e14b9239bb90ce578a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Animation: 
+  building: {fileID: 1624193766553156131}
 --- !u!1 &7033084344096759783
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,7 +221,7 @@ MeshRenderer:
   m_GameObject: {fileID: 7033084344096759783}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1

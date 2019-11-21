@@ -122,6 +122,6 @@ MonoBehaviour:
   hand: {fileID: 0}
   handPosition: {fileID: 0}
   enemyTag: Visitor
-  bulletPrefab: {fileID: 1602084178116780069, guid: 2cce4cf3dd99cf24ab717c281bb989ff,
+  bulletPrefab: {fileID: 1634809021488462296, guid: 379f369f59e531949b8402bee23d4ffd,
     type: 3}
   firePoint: {fileID: 467065406795101458}

@@ -6,7 +6,7 @@ public class Bullet : MonoBehaviour
     private Transform target;
     private bool isD = true, isS = false;
 
-    public int damage = 20;
+    public int damage ;
 
     public float speed = 70f;
     public float explosionRadius = 0f;
@@ -41,7 +41,9 @@ public class Bullet : MonoBehaviour
 
         if(dir.magnitude <= distanceThisFrame)
         {
-            HitTarget();
+            //HitTarget();
+            Damage(target);
+            Destroy(gameObject);
             return;
         }
 
@@ -70,7 +72,7 @@ public class Bullet : MonoBehaviour
         }
 
 
-        BulletEnqueue();
+        //BulletEnqueue();
         //Destroy(gameObject);       
     }
 

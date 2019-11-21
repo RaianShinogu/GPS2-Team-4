@@ -7,6 +7,7 @@ public class Node : MonoBehaviour
 {
     BuildManager buildManager;
     NodeUI nodeUI;
+    BuildingAnimation buildingAnimation;
     [SerializeField] private Color hoverColor;
     public Vector3 positionOffset;
     bool isDragging = false;
@@ -33,6 +34,7 @@ public class Node : MonoBehaviour
         startColor = rend.material.color;
         buildManager = BuildManager.instance;
         nodeUI = NodeUI.instance;
+       // buildingAnimation = BuildingAnimation.instance;
     }
     
     void OnMouseEnter()
@@ -110,10 +112,12 @@ public class Node : MonoBehaviour
             }
 
             nodeUI.ShowUpDemUI(this, sellPrice, upgradePrice);
+            
             return;
         }
 
         nodeUI.ShowBuildUI(this);
+       
     }
 
     void OnMouseDown()

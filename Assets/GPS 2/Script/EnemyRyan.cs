@@ -57,7 +57,7 @@ public class EnemyRyan : MonoBehaviour
     }
     public void TakeDamage(float amount)
     {
-        Debug.Log("damaged");
+        
         health += amount;
 
 
@@ -83,7 +83,7 @@ public class EnemyRyan : MonoBehaviour
             health3.SetActive(true);
         }
 
-        
+        Debug.Log(health);
         
 
 

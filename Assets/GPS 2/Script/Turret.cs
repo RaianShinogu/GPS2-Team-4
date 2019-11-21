@@ -135,13 +135,10 @@ public class Turret : MonoBehaviour
                 bullet.Seek(target, isDamage, isSlow);
                 //subject to change
                 if (building != null)
-                {
-                    if (BuildingType == "Building 2")
-                    {
+                { 
 
-                    }
 
-                    else if (BuildingType == "Building 1")
+                     if (BuildingType == "Building 1")
                     {
                         building.Play("Attack", 0, 0.25f);
                         Instantiate(hand, handPosition.position + Vector3.up + Vector3.back, hand.transform.rotation);
@@ -151,7 +148,6 @@ public class Turret : MonoBehaviour
                     {
                         building.Play("Attack", 0, 0.25f);
                     }
-
 
 
                 }
