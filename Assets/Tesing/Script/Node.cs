@@ -10,6 +10,7 @@ public class Node : MonoBehaviour
     BuildingAnimation buildingAnimation;
     [SerializeField] private Color hoverColor;
     public Vector3 positionOffset;
+    public GameObject descriptionPanel;
     bool isDragging = false;
     private float delayTime = 0.2f;
     private float counterTime = 0.0f;
@@ -209,7 +210,7 @@ public class Node : MonoBehaviour
 
     public void selectedBuilding1Ghosh()
     {
-         
+        Destroy(buildingGhosh);
         buildingGhosh = (GameObject)Instantiate(buildManager.Building1Ghosh, transform.position, buildManager.Building1Ghosh.transform.rotation);
     }
 
@@ -302,6 +303,7 @@ public class Node : MonoBehaviour
     public void DestroyGhosh()
     {
         Destroy(buildingGhosh);
+        descriptionPanel.SetActive(false) ;
     }
 
 }

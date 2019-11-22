@@ -18,7 +18,8 @@ public class NodeUI : MonoBehaviour
     bool conformSelectBuilding2 = false;
     bool conformSelectBuilding3 = false;
     Node node;
-
+    public Text description;
+    public GameObject descriptionPanel;
     public Text sellPriceDisplay;
     public Text upgradePriceDisplay;
 
@@ -40,7 +41,8 @@ public class NodeUI : MonoBehaviour
     }
     public void ShowBuildUI(Node node)
     {
-        
+            if(isOpenBuildingUI == false)
+        {
             isOpenBuildingUI = true;
             //buildUI.SetActive(false);   // reset any opened UI, if any
             buildUI.SetActive(true);
@@ -55,16 +57,18 @@ public class NodeUI : MonoBehaviour
             }
             this.node = node;
             upgradeDemolishUI.SetActive(false);
-            node.DestroyGhosh();
-       
+        }
+            
+  
+        
+        
         if (this.prevNode != node)
         {
-            //! reset prev node stuff here
-            Debug.Log("prevNode" + this.prevNode);
-            this.prevNode = FindObjectOfType<Node>();
+            //! reset prev node stuff here            
+            prevNode = FindObjectOfType<Node>();
             prevNode.DestroyGhosh();
             this.prevNode = node;
-            Debug.Log("prevNode" + this.prevNode);
+            //Debug.Log("prevNode" + this.prevNode);
         }
         else if (prevNode == null)
         {
@@ -94,6 +98,8 @@ public class NodeUI : MonoBehaviour
        if(!conformSelectBuilding1)
         {
            node.selectedBuilding1Ghosh();
+            descriptionPanel.SetActive(true);
+            description.text = "Building 1";
             conformSelectBuilding1 = true;
             conformSelectBuilding2 = false;
             conformSelectBuilding3 = false;
@@ -124,6 +130,8 @@ public class NodeUI : MonoBehaviour
         if (!conformSelectBuilding2)
         {
             node.selectedBuilding2Ghosh();
+            descriptionPanel.SetActive(true);
+            description.text = "Building 2";
             conformSelectBuilding1 = false;
             conformSelectBuilding2 = true;
             conformSelectBuilding3 = false;
@@ -153,6 +161,8 @@ public class NodeUI : MonoBehaviour
         if (!conformSelectBuilding3)
         {
             node.selectedBuilding3Ghosh();
+            descriptionPanel.SetActive(true);
+            description.text = "Building 3";
             conformSelectBuilding1 = false;
             conformSelectBuilding2 = false;
             conformSelectBuilding3 = true;
