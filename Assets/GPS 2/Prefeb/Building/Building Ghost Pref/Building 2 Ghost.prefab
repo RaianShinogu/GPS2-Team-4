@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 8646990869151962969}
   - component: {fileID: 652065624502336883}
   m_Layer: 0
-  m_Name: Building 2 Gosh
+  m_Name: Building 2 Ghost
   m_TagString: PileOfGoop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -134,6 +134,8 @@ MonoBehaviour:
   BuildingType: Building 1
   hand: {fileID: 6750208485344850193, guid: 038e9224e92247248a5a3820fa89d936, type: 3}
   handPosition: {fileID: 8646990869151962969}
+  towerRange: {fileID: 0}
+  isGhost: 1
   enemyTag: Visitor
   bulletPrefab: {fileID: 1634809021488462296, guid: 1a9bc45c70247354282c26f9ff64fb52,
     type: 3}
@@ -195,7 +197,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 013fea5cb8bba5940be74ac853dec594, type: 2}
+  - {fileID: 2100000, guid: 96221a6c414e8f8449bdad5d3b52bc43, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

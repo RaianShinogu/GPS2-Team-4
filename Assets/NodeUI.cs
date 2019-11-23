@@ -65,8 +65,8 @@ public class NodeUI : MonoBehaviour
         if (this.prevNode != node)
         {
             //! reset prev node stuff here            
-            prevNode = FindObjectOfType<Node>();
-            prevNode.DestroyGhosh();
+            //prevNode = FindObjectOfType<Node>();
+            //prevNode.DestroyGhosh();
             this.prevNode = node;
             //Debug.Log("prevNode" + this.prevNode);
         }

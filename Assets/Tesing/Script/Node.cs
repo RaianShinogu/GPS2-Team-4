@@ -7,7 +7,6 @@ public class Node : MonoBehaviour
 {
     BuildManager buildManager;
     NodeUI nodeUI;
-    BuildingAnimation buildingAnimation;
     [SerializeField] private Color hoverColor;
     public Vector3 positionOffset;
     public GameObject descriptionPanel;

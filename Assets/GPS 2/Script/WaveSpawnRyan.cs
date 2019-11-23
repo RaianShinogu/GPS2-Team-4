@@ -3,7 +3,8 @@ using System.Collections;
 
 public class WaveSpawnRyan : MonoBehaviour
 {
-    public Transform enemyPrefab;
+    public GameObject enemyPrefab;
+    public GameObject enemyPrefab2;
 
     public Transform spawnPoint;
     public GameObject Startwave;
@@ -91,8 +92,17 @@ public class WaveSpawnRyan : MonoBehaviour
     }
 
     void SpawnEnemy()
-    {        
-        Instantiate(enemyPrefab, spawnPoint.position + Vector3.up*2, spawnPoint.rotation);
+    {
+        visitorType = Random.Range(0, 2);
+        if(visitorType == 0)
+        {
+            Instantiate(enemyPrefab, spawnPoint.position + Vector3.up * 2, spawnPoint.rotation);
+        }
+        else if(visitorType == 1)
+        {
+            Instantiate(enemyPrefab2, spawnPoint.position + Vector3.up * 2, spawnPoint.rotation);
+        }
+        
     }
 
     public void StartGame()

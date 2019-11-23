@@ -13,8 +13,6 @@ public class Turret : MonoBehaviour
     public float fireRate = 1f;
     public float fireCountDown = 0f;
     float totalFireCountDown;
-    public float inputAnimationCountDown;
-    float animationCountDown;
 
     public bool isSlow = false;
     public bool isDamage = true;
@@ -23,6 +21,7 @@ public class Turret : MonoBehaviour
     [SerializeField] GameObject hand;
     [SerializeField] Transform handPosition;
     [SerializeField] GameObject towerRange;
+    public bool isGhost;
 
     //
     private Queue<Bullet> bulletPool = new Queue<Bullet>();
@@ -40,7 +39,7 @@ public class Turret : MonoBehaviour
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
         building = gameObject.GetComponent<Animator>();
         totalFireCountDown = fireCountDown;
-        animationCountDown = inputAnimationCountDown;
+        fireCountDown = 0f;
     }
 
     void UpdateTarget()
@@ -80,36 +79,35 @@ public class Turret : MonoBehaviour
         //towerRange.transform.localScale = Vector3.one * range * 2.0f;
 
         if (target == null)
-            return;
+        {
+            if (BuildingType == "Building 2" || BuildingType == "Building 1")
+            {
+                building.SetBool("isAttacking", false);
+                return;
+            }
+            else
+            {
+                return;
+            }
+                
+        }
+            
 
         if(fireCountDown <= 0f)
         {
-            
             //fireCountDown = 1f / fireRate;
             if(BuildingType == "Building 2" || BuildingType == "Building 1")
             {
-                if(coolDown == false)
-                {
-                    building.SetBool("isAttacking", true);
-                    Shoot();
-                    coolDown = true;
-                    animationCountDown = inputAnimationCountDown; 
-                }   
-                if(animationCountDown <= 0f)
-                {
-                    building.SetBool("isAttacking", false);
-                    fireCountDown = totalFireCountDown;
-                    coolDown = false;
-                    
-                }
-                animationCountDown -= Time.deltaTime;
+                 building.SetBool("isAttacking", true);
+                 Shoot();
+                fireCountDown = totalFireCountDown;
             }
             else
             {
                 Shoot();
                 fireCountDown = totalFireCountDown;
             }
-            
+
         }
 
         fireCountDown -= Time.deltaTime;
@@ -121,7 +119,7 @@ public class Turret : MonoBehaviour
 
     private void Shoot()
     {//pool
-        if (bulletPool.Count < 10)
+        if (bulletPool.Count < 100)
         {
             GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
             
@@ -136,23 +134,13 @@ public class Turret : MonoBehaviour
                 bullet.BulletActive();
                 bullet.Seek(target, isDamage, isSlow);
                 //subject to change
-                if (building != null)
-                { 
+              if (BuildingType == "Building 3")
+              {
+                 building.Play("Attack", 0, 0.25f);
+              }
 
 
-                     if (BuildingType == "Building 1")
-                    {
-                        building.Play("Attack", 0, 0.25f);
-                        Instantiate(hand, handPosition.position + Vector3.up + Vector3.back, hand.transform.rotation);
-                    }
-
-                    else if (BuildingType == "Building 3")
-                    {
-                        building.Play("Attack", 0, 0.25f);
-                    }
-
-
-                }
+             
 
             }
         }
@@ -164,7 +152,11 @@ public class Turret : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, range);
 
-        towerRange.transform.localScale = Vector3.one * range * 2.0f;
+        if(isGhost)
+        {
+            towerRange.transform.localScale = Vector3.one * range * 2.0f;
+        }
+        
     }
 
 }

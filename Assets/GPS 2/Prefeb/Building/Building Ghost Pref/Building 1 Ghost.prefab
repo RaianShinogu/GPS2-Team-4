@@ -257,7 +257,7 @@ GameObject:
   - component: {fileID: 5619094104554602293}
   - component: {fileID: -3974471591018978154}
   m_Layer: 0
-  m_Name: Building 1 Gosh
+  m_Name: Building 1 Ghost
   m_TagString: JackInBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -304,6 +304,7 @@ MonoBehaviour:
   hand: {fileID: 0}
   handPosition: {fileID: 0}
   towerRange: {fileID: 4871642002333297327}
+  isGhost: 1
   enemyTag: Visitor
   bulletPrefab: {fileID: 1634809021488462296, guid: 1a9bc45c70247354282c26f9ff64fb52,
     type: 3}

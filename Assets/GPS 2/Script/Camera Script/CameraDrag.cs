@@ -9,8 +9,8 @@ public class CameraDrag : MonoBehaviour
     [SerializeField] float dragSensitivity ;
     Vector3 dragDirection = Vector3.zero; //The direction of our drag input
     float decayRate = 5f;
-    //public float maxZ = -5.0f;
-    //public float mixZ = -19.52f;
+    public float maxZ = -5.0f;
+    public float mixZ = -19.52f;
 
     public float maxX = 64.3f;
     public float mixX = -35.1f;
@@ -54,7 +54,7 @@ public class CameraDrag : MonoBehaviour
            Vector3 touchPosition = Input.GetTouch(0).position;
            touchPosition = Camera.main.ScreenToWorldPoint(touchPosition);
             dragDirection.x = Input.GetTouch(0).deltaPosition.x / (float)-Screen.width;
-            //dragDirection.y = Input.GetTouch(0).deltaPosition.y / (float)-Screen.height;
+            dragDirection.y = Input.GetTouch(0).deltaPosition.y / (float)-Screen.height;
             if (this.transform.position.x < mixX && dragDirection.x < 0)
             {
                 dragDirection.x = 0;
@@ -65,7 +65,7 @@ public class CameraDrag : MonoBehaviour
                 dragDirection.x = 0;
             }
 
-            /*if (this.transform.position.z < mixZ && dragDirection.y < 0)
+            if (this.transform.position.z < mixZ && dragDirection.y < 0)
             {
                 dragDirection.y = 0;
             }
@@ -73,7 +73,7 @@ public class CameraDrag : MonoBehaviour
             if (this.transform.position.z > maxZ && dragDirection.y > 0)
             {
                 dragDirection.y  = 0;
-            }*/
+            }
             
         }
     }

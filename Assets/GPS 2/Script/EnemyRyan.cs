@@ -7,7 +7,7 @@ using System.Collections;
 
 public class EnemyRyan : MonoBehaviour
 {
-    public Image scareMeter;
+    public bool vistor2;
 
     [Header("RaycastTesing")]
     public float speed = 5f;
@@ -19,7 +19,7 @@ public class EnemyRyan : MonoBehaviour
 
     public float health = 0;
     public float maxHealth = 100;
-    public GameObject health1, health2, health3;
+    public GameObject health1, health2, health3, health1v2, health2v2, health3v2;
 
     //private Transform target;
     private int wavepointindex = 0;
@@ -67,6 +67,14 @@ public class EnemyRyan : MonoBehaviour
             health1.SetActive(true);
             health2.SetActive(false);
             health3.SetActive(false);
+
+            if (vistor2 == true)
+            {
+                health1v2.SetActive(true);
+                health2v2.SetActive(false);
+                health3v2.SetActive(false);
+            }
+               
         }
         else if(health > 20 && health <= 40)
         {
@@ -74,6 +82,14 @@ public class EnemyRyan : MonoBehaviour
             health1.SetActive(false);
             health2.SetActive(true);
             health3.SetActive(false);
+
+            if(vistor2 == true)
+            {
+                health1v2.SetActive(false);
+                health2v2.SetActive(true);
+                health3v2.SetActive(false);
+            }
+            
         }
         else if(health > 40)
         {
@@ -81,6 +97,14 @@ public class EnemyRyan : MonoBehaviour
             health1.SetActive(false);
             health2.SetActive(false);
             health3.SetActive(true);
+
+            if (vistor2 == true)
+            {
+                health1v2.SetActive(false);
+                health2v2.SetActive(false);
+                health3v2.SetActive(true);
+            }
+               
         }
 
         Debug.Log(health);
@@ -121,7 +145,7 @@ public class EnemyRyan : MonoBehaviour
         Vector3 dir = target.position - transform.position;
         transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
 
-        if(Vector3.Distance(transform.position, target.position) <= 0.2f)
+        if(Vector3.Distance(transform.position, target.position) <= 0.4f)
         {
             GetNextWaypoint();
         }

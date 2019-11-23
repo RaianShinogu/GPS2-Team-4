@@ -89,7 +89,6 @@ GameObject:
   - component: {fileID: 8646990869151962969}
   - component: {fileID: 1624193766553156131}
   - component: {fileID: 652065624502336883}
-  - component: {fileID: 6109196581879704694}
   m_Layer: 0
   m_Name: Building 2
   m_TagString: PileOfGoop
@@ -144,33 +143,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e6665da2d03cf94c849200ac84be10b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 20
+  range: 13.5
   fireRate: 1
-  fireCountDown: 1
-  inputAnimationCountDown: 1
+  fireCountDown: 1.5
   isSlow: 0
   isDamage: 1
   building: {fileID: 1624193766553156131}
-  BuildingType: Building 1
+  BuildingType: Building 2
   hand: {fileID: 6750208485344850193, guid: 038e9224e92247248a5a3820fa89d936, type: 3}
   handPosition: {fileID: 8646990869151962969}
+  towerRange: {fileID: 0}
+  isGhost: 0
   enemyTag: Visitor
   bulletPrefab: {fileID: 1634809021488462296, guid: 1a9bc45c70247354282c26f9ff64fb52,
     type: 3}
   firePoint: {fileID: 8646990869151962969}
---- !u!114 &6109196581879704694
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5646126045520176458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10abce6631534e14b9239bb90ce578a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  building: {fileID: 1624193766553156131}
 --- !u!1 &7033084344096759783
 GameObject:
   m_ObjectHideFlags: 0

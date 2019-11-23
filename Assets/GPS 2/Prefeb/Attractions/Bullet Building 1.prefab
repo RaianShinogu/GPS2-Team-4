@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1634809021488462302}
   - component: {fileID: -7506813056532904003}
   m_Layer: 0
-  m_Name: Bullet AOE
+  m_Name: Bullet Building 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
