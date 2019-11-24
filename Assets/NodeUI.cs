@@ -87,6 +87,7 @@ public class NodeUI : MonoBehaviour
 
     public void HideBuildUI()
     {
+        Global.audiomanager.getSFX("InGameClick").play();
         buildUI.SetActive(false);
         isOpenBuildingUI = false;
         prevNode = null;
@@ -94,8 +95,9 @@ public class NodeUI : MonoBehaviour
 
     public void BuildBuilding1()
     {
-       // isOpenBuildingUI = false;
-       if(!conformSelectBuilding1)
+        Global.audiomanager.getSFX("InGameClick").play();
+        // isOpenBuildingUI = false;
+        if (!conformSelectBuilding1)
         {
            node.selectedBuilding1Ghosh();
             descriptionPanel.SetActive(true);
@@ -127,6 +129,7 @@ public class NodeUI : MonoBehaviour
 
     public void BuildBuilding2()
     {
+        Global.audiomanager.getSFX("InGameClick").play();
         if (!conformSelectBuilding2)
         {
             node.selectedBuilding2Ghosh();
@@ -158,6 +161,7 @@ public class NodeUI : MonoBehaviour
 
     public void BuildBuilding3()
     {
+        Global.audiomanager.getSFX("InGameClick").play();
         if (!conformSelectBuilding3)
         {
             node.selectedBuilding3Ghosh();
@@ -206,6 +210,7 @@ public class NodeUI : MonoBehaviour
 
     public void HideUpDemUI()
     {
+        
         upgradeDemolishUI.SetActive(false);
         isOpenBuildingUI = false;
     }

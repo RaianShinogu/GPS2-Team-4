@@ -21,6 +21,11 @@ public class GameManager : MonoBehaviour
         
     }
 
+    public void playInGameSFX()
+    {
+        Global.audiomanager.getSFX("InGameClick").play();
+    }
+
     public void EndGame()
     {
         //gameEnded = true;

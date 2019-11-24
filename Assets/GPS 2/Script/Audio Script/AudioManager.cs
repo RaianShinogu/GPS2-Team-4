@@ -12,7 +12,8 @@ public class AudioManager : MonoBehaviour {
     private float masterVolume = 0.7f;
     private float putSFXvolume = 0.7f;
     private float putBGMvolume = 0.7f;
-
+    public bool SFXon = true;
+    public bool BGMon = true;
 
     public void Awake() {
 
@@ -124,21 +125,37 @@ public class AudioManager : MonoBehaviour {
         {
 
             bgm[i].setVolume(BGMVolume);
-
+          
+        }
+        if (BGMVolume == 0.0f)
+        {
+            BGMon = false;
+        }
+        else
+        {
+            BGMon = true;
         }
     }
 
     public void setSFXVolume(float SFXVolume)
     {
+
        // audiomixer.SetFloat("SFXVolume", SFXVolume);
         for (int i = 0; i < sfx.Length; i++)
         {
 
             sfx[i].setVolume(SFXVolume);
 
-
+            
         }
-
+        if (SFXVolume == 0.0f)
+        {
+            SFXon = false;
+        }
+        else
+        {
+            SFXon = true;
+        }
     }
 
     }

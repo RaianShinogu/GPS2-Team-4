@@ -163,17 +163,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 403248279}
     m_Modifications:
+    - target: {fileID: 5884906683880839249, guid: 3ac4d4f2ee511c04f89931d5042e95c5,
+        type: 3}
+      propertyPath: m_Name
+      value: SFX Toggle
+      objectReference: {fileID: 0}
     - target: {fileID: 5884906683780760420, guid: 3ac4d4f2ee511c04f89931d5042e95c5,
         type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 86b217960d86a9a438f77d071c518615,
         type: 3}
-    - target: {fileID: 5884906683880839249, guid: 3ac4d4f2ee511c04f89931d5042e95c5,
-        type: 3}
-      propertyPath: m_Name
-      value: SFX Toggle
-      objectReference: {fileID: 0}
     - target: {fileID: 5884906683880839250, guid: 3ac4d4f2ee511c04f89931d5042e95c5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -290,6 +290,36 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 86b217960d86a9a438f77d071c518615,
         type: 3}
+    - target: {fileID: 5884906685026115182, guid: 3ac4d4f2ee511c04f89931d5042e95c5,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5884906685026115182, guid: 3ac4d4f2ee511c04f89931d5042e95c5,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5884906685026115182, guid: 3ac4d4f2ee511c04f89931d5042e95c5,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5884906685026115182, guid: 3ac4d4f2ee511c04f89931d5042e95c5,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 403248280}
+    - target: {fileID: 5884906685026115182, guid: 3ac4d4f2ee511c04f89931d5042e95c5,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: playUISFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 5884906685026115182, guid: 3ac4d4f2ee511c04f89931d5042e95c5,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ac4d4f2ee511c04f89931d5042e95c5, type: 3}
 --- !u!1 &166218587
@@ -579,6 +609,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1445772933}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1445772935}
+        m_MethodName: playSFX
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1189,17 +1230,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 403248279}
     m_Modifications:
+    - target: {fileID: 5884906683880839249, guid: 3ac4d4f2ee511c04f89931d5042e95c5,
+        type: 3}
+      propertyPath: m_Name
+      value: BGM Toggle
+      objectReference: {fileID: 0}
     - target: {fileID: 5884906683780760420, guid: 3ac4d4f2ee511c04f89931d5042e95c5,
         type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 86b217960d86a9a438f77d071c518615,
         type: 3}
-    - target: {fileID: 5884906683880839249, guid: 3ac4d4f2ee511c04f89931d5042e95c5,
-        type: 3}
-      propertyPath: m_Name
-      value: BGM Toggle
-      objectReference: {fileID: 0}
     - target: {fileID: 5884906683880839250, guid: 3ac4d4f2ee511c04f89931d5042e95c5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1316,6 +1357,36 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 86b217960d86a9a438f77d071c518615,
         type: 3}
+    - target: {fileID: 5884906685026115182, guid: 3ac4d4f2ee511c04f89931d5042e95c5,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5884906685026115182, guid: 3ac4d4f2ee511c04f89931d5042e95c5,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5884906685026115182, guid: 3ac4d4f2ee511c04f89931d5042e95c5,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5884906685026115182, guid: 3ac4d4f2ee511c04f89931d5042e95c5,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 403248280}
+    - target: {fileID: 5884906685026115182, guid: 3ac4d4f2ee511c04f89931d5042e95c5,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: playUISFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 5884906685026115182, guid: 3ac4d4f2ee511c04f89931d5042e95c5,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ac4d4f2ee511c04f89931d5042e95c5, type: 3}
 --- !u!1 &1036899383
@@ -2055,6 +2126,17 @@ MonoBehaviour:
       - m_Target: {fileID: 403248278}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 403248280}
+        m_MethodName: playUISFX
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

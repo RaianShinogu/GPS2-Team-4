@@ -49,4 +49,9 @@ public class OptionsMenu : MonoBehaviour
             Global.audiomanager.setSFXVolume(0.7f);
         }
     }
+
+    public void playUISFX()
+    {
+        Global.audiomanager.getSFX("UIclick").play();
+    }
 }

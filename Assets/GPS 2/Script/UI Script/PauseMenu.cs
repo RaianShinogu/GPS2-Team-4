@@ -31,6 +31,8 @@ public class PauseMenu : MonoBehaviour
 
     void Resume()
     {
+
+        
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
@@ -44,6 +46,8 @@ public class PauseMenu : MonoBehaviour
 
     public void Restart()
     {
+
+        Global.audiomanager.getSFX("InGameClick").play();
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
@@ -57,6 +61,8 @@ public class PauseMenu : MonoBehaviour
 
     void Pause()
     {
+
+       
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
@@ -71,6 +77,8 @@ public class PauseMenu : MonoBehaviour
 
     public void backToMenu()
     {
+
+        Global.audiomanager.getSFX("InGameClick").play();
         //change this when build complete
         Time.timeScale = 1f;
         SceneManager.LoadScene("Main Menu");
@@ -79,12 +87,15 @@ public class PauseMenu : MonoBehaviour
 
     public void QuitGame()
     {
+
+        Global.audiomanager.getSFX("InGameClick").play();
         Application.Quit();
     }
 
     public void GamePause()
     {
-        
+
+        Global.audiomanager.getSFX("InGameClick").play();
         GameIsPaused = !GameIsPaused;
     }
 }

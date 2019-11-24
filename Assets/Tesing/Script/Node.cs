@@ -132,6 +132,8 @@ public class Node : MonoBehaviour
 
     void OnMouseDown()
     {
+
+        Global.audiomanager.getSFX("InGameClick").play();
         buildingChoice = buildManager.getBuildingChoice();
         buildingType = buildManager.type;
         gold = buildManager.gold;

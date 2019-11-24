@@ -90,6 +90,7 @@ public class TutoriaUpdated : MonoBehaviour
 
     public void SkipTutorial()
     {
+       // Global.audiomanager.getSFX("InGameClick").play();
         SceneManager.LoadScene("Actual Game Scene", LoadSceneMode.Single);
     }
 }
