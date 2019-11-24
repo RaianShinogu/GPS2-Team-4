@@ -41,10 +41,10 @@ public class NodeUI : MonoBehaviour
     }
     public void ShowBuildUI(Node node)
     {
-            if(isOpenBuildingUI == false)
-        {
-            isOpenBuildingUI = true;
-            //buildUI.SetActive(false);   // reset any opened UI, if any
+            //if(isOpenBuildingUI == false)
+        //{
+            //isOpenBuildingUI = true;
+            buildUI.SetActive(false);   // reset any opened UI, if any
             buildUI.SetActive(true);
             buildUI.transform.position = node.transform.position + uiOffset;
             if (inTutorialLevel == true)
@@ -57,7 +57,7 @@ public class NodeUI : MonoBehaviour
             }
             this.node = node;
             upgradeDemolishUI.SetActive(false);
-        }
+        //}
             
   
         
@@ -224,6 +224,12 @@ public class NodeUI : MonoBehaviour
         isOpenBuildingUI = false;
     }
 
-    
+    public void ResetConfirmation() // to turn off opened description box and reset confirmation
+    {
+        descriptionPanel.SetActive(false);
+        conformSelectBuilding1 = false;
+        conformSelectBuilding2 = false;
+        conformSelectBuilding3 = false;
+    }
 
 }

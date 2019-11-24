@@ -19,6 +19,8 @@ public class Node : MonoBehaviour
 
     [HideInInspector]public GameObject building;
     [HideInInspector] public GameObject buildingGhosh;
+    private static bool haveGhost;
+    private static GameObject ghostContainer;
 
     private GameObject buildingChoice;
 
@@ -85,7 +87,15 @@ public class Node : MonoBehaviour
             isDragging = false;
             return;
         }
-        
+
+        if (haveGhost)
+        {
+            Destroy(ghostContainer);
+            ghostContainer = null;
+            haveGhost = false;
+            nodeUI.ResetConfirmation();
+        }
+
         //
         if (building != null)
         {
@@ -211,6 +221,8 @@ public class Node : MonoBehaviour
     {
         Destroy(buildingGhosh);
         buildingGhosh = (GameObject)Instantiate(buildManager.Building1Ghosh, transform.position, buildManager.Building1Ghosh.transform.rotation);
+        haveGhost = true;
+        ghostContainer = buildingGhosh;
     }
 
     public void selectedBuilding2()
@@ -228,6 +240,8 @@ public class Node : MonoBehaviour
     {
         Destroy(buildingGhosh);
         buildingGhosh = (GameObject)Instantiate(buildManager.Building2Ghosh, transform.position, buildManager.Building2Ghosh.transform.rotation);
+        haveGhost = true;
+        ghostContainer = buildingGhosh;
     }
 
     public void selectedBuilding3()
@@ -245,6 +259,8 @@ public class Node : MonoBehaviour
     {
         Destroy(buildingGhosh);
         buildingGhosh = (GameObject)Instantiate(buildManager.Building3Ghosh, transform.position, buildManager.Building3Ghosh.transform.rotation);
+        haveGhost = true;
+        ghostContainer = buildingGhosh;
     }
 
     public void Demolish()
