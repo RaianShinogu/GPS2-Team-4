@@ -918,6 +918,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3800182922532344411}
   - component: {fileID: 3800182922532344408}
+  - component: {fileID: 8776129522471539405}
   m_Layer: 0
   m_Name: Bats
   m_TagString: Untagged
@@ -934,7 +935,7 @@ Transform:
   m_GameObject: {fileID: 3800182922532344410}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.319336, y: 2.6223145, z: 0.62109375}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 3800182921123324300}
   - {fileID: 3800182922284136694}
@@ -962,6 +963,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8776129522471539405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3800182922532344410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb74c3b27c5a41a46ad764b308ec38ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BulletAnimation: {fileID: 3800182922532344408}
+  animationMove: Bat
 --- !u!1 &3800182922585004746
 GameObject:
   m_ObjectHideFlags: 0

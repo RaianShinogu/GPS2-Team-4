@@ -21,6 +21,8 @@ public class Turret : MonoBehaviour
     [SerializeField] GameObject hand;
     [SerializeField] Transform handPosition;
     [SerializeField] GameObject towerRange;
+    public GameObject jackOfTheBox;
+    public GameObject spawn;
     public bool isGhost;
 
     //
@@ -76,6 +78,8 @@ public class Turret : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isGhost)
+            return;
         //towerRange.transform.localScale = Vector3.one * range * 2.0f;
 
         if (target == null)
@@ -96,10 +100,18 @@ public class Turret : MonoBehaviour
         if(fireCountDown <= 0f)
         {
             //fireCountDown = 1f / fireRate;
-            if(BuildingType == "Building 2" || BuildingType == "Building 1")
+            if( BuildingType == "Building 1")
             {
                  building.SetBool("isAttacking", true);
+                Instantiate(jackOfTheBox, spawn.transform.position + Vector3.back, jackOfTheBox.transform.rotation);
                  Shoot();
+                fireCountDown = totalFireCountDown;
+            }
+
+            else if (BuildingType == "Building 2" )
+            {
+                building.SetBool("isAttacking", true);
+                Shoot();
                 fireCountDown = totalFireCountDown;
             }
             else
