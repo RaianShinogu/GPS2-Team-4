@@ -50,7 +50,10 @@ public class PauseMenu : MonoBehaviour
         Global.audiomanager.getSFX("InGameClick").play();
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
-        GameIsPaused = false;
+        if (GameIsPaused ==true) 
+        { 
+            GameIsPaused = false; 
+        }
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
        // Global.audiomanager.stopAllSFX();
@@ -82,7 +85,10 @@ public class PauseMenu : MonoBehaviour
         //change this when build complete
         Time.timeScale = 1f;
         SceneManager.LoadScene("Main Menu");
-        GameIsPaused = false;
+        if (GameIsPaused == true)
+        {
+            GameIsPaused = false;
+        }
     }
 
     public void QuitGame()

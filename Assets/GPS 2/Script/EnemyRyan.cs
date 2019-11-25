@@ -25,6 +25,9 @@ public class EnemyRyan : MonoBehaviour
     private int wavepointindex = 0;
 
     public Color outlineColor;
+    
+    //lose amount
+    private float reduceHealthAmnt = 2.5f;
 
     Renderer rend;
     private int enemyLeft;
@@ -61,52 +64,7 @@ public class EnemyRyan : MonoBehaviour
         health += amount;
 
 
-        if(health >= 0 && health <= 20)
-        {
-            //rend.material.SetColor("_FirstOutlineColor", Color.green);
-            health1.SetActive(true);
-            health2.SetActive(false);
-            health3.SetActive(false);
-
-            if (vistor2 == true)
-            {
-                health1v2.SetActive(true);
-                health2v2.SetActive(false);
-                health3v2.SetActive(false);
-            }
-               
-        }
-        else if(health > 20 && health <= 40)
-        {
-            //rend.material.SetColor("_FirstOutlineColor", Color.blue);
-            health1.SetActive(false);
-            health2.SetActive(true);
-            health3.SetActive(false);
-
-            if(vistor2 == true)
-            {
-                health1v2.SetActive(false);
-                health2v2.SetActive(true);
-                health3v2.SetActive(false);
-            }
-            
-        }
-        else if(health > 40)
-        {
-            //rend.material.SetColor("_FirstOutlineColor", Color.red);
-            health1.SetActive(false);
-            health2.SetActive(false);
-            health3.SetActive(true);
-
-            if (vistor2 == true)
-            {
-                health1v2.SetActive(false);
-                health2v2.SetActive(false);
-                health3v2.SetActive(true);
-            }
-               
-        }
-
+       
         Debug.Log(health);
         
 
@@ -130,6 +88,69 @@ public class EnemyRyan : MonoBehaviour
         }
     }*/
 
+    private void takeDamageChange()
+    {
+        if (health >= 0 && health <= 20)
+        {
+            //rend.material.SetColor("_FirstOutlineColor", Color.green);
+            health1.SetActive(true);
+            health2.SetActive(false);
+            health3.SetActive(false);
+
+            if (vistor2 == true)
+            {
+                health1v2.SetActive(true);
+                health2v2.SetActive(false);
+                health3v2.SetActive(false);
+            }
+
+        }
+        else if (health > 20 && health <= 40)
+        {
+            //rend.material.SetColor("_FirstOutlineColor", Color.blue);
+            health1.SetActive(false);
+            health2.SetActive(true);
+            health3.SetActive(false);
+
+            if (vistor2 == true)
+            {
+                health1v2.SetActive(false);
+                health2v2.SetActive(true);
+                health3v2.SetActive(false);
+            }
+
+        }
+        else if (health > 40)
+        {
+            //rend.material.SetColor("_FirstOutlineColor", Color.red);
+            health1.SetActive(false);
+            health2.SetActive(false);
+            health3.SetActive(true);
+
+            if (vistor2 == true)
+            {
+                health1v2.SetActive(false);
+                health2v2.SetActive(false);
+                health3v2.SetActive(true);
+            }
+
+        }
+
+    }
+
+
+    private void reduceHealthOverTime()
+    {
+
+        if (health > 0)
+        {
+
+            health = health - (reduceHealthAmnt * Time.deltaTime);
+
+        }
+
+    }
+
     public void BecomeSlowed()
     {
         Debug.Log("slowed");
@@ -139,6 +160,10 @@ public class EnemyRyan : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        takeDamageChange();
+
+        reduceHealthOverTime();
+
         Raycast();
         //transform.Translate(speed * Time.deltaTime, 0, 0);
 
@@ -187,11 +212,15 @@ public class EnemyRyan : MonoBehaviour
         {
             PlayerStats.spookPoint += 2;
         }
-        else
+        else if (health >= 40)
         {
             PlayerStats.spookPoint += 3;
         }
-        
+        else if (health <= 0)
+        {
+            PlayerStats.losePoint += 1;
+        }
+
         Destroy(gameObject);
 
         if(enemyLeft <= 0)

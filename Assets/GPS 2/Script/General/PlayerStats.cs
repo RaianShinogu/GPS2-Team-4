@@ -5,12 +5,15 @@ using UnityEngine;
 public class PlayerStats : MonoBehaviour
 {
     public static int spookPoint;
+    public static int losePoint;
     public int startSpook = 0;
+    public int startlosePoint = 0;
 
     // Start is called before the first frame update
     void Start()
     {
         spookPoint = startSpook;
+        losePoint = startlosePoint;
     }
 
     // Update is called once per frame
