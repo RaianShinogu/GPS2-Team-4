@@ -102,8 +102,7 @@ public class Turret : MonoBehaviour
             //fireCountDown = 1f / fireRate;
             if( BuildingType == "Building 1")
             {
-                //building.SetBool("isAttacking", true);
-                building.Play("Open/Close", 0, 0.25f);
+                 building.SetBool("isAttacking", true);
                 Instantiate(jackOfTheBox, spawn.transform.position + Vector3.back, jackOfTheBox.transform.rotation);
                  Shoot();
                 fireCountDown = totalFireCountDown;
@@ -112,7 +111,6 @@ public class Turret : MonoBehaviour
             else if (BuildingType == "Building 2" )
             {
                 building.SetBool("isAttacking", true);
-                //building.Play("Open/Close", 0, 0.25f);
                 Shoot();
                 fireCountDown = totalFireCountDown;
             }
@@ -122,10 +120,6 @@ public class Turret : MonoBehaviour
                 fireCountDown = totalFireCountDown;
             }
 
-        }
-        else
-        {
-            //building.SetBool("isAttacking", false);
         }
 
         fireCountDown -= Time.deltaTime;

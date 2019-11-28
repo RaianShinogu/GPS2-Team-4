@@ -93,7 +93,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 20
-  speed: 15
+  speed: 40
   explosionRadius: 0
   originPos: {fileID: 0}
 --- !u!1001 &2638036019564049803
@@ -103,6 +103,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1634809021488462300}
     m_Modifications:
+    - target: {fileID: 8776129522471539405, guid: a856ca2e268f5b34b9ba86389d84dcbd,
+        type: 3}
+      propertyPath: BulletAnimation
+      value: 
+      objectReference: {fileID: 1162168344544487379}
+    - target: {fileID: 8776129522471539405, guid: a856ca2e268f5b34b9ba86389d84dcbd,
+        type: 3}
+      propertyPath: animationMove
+      value: bat
+      objectReference: {fileID: 0}
+    - target: {fileID: 3800182922532344410, guid: a856ca2e268f5b34b9ba86389d84dcbd,
+        type: 3}
+      propertyPath: m_Name
+      value: Bats
+      objectReference: {fileID: 0}
     - target: {fileID: 3800182922532344411, guid: a856ca2e268f5b34b9ba86389d84dcbd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -173,25 +188,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 3800182922532344410, guid: a856ca2e268f5b34b9ba86389d84dcbd,
-        type: 3}
-      propertyPath: m_Name
-      value: Bats
-      objectReference: {fileID: 0}
     - target: {fileID: 3800182922532344408, guid: a856ca2e268f5b34b9ba86389d84dcbd,
         type: 3}
       propertyPath: m_ApplyRootMotion
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8776129522471539405, guid: a856ca2e268f5b34b9ba86389d84dcbd,
-        type: 3}
-      propertyPath: BulletAnimation
-      value: 
-      objectReference: {fileID: 1162168344544487379}
-    - target: {fileID: 8776129522471539405, guid: a856ca2e268f5b34b9ba86389d84dcbd,
-        type: 3}
-      propertyPath: animationMove
-      value: bat
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a856ca2e268f5b34b9ba86389d84dcbd, type: 3}
