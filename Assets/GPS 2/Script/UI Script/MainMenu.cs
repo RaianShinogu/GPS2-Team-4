@@ -16,6 +16,7 @@ public class MainMenu : MonoBehaviour
     }
     public void Play()
     {
+        playSFX();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         
     }
@@ -23,7 +24,13 @@ public class MainMenu : MonoBehaviour
 
     public void Quit()
     {
+        playSFX();
         Debug.Log("Quit!");
         Application.Quit();
+    }
+
+    public void playSFX()
+    {
+        Global.audiomanager.getSFX("UIclick").play();
     }
 }

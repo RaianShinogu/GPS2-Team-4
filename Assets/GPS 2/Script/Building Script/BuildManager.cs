@@ -22,6 +22,9 @@ public class BuildManager : MonoBehaviour
     public GameObject UpBuilding1;
     public GameObject UpBuilding2;
     public GameObject UpBuilding3;
+    public GameObject Building1Ghosh;
+    public GameObject Building2Ghosh;
+    public GameObject Building3Ghosh;
     //public GameObject demolish;
     ///public GameObject buildUI;
     //public GameObject endStageButton;
@@ -109,4 +112,6 @@ public class BuildManager : MonoBehaviour
     {
         gold -= 44;
     }
+
+    
 }

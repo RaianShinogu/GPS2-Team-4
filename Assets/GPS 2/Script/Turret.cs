@@ -13,8 +13,6 @@ public class Turret : MonoBehaviour
     public float fireRate = 1f;
     public float fireCountDown = 0f;
     float totalFireCountDown;
-    public float inputAnimationCountDown;
-    float animationCountDown;
 
     public bool isSlow = false;
     public bool isDamage = true;
@@ -22,8 +20,13 @@ public class Turret : MonoBehaviour
     public string BuildingType;
     [SerializeField] GameObject hand;
     [SerializeField] Transform handPosition;
+    [SerializeField] GameObject towerRange;
+    public GameObject jackOfTheBox;
+    public GameObject spawn;
+    public bool isGhost;
 
-
+    //
+    private Queue<Bullet> bulletPool = new Queue<Bullet>();
     [Header("Unity Setup Fields")]
 
     public string enemyTag = "Visitor";
@@ -38,25 +41,30 @@ public class Turret : MonoBehaviour
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
         building = gameObject.GetComponent<Animator>();
         totalFireCountDown = fireCountDown;
-        animationCountDown = inputAnimationCountDown;
+        fireCountDown = 0f;
     }
 
     void UpdateTarget()
     {
+   
         GameObject[] enemies = GameObject.FindGameObjectsWithTag(enemyTag);
         float shortestDistance = Mathf.Infinity;
         GameObject nearestEnemy = null;
 
-        foreach(GameObject enemy in enemies)
+        foreach (GameObject enemy in enemies)
         {
-            float distanceToEnemy = Vector3.Distance(transform.position, enemy.transform.position);
-            if(distanceToEnemy < shortestDistance)
+            if (enemy.GetComponent<EnemyRyan>().health < 40)//a
             {
-                shortestDistance = distanceToEnemy;
-                nearestEnemy = enemy;
+                float distanceToEnemy = Vector3.Distance(transform.position, enemy.transform.position);
+                if (distanceToEnemy < shortestDistance)
+                {
+                    shortestDistance = distanceToEnemy;
+                    nearestEnemy = enemy;
+
+                }
             }
         }
-
+        //---
         if(nearestEnemy != null && shortestDistance <= range)
         {
             target = nearestEnemy.transform;
@@ -70,38 +78,48 @@ public class Turret : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        if (target == null)
+        if (isGhost)
             return;
+        //towerRange.transform.localScale = Vector3.one * range * 2.0f;
+
+        if (target == null)
+        {
+            if (BuildingType == "Building 2" || BuildingType == "Building 1")
+            {
+                building.SetBool("isAttacking", false);
+                return;
+            }
+            else
+            {
+                return;
+            }
+                
+        }
+            
 
         if(fireCountDown <= 0f)
         {
-            
             //fireCountDown = 1f / fireRate;
-            if(BuildingType == "Building 2" || BuildingType == "Building 1")
+            if( BuildingType == "Building 1")
             {
-                if(coolDown == false)
-                {
-                    building.SetBool("isAttacking", true);
-                    Shoot();
-                    coolDown = true;
-                    animationCountDown = inputAnimationCountDown; 
-                }   
-                if(animationCountDown <= 0f)
-                {
-                    building.SetBool("isAttacking", false);
-                    fireCountDown = totalFireCountDown;
-                    coolDown = false;
-                    
-                }
-                animationCountDown -= Time.deltaTime;
+                 building.SetBool("isAttacking", true);
+                Instantiate(jackOfTheBox, spawn.transform.position + Vector3.back, jackOfTheBox.transform.rotation);
+                 Shoot();
+                fireCountDown = totalFireCountDown;
+            }
+
+            else if (BuildingType == "Building 2" )
+            {
+                building.SetBool("isAttacking", true);
+                Shoot();
+                fireCountDown = totalFireCountDown;
             }
             else
             {
                 Shoot();
                 fireCountDown = totalFireCountDown;
             }
-            
+
         }
 
         fireCountDown -= Time.deltaTime;
@@ -112,43 +130,45 @@ public class Turret : MonoBehaviour
     }
 
     private void Shoot()
-    {
-        GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-        Bullet bullet = bulletGO.GetComponent<Bullet>();
-
-        if(bullet != null)
+    {//pool
+        if (bulletPool.Count < 100)
         {
-            bullet.Seek(target, isDamage, isSlow);
-            //subject to change
-            if (building != null)
+            GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+            
+            Bullet bullet = bulletGO.GetComponent<Bullet>();
+            bullet.originPos = this.firePoint.transform;
+            bulletPool.Enqueue(bullet);
+        }
+        foreach (Bullet bullet in bulletPool) 
+        {
+            if (bullet != null)
             {
-                if(BuildingType == "Building 2")
-                {
-                    
-                }
-                
-                else if(BuildingType == "Building 1")
-                {
-                    building.Play("Attack", 0, 0.25f);
-                    Instantiate(hand, handPosition.position + Vector3.up + Vector3.back, hand.transform.rotation);
-                }
-
-                else if (BuildingType == "Building 3")
-                {
-                    building.Play("Attack", 0, 0.25f);
-                }
+                bullet.BulletActive();
+                bullet.Seek(target, isDamage, isSlow);
+                //subject to change
+              if (BuildingType == "Building 3")
+              {
+                 building.Play("Attack", 0, 0.25f);
+              }
 
 
+             
 
             }
-            
         }
+        
     }
-
+    [ExecuteInEditMode]
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, range);
+
+        if(isGhost)
+        {
+            towerRange.transform.localScale = Vector3.one * range * 2.0f;
+        }
+        
     }
 
 }

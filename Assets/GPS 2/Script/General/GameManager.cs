@@ -4,12 +4,19 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject gameOverUI;
+    public GameObject gameOverUI,loseGameUI;
     public GameObject star1, star2, star3;
 
+    private int loseAmount = 5;
     public static bool gameEnded = false;
     public int oneStar = 0, twoStar = 10, threeStar = 20;
     // Update is called once per frame
+
+    private void Start()
+    {
+        Time.timeScale = 1f;
+    }
+
     void Update()
     {
         if (gameEnded)
@@ -18,7 +25,21 @@ public class GameManager : MonoBehaviour
         {
             EndGame();
         }
-        
+        if (PlayerStats.losePoint >= loseAmount)
+        {
+            loseGame();
+        }
+    }
+
+    public void playInGameSFX()
+    {
+        Global.audiomanager.getSFX("InGameClick").play();
+    }
+
+    public void loseGame()
+    {
+        Time.timeScale = 0.0f;
+        loseGameUI.SetActive(true);
     }
 
     public void EndGame()

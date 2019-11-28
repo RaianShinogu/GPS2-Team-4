@@ -48,6 +48,7 @@ public class Toggle: MonoBehaviour
 
     void Start()
     {
+        VolumeStatus();
         if (isOn)
         {
             toggleBgImage.color = onColorBg;
@@ -79,10 +80,12 @@ public class Toggle: MonoBehaviour
         if (Music)
         {
             optionsMenu.setMusicActive();
+        
         }
         if (SFX)
         {
             optionsMenu.setSFXActive();
+           
         }
     }
 
@@ -92,7 +95,15 @@ public class Toggle: MonoBehaviour
         switching = true;
     }
 
-
+    
+    private void VolumeStatus()
+    {
+        if((Music && Global.audiomanager.BGMon == false)|| (SFX && Global.audiomanager.SFXon == false))
+        {
+            isOn = false;
+        }
+      
+    }
 
     public void theToggle(bool toggleStatus)
     {

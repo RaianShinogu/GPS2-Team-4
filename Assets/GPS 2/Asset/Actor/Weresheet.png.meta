@@ -1,0 +1,499 @@
+fileFormatVersion: 2
+guid: d6ebf3babe9f802408c597cd5c9bbadc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4134470982481670237
+    second: Head
+  - first:
+      213: 2459872636997119205
+    second: TOP Arm
+  - first:
+      213: -4787932545350243306
+    second: Jaw
+  - first:
+      213: 4715941505305980757
+    second: BOTTOM Arm
+  - first:
+      213: -2912605832241475739
+    second: Torso
+  - first:
+      213: 6654179475824045402
+    second: TOP Forearm
+  - first:
+      213: -2978136055583279154
+    second: TOP Hand
+  - first:
+      213: 8912092790251804499
+    second: BOTTOM Forearm
+  - first:
+      213: -7743020866441445635
+    second: BOTTOM Lap
+  - first:
+      213: 3170338532538501778
+    second: TOP Lap
+  - first:
+      213: -5890888257780047973
+    second: Tail
+  - first:
+      213: 3804955396996386383
+    second: BOTTOM Hand
+  - first:
+      213: 5890937160340614148
+    second: BOTTOM Thigh
+  - first:
+      213: 1893376179886872481
+    second: Weresheet_13
+  - first:
+      213: -6516658878738865387
+    second: BOTTOM Foot
+  - first:
+      213: -7813451065532517107
+    second: TOP Foot
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Head
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 1944
+        width: 558
+        height: 497
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ba74a61f18a5104bb7debf77e1430ee
+      internalID: 4134470982481670237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOP Arm
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 1684
+        width: 363
+        height: 355
+      alignment: 9
+      pivot: {x: 0.17487665, y: 0.7659603}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d80a61a88b90cb42900e5c6e2cac68b
+      internalID: 2459872636997119205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jaw
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 1641
+        width: 378
+        height: 259
+      alignment: 9
+      pivot: {x: 0.61665416, y: 0.69028217}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 278d05bdc8d77944fa3cbf7f8c3f250b
+      internalID: -4787932545350243306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOTTOM Arm
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 980
+        width: 272
+        height: 431
+      alignment: 9
+      pivot: {x: 0.4523191, y: 0.9032192}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd710c4df09a0a649bb6389a23d1a6ac
+      internalID: 4715941505305980757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torso
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 901
+        width: 538
+        height: 689
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5dab3701cb9fb4409d344790eef3503
+      internalID: -2912605832241475739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOP Forearm
+      rect:
+        serializedVersion: 2
+        x: 1564
+        y: 1275
+        width: 208
+        height: 299
+      alignment: 9
+      pivot: {x: 0.68156904, y: 0.8710321}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f28d67b1787d498409adcdcb6bd7d3e3
+      internalID: 6654179475824045402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOP Hand
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 946
+        width: 171
+        height: 203
+      alignment: 9
+      pivot: {x: 0.530337, y: 0.7299961}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 357ff841b121e114dacfd5085d510d74
+      internalID: -2978136055583279154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOTTOM Forearm
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 655
+        width: 288
+        height: 223
+      alignment: 9
+      pivot: {x: 0.8332366, y: 0.82568413}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d082b8e2caa45f74188037e54ee99e78
+      internalID: 8912092790251804499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOTTOM Lap
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 687
+        width: 233
+        height: 191
+      alignment: 9
+      pivot: {x: 0.48886776, y: 0.77160645}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e680888419b5d8b4fbe24ea7336008c6
+      internalID: -7743020866441445635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOP Lap
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 665
+        width: 213
+        height: 241
+      alignment: 9
+      pivot: {x: 0.43911213, y: 0.7260195}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df9ae89e171e3d54693998304bdb93a9
+      internalID: 3170338532538501778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tail
+      rect:
+        serializedVersion: 2
+        x: 1673
+        y: 560
+        width: 250
+        height: 192
+      alignment: 9
+      pivot: {x: 0.12648633, y: 0.77019215}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec4e09c7f77fe9b44abd706090cb56ed
+      internalID: -5890888257780047973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOTTOM Hand
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 358
+        width: 154
+        height: 169
+      alignment: 9
+      pivot: {x: 0.65158814, y: 0.8223117}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c11fbb0a899460145b56674159d5ba6d
+      internalID: 3804955396996386383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOTTOM Thigh
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 485
+        width: 206
+        height: 137
+      alignment: 9
+      pivot: {x: 0.28594497, y: 0.68933195}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ae55e0d0f85fb444afc4d67c2911cb6
+      internalID: 5890937160340614148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weresheet_13
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 474
+        width: 204
+        height: 136
+      alignment: 9
+      pivot: {x: 0.28384638, y: 0.6716515}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19d8fa9635d382c44ab125a0399d305e
+      internalID: 1893376179886872481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOTTOM Foot
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 218
+        width: 139
+        height: 143
+      alignment: 9
+      pivot: {x: 0.6492854, y: 0.73580444}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cd2baba516391e4d941cbf36cb29fc8
+      internalID: -6516658878738865387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TOP Foot
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 212
+        width: 139
+        height: 143
+      alignment: 9
+      pivot: {x: 0.70526785, y: 0.82649815}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4de2591c36c68542bb30a429148cc4e
+      internalID: -7813451065532517107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: da410a67839181148b0018e10187797c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

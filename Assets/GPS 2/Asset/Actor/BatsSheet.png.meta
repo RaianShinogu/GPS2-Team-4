@@ -1,0 +1,379 @@
+fileFormatVersion: 2
+guid: 48fa4761c1e3a8c4ab9b1fa6bc719e56
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1315061956611353844
+    second: XS L Wing
+  - first:
+      213: 1361375179605606415
+    second: XS R Wing
+  - first:
+      213: -5433810812993476957
+    second: XL Body
+  - first:
+      213: -3618948489335682173
+    second: XL R Wing
+  - first:
+      213: 930845737373364718
+    second: S L Wing
+  - first:
+      213: -2108589885853217050
+    second: XL L Wing
+  - first:
+      213: -5827222905333093824
+    second: S R Wing
+  - first:
+      213: 9126627280664239016
+    second: S Body
+  - first:
+      213: 3712345231364917625
+    second: M L Wing
+  - first:
+      213: -112205025801511699
+    second: M Body
+  - first:
+      213: 4477551331091866731
+    second: M R Wing
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: XS L Wing
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 1583
+        width: 99
+        height: 177
+      alignment: 9
+      pivot: {x: 0.7348673, y: 0.21849896}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 218a230ad58174f4aa72ae7a0f2286a2
+      internalID: -1315061956611353844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XS R Wing
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 1588
+        width: 73
+        height: 195
+      alignment: 9
+      pivot: {x: 0.4089924, y: 0.19338003}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89db8fefcb885444ea4ab338531289e6
+      internalID: 1361375179605606415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XL Body
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 1102
+        width: 328
+        height: 351
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b196fcc0a37068744bc209c0ebf362b0
+      internalID: -5433810812993476957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XL R Wing
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 995
+        width: 606
+        height: 505
+      alignment: 9
+      pivot: {x: 0.105341546, y: 0.12507421}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 033ecbb905262af488a76eaf671f09cc
+      internalID: -3618948489335682173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S L Wing
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 1319
+        width: 196
+        height: 164
+      alignment: 9
+      pivot: {x: 0.87284446, y: 0.21643884}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c91405c09a0a49d498c12f655588ba14
+      internalID: 930845737373364718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XL L Wing
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 819
+        width: 490
+        height: 440
+      alignment: 9
+      pivot: {x: 0.8931815, y: 0.15273035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eab8a4b187a26d468cb63fc6d7d9c0f
+      internalID: -2108589885853217050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S R Wing
+      rect:
+        serializedVersion: 2
+        x: 1778
+        y: 900
+        width: 150
+        height: 250
+      alignment: 9
+      pivot: {x: 0.18997397, y: 0.16782886}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9302c28fb37c6645bfee7f3f0641f34
+      internalID: -5827222905333093824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S Body
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 725
+        width: 126
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e044cf7d4b0fdff4fba6d68d82f84b43
+      internalID: 9126627280664239016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M L Wing
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 324
+        width: 354
+        height: 218
+      alignment: 9
+      pivot: {x: 0.9128675, y: 0.30191544}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80a8a0f510844a04b9f20789b3ca633f
+      internalID: 3712345231364917625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M Body
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 190
+        width: 225
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c7f7e40e86802d4d9705ba2e57fa260
+      internalID: -112205025801511699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M R Wing
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 306
+        width: 371
+        height: 305
+      alignment: 9
+      pivot: {x: 0.16872454, y: 0.14060178}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 159f1754395bb524e87849c268753570
+      internalID: 4477551331091866731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 450de8ba938d7094e9412594ed89a44e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

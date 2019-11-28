@@ -6,10 +6,17 @@ public class Bullet : MonoBehaviour
     private Transform target;
     private bool isD = true, isS = false;
 
-    public int damage = 20;
+    public int damage ;
 
     public float speed = 70f;
     public float explosionRadius = 0f;
+
+    public Transform originPos;
+    
+    private void Awake()
+    {
+        
+    }
 
     public void Seek(Transform _target, bool _isDamage, bool _isSlow)
     {
@@ -25,6 +32,7 @@ public class Bullet : MonoBehaviour
         if(target == null)
         {
             Destroy(gameObject);
+            
             return;
         }
 
@@ -33,13 +41,24 @@ public class Bullet : MonoBehaviour
 
         if(dir.magnitude <= distanceThisFrame)
         {
-            HitTarget();
+            //HitTarget();
+            Damage(target);
+            Destroy(gameObject);
             return;
         }
 
         transform.Translate(dir.normalized * distanceThisFrame, Space.World);
         //transform.LookAt(target);
     }
+
+    private void BulletEnqueue()
+    {
+        this.transform.position = this.originPos.position;
+        this.gameObject.SetActive(false);
+
+    }
+
+    public void BulletActive() { if(this.gameObject.activeSelf == false)this.gameObject.SetActive(true); }
 
     private void HitTarget()
     {
@@ -52,9 +71,9 @@ public class Bullet : MonoBehaviour
             Damage(target);
         }
 
-        
-        
-        Destroy(gameObject);       
+
+        //BulletEnqueue();
+        //Destroy(gameObject);       
     }
 
     private void Explode()

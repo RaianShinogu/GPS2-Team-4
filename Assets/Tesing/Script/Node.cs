@@ -9,6 +9,7 @@ public class Node : MonoBehaviour
     NodeUI nodeUI;
     [SerializeField] private Color hoverColor;
     public Vector3 positionOffset;
+    public GameObject descriptionPanel;
     bool isDragging = false;
     private float delayTime = 0.2f;
     private float counterTime = 0.0f;
@@ -17,6 +18,9 @@ public class Node : MonoBehaviour
     bool canUpgrade;
 
     [HideInInspector]public GameObject building;
+    [HideInInspector] public GameObject buildingGhosh;
+    private static bool haveGhost;
+    private static GameObject ghostContainer;
 
     private GameObject buildingChoice;
 
@@ -33,6 +37,7 @@ public class Node : MonoBehaviour
         startColor = rend.material.color;
         buildManager = BuildManager.instance;
         nodeUI = NodeUI.instance;
+       // buildingAnimation = BuildingAnimation.instance;
     }
     
     void OnMouseEnter()
@@ -82,7 +87,15 @@ public class Node : MonoBehaviour
             isDragging = false;
             return;
         }
-        
+
+        if (haveGhost)
+        {
+            Destroy(ghostContainer);
+            ghostContainer = null;
+            haveGhost = false;
+            nodeUI.ResetConfirmation();
+        }
+
         //
         if (building != null)
         {
@@ -110,14 +123,17 @@ public class Node : MonoBehaviour
             }
 
             nodeUI.ShowUpDemUI(this, sellPrice, upgradePrice);
+            
             return;
         }
-
         nodeUI.ShowBuildUI(this);
+       
     }
 
     void OnMouseDown()
     {
+
+        Global.audiomanager.getSFX("InGameClick").play();
         buildingChoice = buildManager.getBuildingChoice();
         buildingType = buildManager.type;
         gold = buildManager.gold;
@@ -196,30 +212,57 @@ public class Node : MonoBehaviour
     {
         if (gold >= 10)
         {
-            building = (GameObject)Instantiate(buildManager.Building1, transform.position + Vector3.down, buildManager.Building1.transform.rotation);
+            Destroy(buildingGhosh);
+            building = (GameObject)Instantiate(buildManager.Building1, transform.position , buildManager.Building1.transform.rotation);
             buildManager.Building1Cost();
             canUpgrade = true;
         }
+    }
+
+    public void selectedBuilding1Ghosh()
+    {
+        Destroy(buildingGhosh);
+        buildingGhosh = (GameObject)Instantiate(buildManager.Building1Ghosh, transform.position, buildManager.Building1Ghosh.transform.rotation);
+        haveGhost = true;
+        ghostContainer = buildingGhosh;
     }
 
     public void selectedBuilding2()
     {
         if (gold >= 20)
         {
+            Destroy(buildingGhosh);
             building = (GameObject)Instantiate(buildManager.Building2, transform.position + positionOffset, buildManager.Building2.transform.rotation);
             buildManager.Building2Cost();
             canUpgrade = true;
         }
     }
 
+    public void selectedBuilding2Ghosh()
+    {
+        Destroy(buildingGhosh);
+        buildingGhosh = (GameObject)Instantiate(buildManager.Building2Ghosh, transform.position, buildManager.Building2Ghosh.transform.rotation);
+        haveGhost = true;
+        ghostContainer = buildingGhosh;
+    }
+
     public void selectedBuilding3()
     {
         if (gold >= 30)
         {
-            building = (GameObject)Instantiate(buildManager.Building3, transform.position + Vector3.down/2, buildManager.Building3.transform.rotation);
+            Destroy(buildingGhosh);
+            building = (GameObject)Instantiate(buildManager.Building3, transform.position , buildManager.Building3.transform.rotation);
             buildManager.Building3Cost();
             canUpgrade = true;
         }
+    }
+
+    public void selectedBuilding3Ghosh()
+    {
+        Destroy(buildingGhosh);
+        buildingGhosh = (GameObject)Instantiate(buildManager.Building3Ghosh, transform.position, buildManager.Building3Ghosh.transform.rotation);
+        haveGhost = true;
+        ghostContainer = buildingGhosh;
     }
 
     public void Demolish()
@@ -272,6 +315,12 @@ public class Node : MonoBehaviour
             }
             canUpgrade = false;
         }
+    }
+
+    public void DestroyGhosh()
+    {
+        Destroy(buildingGhosh);
+        descriptionPanel.SetActive(false) ;
     }
 
 }
