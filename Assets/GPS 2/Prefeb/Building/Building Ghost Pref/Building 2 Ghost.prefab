@@ -124,17 +124,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e6665da2d03cf94c849200ac84be10b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 13.5
+  range: 17
   fireRate: 1
   fireCountDown: 1
-  inputAnimationCountDown: 1
   isSlow: 0
   isDamage: 1
   building: {fileID: 0}
   BuildingType: Building 1
   hand: {fileID: 6750208485344850193, guid: 038e9224e92247248a5a3820fa89d936, type: 3}
   handPosition: {fileID: 8646990869151962969}
-  towerRange: {fileID: 0}
+  towerRange: {fileID: 7411894703625650874}
+  jackOfTheBox: {fileID: 0}
+  spawn: {fileID: 0}
   isGhost: 1
   enemyTag: Visitor
   bulletPrefab: {fileID: 1634809021488462296, guid: 1a9bc45c70247354282c26f9ff64fb52,
@@ -275,18 +276,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4721448122245344, guid: 037db0977f12f4f92915a74fe6e66d6a, type: 3}
       propertyPath: m_LocalScale.x
-      value: 26.62052
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 4721448122245344, guid: 037db0977f12f4f92915a74fe6e66d6a, type: 3}
       propertyPath: m_LocalScale.y
-      value: 26.62052
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 4721448122245344, guid: 037db0977f12f4f92915a74fe6e66d6a, type: 3}
       propertyPath: m_LocalScale.z
-      value: 26.62052
+      value: 34
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 037db0977f12f4f92915a74fe6e66d6a, type: 3}
+--- !u!1 &7411894703625650874 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1696264954119898, guid: 037db0977f12f4f92915a74fe6e66d6a,
+    type: 3}
+  m_PrefabInstance: {fileID: 7411324411191346272}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7406897915720574080 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4721448122245344, guid: 037db0977f12f4f92915a74fe6e66d6a,

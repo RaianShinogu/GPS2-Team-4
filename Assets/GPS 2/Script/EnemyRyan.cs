@@ -246,6 +246,7 @@ public class EnemyRyan : MonoBehaviour
         //straight
         if (Physics.Raycast(transform.position + Vector3.down / 2, transform.TransformDirection(Vector3.right), out rightHit, 0.2f))
         {
+            
             /*if (rightHit.transform.CompareTag("EnemyTurnLeft"))
             {
                 Debug.Log("turn left");
