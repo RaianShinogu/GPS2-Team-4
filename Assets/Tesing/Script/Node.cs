@@ -89,19 +89,19 @@ public class Node : MonoBehaviour
             if(building.tag == buildManager.Building1.tag)
             {
                 sellPrice = "$ 5";
-                upgradePrice = "$ 5";
+                upgradePrice = "$ 15";
             }
 
             else if (building.tag == buildManager.Building2.tag)
             {
                 sellPrice = "$ 7";
-                upgradePrice = "$ 10";
+                upgradePrice = "$ 29";
             }
 
             else
             {
                 sellPrice = "$ 10";
-                upgradePrice = "$ 15";
+                upgradePrice = "$ 44";
             }
 
             if(canUpgrade == false)
@@ -250,21 +250,21 @@ public class Node : MonoBehaviour
         {    
             Destroy(building);
 
-            if (building.tag == buildManager.Building1.tag && gold >= 5)
+            if (building.tag == buildManager.Building1.tag && gold >= 15)
             {
                 building = null;
                 building = (GameObject)Instantiate(buildManager.UpBuilding1, transform.position + Vector3.down, buildManager.Building1.transform.rotation);
                 buildManager.UpgradeBuilding1Cost();            
             }
 
-            if (building.tag == buildManager.Building2.tag && gold >= 10)
+            if (building.tag == buildManager.Building2.tag && gold >= 29)
             {
                 building = null;
                 building = (GameObject)Instantiate(buildManager.UpBuilding2, transform.position + Vector3.down, buildManager.Building2.transform.rotation);
                 buildManager.UpgradeBuilding2Cost();
             }
 
-            if (building.tag == buildManager.Building3.tag && gold >= 15)
+            if (building.tag == buildManager.Building3.tag && gold >= 44)
             {
                 building = null;
                 building = (GameObject)Instantiate(buildManager.UpBuilding3, transform.position + Vector3.down, buildManager.Building3.transform.rotation);

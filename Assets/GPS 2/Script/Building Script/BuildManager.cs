@@ -97,16 +97,16 @@ public class BuildManager : MonoBehaviour
 
     public void UpgradeBuilding1Cost()
     {
-        gold -= 5;
+        gold -= 15;
     }
 
     public void UpgradeBuilding2Cost()
     {
-        gold -= 10;
+        gold -= 29;
     }
 
     public void UpgradeBuilding3Cost()
     {
-        gold -= 15;
+        gold -= 44;
     }
 }
