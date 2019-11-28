@@ -41,7 +41,7 @@ public class Toggle: MonoBehaviour
         handleSize = handleRect.sizeDelta.x;
         float toggleSizeX = toggle.sizeDelta.x;
         onPosX = (toggleSizeX / 2) - (handleSize / 2) - handleOffset;
-        offPosX = onPosX * -1;
+        offPosX = onPosX * -0.7f;
         optionsMenu = GetComponentInParent<OptionsMenu>();
     }
 
