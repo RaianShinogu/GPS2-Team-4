@@ -273,11 +273,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 5884906683780760427, guid: 3ac4d4f2ee511c04f89931d5042e95c5,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -6.7
-      objectReference: {fileID: 0}
     - target: {fileID: 5884906685802719423, guid: 3ac4d4f2ee511c04f89931d5042e95c5,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -432,6 +427,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 1d65d4c45afd0614aa63798c42c7d639,
         type: 3}
+    - target: {fileID: 5884906683780760427, guid: 3ac4d4f2ee511c04f89931d5042e95c5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -6.7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ac4d4f2ee511c04f89931d5042e95c5, type: 3}
 --- !u!1 &166218587
@@ -792,7 +792,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &403248279
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1526,11 +1526,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 5884906683780760427, guid: 3ac4d4f2ee511c04f89931d5042e95c5,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -6.7
-      objectReference: {fileID: 0}
     - target: {fileID: 5884906685802719423, guid: 3ac4d4f2ee511c04f89931d5042e95c5,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1685,6 +1680,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 1d65d4c45afd0614aa63798c42c7d639,
         type: 3}
+    - target: {fileID: 5884906683780760427, guid: 3ac4d4f2ee511c04f89931d5042e95c5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -6.7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ac4d4f2ee511c04f89931d5042e95c5, type: 3}
 --- !u!1 &1036899383

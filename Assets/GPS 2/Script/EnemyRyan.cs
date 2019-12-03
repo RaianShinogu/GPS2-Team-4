@@ -8,7 +8,7 @@ using System.Collections;
 public class EnemyRyan : MonoBehaviour
 {
     public bool vistor2;
-
+    public Animator scare;
     [Header("RaycastTesing")]
     public float speed = 5f;
    
@@ -62,9 +62,11 @@ public class EnemyRyan : MonoBehaviour
     {
         
         health += amount;
+        scare.Play("Visitor_Scaredd");
 
 
-       
+
+
         Debug.Log(health);
         
 
