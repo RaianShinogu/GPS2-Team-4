@@ -1,0 +1,571 @@
+fileFormatVersion: 2
+guid: 865a276e7f2da5c458fb3f1205a89904
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4434483658066107417
+    second: L EYEBROW
+  - first:
+      213: 5818619478701013397
+    second: R EYEBROW
+  - first:
+      213: -4134903049265638890
+    second: L PUPIL
+  - first:
+      213: -1343176910323019421
+    second: R PUPIL
+  - first:
+      213: -5143143422076278770
+    second: HEAD
+  - first:
+      213: -9040017796041919318
+    second: L FORE
+  - first:
+      213: 8076670522060463504
+    second: R FORE
+  - first:
+      213: 7740678723223535695
+    second: BODY
+  - first:
+      213: -1533989492069583826
+    second: JAW
+  - first:
+      213: 4486690742676446219
+    second: L ARM
+  - first:
+      213: -7464583927703953130
+    second: R ARM
+  - first:
+      213: -8210058595767609884
+    second: L HAND
+  - first:
+      213: 8701197361204201376
+    second: R HAND
+  - first:
+      213: -3258029830021875397
+    second: L THIGH
+  - first:
+      213: 5720140988693667043
+    second: L LAP
+  - first:
+      213: 1630672973961883415
+    second: R LAP
+  - first:
+      213: 4065024662622817904
+    second: R THIGH
+  - first:
+      213: -166831282576480481
+    second: L FOOT
+  - first:
+      213: -6671306818904814964
+    second: R FOOT
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: L EYEBROW
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 1830
+        width: 174
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7486b6f9ff92f794eb66c471526657b5
+      internalID: 4434483658066107417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R EYEBROW
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 1850
+        width: 241
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c90bf608bad20b4fa76ee500c92a236
+      internalID: 5818619478701013397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L PUPIL
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 1648
+        width: 20
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb88bc63a7245424cadf3ed7829b3654
+      internalID: -4134903049265638890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R PUPIL
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 1660
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36b424bc69a765940a4ee5a7f89a2c4c
+      internalID: -1343176910323019421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEAD
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1053
+        width: 703
+        height: 495
+      alignment: 9
+      pivot: {x: 0.5648001, y: 0.11587876}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e844553f72bc7f94fbe87f8770973b74
+      internalID: -5143143422076278770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L FORE
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 909
+        width: 24
+        height: 157
+      alignment: 9
+      pivot: {x: 0.49999747, y: 0.8674161}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 401d8787671423d41869f4141556f015
+      internalID: -9040017796041919318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R FORE
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 920
+        width: 24
+        height: 157
+      alignment: 9
+      pivot: {x: 0.32831573, y: 0.8411725}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6f9dc6eb3139d346ab7d936b2299516
+      internalID: 8076670522060463504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BODY
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 961
+        width: 128
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f53055c7d35229f46a26d5959d8ed35e
+      internalID: 7740678723223535695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JAW
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 788
+        width: 223
+        height: 173
+      alignment: 9
+      pivot: {x: 0.74943674, y: 0.84534395}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ca5c6918965f04399fb3e149243e51
+      internalID: -1533989492069583826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L ARM
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 714
+        width: 26
+        height: 136
+      alignment: 9
+      pivot: {x: 0.5792354, y: 0.8635568}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 509cd502775b0ea448564253c8d68a23
+      internalID: 4486690742676446219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R ARM
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 714
+        width: 27
+        height: 136
+      alignment: 9
+      pivot: {x: 0.42369023, y: 0.8484084}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2097822f12d90ce4eb18eb16b962248d
+      internalID: -7464583927703953130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L HAND
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 596
+        width: 35
+        height: 64
+      alignment: 9
+      pivot: {x: 0.735444, y: 0.78970814}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edaa0a32972d15e4db5212a3b06849b1
+      internalID: -8210058595767609884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R HAND
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 596
+        width: 35
+        height: 45
+      alignment: 9
+      pivot: {x: 0.20568848, y: 0.8204671}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd37d43926862c546b8926fe7aa0e128
+      internalID: 8701197361204201376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L THIGH
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 204
+        width: 30
+        height: 155
+      alignment: 9
+      pivot: {x: 0.5686676, y: 0.85886645}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79eed1ea4678c18468ba35c184b6ee66
+      internalID: -3258029830021875397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L LAP
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 280
+        width: 50
+        height: 157
+      alignment: 9
+      pivot: {x: 0.7472168, y: 0.91990495}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bae18775be1ef049bc5fc40aec0b0d5
+      internalID: 5720140988693667043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R LAP
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 283
+        width: 39
+        height: 156
+      alignment: 9
+      pivot: {x: 0.18304756, y: 0.8433597}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59182b88686935f418859ad5592bf4bb
+      internalID: 1630672973961883415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R THIGH
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 159
+        width: 38
+        height: 153
+      alignment: 9
+      pivot: {x: 0.28313565, y: 0.8635579}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b99fd5151ce6cab41aace558cff8f0e2
+      internalID: 4065024662622817904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: L FOOT
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 90
+        width: 132
+        height: 61
+      alignment: 9
+      pivot: {x: 0.7185017, y: 0.7364099}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aec5f412acc5dc848b5610d746b9ce9d
+      internalID: -166831282576480481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: R FOOT
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 57
+        width: 131
+        height: 61
+      alignment: 9
+      pivot: {x: 0.75162137, y: 0.7701849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67ff164c4def1f04e956252aa406ad8f
+      internalID: -6671306818904814964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 4fa6e06d64805db41a7b8adeceb949e0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

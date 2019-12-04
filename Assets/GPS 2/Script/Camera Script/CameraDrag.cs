@@ -26,7 +26,7 @@ public class CameraDrag : MonoBehaviour
         if (simulateMouse) DragWithMouse();
         else DragWithTouch();
 
-        MoveByDragDirection();
+        //MoveByDragDirection();
     }
 
     private void MoveByDragDirection()
@@ -74,7 +74,8 @@ public class CameraDrag : MonoBehaviour
             {
                 dragDirection.y  = 0;
             }
-            
+
+            MoveByDragDirection();
         }
     }
 
@@ -98,6 +99,7 @@ public class CameraDrag : MonoBehaviour
             //dragDirection.x = Input.GetAxis("Mouse X");
             //dragDirection.y = Input.GetAxis("Mouse Y");
 
+            MoveByDragDirection();
         }
 
     }

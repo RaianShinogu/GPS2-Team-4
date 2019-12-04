@@ -24,9 +24,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4014013095199630273}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.3603516, y: 20.64, z: 17.433594}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.6427876, y: 0, z: 0, w: 0.7660445}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 4014013095520445225}
   - {fileID: 4014013096951996429}
@@ -46,7 +46,7 @@ Transform:
   - {fileID: 4014013096870171970}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 80, y: 0, z: 0}
 --- !u!95 &4014013095199630279
 Animator:
   serializedVersion: 3
@@ -967,6 +967,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4014013096113289033}
   - component: {fileID: 4014013096113289038}
+  - component: {fileID: 3405583735432700765}
+  - component: {fileID: 4195338302825702614}
   m_Layer: 0
   m_Name: Torso
   m_TagString: Untagged
@@ -1038,6 +1040,44 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3405583735432700765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4014013096113289032}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb0cb325363fae141b78019125d68fdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 30
+  wolfPrab: {fileID: 4014013095199630273}
+  enemyTag: Visitor
+  range: 15
+  speed: 15
+  Pref: {fileID: 4014013095199630273}
+  initialPos: {x: 0, y: 0, z: 0}
+--- !u!114 &4195338302825702614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4014013096113289032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb0cb325363fae141b78019125d68fdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 30
+  wolfPrab: {fileID: 4014013095199630273}
+  enemyTag: Visitor
+  range: 15
+  speed: 15
+  Pref: {fileID: 4014013095199630273}
+  initialPos: {x: 0, y: -20.27104, z: -17.37292}
 --- !u!1 &4014013096182318489
 GameObject:
   m_ObjectHideFlags: 0

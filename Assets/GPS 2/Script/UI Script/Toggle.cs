@@ -41,7 +41,7 @@ public class Toggle: MonoBehaviour
         handleSize = handleRect.sizeDelta.x;
         float toggleSizeX = toggle.sizeDelta.x;
         onPosX = (toggleSizeX / 2) - (handleSize / 2) - handleOffset;
-        offPosX = onPosX * -1;
+        offPosX = onPosX * -0.7f;
         optionsMenu = GetComponentInParent<OptionsMenu>();
     }
 
@@ -67,14 +67,14 @@ public class Toggle: MonoBehaviour
 
     void Update()
     {
-
+        
         if (switching)
         {
             theToggle(isOn);
         }
     }
 
-    public void DoYourStaff()
+    public void DoYourStuff()
     {
         //Debug.Log(isOn);
         if (Music)
@@ -100,13 +100,14 @@ public class Toggle: MonoBehaviour
     {
         if((Music && Global.audiomanager.BGMon == false)|| (SFX && Global.audiomanager.SFXon == false))
         {
-            isOn = false;
+            this.isOn = false;
         }
-      
+
     }
 
     public void theToggle(bool toggleStatus)
     {
+        
         if (!onIcon.activeSelf || !offIcon.activeSelf)
         {
             onIcon.SetActive(true);
@@ -127,7 +128,7 @@ public class Toggle: MonoBehaviour
             Transparency(offIcon, 1f, 0f);
             handleTransform.localPosition = SmoothMove(handle, offPosX, onPosX);
         }
-
+        
     }
 
 
@@ -165,12 +166,12 @@ public class Toggle: MonoBehaviour
             {
                 case true:
                     isOn = false;
-                    DoYourStaff();
+                    DoYourStuff();
                     break;
 
                 case false:
                     isOn = true;
-                    DoYourStaff();
+                    DoYourStuff();
                     break;
             }
 

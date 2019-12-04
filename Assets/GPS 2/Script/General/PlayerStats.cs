@@ -16,9 +16,5 @@ public class PlayerStats : MonoBehaviour
         losePoint = startlosePoint;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }
