@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class wareWolf : MonoBehaviour
 {
+    
+
     private Transform target;
     private bool isD = true, isS = false;
     public int damage;
@@ -22,6 +24,7 @@ public class wareWolf : MonoBehaviour
     {
         initialPos = this.transform.position;
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
+        buildingSpawn = BuildingSpawn.instance;
     }
 
     void UpdateTarget()
@@ -33,7 +36,7 @@ public class wareWolf : MonoBehaviour
 
         foreach (GameObject enemy in enemies)
         {
-            if (enemy.GetComponent<EnemyRyan>().health < 40)//a
+            if (enemy.GetComponent<EnemyRyan>().health < 70)//a
             {
                 float distanceToEnemy = Vector3.Distance(transform.position, enemy.transform.position);
                 if (distanceToEnemy < shortestDistance)
@@ -59,9 +62,6 @@ public class wareWolf : MonoBehaviour
         if (target == null)
             return;
 
-        if (isDone == true)
-            return;
-
         Vector3 dir = target.position - transform.position;
         float distanceThisFrame = speed * Time.deltaTime;
 
@@ -69,8 +69,7 @@ public class wareWolf : MonoBehaviour
         {
             Damage(target);
             Destroy(wolfPrab);
-            //Pref.transform.position = initialPos;
-            isDone = true;   
+            buildingSpawn.bulletLeft--;
             return;
         }
 

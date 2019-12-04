@@ -485,6 +485,7 @@ MonoBehaviour:
   scare: {fileID: 8693759950607225133}
   speed: 5
   agent: {fileID: -9106911618537900921}
+  Income: 10
   health: 0
   maxHealth: 100
   health1: {fileID: 527996549661410737}

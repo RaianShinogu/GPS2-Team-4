@@ -11,9 +11,10 @@ public class EnemyRyan : MonoBehaviour
     public Animator scare;
     [Header("RaycastTesing")]
     public float speed = 5f;
-   
+    BuildManager buildManager;
     GameObject targetEnd;
     [SerializeField] NavMeshAgent agent;
+    public int Income;
 
     //public float speed = 10f;
 
@@ -35,43 +36,24 @@ public class EnemyRyan : MonoBehaviour
 
 
     public static bool finalDeath = false;
-    
+    bool firstHit = true;
 
     // Start is called before the first frame update
     void Start()
     {
-        //agent.SetDestination(targetEnd.transform.position);
-        //StartCoroutine(RecalculatePathRotine());
         GameObject gameMaster = GameObject.Find("Game Manager");
         WaveSpawnRyan waveSpawnRyan = gameMaster.GetComponent<WaveSpawnRyan>();
         enemyLeft = waveSpawnRyan.totalEnemies;
-        
-        //transform.eulerAngles = new Vector3(80, 0, 0);
-        target = WayPoint.points[0];        
-        //rend = GetComponent<Renderer>();
-        //rend.material.SetColor("_FirstOutlineColor", Color.green);
+        target = WayPoint.points[0];
+        buildManager = BuildManager.instance;
 
     }
 
-    void Awake()
-    {
-        //targetEnd = GameObject.Find("End");
-        
-    }
     public void TakeDamage(float amount)
     {
         
         health += amount;
         scare.Play("Visitor_Scaredd");
-
-
-
-
-        Debug.Log(health);
-        
-
-
-        //scareMeter.fillAmount = health/maxHealth;
 
         if(health >= maxHealth)
         {
@@ -80,21 +62,10 @@ public class EnemyRyan : MonoBehaviour
         }
     }
 
-    /*IEnumerator RecalculatePathRotine()
-    {
-        WaitForSeconds delay = new WaitForSeconds(0.1f);
-        while (true)
-        {
-            yield return new WaitForSeconds(0.1f);
-            agent.SetDestination(targetEnd.transform.position);
-        }
-    }*/
-
     private void takeDamageChange()
     {
-        if (health >= 0 && health <= 20)
+        if (health >= 0 && health <= 49)
         {
-            //rend.material.SetColor("_FirstOutlineColor", Color.green);
             health1.SetActive(true);
             health2.SetActive(false);
             health3.SetActive(false);
@@ -106,10 +77,15 @@ public class EnemyRyan : MonoBehaviour
                 health3v2.SetActive(false);
             }
 
+            if (firstHit == false)
+            {
+                Income = (Income * 25)/ 100;
+                firstHit = true;
+            }
+
         }
-        else if (health > 20 && health <= 40)
+        else if (health > 50 && health <= 69)
         {
-            //rend.material.SetColor("_FirstOutlineColor", Color.blue);
             health1.SetActive(false);
             health2.SetActive(true);
             health3.SetActive(false);
@@ -122,9 +98,8 @@ public class EnemyRyan : MonoBehaviour
             }
 
         }
-        else if (health > 40)
+        else if (health >= 70)
         {
-            //rend.material.SetColor("_FirstOutlineColor", Color.red);
             health1.SetActive(false);
             health2.SetActive(false);
             health3.SetActive(true);
@@ -136,6 +111,11 @@ public class EnemyRyan : MonoBehaviour
                 health3v2.SetActive(true);
             }
 
+            if(firstHit == true)
+            {
+                buildManager.income(Income);
+                firstHit = false;
+            }
         }
 
     }
@@ -148,7 +128,6 @@ public class EnemyRyan : MonoBehaviour
         {
 
             health = health - (reduceHealthAmnt * Time.deltaTime);
-            Debug.Log(health);
 
         }
 
@@ -164,12 +143,8 @@ public class EnemyRyan : MonoBehaviour
     void Update()
     {
         takeDamageChange();
-
         reduceHealthOverTime();
-
         Raycast();
-        //transform.Translate(speed * Time.deltaTime, 0, 0);
-
         Vector3 dir = target.position - transform.position;
         transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
 
@@ -178,18 +153,6 @@ public class EnemyRyan : MonoBehaviour
             GetNextWaypoint();
         }
 
-        /*if(speed >= 10)
-        {
-            speed = 10;
-        }
-        else if(speed > 0 && speed < 10)
-        {
-            speed += 1 * Time.deltaTime;
-        }
-        else if (speed <= 0)
-        {
-            speed = 1;
-        }*/
     }
 
     private void GetNextWaypoint()
@@ -236,32 +199,9 @@ public class EnemyRyan : MonoBehaviour
 
     void Raycast()
     {
-        RaycastHit backHit;
-        RaycastHit leftHit;
         RaycastHit rightHit;
-        RaycastHit forwardHit;
-        //Debug.DrawRay(transform.position + Vector3.down/2 , transform.TransformDirection(Vector3.back) * 0.1f, Color.red); //down
-        //Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.left) * 5f, Color.red); //(back of the object)
-        Debug.DrawRay(transform.position + Vector3.down / 2, transform.TransformDirection(Vector3.right) * 0.2f, Color.red); //front
-        //Debug.DrawRay(transform.position + Vector3.down/2 , transform.TransformDirection(Vector3.forward) * 0.1f, Color.red);//up
-
-
-        //straight
         if (Physics.Raycast(transform.position + Vector3.down / 2, transform.TransformDirection(Vector3.right), out rightHit, 0.2f))
         {
-            /*if (rightHit.transform.CompareTag("EnemyTurnLeft"))
-            {
-                Debug.Log("turn left");
-                rotation += turnLeft;
-                transform.eulerAngles = new Vector3(80, rotation, 0);
-            }
-
-            else if (rightHit.transform.CompareTag("EnemyTurnRight"))
-            {
-                Debug.Log("turn right");
-                rotation += turnRight;
-                transform.eulerAngles = new Vector3(80, rotation, 0);
-            }*/
 
              if (rightHit.transform.CompareTag("Finish"))
             {

@@ -113,5 +113,11 @@ public class BuildManager : MonoBehaviour
         gold -= 44;
     }
 
-    
+    #region incomeManager
+    public void income(int amount)
+    {    
+        gold += amount;     
+        
+    }
+    #endregion
 }
