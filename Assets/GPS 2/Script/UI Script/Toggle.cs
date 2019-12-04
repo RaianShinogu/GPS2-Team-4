@@ -67,7 +67,7 @@ public class Toggle: MonoBehaviour
 
     void Update()
     {
-
+        //VolumeStatus();
         if (switching)
         {
             theToggle(isOn);
