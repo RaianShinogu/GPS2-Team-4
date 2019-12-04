@@ -102,7 +102,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5166385001555288770
 Transform:
   m_ObjectHideFlags: 0
@@ -494,6 +494,7 @@ MonoBehaviour:
   health2v2: {fileID: 0}
   health3v2: {fileID: 0}
   outlineColor: {r: 0, g: 0, b: 0, a: 0}
+  reduceHealthAmnt: 2
 --- !u!33 &-728008757661306473
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -532,7 +533,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &770734721932813239
 Transform:
   m_ObjectHideFlags: 0
@@ -764,26 +765,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5125873859494057817, guid: 73e8e9b0a703b4a4a988260d20fe49f8,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5125873859494057817, guid: 73e8e9b0a703b4a4a988260d20fe49f8,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 969617370301345954, guid: 73e8e9b0a703b4a4a988260d20fe49f8,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 969617370301345954, guid: 73e8e9b0a703b4a4a988260d20fe49f8,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 1019692296631477934, guid: 73e8e9b0a703b4a4a988260d20fe49f8,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -903,6 +884,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5125873859494057817, guid: 73e8e9b0a703b4a4a988260d20fe49f8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5125873859494057817, guid: 73e8e9b0a703b4a4a988260d20fe49f8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 969617370301345954, guid: 73e8e9b0a703b4a4a988260d20fe49f8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 969617370301345954, guid: 73e8e9b0a703b4a4a988260d20fe49f8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}

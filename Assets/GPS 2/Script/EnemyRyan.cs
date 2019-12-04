@@ -27,7 +27,7 @@ public class EnemyRyan : MonoBehaviour
     public Color outlineColor;
     
     //lose amount
-    private float reduceHealthAmnt = 2.5f;
+    public float reduceHealthAmnt = 2.0f;
 
     Renderer rend;
     private int enemyLeft;
@@ -148,6 +148,7 @@ public class EnemyRyan : MonoBehaviour
         {
 
             health = health - (reduceHealthAmnt * Time.deltaTime);
+            Debug.Log(health);
 
         }
 
