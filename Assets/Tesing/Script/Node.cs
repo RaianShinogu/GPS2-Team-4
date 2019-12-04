@@ -19,8 +19,8 @@ public class Node : MonoBehaviour
 
     [HideInInspector]public GameObject building;
     [HideInInspector] public GameObject buildingGhosh;
-    private static bool haveGhost;
-    private static GameObject ghostContainer;
+    public static bool haveGhost;
+    public static GameObject ghostContainer;
 
     private GameObject buildingChoice;
 

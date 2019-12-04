@@ -22,6 +22,10 @@ TagManager:
   - PileOfGoop
   - Wolf
   - JackInBox
+  - Floor
+  - Fence
+  - Entrance
+  - Path
   layers:
   - Default
   - TransparentFX

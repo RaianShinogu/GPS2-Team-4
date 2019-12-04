@@ -33,7 +33,7 @@ public class NodeUI : MonoBehaviour
         instance = this;
     }
 
-    private void Start()
+    void Start()
     {
         isOpenBuildingUI = false;
         this.prevNode = null;
