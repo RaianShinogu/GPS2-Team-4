@@ -103,7 +103,8 @@ public class Turret : MonoBehaviour
             if( BuildingType == "Building 1")
             {
                  building.SetBool("isAttacking", true);
-                Instantiate(jackOfTheBox, spawn.transform.position + Vector3.back, jackOfTheBox.transform.rotation);
+                GameObject jack = Instantiate(jackOfTheBox, spawn.transform.position + Vector3.back, jackOfTheBox.transform.rotation);
+                jack.transform.parent = spawn.transform;
                  Shoot();
                 fireCountDown = totalFireCountDown;
             }

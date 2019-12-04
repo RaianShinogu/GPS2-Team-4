@@ -511,6 +511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vistor2: 1
+  scare: {fileID: 812137954668577259}
   speed: 5
   agent: {fileID: -9106911618537900921}
   health: 0
@@ -875,6 +876,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5727f6f89ebe20d41a6d3284e759e9d5, type: 3}
+--- !u!95 &812137954668577259 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 330226973815991862, guid: 5727f6f89ebe20d41a6d3284e759e9d5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1139543215753392093}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3427956764511367746
 PrefabInstance:
   m_ObjectHideFlags: 0
