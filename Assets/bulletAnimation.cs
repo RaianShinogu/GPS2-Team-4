@@ -10,6 +10,6 @@ public class bulletAnimation : MonoBehaviour
     private void Awake()
     {
         BulletAnimation.Play(animationMove , 0, 0.25f);
-        Destroy(gameObject, 1.5f);
+        Destroy(gameObject, 1.1f);
     }
 }

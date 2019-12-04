@@ -43,9 +43,7 @@ public class BuildingSpawn : MonoBehaviour
             GameObject bulletPrefab = Instantiate(bulletPref, spawnPosition.transform.position + offSet , spawnPosition.transform.rotation);
             GameObject bulletPrefab1 = Instantiate(bulletPref, spawnPosition2.transform.position + offSet, spawnPosition.transform.rotation);
             GameObject bulletPrefab2 = Instantiate(bulletPref, spawnPosition3.transform.position + offSet, spawnPosition.transform.rotation);
-            bulletPrefab.transform.parent = spawnPosition.transform;
-            bulletPrefab1.transform.parent = spawnPosition2.transform;
-            bulletPrefab2.transform.parent = spawnPosition3.transform;
+
             currentBulletAmount++;
         }
 
