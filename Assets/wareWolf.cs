@@ -61,7 +61,6 @@ public class wareWolf : MonoBehaviour
 
         if (dir.magnitude <= distanceThisFrame)
         {
-            //HitTarget();
             Damage(target);
             Destroy(wolfPrab);
             BuildingSpawn.bulletLeft -= 1;

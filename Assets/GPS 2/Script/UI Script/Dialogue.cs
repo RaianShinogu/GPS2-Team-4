@@ -8,7 +8,7 @@ public class Dialogue : MonoBehaviour
 {
     UIPathManager uiPathManager;
     NodePathManager nodePathManager;
-    public Text mytext = null;
+    public Text endtext = null;
     public Text GoldText = null;
     public Text spookText = null;
     public GameObject buildmanager;
@@ -30,6 +30,7 @@ public class Dialogue : MonoBehaviour
         //if(mytext != null) mytext.text = (nodePathManager.maxCount - nodePathManager.count).ToString() + "/" + nodePathManager.maxCount.ToString();
         if(spookText != null) spookText.text = PlayerStats.spookPoint.ToString();
 
+        if (endtext != null) endtext.text = PlayerStats.losePoint.ToString();
     }
 
    
