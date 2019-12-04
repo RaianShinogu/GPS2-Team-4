@@ -12,6 +12,7 @@ public class BuildingSpawn : MonoBehaviour
     public int maxBulletSpawn;
     public Vector3 offSet;
     public static int bulletLeft = 3;
+    public Animator building;
     private int currentBulletAmount;
     private bool isFull;
     // Start is called before the first frame update
@@ -19,6 +20,13 @@ public class BuildingSpawn : MonoBehaviour
     {
         isFull = false;
         currentBulletAmount = 0;
+        building.SetBool("isAttacking", true);
+        GameObject bulletPrefab = Instantiate(bulletPref, spawnPosition.transform.position + offSet, spawnPosition.transform.rotation);
+        GameObject bulletPrefab1 = Instantiate(bulletPref, spawnPosition2.transform.position + offSet, spawnPosition.transform.rotation);
+        GameObject bulletPrefab2 = Instantiate(bulletPref, spawnPosition3.transform.position + offSet, spawnPosition.transform.rotation);
+        bulletPrefab.transform.parent = spawnPosition.transform;
+        bulletPrefab1.transform.parent = spawnPosition2.transform;
+        bulletPrefab2.transform.parent = spawnPosition3.transform;
     }
 
     // Update is called once per frame
@@ -43,7 +51,9 @@ public class BuildingSpawn : MonoBehaviour
             GameObject bulletPrefab = Instantiate(bulletPref, spawnPosition.transform.position + offSet , spawnPosition.transform.rotation);
             GameObject bulletPrefab1 = Instantiate(bulletPref, spawnPosition2.transform.position + offSet, spawnPosition.transform.rotation);
             GameObject bulletPrefab2 = Instantiate(bulletPref, spawnPosition3.transform.position + offSet, spawnPosition.transform.rotation);
-
+            bulletPrefab.transform.parent = spawnPosition.transform;
+            bulletPrefab1.transform.parent = spawnPosition2.transform;
+            bulletPrefab2.transform.parent = spawnPosition3.transform;
             currentBulletAmount++;
         }
 

@@ -12,11 +12,15 @@ public class wareWolf : MonoBehaviour
     public string enemyTag = "Visitor";
     public float range;
     public float speed;
+    public GameObject Pref;
+    public Vector3 initialPos;
 
+    bool isDone;
     BuildingSpawn buildingSpawn;
     // Start is called before the first frame update
     void Start()
     {
+        initialPos = this.transform.position;
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
     }
 
@@ -55,6 +59,8 @@ public class wareWolf : MonoBehaviour
         if (target == null)
             return;
 
+        if (isDone == true)
+            return;
 
         Vector3 dir = target.position - transform.position;
         float distanceThisFrame = speed * Time.deltaTime;
@@ -63,8 +69,8 @@ public class wareWolf : MonoBehaviour
         {
             Damage(target);
             Destroy(wolfPrab);
-            BuildingSpawn.bulletLeft -= 1;
-            Debug.Log("Building Spawn" + BuildingSpawn.bulletLeft);
+            //Pref.transform.position = initialPos;
+            isDone = true;   
             return;
         }
 
