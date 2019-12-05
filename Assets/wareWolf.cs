@@ -4,27 +4,31 @@ using UnityEngine;
 
 public class wareWolf : MonoBehaviour
 {
-    
+    #region Public Variable
+    public GameObject wolfPrab;
+    public GameObject Pref;
+    [HideInInspector]
+    public string enemyTag = "Visitor";
+    #endregion
 
+    #region Designer Editor
+    [Header("Designer Editor")]
+    public int damage;
+    public float range; 
+    public float speed;
+    #endregion
+
+    #region Private Variable
     private Transform target;
     private bool isD = true, isS = false;
-    public int damage;
-
-    public GameObject wolfPrab;
-    public string enemyTag = "Visitor";
-    public float range;
-    public float speed;
-    public GameObject Pref;
-    public Vector3 initialPos;
-
     bool isDone;
     BuildingSpawn buildingSpawn;
-    // Start is called before the first frame update
+    #endregion
+
     void Start()
     {
-        initialPos = this.transform.position;
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
-        buildingSpawn = BuildingSpawn.instance;
+        buildingSpawn = GetComponent<BuildingSpawn>();
     }
 
     void UpdateTarget()
@@ -56,7 +60,7 @@ public class wareWolf : MonoBehaviour
             target = null;
         }
     }
-    // Update is called once per frame
+
     void Update()
     {
         if (target == null)
@@ -68,7 +72,7 @@ public class wareWolf : MonoBehaviour
         if (dir.magnitude <= distanceThisFrame)
         {
             Damage(target);
-            Destroy(wolfPrab);
+            wolfPrab.SetActive(false);
             buildingSpawn.bulletLeft--;
             return;
         }

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class BuildManager : MonoBehaviour
 {
+    #region BuildManager
     public static BuildManager instance;
-    
     void Awake()
     {
         if(instance != null)
@@ -15,7 +15,9 @@ public class BuildManager : MonoBehaviour
         }
         instance = this;
     }
+    #endregion
 
+    #region Public Variable
     public GameObject Building1;
     public GameObject Building2;
     public GameObject Building3;
@@ -25,16 +27,19 @@ public class BuildManager : MonoBehaviour
     public GameObject Building1Ghosh;
     public GameObject Building2Ghosh;
     public GameObject Building3Ghosh;
-    //public GameObject demolish;
-    ///public GameObject buildUI;
-    //public GameObject endStageButton;
-
-    //public GameObject uiCanvas;
-
-    [SerializeField]private GameObject buildingChoice;
+    [HideInInspector]
     public string type;
-    private int StageCount = 0;
+    #endregion
+
+    #region Designer Editor
+    [Header("Designer Editor")]
     public int gold = 100;
+    #endregion
+
+    #region Private Variable
+    [SerializeField]private GameObject buildingChoice;
+    private int StageCount = 0;
+    #endregion
 
     public GameObject getBuildingChoice()
     {
@@ -53,20 +58,12 @@ public class BuildManager : MonoBehaviour
 
     public void EndStage()
     {
-        //uiCanvas.SetActive(false);
         if (StageCount >= 1)
         {
             buildingChoice = null;
-            //buildUI.SetActive(false);
-            //endStageButton.SetActive(false);
            
         }
         StageCount++;
-    }
-    public void setDemolishMode()
-    {
-        
-        //buildingChoice = demolish;
     }
 
     public void Building1Cost()

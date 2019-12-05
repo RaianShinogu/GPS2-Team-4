@@ -7,38 +7,34 @@ using System.Collections;
 
 public class EnemyRyan : MonoBehaviour
 {
+    #region Public Variable
+    public GameObject health1, health2, health3, health1v2, health2v2, health3v2;
     public bool vistor2;
     public Animator scare;
-    [Header("RaycastTesing")]
-    public float speed = 5f;
-    BuildManager buildManager;
-    GameObject targetEnd;
-    [SerializeField] NavMeshAgent agent;
-    public int Income;
-
-    //public float speed = 10f;
-
+    public static bool finalDeath = false;
+    [HideInInspector]
     public float health = 0;
+    #endregion
+
+    #region Designer Editor
+    [Header ("Designer Editor")]
+    public float speed = 5f;
+    public int Income;
     public float maxHealth = 100;
-    public GameObject health1, health2, health3, health1v2, health2v2, health3v2;
-
-    //private Transform target;
-    private int wavepointindex = 0;
-
-    public Color outlineColor;
-    
-    //lose amount
     public float reduceHealthAmnt = 2.0f;
+    #endregion
 
+    #region Private Variable
+    GameObject targetEnd;
     Renderer rend;
+    BuildManager buildManager;
     private int enemyLeft;
     private Transform target;
-
-
-    public static bool finalDeath = false;
+    private int wavepointindex = 0;
     bool firstHit = true;
-
-    // Start is called before the first frame update
+    [SerializeField] NavMeshAgent agent;
+    #endregion
+   
     void Start()
     {
         GameObject gameMaster = GameObject.Find("Game Manager");
@@ -79,7 +75,7 @@ public class EnemyRyan : MonoBehaviour
 
             if (firstHit == false)
             {
-                Income = (Income * 25)/ 100;
+                Income = (Income * 75)/ 100;
                 firstHit = true;
             }
 
@@ -139,7 +135,6 @@ public class EnemyRyan : MonoBehaviour
         speed -= 4;
     }
 
-    // Update is called once per frame
     void Update()
     {
         takeDamageChange();

@@ -41,8 +41,6 @@ public class BuildingSelectionUI : MonoBehaviour
     public void DemolishBuilding()
     {
         Debug.Log("Demolish mode!");
-        buildManager.setDemolishMode();
-
         actor1button.color = Color.white;
         actor2button.color = Color.white;
         //demolishbutton.color = Color.red;

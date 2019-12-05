@@ -5,17 +5,7 @@ using UnityEngine;
 
 public class Turret : MonoBehaviour
 {
-    private Transform target;
-
-    [Header("Attributes")]
-
-    public float range = 5f;
-    public float fireRate = 1f;
-    public float fireCountDown = 0f;
-    float totalFireCountDown;
-
-    public bool isSlow = false;
-    public bool isDamage = true;
+    
     public Animator building;
     public string BuildingType;
     [SerializeField] GameObject hand;
@@ -23,17 +13,22 @@ public class Turret : MonoBehaviour
     [SerializeField] GameObject towerRange;
     public GameObject jackOfTheBox;
     public GameObject spawn;
-    public bool isGhost;
-
-    //
-    private Queue<Bullet> bulletPool = new Queue<Bullet>();
-    [Header("Unity Setup Fields")]
-
+    public bool isSlow = false;
+    public bool isDamage = true;
+    public bool isGhost;   
+    [HideInInspector]
     public string enemyTag = "Visitor";
-
     public GameObject bulletPrefab;
     public Transform firePoint;
+
+    [Header ("Designer Editor")]
+    public float range = 5f;
+    public float fireCountDown = 0f;
+
+    private Queue<Bullet> bulletPool = new Queue<Bullet>();
+    private Transform target;
     bool coolDown = false;
+    float totalFireCountDown;
 
     // Start is called before the first frame update
     void Start()
@@ -111,7 +106,7 @@ public class Turret : MonoBehaviour
 
             else if (BuildingType == "Building 2" )
             {
-                building.SetBool("isAttacking", true);
+                //building.Play("Attack");
                 Shoot();
                 fireCountDown = totalFireCountDown;
             }

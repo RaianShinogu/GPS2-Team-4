@@ -145,7 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 13.5
   fireRate: 1
-  fireCountDown: 1.5
+  fireCountDown: 2
   isSlow: 0
   isDamage: 1
   building: {fileID: 1624193766553156131}
