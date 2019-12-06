@@ -10,10 +10,10 @@ public class CameraDrag : MonoBehaviour
     Vector3 dragDirection = Vector3.zero; //The direction of our drag input
     float decayRate = 5f;
     public float maxZ = -5.0f;
-    public float mixZ = -19.52f;
+    public float minZ = -19.52f;
 
     public float maxX = 64.3f;
-    public float mixX = -35.1f;
+    public float minX = -35.1f;
 
     bool canDrag = true;
     Vector3 lastMousePosition = Vector3.zero;
@@ -55,7 +55,7 @@ public class CameraDrag : MonoBehaviour
            touchPosition = Camera.main.ScreenToWorldPoint(touchPosition);
             dragDirection.x = Input.GetTouch(0).deltaPosition.x / (float)-Screen.width;
             dragDirection.y = Input.GetTouch(0).deltaPosition.y / (float)-Screen.height;
-            if (this.transform.position.x < mixX && dragDirection.x < 0)
+            if (this.transform.position.x < minX && dragDirection.x < 0)
             {
                 dragDirection.x = 0;
             }
@@ -65,7 +65,7 @@ public class CameraDrag : MonoBehaviour
                 dragDirection.x = 0;
             }
 
-            if (this.transform.position.z < mixZ && dragDirection.y < 0)
+            if (this.transform.position.z < minZ && dragDirection.y < 0)
             {
                 dragDirection.y = 0;
             }

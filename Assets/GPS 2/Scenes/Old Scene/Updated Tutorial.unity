@@ -226,7 +226,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &10248569
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -327,7 +329,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &11573750
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -428,7 +432,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1 &12346894
 GameObject:
   m_ObjectHideFlags: 0
@@ -603,7 +609,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &31215149
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -704,7 +712,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &35444471
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -805,7 +815,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!114 &50244145 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1015660080755091891, guid: 5c8cb41558714084eacc5f002406bc55,
@@ -948,7 +960,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &63112330
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1049,7 +1063,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &80761544
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1155,7 +1171,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &81118012
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1256,7 +1274,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &81472026
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1357,7 +1377,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1 &99969172
 GameObject:
   m_ObjectHideFlags: 0
@@ -1532,7 +1554,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &121241509
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1633,7 +1657,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1 &127114370
 GameObject:
   m_ObjectHideFlags: 0
@@ -1732,7 +1758,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   simulateMouse: 1
   dragSensitivity: 300
-  cameraLimit: 1
+  maxZ: -5
+  minZ: -19.52
+  maxX: 64.3
+  minX: -35.1
 --- !u!1001 &131544470
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1833,7 +1862,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &133122708
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1934,7 +1965,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &152748618
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2035,7 +2068,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &153389438
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2136,122 +2171,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!4 &162671445 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3991052059632090206, guid: 0f92943cc3129694d92fcd05f0a7e1d7,
     type: 3}
   m_PrefabInstance: {fileID: 1211408374}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &169072098
+--- !u!1 &169072098 stripped
 GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5086938109732883775, guid: 751b07aed5e86d3419ac7ebb04abbbba,
+    type: 3}
+  m_PrefabInstance: {fileID: 5086938109901625565}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 169072103}
-  - component: {fileID: 169072102}
-  - component: {fileID: 169072101}
-  - component: {fileID: 169072100}
-  - component: {fileID: 169072099}
-  m_Layer: 0
-  m_Name: Blink
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &169072099
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 169072098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 371a8dae5f829a54d9b02449f5f8b987, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FadeDuration: 1
-  Color1: {r: 0, g: 0, b: 0, a: 1}
-  Color2: {r: 0.7075472, g: 0.7075472, b: 0.7075472, a: 1}
---- !u!65 &169072100
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 169072098}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &169072101
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 169072098}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &169072102
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 169072098}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &169072103
+--- !u!4 &169072103 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5086938109732883770, guid: 751b07aed5e86d3419ac7ebb04abbbba,
+    type: 3}
+  m_PrefabInstance: {fileID: 5086938109901625565}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 169072098}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.141375, y: 58.952778, z: -53.613144}
-  m_LocalScale: {x: 2, y: 0.2, z: 2}
-  m_Children:
-  - {fileID: 712305045}
-  m_Father: {fileID: 2034903650}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &173734210
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2352,7 +2292,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &186806618
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2453,7 +2395,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &195117507
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2554,7 +2498,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &198355589
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2655,7 +2601,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &203782515
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2761,7 +2709,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &219922145
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2862,7 +2812,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &222671182
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3043,7 +2995,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &260992519
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3144,7 +3098,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!114 &271129742 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2054757161275943270, guid: d16a55713261c224787a525df5056bd7,
@@ -3263,7 +3219,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1 &293059056
 GameObject:
   m_ObjectHideFlags: 0
@@ -3441,7 +3399,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &337605233
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3547,7 +3507,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!224 &352832922 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4418267202575910372, guid: 960eb58287872fb4a842f3ab220cf8f1,
@@ -3952,7 +3914,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &409685612
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4053,7 +4017,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &416137236
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4523,7 +4489,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &423365258
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4629,7 +4597,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &425425546
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4735,7 +4705,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &435951958
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4836,7 +4808,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &439624804
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4942,7 +4916,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &440580296
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5048,7 +5024,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &445516113
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5149,7 +5127,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &460190607
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5250,7 +5230,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &461721132
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5351,7 +5333,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &474745892
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5452,7 +5436,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!4 &481301257 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6247435157002208480, guid: f46d7e2ad590cd84185ec7a0942e3988,
@@ -5559,7 +5545,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!4 &496925791 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6247435157002208480, guid: f46d7e2ad590cd84185ec7a0942e3988,
@@ -5740,7 +5728,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &520221556
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5841,7 +5831,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &534730241
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5942,7 +5934,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!4 &541030119 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3991052059632090206, guid: 0f92943cc3129694d92fcd05f0a7e1d7,
@@ -6004,7 +5998,7 @@ PrefabInstance:
     - target: {fileID: 5171635056801022111, guid: 5c8cb41558714084eacc5f002406bc55,
         type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5171635056801022111, guid: 5c8cb41558714084eacc5f002406bc55,
         type: 3}
@@ -6555,7 +6549,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1 &578878468
 GameObject:
   m_ObjectHideFlags: 0
@@ -6761,7 +6757,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &595071294
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6862,7 +6860,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!4 &609771958 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9199620504488647032, guid: 0597a23b88dbacf41808611c5a5c9391,
@@ -6981,7 +6981,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!4 &649402004 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3991052059632090206, guid: 0f92943cc3129694d92fcd05f0a7e1d7,
@@ -7094,7 +7096,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &687343015
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7200,7 +7204,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &691105317
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7301,7 +7307,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1 &692908260
 GameObject:
   m_ObjectHideFlags: 0
@@ -7585,7 +7593,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &703841819
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7835,7 +7845,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!4 &708135187 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9199620504488647032, guid: 0597a23b88dbacf41808611c5a5c9391,
@@ -7942,106 +7954,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
---- !u!1 &712305044
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 712305045}
-  - component: {fileID: 712305048}
-  - component: {fileID: 712305047}
-  - component: {fileID: 712305046}
-  m_Layer: 5
-  m_Name: Canvas
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &712305045
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 712305044}
-  m_LocalRotation: {x: 0.52725244, y: 0, z: 0, w: 0.84970874}
-  m_LocalPosition: {x: 0, y: 0, z: 1.72}
-  m_LocalScale: {x: 0.022216285, y: 0.022216285, z: 0.27770358}
-  m_Children:
-  - {fileID: 1919528998}
-  m_Father: {fileID: 169072103}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 63.64, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.01, y: 9.8}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &712305046
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 712305044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
---- !u!114 &712305047
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 712305044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
---- !u!223 &712305048
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 712305044}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 2
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_TargetDisplay: 0
+  buildingGhost: {fileID: 0}
 --- !u!1 &717158032
 GameObject:
   m_ObjectHideFlags: 0
@@ -8235,7 +8150,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &723262262
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8336,7 +8253,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &734900828
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8521,7 +8440,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1 &767788985 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1418531472716033440, guid: 79dd12d7c8bbee147a242d950218b713,
@@ -8548,7 +8469,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &781058629
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8649,7 +8572,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &784212453
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8750,7 +8675,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &802888314
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8851,7 +8778,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &809350108
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8952,7 +8881,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &823656033
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9127,7 +9058,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &828181472
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9228,7 +9161,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &837420499
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9329,7 +9264,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &844256958
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9430,7 +9367,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &848946946
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9531,7 +9470,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1 &849261776
 GameObject:
   m_ObjectHideFlags: 0
@@ -9698,7 +9639,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &874690207
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9804,7 +9747,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &894271034
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9910,7 +9855,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &895537474
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10011,7 +9958,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &896141390
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10117,7 +10066,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1 &901205103
 GameObject:
   m_ObjectHideFlags: 0
@@ -10170,9 +10121,15 @@ MonoBehaviour:
     type: 3}
   Building3: {fileID: 3467772106693134081, guid: f11bc5e131626ba4089fe666a4bd2d81,
     type: 3}
-  buildingChoice: {fileID: 0}
+  UpBuilding1: {fileID: 0}
+  UpBuilding2: {fileID: 0}
+  UpBuilding3: {fileID: 0}
+  Building1Ghost: {fileID: 0}
+  Building2Ghost: {fileID: 0}
+  Building3Ghost: {fileID: 0}
   type: 
   gold: 100
+  buildingChoice: {fileID: 0}
 --- !u!114 &901205106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10186,9 +10143,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverUI: {fileID: 1420294829}
+  loseGameUI: {fileID: 0}
   star1: {fileID: 1426326226}
   star2: {fileID: 1219530925}
   star3: {fileID: 1545386182}
+  loseAmount: 5
   oneStar: 0
   twoStar: 10
   threeStar: 20
@@ -10205,6 +10164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startSpook: 0
+  startlosePoint: 0
 --- !u!114 &901205108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10219,6 +10179,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 1959920827984648995, guid: 2848429a0a83d354fae6a55756680ace,
     type: 3}
+  enemyPrefab2: {fileID: 0}
   spawnPoint: {fileID: 52010733}
   Startwave: {fileID: 0}
   tutorialVistor: {fileID: 1854466802}
@@ -10328,7 +10289,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &922391234
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10429,7 +10392,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &924015803
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10530,7 +10495,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1 &929891330
 GameObject:
   m_ObjectHideFlags: 0
@@ -10730,7 +10697,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &977211050
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10831,7 +10800,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &981612766
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10932,7 +10903,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1 &990840243
 GameObject:
   m_ObjectHideFlags: 0
@@ -11067,7 +11040,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &1006753997
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11168,7 +11143,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &1035795043
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11269,7 +11246,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &1051196028
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11370,7 +11349,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &1065846812
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11471,7 +11452,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &1069193571
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11572,7 +11555,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &1072696664
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11673,7 +11658,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!4 &1074587662 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3991052059632090206, guid: 0f92943cc3129694d92fcd05f0a7e1d7,
@@ -11930,62 +11917,62 @@ PrefabInstance:
     - target: {fileID: 7160238096785829514, guid: fe844cdfffd43904da8714001a5fe4e1,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7160238096785829514, guid: fe844cdfffd43904da8714001a5fe4e1,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7160238096785829514, guid: fe844cdfffd43904da8714001a5fe4e1,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 16.666666
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7160238096785829514, guid: fe844cdfffd43904da8714001a5fe4e1,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -50
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5847704897914604002, guid: fe844cdfffd43904da8714001a5fe4e1,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5847704897914604002, guid: fe844cdfffd43904da8714001a5fe4e1,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5847704897914604002, guid: fe844cdfffd43904da8714001a5fe4e1,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 50
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5847704897914604002, guid: fe844cdfffd43904da8714001a5fe4e1,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -50
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 149508520219137843, guid: fe844cdfffd43904da8714001a5fe4e1,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 149508520219137843, guid: fe844cdfffd43904da8714001a5fe4e1,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 149508520219137843, guid: fe844cdfffd43904da8714001a5fe4e1,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 83.33333
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 149508520219137843, guid: fe844cdfffd43904da8714001a5fe4e1,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -50
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe844cdfffd43904da8714001a5fe4e1, type: 3}
@@ -12254,7 +12241,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1 &1143642218
 GameObject:
   m_ObjectHideFlags: 0
@@ -12582,7 +12571,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &1186798863
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12683,7 +12674,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1 &1200410524
 GameObject:
   m_ObjectHideFlags: 0
@@ -12969,7 +12962,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1 &1219530925 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6069271088585661233, guid: a9a69d1dd04420c4db660f1f1a970b4f,
@@ -13076,7 +13071,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!4 &1241666335 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9199620504488647032, guid: 0597a23b88dbacf41808611c5a5c9391,
@@ -13183,7 +13180,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &1257050518
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13388,7 +13387,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1 &1273876188
 GameObject:
   m_ObjectHideFlags: 0
@@ -13566,7 +13567,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &1291774509
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13667,7 +13670,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &1310233452
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13773,7 +13778,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &1313849122
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13896,64 +13903,9 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4316107422753798958, guid: 0f5f58d089596fe45a1650daad279f60,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 57.399902
-      objectReference: {fileID: 0}
-    - target: {fileID: 4316107422753798958, guid: 0f5f58d089596fe45a1650daad279f60,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -50.48999
-      objectReference: {fileID: 0}
     - target: {fileID: 4316107421773934052, guid: 0f5f58d089596fe45a1650daad279f60,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1404625001, guid: 0f5f58d089596fe45a1650daad279f60, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1404625001, guid: 0f5f58d089596fe45a1650daad279f60, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1404625001, guid: 0f5f58d089596fe45a1650daad279f60, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1392061172, guid: 0f5f58d089596fe45a1650daad279f60, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1392061172, guid: 0f5f58d089596fe45a1650daad279f60, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2080607796901471232, guid: 0f5f58d089596fe45a1650daad279f60,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2080607796901471232, guid: 0f5f58d089596fe45a1650daad279f60,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2080607796901471232, guid: 0f5f58d089596fe45a1650daad279f60,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2080607797228353277, guid: 0f5f58d089596fe45a1650daad279f60,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2080607797228353277, guid: 0f5f58d089596fe45a1650daad279f60,
-        type: 3}
-      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5862032574958763511, guid: 0f5f58d089596fe45a1650daad279f60,
@@ -13976,9 +13928,25 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 98
       objectReference: {fileID: 0}
-    - target: {fileID: 1826925042, guid: 0f5f58d089596fe45a1650daad279f60, type: 3}
-      propertyPath: m_IsActive
-      value: 0
+    - target: {fileID: 4316107421537646891, guid: 0f5f58d089596fe45a1650daad279f60,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 4316107422753798958, guid: 0f5f58d089596fe45a1650daad279f60,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 57.399902
+      objectReference: {fileID: 0}
+    - target: {fileID: 4316107422753798958, guid: 0f5f58d089596fe45a1650daad279f60,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -50.48999
+      objectReference: {fileID: 0}
+    - target: {fileID: 4316107421773934058, guid: 0f5f58d089596fe45a1650daad279f60,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.92156863
       objectReference: {fileID: 0}
     - target: {fileID: 2080607798069540375, guid: 0f5f58d089596fe45a1650daad279f60,
         type: 3}
@@ -13995,9 +13963,39 @@ PrefabInstance:
       propertyPath: m_Name
       value: SFX Toggle
       objectReference: {fileID: 0}
+    - target: {fileID: 2080607796901471232, guid: 0f5f58d089596fe45a1650daad279f60,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2080607796901471232, guid: 0f5f58d089596fe45a1650daad279f60,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2080607796901471232, guid: 0f5f58d089596fe45a1650daad279f60,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2080607797228353277, guid: 0f5f58d089596fe45a1650daad279f60,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2080607797228353277, guid: 0f5f58d089596fe45a1650daad279f60,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5862032574958763510, guid: 0f5f58d089596fe45a1650daad279f60,
         type: 3}
       propertyPath: Music
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9204506907864139993, guid: 0f5f58d089596fe45a1650daad279f60,
+        type: 3}
+      propertyPath: SFX
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5862032574858553025, guid: 0f5f58d089596fe45a1650daad279f60,
@@ -14024,15 +14022,29 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 86b217960d86a9a438f77d071c518615,
         type: 3}
-    - target: {fileID: 4316107421537646891, guid: 0f5f58d089596fe45a1650daad279f60,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 1000
+    - target: {fileID: 1404625001, guid: 0f5f58d089596fe45a1650daad279f60, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4316107421773934058, guid: 0f5f58d089596fe45a1650daad279f60,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 0.92156863
+    - target: {fileID: 1404625001, guid: 0f5f58d089596fe45a1650daad279f60, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1404625001, guid: 0f5f58d089596fe45a1650daad279f60, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1392061172, guid: 0f5f58d089596fe45a1650daad279f60, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1392061172, guid: 0f5f58d089596fe45a1650daad279f60, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1826925042, guid: 0f5f58d089596fe45a1650daad279f60, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1604169908, guid: 0f5f58d089596fe45a1650daad279f60, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -14047,11 +14059,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -94
-      objectReference: {fileID: 0}
-    - target: {fileID: 9204506907864139993, guid: 0f5f58d089596fe45a1650daad279f60,
-        type: 3}
-      propertyPath: SFX
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f5f58d089596fe45a1650daad279f60, type: 3}
@@ -14313,7 +14320,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1 &1330747687
 GameObject:
   m_ObjectHideFlags: 0
@@ -14598,7 +14607,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1 &1339095971 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1418531472716033440, guid: 79dd12d7c8bbee147a242d950218b713,
@@ -14625,7 +14636,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &1346431174
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14726,7 +14739,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!4 &1353310556 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3991052059632090206, guid: 0f92943cc3129694d92fcd05f0a7e1d7,
@@ -14833,7 +14848,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &1373044860
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14934,7 +14951,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &1381071743
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15035,7 +15054,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1 &1401484132
 GameObject:
   m_ObjectHideFlags: 0
@@ -15255,7 +15276,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1 &1420294829 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6069271089302092400, guid: a9a69d1dd04420c4db660f1f1a970b4f,
@@ -15362,7 +15385,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1 &1426326226 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6069271088776187760, guid: a9a69d1dd04420c4db660f1f1a970b4f,
@@ -15580,7 +15605,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &1457034353
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15681,7 +15708,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &1460519609
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15787,7 +15816,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &1464121742
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15962,7 +15993,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &1489075360
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16063,7 +16096,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1 &1495015509
 GameObject:
   m_ObjectHideFlags: 0
@@ -16255,7 +16290,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &1512520486
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16366,7 +16403,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &1528801941
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16467,7 +16506,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1 &1539967036 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1418531472716033440, guid: 79dd12d7c8bbee147a242d950218b713,
@@ -16494,92 +16535,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1 &1545386182 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6069271089224631150, guid: a9a69d1dd04420c4db660f1f1a970b4f,
     type: 3}
   m_PrefabInstance: {fileID: 561338703}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1580611416
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1580611417}
-  - component: {fileID: 1580611419}
-  - component: {fileID: 1580611418}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1580611417
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1580611416}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.00000014787831}
-  m_LocalScale: {x: 0.77757, y: 0.77757, z: 0.77757}
-  m_Children: []
-  m_Father: {fileID: 1919528998}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000020815748, y: 0.00000008442339}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1580611418
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1580611416}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 1
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 'Tap here to build
-
-'
---- !u!222 &1580611419
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1580611416}
-  m_CullTransparentMesh: 0
 --- !u!1001 &1592335346
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16680,7 +16644,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &1593830713
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16781,7 +16747,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!4 &1607378609 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6247435157002208480, guid: f46d7e2ad590cd84185ec7a0942e3988,
@@ -17061,7 +17029,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &1636281720
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17305,7 +17275,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &1638243723
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17406,7 +17378,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &1651513090
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17512,7 +17486,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &1655249493
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17613,7 +17589,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &1670357368
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17887,7 +17865,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &1737551297
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17993,7 +17973,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &1740853981
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18168,7 +18150,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!4 &1774770616 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5868028659306250189, guid: a1cda6f8b2025034db9937f57d4f83d8,
@@ -18275,7 +18259,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &1800961196
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18376,7 +18362,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &1804125109
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18477,7 +18465,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &1806836867
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18578,7 +18568,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &1810405040
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18679,7 +18671,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &1822406308
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18780,7 +18774,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &1850405789
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19223,7 +19219,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1 &1890879745
 GameObject:
   m_ObjectHideFlags: 0
@@ -19433,7 +19431,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &1893545774
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19534,81 +19534,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
---- !u!1 &1919528997
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1919528998}
-  - component: {fileID: 1919529000}
-  - component: {fileID: 1919528999}
-  m_Layer: 5
-  m_Name: Panel
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1919528998
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1919528997}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1580611417}
-  m_Father: {fileID: 712305045}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1919528999
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1919528997}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c698a79e571f43a4ea4dd8494a414772, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1919529000
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1919528997}
-  m_CullTransparentMesh: 0
+  buildingGhost: {fileID: 0}
 --- !u!1001 &1922914677
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19709,7 +19637,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &1930282370
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19810,7 +19740,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1 &1949712943
 GameObject:
   m_ObjectHideFlags: 0
@@ -20081,7 +20013,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1 &1981209791
 GameObject:
   m_ObjectHideFlags: 0
@@ -20233,7 +20167,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!4 &2014435811 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3991052059632090206, guid: 0f92943cc3129694d92fcd05f0a7e1d7,
@@ -20340,7 +20276,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &2033273132
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20441,7 +20379,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1 &2034903649
 GameObject:
   m_ObjectHideFlags: 0
@@ -20457,7 +20397,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2034903650
 Transform:
   m_ObjectHideFlags: 0
@@ -20662,7 +20602,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1 &2046207640
 GameObject:
   m_ObjectHideFlags: 0
@@ -20861,7 +20803,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1 &2055508421
 GameObject:
   m_ObjectHideFlags: 0
@@ -21039,7 +20983,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!4 &2060917224 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9199620504488647032, guid: 0597a23b88dbacf41808611c5a5c9391,
@@ -21152,7 +21098,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &2077897986
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21253,7 +21201,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!4 &2084315800 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 986105821164099215, guid: 16c9f4ff8324cfc40b7b2deea7fc851d,
@@ -21360,7 +21310,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &2088103478
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21461,7 +21413,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1001 &2094813374
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21646,7 +21600,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!4 &2100446495 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3991052059632090206, guid: 0f92943cc3129694d92fcd05f0a7e1d7,
@@ -21758,7 +21714,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
 --- !u!1 &2108261049
 GameObject:
   m_ObjectHideFlags: 0
@@ -21795,7 +21753,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 40.000042, y: 48.00003}
+  m_AnchoredPosition: {x: 40, y: 48.00003}
   m_SizeDelta: {x: 350.5, y: 65.70001}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &2108261051
@@ -22277,4 +22235,75 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   positionOffset: {x: 0, y: 0, z: 0}
+  descriptionPanel: {fileID: 0}
   building: {fileID: 0}
+  buildingGhost: {fileID: 0}
+--- !u!1001 &5086938109901625565
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2034903650}
+    m_Modifications:
+    - target: {fileID: 5086938109732883775, guid: 751b07aed5e86d3419ac7ebb04abbbba,
+        type: 3}
+      propertyPath: m_Name
+      value: Blink
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086938109732883770, guid: 751b07aed5e86d3419ac7ebb04abbbba,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.141375
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086938109732883770, guid: 751b07aed5e86d3419ac7ebb04abbbba,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 58.952778
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086938109732883770, guid: 751b07aed5e86d3419ac7ebb04abbbba,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -53.613144
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086938109732883770, guid: 751b07aed5e86d3419ac7ebb04abbbba,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086938109732883770, guid: 751b07aed5e86d3419ac7ebb04abbbba,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086938109732883770, guid: 751b07aed5e86d3419ac7ebb04abbbba,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086938109732883770, guid: 751b07aed5e86d3419ac7ebb04abbbba,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086938109732883770, guid: 751b07aed5e86d3419ac7ebb04abbbba,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086938109732883770, guid: 751b07aed5e86d3419ac7ebb04abbbba,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086938109732883770, guid: 751b07aed5e86d3419ac7ebb04abbbba,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086938109732883770, guid: 751b07aed5e86d3419ac7ebb04abbbba,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 751b07aed5e86d3419ac7ebb04abbbba, type: 3}

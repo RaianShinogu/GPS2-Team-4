@@ -24,9 +24,9 @@ public class BuildManager : MonoBehaviour
     public GameObject UpBuilding1;
     public GameObject UpBuilding2;
     public GameObject UpBuilding3;
-    public GameObject Building1Ghosh;
-    public GameObject Building2Ghosh;
-    public GameObject Building3Ghosh;
+    public GameObject Building1Ghost;
+    public GameObject Building2Ghost;
+    public GameObject Building3Ghost;
     [HideInInspector]
     public string type;
     #endregion

@@ -18,7 +18,7 @@ public class Node : MonoBehaviour
     bool canUpgrade;
 
     [HideInInspector]public GameObject building;
-    [HideInInspector] public GameObject buildingGhosh;
+    [HideInInspector] public GameObject buildingGhost;
     public static bool haveGhost;
     public static GameObject ghostContainer;
 
@@ -212,57 +212,57 @@ public class Node : MonoBehaviour
     {
         if (gold >= 10)
         {
-            Destroy(buildingGhosh);
+            Destroy(buildingGhost);
             building = (GameObject)Instantiate(buildManager.Building1, transform.position , buildManager.Building1.transform.rotation);
             buildManager.Building1Cost();
             canUpgrade = true;
         }
     }
 
-    public void selectedBuilding1Ghosh()
+    public void selectedBuilding1Ghost()
     {
-        Destroy(buildingGhosh);
-        buildingGhosh = (GameObject)Instantiate(buildManager.Building1Ghosh, transform.position, buildManager.Building1Ghosh.transform.rotation);
+        Destroy(buildingGhost);
+        buildingGhost = (GameObject)Instantiate(buildManager.Building1Ghost, transform.position+positionOffset, buildManager.Building1Ghost.transform.rotation);
         haveGhost = true;
-        ghostContainer = buildingGhosh;
+        ghostContainer = buildingGhost;
     }
 
     public void selectedBuilding2()
     {
         if (gold >= 20)
         {
-            Destroy(buildingGhosh);
+            Destroy(buildingGhost);
             building = (GameObject)Instantiate(buildManager.Building2, transform.position + positionOffset, buildManager.Building2.transform.rotation);
             buildManager.Building2Cost();
             canUpgrade = true;
         }
     }
 
-    public void selectedBuilding2Ghosh()
+    public void selectedBuilding2Ghost()
     {
-        Destroy(buildingGhosh);
-        buildingGhosh = (GameObject)Instantiate(buildManager.Building2Ghosh, transform.position, buildManager.Building2Ghosh.transform.rotation);
+        Destroy(buildingGhost);
+        buildingGhost = (GameObject)Instantiate(buildManager.Building2Ghost, transform.position + positionOffset, buildManager.Building2Ghost.transform.rotation);
         haveGhost = true;
-        ghostContainer = buildingGhosh;
+        ghostContainer = buildingGhost;
     }
 
     public void selectedBuilding3()
     {
         if (gold >= 30)
         {
-            Destroy(buildingGhosh);
+            Destroy(buildingGhost);
             building = (GameObject)Instantiate(buildManager.Building3, transform.position , buildManager.Building3.transform.rotation);
             buildManager.Building3Cost();
             canUpgrade = true;
         }
     }
 
-    public void selectedBuilding3Ghosh()
+    public void selectedBuilding3Ghost()
     {
-        Destroy(buildingGhosh);
-        buildingGhosh = (GameObject)Instantiate(buildManager.Building3Ghosh, transform.position, buildManager.Building3Ghosh.transform.rotation);
+        Destroy(buildingGhost);
+        buildingGhost = (GameObject)Instantiate(buildManager.Building3Ghost, transform.position + positionOffset, buildManager.Building3Ghost.transform.rotation);
         haveGhost = true;
-        ghostContainer = buildingGhosh;
+        ghostContainer = buildingGhost;
     }
 
     public void Demolish()
@@ -317,9 +317,9 @@ public class Node : MonoBehaviour
         }
     }
 
-    public void DestroyGhosh()
+    public void DestroyGhost()
     {
-        Destroy(buildingGhosh);
+        Destroy(buildingGhost);
         descriptionPanel.SetActive(false) ;
     }
 

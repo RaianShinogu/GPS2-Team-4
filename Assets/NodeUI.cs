@@ -22,7 +22,7 @@ public class NodeUI : MonoBehaviour
     public GameObject descriptionPanel;
     public Text sellPriceDisplay;
     public Text upgradePriceDisplay;
-
+    public DialogManager dialogManager;
     void Awake()
     {
         if (instance != null)
@@ -37,6 +37,7 @@ public class NodeUI : MonoBehaviour
     {
         isOpenBuildingUI = false;
         this.prevNode = null;
+        dialogManager = FindObjectOfType<DialogManager>();
         
     }
     public void ShowBuildUI(Node node)
@@ -47,16 +48,14 @@ public class NodeUI : MonoBehaviour
             buildUI.SetActive(false);   // reset any opened UI, if any
             buildUI.SetActive(true);
             buildUI.transform.position = node.transform.position + uiOffset;
-            if (inTutorialLevel == true)
-            {
-                if (node.name == "Node (116)")
-                {
-                    Destroy(Blink);
-                    isTutorial = true;
-                }
-            }
             this.node = node;
             upgradeDemolishUI.SetActive(false);
+        if(inTutorialLevel == true)
+        {
+            Blink.SetActive(false);
+            inTutorialLevel = false;
+            dialogManager.setActiveOtherNode();
+        }
         //}
             
   
@@ -99,7 +98,7 @@ public class NodeUI : MonoBehaviour
         // isOpenBuildingUI = false;
         if (!conformSelectBuilding1)
         {
-           node.selectedBuilding1Ghosh();
+           node.selectedBuilding1Ghost();
             descriptionPanel.SetActive(true);
             description.text = "Building 1";
             conformSelectBuilding1 = true;
@@ -132,7 +131,7 @@ public class NodeUI : MonoBehaviour
         Global.audiomanager.getSFX("InGameClick").play();
         if (!conformSelectBuilding2)
         {
-            node.selectedBuilding2Ghosh();
+            node.selectedBuilding2Ghost();
             descriptionPanel.SetActive(true);
             description.text = "Building 2";
             conformSelectBuilding1 = false;
@@ -164,7 +163,7 @@ public class NodeUI : MonoBehaviour
         Global.audiomanager.getSFX("InGameClick").play();
         if (!conformSelectBuilding3)
         {
-            node.selectedBuilding3Ghosh();
+            node.selectedBuilding3Ghost();
             descriptionPanel.SetActive(true);
             description.text = "Building 3";
             conformSelectBuilding1 = false;
