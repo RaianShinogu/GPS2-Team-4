@@ -26,7 +26,7 @@ public class BuildingSpawn : MonoBehaviour
     bool location1, location2, location3;
     bool hasSpawn;
     GameObject wolfBullet1, wolfBullet2, wolfBullet3;
-    private List<GameObject> wolfs;
+    private List<GameObject> wolfs = new List<GameObject>();
     private bool spawnLocation1, spawnLocation2, spawnLocation3;
     #endregion
 
@@ -42,6 +42,7 @@ public class BuildingSpawn : MonoBehaviour
         spawnLocation3 = false;
         hasSpawn = false;
         currentTime = 0;
+        
     }
 
     void LateUpdate()

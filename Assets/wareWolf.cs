@@ -28,7 +28,7 @@ public class wareWolf : MonoBehaviour
     void Start()
     {
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
-        buildingSpawn = GetComponent<BuildingSpawn>();
+        buildingSpawn = FindObjectOfType<BuildingSpawn>();
     }
 
     void UpdateTarget()
@@ -93,7 +93,7 @@ public class wareWolf : MonoBehaviour
 
         if (e != null)
         {
-            Debug.Log("hit");
+            //Debug.Log("hit");
 
 
             if (isD == true)
