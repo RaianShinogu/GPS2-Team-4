@@ -53,8 +53,8 @@ public class NodeUI : MonoBehaviour
         if(inTutorialLevel == true)
         {
             Blink.SetActive(false);
-            inTutorialLevel = false;
             dialogManager.setActiveOtherNode();
+            dialogManager.endSelectBuilding = false;
         }
         //}
             
@@ -104,25 +104,19 @@ public class NodeUI : MonoBehaviour
             conformSelectBuilding1 = true;
             conformSelectBuilding2 = false;
             conformSelectBuilding3 = false;
-           return;
-        }
-        node.selectedBuilding1();
-        if (inTutorialLevel == true)
-        {
-            if (isTutorial == true)
+            if (inTutorialLevel == true)
             {
-                //tutorialUI.SetActive(false);
-                //tutorialVistor.SetActive(true);
-                //wave.SetActive(true);
-                isTutorial = false;
                 inTutorialLevel = false;
                 conformSelectBuilding1 = false;
                 conformSelectBuilding2 = false;
                 conformSelectBuilding3 = false;
-
-
+                dialogManager.waveStart = false;
+                Debug.Log("Gayy");
             }
+            return;
         }
+        node.selectedBuilding1();
+        
         HideBuildUI();
     }
 
@@ -137,24 +131,20 @@ public class NodeUI : MonoBehaviour
             conformSelectBuilding1 = false;
             conformSelectBuilding2 = true;
             conformSelectBuilding3 = false;
-            return;
-        }
-        // isOpenBuildingUI = false;
-        node.selectedBuilding2();
-        if (inTutorialLevel == true)
-        {
-            if (isTutorial == true)
+            if (inTutorialLevel == true)
             {
-                //tutorialUI.SetActive(false);
-                //tutorialVistor.SetActive(true);
-                //wave.SetActive(true);
-                isTutorial = false;
                 inTutorialLevel = false;
                 conformSelectBuilding1 = false;
                 conformSelectBuilding2 = false;
                 conformSelectBuilding3 = false;
+                dialogManager.waveStart = false;
+                Debug.Log("Gayy");
             }
+            return;
         }
+        // isOpenBuildingUI = false;
+        node.selectedBuilding2();
+       
         HideBuildUI();
     }
 
@@ -169,24 +159,20 @@ public class NodeUI : MonoBehaviour
             conformSelectBuilding1 = false;
             conformSelectBuilding2 = false;
             conformSelectBuilding3 = true;
-            return;
-        }
-        // isOpenBuildingUI = false;
-        node.selectedBuilding3();
-        if (inTutorialLevel == true)
-        {
-            if (isTutorial == true)
+            if (inTutorialLevel == true)
             {
-                //tutorialUI.SetActive(false);
-                //tutorialVistor.SetActive(true);
-                //wave.SetActive(true);
-                isTutorial = false;
                 inTutorialLevel = false;
                 conformSelectBuilding1 = false;
                 conformSelectBuilding2 = false;
                 conformSelectBuilding3 = false;
+                dialogManager.waveStart = false;
+                Debug.Log("Gayy");
             }
+            return;
         }
+        // isOpenBuildingUI = false;
+        node.selectedBuilding3();
+        
 
         HideBuildUI();
     }

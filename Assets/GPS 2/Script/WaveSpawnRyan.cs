@@ -13,6 +13,7 @@ public class WaveSpawnRyan : MonoBehaviour
     int visitorType;
 
     public float timeBetweenWaves = 5f;
+    public DialogManager dialogManager;
     private float countdown = 2f;
 
     private bool gameStart = false;
@@ -89,6 +90,8 @@ public class WaveSpawnRyan : MonoBehaviour
         }*/
         //waveNumber++;
         SpawnEnemy();
+        
+        
     }
 
     void SpawnEnemy()
@@ -118,14 +121,13 @@ public class WaveSpawnRyan : MonoBehaviour
     {
         gameStart = true;
         wave.SetActive(false);
-        if(isTutorial == true)
+        if (isTutorial == true)
         {
-            tutorialVistor.SetActive(false);
+            dialogManager.buildingDemolish = false;
         }
-        
-        
-        
-        
+
+
+
 
     }
 

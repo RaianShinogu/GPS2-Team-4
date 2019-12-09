@@ -26,6 +26,7 @@ TagManager:
   - Fence
   - Entrance
   - Path
+  - Tutorial
   layers:
   - Default
   - TransparentFX
