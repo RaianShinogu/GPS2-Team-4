@@ -37,6 +37,7 @@ public class EnemyRyan : MonoBehaviour
    
     void Start()
     {
+        finalDeath = false;
         GameObject gameMaster = GameObject.Find("Game Manager");
         WaveSpawnRyan waveSpawnRyan = gameMaster.GetComponent<WaveSpawnRyan>();
         enemyLeft = waveSpawnRyan.totalEnemies;
@@ -165,7 +166,7 @@ public class EnemyRyan : MonoBehaviour
     void EndPath()
     {        
         Debug.Log("Enemies left = " + enemyLeft);
-        if (health >= 0 && health <= 20)
+        if (health > 0 && health <= 20)
         {
             PlayerStats.spookPoint += 1;
         }
