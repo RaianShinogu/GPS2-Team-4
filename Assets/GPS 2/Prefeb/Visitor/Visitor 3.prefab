@@ -924,7 +924,12 @@ MonoBehaviour:
   speed: 5
   Income: 20
   maxHealth: 100
-  reduceHealthAmnt: 2.5
+  reduceHealthPerSec: 2
+  minYellow: 0
+  maxYellow: 39
+  minOrange: 40
+  maxOrange: 69
+  minRed: 70
   agent: {fileID: -9106911618537900921}
 --- !u!33 &-728008757661306473
 MeshFilter:

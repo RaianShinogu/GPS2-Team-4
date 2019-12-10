@@ -6,10 +6,17 @@ public class Bullet : MonoBehaviour
     private Transform target;
     private bool isD = true, isS = false;
 
-    public int damage ;
+    [Header ("Visitor 1")]
+    public int strongDamage ;
+    [Header("Visitor 2")]
+    public int damage;
+    [Header("Visitor 3")]
+    public int WeakDamage;
 
     public float speed = 70f;
     public float explosionRadius = 0f;
+    public bool Building1;
+    public bool Building2;
 
     public Transform originPos;
     
@@ -81,7 +88,7 @@ public class Bullet : MonoBehaviour
         Collider[] colliders = Physics.OverlapSphere(transform.position, explosionRadius);
         foreach(Collider collider in colliders)
         {
-            if(collider.tag == "Visitor")
+            if(collider.tag == "Visitor" )
             {
                 Damage(collider.transform);
             }
@@ -95,11 +102,24 @@ public class Bullet : MonoBehaviour
         if(e !=null)
         {
             Debug.Log("hit");
-            
+            Debug.Log(enemy);
 
             if (isD == true)
             {
-                e.TakeDamage(damage);
+                if(enemy.transform.name == "Visitor 1(Clone)")
+                {
+                    e.TakeDamage(strongDamage);
+                }
+                else if (enemy.transform.name == "Visitor 2(Clone)")
+                {
+                    e.TakeDamage(damage);
+                }
+                else if(enemy.transform.name == "Visitor 3(Clone)")
+                {
+                    e.TakeDamage(WeakDamage);
+                }
+                //e.TakeDamage(strongDamage);
+
             }
             if (isS == true)
             {

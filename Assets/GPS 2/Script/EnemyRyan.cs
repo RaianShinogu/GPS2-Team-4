@@ -13,7 +13,7 @@ public class EnemyRyan : MonoBehaviour
     public bool vistor3;
     public Animator scare1, scare2, scare3;
     public static bool finalDeath = false;
-    [HideInInspector]
+    //[HideInInspector]
     public float health = 0;
     #endregion
 
@@ -22,7 +22,15 @@ public class EnemyRyan : MonoBehaviour
     public float speed = 5f;
     public int Income;
     public float maxHealth = 100;
-    public float reduceHealthAmnt = 2.0f;
+    public float reduceHealthPerSec = 2.0f;
+    [Header ("Yellow To Orange")]
+    public int minYellow;
+    public int maxYellow;
+    [Header("Orange To Red")]
+    public int minOrange;
+    public int maxOrange;
+    [Header(" Red")]
+    public int minRed;
     #endregion
 
     #region Private Variable
@@ -66,11 +74,13 @@ public class EnemyRyan : MonoBehaviour
             
             health = maxHealth;
         }
+
+        Debug.Log("Damage Duel " + amount);
     }
 
     private void takeDamageChange()
     {
-        if (health >= 0 && health <= 49)
+        if (health >= minYellow && health <= maxYellow)
         {
             health1.SetActive(true);
             health2.SetActive(false);
@@ -96,7 +106,7 @@ public class EnemyRyan : MonoBehaviour
             }
 
         }
-        else if (health > 50 && health <= 69)
+        else if (health > minOrange && health <= maxOrange)
         {
             health1.SetActive(false);
             health2.SetActive(true);
@@ -117,7 +127,7 @@ public class EnemyRyan : MonoBehaviour
             }
 
         }
-        else if (health >= 70)
+        else if (health >= minRed)
         {
             health1.SetActive(false);
             health2.SetActive(false);
@@ -153,7 +163,7 @@ public class EnemyRyan : MonoBehaviour
         if (health > 0)
         {
 
-            health = health - (reduceHealthAmnt * Time.deltaTime);
+            health = health - (reduceHealthPerSec * Time.deltaTime);
 
         }
 

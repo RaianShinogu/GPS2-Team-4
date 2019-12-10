@@ -793,8 +793,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c93e8940348583246bec4a66caf0085e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  test: {fileID: 0}
-  isOnPc: 0
+  isOnPc: 1
 --- !u!114 &127114376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3965,7 +3964,8 @@ MonoBehaviour:
     type: 3}
   enemyPrefab2: {fileID: 7821387858139305634, guid: 85f866f90a918bc42830d363d53c67a0,
     type: 3}
-  enemyPrefab3: {fileID: 0}
+  enemyPrefab3: {fileID: 7821387858139305634, guid: 240ecff73528e0348b3cf64d06958c31,
+    type: 3}
   spawnPoint: {fileID: 52010733}
   Startwave: {fileID: 0}
   tutorialVistor: {fileID: 0}
@@ -9399,6 +9399,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7168433723364972830, guid: 95f1f3e937e4136429e7529d0ca27e1b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5586561111077197169, guid: 95f1f3e937e4136429e7529d0ca27e1b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9507,11 +9512,6 @@ PrefabInstance:
     - target: {fileID: 883470102, guid: 95f1f3e937e4136429e7529d0ca27e1b, type: 3}
       propertyPath: m_IsActive
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7168433723364972830, guid: 95f1f3e937e4136429e7529d0ca27e1b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 883470103, guid: 95f1f3e937e4136429e7529d0ca27e1b, type: 3}
       propertyPath: m_AnchorMin.y

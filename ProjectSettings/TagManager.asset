@@ -27,6 +27,8 @@ TagManager:
   - Entrance
   - Path
   - Tutorial
+  - Visitor 3
+  - Visitor 2
   layers:
   - Default
   - TransparentFX

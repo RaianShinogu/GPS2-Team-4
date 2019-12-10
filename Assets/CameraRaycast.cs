@@ -10,7 +10,6 @@ public class CameraRaycast : MonoBehaviour
     //int layerMask = 6;
     Ray ray;
     RaycastHit hit;
-    public Text test;
     public bool isOnPc;
     void Start()
     {
