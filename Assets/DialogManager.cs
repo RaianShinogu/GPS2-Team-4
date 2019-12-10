@@ -8,6 +8,7 @@ public class DialogManager : MonoBehaviour
 {
     // Start is called before the first frame update
     public string Explaination;
+    public string IntroSkipButton;
     public string BuildingUI;
     public string BuildingExplaination;
     public string ChoosingBuilding;
@@ -39,13 +40,15 @@ public class DialogManager : MonoBehaviour
     bool endBuildingUI;
     bool ending;
     bool endTutorial;
+    bool skipTutorial;
     public bool endSelectBuilding;
     public bool waveStart;
     public bool buildingDemolish;
     public Blink blinkObject;
     void Start()
     {
-        endIntro = false;
+        skipTutorial = false;
+        endIntro = true;
         endBuildingUI = true;
         endSelectBuilding = true;
         waveStart = true;
@@ -60,8 +63,6 @@ public class DialogManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {    
-            
-        
 
        if (endSelectBuilding == false)
         {
@@ -107,7 +108,16 @@ public class DialogManager : MonoBehaviour
 
     public void pressHereToContinue()
     {
-        if (endIntro == false)
+        if (skipTutorial == false)
+        {
+            //tutorialCanvas.SetActive(false);
+            //buildingTutorialCanvas.SetActive(true);
+            IntrotextBox.text = IntroSkipButton;
+            skipTutorial = true;
+            endIntro = false;
+            //endBuildingUI = false;
+        }
+        else if (endIntro == false)
         {
             tutorialCanvas.SetActive(false);
             buildingTutorialCanvas.SetActive(true);

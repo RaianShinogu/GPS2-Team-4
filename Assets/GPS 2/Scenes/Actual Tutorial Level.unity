@@ -1319,6 +1319,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Explaination: 'Welcome, to your very own haunted park! Where everyone''s nightmares
     come true... Tap on your screen and follow me! '
+  IntroSkipButton: Press me to skip tutorial.
   BuildingUI: "This is your park! Hehe\u2026 A real ghost town isn\u2019t it? Let's
     get started on building something, shall we?"
   BuildingExplaination: 'See this spot? This is where you can build an attraction.
@@ -1333,7 +1334,7 @@ MonoBehaviour:
     button. "
   Ending: "That\u2019s all you need to know about building your own haunted park.
     Happy haunting! "
-  countDown: 10
+  countDown: 0
   IntrotextBox: {fileID: 1395611656}
   textBox: {fileID: 563745506}
   bottomRight: {fileID: 1546478489}
