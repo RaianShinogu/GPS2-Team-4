@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class GameManager : MonoBehaviour
     public int oneStar = 0, twoStar = 10, threeStar = 20;
     // Update is called once per frame
 
+    public Text test;
+
     private void Start()
     {
         Time.timeScale = 1f;
@@ -20,6 +23,11 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        /*if(Input.GetTouch(0).phase == TouchPhase.Began)
+        {
+            test.text = Input.GetTouch(0).position.ToString();
+        }*/
+
         if (gameEnded)
             return;
         if(EnemyRyan.finalDeath == true)

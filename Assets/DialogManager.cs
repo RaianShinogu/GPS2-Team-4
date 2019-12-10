@@ -18,6 +18,7 @@ public class DialogManager : MonoBehaviour
 
     public float countDown;
     public Text IntrotextBox;
+    public Text PressMe;
     public Text textBox;
     public Text bottomRight;
     public Text bottomMiddle;
@@ -112,7 +113,8 @@ public class DialogManager : MonoBehaviour
         {
             //tutorialCanvas.SetActive(false);
             //buildingTutorialCanvas.SetActive(true);
-            IntrotextBox.text = IntroSkipButton;
+            IntrotextBox.text = null;
+            PressMe.text = IntroSkipButton;
             skipTutorial = true;
             endIntro = false;
             //endBuildingUI = false;

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
 public class CameraRaycast : MonoBehaviour
@@ -9,10 +10,11 @@ public class CameraRaycast : MonoBehaviour
     //int layerMask = 6;
     Ray ray;
     RaycastHit hit;
-
+    public Text test;
     void Start()
     {
         nodeUI = NodeUI.instance;
+
     }
 
 
@@ -20,13 +22,15 @@ public class CameraRaycast : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(0))
         {
-            ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            Touch touch = Input.GetTouch(0);
+            ray = Camera.main.ScreenPointToRay(touch.position);
+            
             //layerMask = ~layerMask;
-            if (Physics.Raycast(ray, out hit, 1000.0f))
+            if (Physics.Raycast(ray, out hit, 100.0f))
             {
                 Debug.Log(hit.collider.name);
                 Debug.Log(EventSystem.current.IsPointerOverGameObject());
-                if (EventSystem.current.IsPointerOverGameObject())
+                if (EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId))
                 {
                     return;
                 }
@@ -38,6 +42,7 @@ public class CameraRaycast : MonoBehaviour
                     Node.ghostContainer = null;
                     Node.haveGhost = false;
                     nodeUI.HideUpDemUI();
+                    //test.text = Input.GetTouch(0).position.ToString();
                 }
             }
 

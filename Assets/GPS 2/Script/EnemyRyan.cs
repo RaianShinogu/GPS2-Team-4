@@ -8,9 +8,10 @@ using System.Collections;
 public class EnemyRyan : MonoBehaviour
 {
     #region Public Variable
-    public GameObject health1, health2, health3, health1v2, health2v2, health3v2;
+    public GameObject health1, health2, health3, health1v2, health2v2, health3v2, health1v3, health2v3, health3v3;
     public bool vistor2;
-    public Animator scare;
+    public bool vistor3;
+    public Animator scare1, scare2, scare3;
     public static bool finalDeath = false;
     [HideInInspector]
     public float health = 0;
@@ -50,9 +51,17 @@ public class EnemyRyan : MonoBehaviour
     {
         
         health += amount;
-        scare.Play("Visitor_Scaredd");
+        scare1.Play("Visitor_Scaredd");
+        if(vistor2 == true)
+        {
+            scare2.Play("Visitor_Scaredd");
+        }
+        if (vistor3 == true)
+        {
+            scare3.Play("Visitor_Scaredd");
+        }
 
-        if(health >= maxHealth)
+        if (health >= maxHealth)
         {
             
             health = maxHealth;
@@ -72,6 +81,12 @@ public class EnemyRyan : MonoBehaviour
                 health1v2.SetActive(true);
                 health2v2.SetActive(false);
                 health3v2.SetActive(false);
+            }
+            if (vistor3 == true)
+            {
+                health1v3.SetActive(true);
+                health2v3.SetActive(false);
+                health3v3.SetActive(false);
             }
 
             if (firstHit == false)
@@ -94,6 +109,13 @@ public class EnemyRyan : MonoBehaviour
                 health3v2.SetActive(false);
             }
 
+            if (vistor3 == true)
+            {
+                health1v3.SetActive(false);
+                health2v3.SetActive(true);
+                health3v3.SetActive(false);
+            }
+
         }
         else if (health >= 70)
         {
@@ -108,7 +130,14 @@ public class EnemyRyan : MonoBehaviour
                 health3v2.SetActive(true);
             }
 
-            if(firstHit == true)
+            if (vistor3 == true)
+            {
+                health1v3.SetActive(false);
+                health2v3.SetActive(false);
+                health3v3.SetActive(true);
+            }
+
+            if (firstHit == true)
             {
                 buildManager.income(Income);
                 firstHit = false;
