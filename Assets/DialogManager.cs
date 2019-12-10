@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DialogManager : MonoBehaviour
 {
@@ -58,43 +59,9 @@ public class DialogManager : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        if(Input.GetMouseButtonDown(0))
-        {
-            if (endIntro == false)
-            {
-                tutorialCanvas.SetActive(false);
-                buildingTutorialCanvas.SetActive(true);
-                textBox.text = BuildingUI;
-                endIntro = true;
-                endBuildingUI = false;
-            }
-            else if (endBuildingUI == false)
-            {
-                tapContinue.SetActive(false);
-                buildingTutorialCanvas.SetActive(false);
-                TapIn.SetActive(true);
-                Tapin.text = BuildingExplaination;
-                blink.SetActive(true);
-                blinkObject.active = true;
-                blinkCanvas.SetActive(true);
-                endBuildingUI = true;
-                node.SetActive(true);
-            }    
-            else if(ending == false)
-            {
-                buildingTutorialCanvas.SetActive(true);
-                MiddleBottom.SetActive(false);
-                textBox.text = Ending;
-                ending = true;
-                endTutorial = false;
-            }
-            else if(endTutorial == false)
-            {
-                buildingTutorialCanvas.SetActive(false);
-                tapContinue.SetActive(false);
-            }
-        }
+    {    
+            
+        
 
        if (endSelectBuilding == false)
         {
@@ -130,5 +97,48 @@ public class DialogManager : MonoBehaviour
     public void setActiveOtherNode()
     {
         otherNodes.SetActive(true);
+    }
+
+    public void SkipTutorial()
+    {
+        // Global.audiomanager.getSFX("InGameClick").play();
+        SceneManager.LoadScene("Actual Game Scene", LoadSceneMode.Single);
+    }
+
+    public void pressHereToContinue()
+    {
+        if (endIntro == false)
+        {
+            tutorialCanvas.SetActive(false);
+            buildingTutorialCanvas.SetActive(true);
+            textBox.text = BuildingUI;
+            endIntro = true;
+            endBuildingUI = false;
+        }
+        else if (endBuildingUI == false)
+        {
+            tapContinue.SetActive(false);
+            buildingTutorialCanvas.SetActive(false);
+            TapIn.SetActive(true);
+            //Tapin.text = BuildingExplaination;
+            blink.SetActive(true);
+            blinkObject.active = true;
+            blinkCanvas.SetActive(true);
+            endBuildingUI = true;
+            node.SetActive(true);
+        }
+        else if (ending == false)
+        {
+            buildingTutorialCanvas.SetActive(true);
+            MiddleBottom.SetActive(false);
+            textBox.text = Ending;
+            ending = true;
+            endTutorial = false;
+        }
+        else if (endTutorial == false)
+        {
+            buildingTutorialCanvas.SetActive(false);
+            tapContinue.SetActive(false);
+        }
     }
 }
