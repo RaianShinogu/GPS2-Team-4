@@ -13,7 +13,12 @@ public class wareWolf : MonoBehaviour
 
     #region Designer Editor
     [Header("Designer Editor")]
+    [Header("Visitor 1")]
+    public int strongDamage;
+    [Header("Visitor 2")]
     public int damage;
+    [Header("Visitor 3")]
+    public int WeakDamage;
     public float range; 
     public float speed;
     #endregion
@@ -98,7 +103,18 @@ public class wareWolf : MonoBehaviour
 
             if (isD == true)
             {
-                e.TakeDamage(damage);
+                if (enemy.transform.name == "Visitor 1(Clone)")
+                {
+                    e.TakeDamage(WeakDamage);
+                }
+                else if (enemy.transform.name == "Visitor 2(Clone)")
+                {
+                    e.TakeDamage(damage);
+                }
+                else if (enemy.transform.name == "Visitor 3(Clone)")
+                {
+                    e.TakeDamage(strongDamage);
+                }
             }
             if (isS == true)
             {

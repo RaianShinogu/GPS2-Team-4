@@ -5,6 +5,7 @@ public class WaveSpawnRyan : MonoBehaviour
 {
     public GameObject enemyPrefab;
     public GameObject enemyPrefab2;
+    public GameObject enemyPrefab3;
 
     public Transform spawnPoint;
     public GameObject Startwave;
@@ -96,7 +97,7 @@ public class WaveSpawnRyan : MonoBehaviour
 
     void SpawnEnemy()
     {
-        visitorType = Random.Range(0, 2);
+        visitorType = Random.Range(0, 3);
         if(visitorType == 0)
         {
             Instantiate(enemyPrefab, spawnPoint.position + Vector3.up * 2, spawnPoint.rotation);
@@ -105,7 +106,12 @@ public class WaveSpawnRyan : MonoBehaviour
         {
             Instantiate(enemyPrefab2, spawnPoint.position + Vector3.up * 2, spawnPoint.rotation);
         }
-        
+        else if (visitorType == 2)
+        {
+            Instantiate(enemyPrefab3, spawnPoint.position + Vector3.up * 2, spawnPoint.rotation);
+        }
+
+
     }
 
     public void StartGame()

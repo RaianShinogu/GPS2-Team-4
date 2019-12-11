@@ -426,7 +426,7 @@ GameObject:
   - component: {fileID: -728008757661306473}
   - component: {fileID: 7845336365422113241}
   m_Layer: 8
-  m_Name: Visitor new
+  m_Name: Visitor 1
   m_TagString: Visitor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -481,21 +481,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e465b3de9dffe148ab6e578ad85ffa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vistor2: 0
-  scare: {fileID: 8693759950607225133}
-  speed: 5
-  agent: {fileID: -9106911618537900921}
-  Income: 10
-  health: 0
-  maxHealth: 100
   health1: {fileID: 527996549661410737}
   health2: {fileID: 8571538913906746463}
   health3: {fileID: 2835215594008356769}
   health1v2: {fileID: 0}
   health2v2: {fileID: 0}
   health3v2: {fileID: 0}
-  outlineColor: {r: 0, g: 0, b: 0, a: 0}
-  reduceHealthAmnt: 2
+  health1v3: {fileID: 0}
+  health2v3: {fileID: 0}
+  health3v3: {fileID: 0}
+  vistor2: 0
+  vistor3: 0
+  scare1: {fileID: 8693759950607225133}
+  scare2: {fileID: 0}
+  scare3: {fileID: 0}
+  health: 0
+  speed: 5
+  Income: 10
+  maxHealth: 100
+  reduceHealthPerSec: 2
+  minYellow: 0
+  maxYellow: 39
+  minOrange: 40
+  maxOrange: 69
+  minRed: 70
+  agent: {fileID: -9106911618537900921}
 --- !u!33 &-728008757661306473
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -766,6 +776,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5125873859494057817, guid: 73e8e9b0a703b4a4a988260d20fe49f8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5125873859494057817, guid: 73e8e9b0a703b4a4a988260d20fe49f8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 969617370301345954, guid: 73e8e9b0a703b4a4a988260d20fe49f8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 969617370301345954, guid: 73e8e9b0a703b4a4a988260d20fe49f8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1019692296631477934, guid: 73e8e9b0a703b4a4a988260d20fe49f8,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -885,26 +915,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5125873859494057817, guid: 73e8e9b0a703b4a4a988260d20fe49f8,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5125873859494057817, guid: 73e8e9b0a703b4a4a988260d20fe49f8,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 969617370301345954, guid: 73e8e9b0a703b4a4a988260d20fe49f8,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 969617370301345954, guid: 73e8e9b0a703b4a4a988260d20fe49f8,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}

@@ -8,11 +8,12 @@ using System.Collections;
 public class EnemyRyan : MonoBehaviour
 {
     #region Public Variable
-    public GameObject health1, health2, health3, health1v2, health2v2, health3v2;
+    public GameObject health1, health2, health3, health1v2, health2v2, health3v2, health1v3, health2v3, health3v3;
     public bool vistor2;
-    public Animator scare;
+    public bool vistor3;
+    public Animator scare1, scare2, scare3;
     public static bool finalDeath = false;
-    [HideInInspector]
+    //[HideInInspector]
     public float health = 0;
     #endregion
 
@@ -21,7 +22,15 @@ public class EnemyRyan : MonoBehaviour
     public float speed = 5f;
     public int Income;
     public float maxHealth = 100;
-    public float reduceHealthAmnt = 2.0f;
+    public float reduceHealthPerSec = 2.0f;
+    [Header ("Yellow To Orange")]
+    public int minYellow;
+    public int maxYellow;
+    [Header("Orange To Red")]
+    public int minOrange;
+    public int maxOrange;
+    [Header(" Red")]
+    public int minRed;
     #endregion
 
     #region Private Variable
@@ -37,6 +46,7 @@ public class EnemyRyan : MonoBehaviour
    
     void Start()
     {
+        finalDeath = false;
         GameObject gameMaster = GameObject.Find("Game Manager");
         WaveSpawnRyan waveSpawnRyan = gameMaster.GetComponent<WaveSpawnRyan>();
         enemyLeft = waveSpawnRyan.totalEnemies;
@@ -49,18 +59,28 @@ public class EnemyRyan : MonoBehaviour
     {
         
         health += amount;
-        scare.Play("Visitor_Scaredd");
+        scare1.Play("Visitor_Scaredd");
+        if(vistor2 == true)
+        {
+            scare2.Play("Visitor_Scaredd");
+        }
+        if (vistor3 == true)
+        {
+            scare3.Play("Visitor_Scaredd");
+        }
 
-        if(health >= maxHealth)
+        if (health >= maxHealth)
         {
             
             health = maxHealth;
         }
+
+        Debug.Log("Damage Duel " + amount);
     }
 
     private void takeDamageChange()
     {
-        if (health >= 0 && health <= 49)
+        if (health >= minYellow && health <= maxYellow)
         {
             health1.SetActive(true);
             health2.SetActive(false);
@@ -72,6 +92,12 @@ public class EnemyRyan : MonoBehaviour
                 health2v2.SetActive(false);
                 health3v2.SetActive(false);
             }
+            if (vistor3 == true)
+            {
+                health1v3.SetActive(true);
+                health2v3.SetActive(false);
+                health3v3.SetActive(false);
+            }
 
             if (firstHit == false)
             {
@@ -80,7 +106,7 @@ public class EnemyRyan : MonoBehaviour
             }
 
         }
-        else if (health > 50 && health <= 69)
+        else if (health > minOrange && health <= maxOrange)
         {
             health1.SetActive(false);
             health2.SetActive(true);
@@ -93,8 +119,15 @@ public class EnemyRyan : MonoBehaviour
                 health3v2.SetActive(false);
             }
 
+            if (vistor3 == true)
+            {
+                health1v3.SetActive(false);
+                health2v3.SetActive(true);
+                health3v3.SetActive(false);
+            }
+
         }
-        else if (health >= 70)
+        else if (health >= minRed)
         {
             health1.SetActive(false);
             health2.SetActive(false);
@@ -107,7 +140,14 @@ public class EnemyRyan : MonoBehaviour
                 health3v2.SetActive(true);
             }
 
-            if(firstHit == true)
+            if (vistor3 == true)
+            {
+                health1v3.SetActive(false);
+                health2v3.SetActive(false);
+                health3v3.SetActive(true);
+            }
+
+            if (firstHit == true)
             {
                 buildManager.income(Income);
                 firstHit = false;
@@ -123,7 +163,7 @@ public class EnemyRyan : MonoBehaviour
         if (health > 0)
         {
 
-            health = health - (reduceHealthAmnt * Time.deltaTime);
+            health = health - (reduceHealthPerSec * Time.deltaTime);
 
         }
 
@@ -165,7 +205,7 @@ public class EnemyRyan : MonoBehaviour
     void EndPath()
     {        
         Debug.Log("Enemies left = " + enemyLeft);
-        if (health >= 0 && health <= 20)
+        if (health > 0 && health <= 20)
         {
             PlayerStats.spookPoint += 1;
         }
