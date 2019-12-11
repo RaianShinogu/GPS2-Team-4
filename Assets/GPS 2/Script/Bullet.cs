@@ -12,6 +12,7 @@ public class Bullet : MonoBehaviour
     public int damage;
     [Header("Visitor 3")]
     public int WeakDamage;
+    public int NutureDamage;
 
     public float speed = 70f;
     public float explosionRadius = 0f;
@@ -106,18 +107,38 @@ public class Bullet : MonoBehaviour
 
             if (isD == true)
             {
-                if(enemy.transform.name == "Visitor 1(Clone)")
+                if(Building1 == true)
                 {
-                    e.TakeDamage(strongDamage);
+                    if (enemy.transform.name == "Visitor 1(Clone)")
+                    {
+                        e.TakeDamage(strongDamage);
+                    }
+                    else if (enemy.transform.name == "Visitor 2(Clone)")
+                    {
+                        e.TakeDamage(damage);
+                    }
+                    else if (enemy.transform.name == "Visitor 3(Clone)")
+                    {
+                        e.TakeDamage(WeakDamage);
+                    }
                 }
-                else if (enemy.transform.name == "Visitor 2(Clone)")
+
+                else if(Building2 == true)
                 {
-                    e.TakeDamage(damage);
+                    if (enemy.transform.name == "Visitor 1(Clone)")
+                    {
+                        e.TakeDamage(NutureDamage);
+                    }
+                    else if (enemy.transform.name == "Visitor 2(Clone)")
+                    {
+                        e.TakeDamage(strongDamage);
+                    }
+                    else if (enemy.transform.name == "Visitor 3(Clone)")
+                    {
+                        e.TakeDamage(NutureDamage);
+                    }
                 }
-                else if(enemy.transform.name == "Visitor 3(Clone)")
-                {
-                    e.TakeDamage(WeakDamage);
-                }
+                
                 //e.TakeDamage(strongDamage);
 
             }

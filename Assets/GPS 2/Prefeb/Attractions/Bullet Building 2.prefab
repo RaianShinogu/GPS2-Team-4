@@ -92,9 +92,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fefe04d0bc691e34ea70206fee235489, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  strongDamage: 75
-  damage: 20
-  WeakDamage: 0
+  strongDamage: 30
+  damage: 75
+  WeakDamage: 30
+  NutureDamage: 30
   speed: 40
   explosionRadius: 0
   Building1: 0

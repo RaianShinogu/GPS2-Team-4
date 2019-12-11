@@ -1054,7 +1054,9 @@ MonoBehaviour:
   wolfPrab: {fileID: 4014013095199630273}
   Pref: {fileID: 4014013095199630273}
   enemyTag: Visitor
-  damage: 30
+  strongDamage: 75
+  damage: 35
+  WeakDamage: 15
   range: 15
   speed: 15
 --- !u!1 &4014013096182318489

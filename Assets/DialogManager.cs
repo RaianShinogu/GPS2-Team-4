@@ -35,6 +35,7 @@ public class DialogManager : MonoBehaviour
     public GameObject MiddleBottom;
     public GameObject TapIn;
     public GameObject WaveButton;
+    public GameObject settingCanvas;
 
     
     bool endIntro;
@@ -151,6 +152,7 @@ public class DialogManager : MonoBehaviour
         {
             buildingTutorialCanvas.SetActive(false);
             tapContinue.SetActive(false);
+            settingCanvas.SetActive(true);
         }
     }
 }
