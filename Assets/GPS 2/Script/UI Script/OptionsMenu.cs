@@ -40,7 +40,7 @@ public class OptionsMenu : MonoBehaviour
     {
         SFXon = !SFXon;
 
-        if (musicOn == false)
+        if (SFXon == false)
         {
             Global.audiomanager.setSFXVolume(0.0f);
         }

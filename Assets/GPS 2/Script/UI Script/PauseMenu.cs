@@ -9,6 +9,7 @@ public class PauseMenu : MonoBehaviour
     public static bool GameIsPaused = false;
     public bool pause;
     public GameObject pauseMenuUI;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -48,9 +49,10 @@ public class PauseMenu : MonoBehaviour
     {
 
         Global.audiomanager.getSFX("InGameClick").play();
-        pauseMenuUI.SetActive(false);
+        if (this.pauseMenuUI != null) { this.pauseMenuUI.SetActive(false); };
+       // if(gameManager.loseGameUI.activeSelf == true) {gameManager.loseGameUI.SetActive(false); }
         Time.timeScale = 1f;
-        if (GameIsPaused ==true) 
+        if (GameIsPaused ==true ) 
         { 
             GameIsPaused = false; 
         }
@@ -63,11 +65,12 @@ public class PauseMenu : MonoBehaviour
         Global.audiomanager.getBGM("main_BGM").play();
     }
 
+
     void Pause()
     {
 
-       
-        pauseMenuUI.SetActive(true);
+
+        if (pauseMenuUI != null) pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
         //
@@ -86,7 +89,7 @@ public class PauseMenu : MonoBehaviour
         //change this when build complete
         Time.timeScale = 1f;
         SceneManager.LoadScene("Main Menu");
-        if (GameIsPaused == true)
+        if (GameIsPaused == true )
         {
             GameIsPaused = false;
         }

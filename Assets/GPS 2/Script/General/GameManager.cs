@@ -27,6 +27,8 @@ public class GameManager : MonoBehaviour
         gameOverUI.SetActive(false);
         finalDeath = false;
         enemyLeft = TotalEnemy;
+        loseGameUI.SetActive(false);
+
     }
 
     void Update()
