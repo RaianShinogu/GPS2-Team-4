@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GPS 2/Scenes/Main Menu.unity
     guid: 8ae43a8cce929c04999f582b15bee905
-  - enabled: 0
+  - enabled: 1
     path: Assets/GPS 2/Scenes/Old Scene/Updated Tutorial.unity
     guid: 1c28c2376fbfe274584f57b8e4ac57b3
   - enabled: 1

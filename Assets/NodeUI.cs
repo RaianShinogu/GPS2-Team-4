@@ -5,6 +5,10 @@ using UnityEngine.UI;
 
 public class NodeUI : MonoBehaviour
 {
+    [SerializeField] private GameObject circleSelector2;
+    [SerializeField] private GameObject circleSelector1;
+    [SerializeField] private GameObject circleSelector3;
+
     Node prevNode;
     public GameObject buildUI;
     public GameObject upgradeDemolishUI;
@@ -19,10 +23,13 @@ public class NodeUI : MonoBehaviour
     bool conformSelectBuilding3 = false;
     Node node;
     public Text description;
+    public Text priceText;
+    public Text scareText;
     public GameObject descriptionPanel;
     public Text sellPriceDisplay;
     public Text upgradePriceDisplay;
     public DialogManager dialogManager;
+
     void Awake()
     {
         if (instance != null)
@@ -100,7 +107,12 @@ public class NodeUI : MonoBehaviour
         {
            node.selectedBuilding1Ghost();
             descriptionPanel.SetActive(true);
-            description.text = "Building 1";
+            description.text = "What's in the box? Dare to take a look?";
+            priceText.text = "10 gold";
+            scareText.text = "10 scares";
+            circleSelector1.SetActive(true);
+            circleSelector2.SetActive(false);
+            circleSelector3.SetActive(false);
             conformSelectBuilding1 = true;
             conformSelectBuilding2 = false;
             conformSelectBuilding3 = false;
@@ -127,7 +139,12 @@ public class NodeUI : MonoBehaviour
         {
             node.selectedBuilding2Ghost();
             descriptionPanel.SetActive(true);
-            description.text = "Building 2";
+            description.text = "Something seems to be lurking in the cave's shadows....";
+            priceText.text = "20 gold";
+            scareText.text = "20 scares";
+            circleSelector1.SetActive(false);
+            circleSelector2.SetActive(true);
+            circleSelector3.SetActive(false);
             conformSelectBuilding1 = false;
             conformSelectBuilding2 = true;
             conformSelectBuilding3 = false;
@@ -155,7 +172,12 @@ public class NodeUI : MonoBehaviour
         {
             node.selectedBuilding3Ghost();
             descriptionPanel.SetActive(true);
-            description.text = "Building 3";
+            description.text = "The moon casts a faint glow on this innocent bush.";
+            priceText.text = "30 gold";
+            scareText.text = "30 scares";
+            circleSelector1.SetActive(false);
+            circleSelector2.SetActive(false);
+            circleSelector3.SetActive(true);
             conformSelectBuilding1 = false;
             conformSelectBuilding2 = false;
             conformSelectBuilding3 = true;
@@ -181,7 +203,7 @@ public class NodeUI : MonoBehaviour
         if(isOpenBuildingUI == false)
         {
             sellPriceDisplay.text = sellPrice;
-            upgradePriceDisplay.text = upgradePrice;
+            //upgradePriceDisplay.text = upgradePrice;
             upgradeDemolishUI.SetActive(false); // reset any opened UI, if any
             upgradeDemolishUI.SetActive(true);
             upgradeDemolishUI.transform.position = node.transform.position + uiOffset;

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class CameraRaycast : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class CameraRaycast : MonoBehaviour
     //int layerMask = 6;
     Ray ray;
     RaycastHit hit;
+    public Text testtext;
+    Vector2 position;
 
     void Start()
     {
@@ -21,6 +24,7 @@ public class CameraRaycast : MonoBehaviour
         if(Input.GetMouseButtonDown(0))
         {
             ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
             //layerMask = ~layerMask;
             if (Physics.Raycast(ray, out hit, 1000.0f))
             {
