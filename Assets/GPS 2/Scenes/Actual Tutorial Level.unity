@@ -596,7 +596,7 @@ MonoBehaviour:
   description: {fileID: 704904737}
   priceText: {fileID: 1670885325}
   scareText: {fileID: 1843269106}
-  descriptionPanel: {fileID: 939221764}
+  descriptionPanel: {fileID: 2075220727}
   sellPriceDisplay: {fileID: 354729237}
   upgradePriceDisplay: {fileID: 0}
   dialogManager: {fileID: 275137760}
@@ -5676,11 +5676,13 @@ MonoBehaviour:
   star1: {fileID: 1426326226}
   star2: {fileID: 1219530925}
   star3: {fileID: 1545386182}
+  TotalEnemy: 20
+  enemyLeft: 2
+  waveSpawnRyan: {fileID: 901205108}
   loseAmount: 5
   oneStar: 0
   twoStar: 10
   threeStar: 20
-  test: {fileID: 0}
 --- !u!114 &901205107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12030,6 +12032,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2070766905}
   m_CullTransparentMesh: 0
+--- !u!1 &2075220727 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5440908911463834988, guid: fe844cdfffd43904da8714001a5fe4e1,
+    type: 3}
+  m_PrefabInstance: {fileID: 2077245644}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2077245644
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12037,6 +12045,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7160238096448813466, guid: fe844cdfffd43904da8714001a5fe4e1,
+        type: 3}
+      propertyPath: m_Name
+      value: BuildCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7160238096448813466, guid: fe844cdfffd43904da8714001a5fe4e1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7160238096448813469, guid: fe844cdfffd43904da8714001a5fe4e1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12156,16 +12174,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.034514
-      objectReference: {fileID: 0}
-    - target: {fileID: 7160238096448813466, guid: fe844cdfffd43904da8714001a5fe4e1,
-        type: 3}
-      propertyPath: m_Name
-      value: BuildCanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 7160238096448813466, guid: fe844cdfffd43904da8714001a5fe4e1,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7160238096785829517, guid: fe844cdfffd43904da8714001a5fe4e1,
         type: 3}
@@ -13643,7 +13651,12 @@ PrefabInstance:
     - target: {fileID: 695293994149288948, guid: 95f1f3e937e4136429e7529d0ca27e1b,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 155.2998
+      value: 339.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 695293994149288948, guid: 95f1f3e937e4136429e7529d0ca27e1b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -772.6
       objectReference: {fileID: 0}
     - target: {fileID: 4991364261314988445, guid: 95f1f3e937e4136429e7529d0ca27e1b,
         type: 3}
@@ -13687,6 +13700,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4746183501159310200, guid: 95f1f3e937e4136429e7529d0ca27e1b,
+        type: 3}
+      propertyPath: pauseMenuUI
+      value: 
+      objectReference: {fileID: 118886636}
+    - target: {fileID: 7849580825099893935, guid: 95f1f3e937e4136429e7529d0ca27e1b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 788.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7849580825099893935, guid: 95f1f3e937e4136429e7529d0ca27e1b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 339.7
       objectReference: {fileID: 0}
     - target: {fileID: 1267273079, guid: 95f1f3e937e4136429e7529d0ca27e1b, type: 3}
       propertyPath: m_Sprite

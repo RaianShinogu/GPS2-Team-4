@@ -23,10 +23,10 @@ public class WaveSpawnRyan : MonoBehaviour
 
     //private int waveIndex = 0;
     private int waveNumber = 1;
-    [HideInInspector] public int totalEnemies;
+    [HideInInspector] public int totalEnemies = 0;
     public int totalEnemiesEachWave;
     public int incomingWave ;
-    int totalEnemy;
+     int totalEnemy;
  
 
     private void Start()
@@ -34,6 +34,7 @@ public class WaveSpawnRyan : MonoBehaviour
         totalEnemies = incomingWave * totalEnemiesEachWave;
         totalEnemy = totalEnemies;
         Debug.Log("Total enemies (start) = " + totalEnemies);
+        Debug.Log(totalEnemies);
     }
 
     void Update ()
@@ -47,7 +48,6 @@ public class WaveSpawnRyan : MonoBehaviour
               {
                  //Debug.Log("Total enmies = " + totalEnemies);
                    StartCoroutine(SpawnWaveMulti());
-                   totalEnemies--;
                    totalEnemiesEachWave--;
                    
                    //SpawnWave();

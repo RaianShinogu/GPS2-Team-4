@@ -120,18 +120,18 @@ public class NodeUI : MonoBehaviour
             conformSelectBuilding1 = true;
             conformSelectBuilding2 = false;
             conformSelectBuilding3 = false;
-            if (inTutorialLevel == true)
-            {
-                inTutorialLevel = false;
-                conformSelectBuilding1 = false;
-                conformSelectBuilding2 = false;
-                conformSelectBuilding3 = false;
-                dialogManager.waveStart = false;
-                Debug.Log("Gayy");
-            }
+            
             return;
         }
-        node.selectedBuilding1();
+       
+            if (inTutorialLevel == true)
+            {
+                dialogManager.waveStart = false;
+                inTutorialLevel = false;
+             }
+            node.selectedBuilding1();
+            
+        
         
         HideBuildUI();
     }
@@ -152,18 +152,15 @@ public class NodeUI : MonoBehaviour
             conformSelectBuilding1 = false;
             conformSelectBuilding2 = true;
             conformSelectBuilding3 = false;
-            if (inTutorialLevel == true)
-            {
-                inTutorialLevel = false;
-                conformSelectBuilding1 = false;
-                conformSelectBuilding2 = false;
-                conformSelectBuilding3 = false;
-                dialogManager.waveStart = false;
-                Debug.Log("Gayy");
-            }
+           
             return;
         }
         // isOpenBuildingUI = false;
+        if (inTutorialLevel == true)
+        {
+            dialogManager.waveStart = false;
+            inTutorialLevel = false;
+        }
         node.selectedBuilding2();
        
         HideBuildUI();
@@ -185,16 +182,13 @@ public class NodeUI : MonoBehaviour
             conformSelectBuilding1 = false;
             conformSelectBuilding2 = false;
             conformSelectBuilding3 = true;
-            if (inTutorialLevel == true)
-            {
-                inTutorialLevel = false;
-                conformSelectBuilding1 = false;
-                conformSelectBuilding2 = false;
-                conformSelectBuilding3 = false;
-                dialogManager.waveStart = false;
-                Debug.Log("Gayy");
-            }
+           
             return;
+        }
+        if (inTutorialLevel == true)
+        {
+            dialogManager.waveStart = false;
+            inTutorialLevel = false;
         }
         // isOpenBuildingUI = false;
         node.selectedBuilding3();

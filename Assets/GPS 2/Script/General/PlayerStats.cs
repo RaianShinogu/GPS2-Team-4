@@ -16,5 +16,10 @@ public class PlayerStats : MonoBehaviour
         losePoint = startlosePoint;
     }
 
+    void Update()
+    {
+        spookPoint = startSpook;
+    }
+
     
 }

@@ -7,18 +7,26 @@ public class GameManager : MonoBehaviour
 {
     public GameObject gameOverUI,loseGameUI;
     public GameObject star1, star2, star3;
+    public int TotalEnemy;
+    [HideInInspector]
+    public int enemyLeft;
+    public WaveSpawnRyan waveSpawnRyan;
 
     public int loseAmount = 5;
     public static bool gameEnded = false;
     public int oneStar = 0, twoStar = 10, threeStar = 20;
+
+    bool finalDeath;
     // Update is called once per frame
 
-    public Text test;
+
 
     private void Start()
     {
         Time.timeScale = 1f;
         gameOverUI.SetActive(false);
+        finalDeath = false;
+        enemyLeft = TotalEnemy;
     }
 
     void Update()
@@ -30,13 +38,18 @@ public class GameManager : MonoBehaviour
 
         if (gameEnded)
             return;
-        if(EnemyRyan.finalDeath == true)
+        if(finalDeath == true)
         {
             EndGame();
         }
         if (PlayerStats.losePoint >= loseAmount)
         {
             loseGame();
+        }
+        VisitorCounter();
+        if (Input.GetKey("up"))
+        {
+            Debug.Log(enemyLeft);
         }
     }
 
@@ -71,5 +84,17 @@ public class GameManager : MonoBehaviour
             star2.SetActive(true);
             star3.SetActive(true);
         }
+    }
+
+    public void VisitorCounter()
+    {
+        if (enemyLeft <= 0)
+        {
+            finalDeath = true;
+            //Debug.Log("Final enemy died");
+        }
+       
+       
+        
     }
 }

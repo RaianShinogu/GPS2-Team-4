@@ -3985,6 +3985,9 @@ MonoBehaviour:
   star1: {fileID: 1426326226}
   star2: {fileID: 1219530925}
   star3: {fileID: 1545386182}
+  TotalEnemy: 20
+  enemyLeft: 20
+  waveSpawnRyan: {fileID: 901205108}
   loseAmount: 5
   oneStar: 0
   twoStar: 10
@@ -4032,6 +4035,7 @@ MonoBehaviour:
   totalEnemies: 20
   totalEnemiesEachWave: 10
   incomingWave: 2
+  totalEnemy: 0
 --- !u!1 &939221764
 GameObject:
   m_ObjectHideFlags: 0

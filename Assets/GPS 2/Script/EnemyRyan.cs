@@ -42,6 +42,7 @@ public class EnemyRyan : MonoBehaviour
     private int wavepointindex = 0;
     bool firstHit = true;
     [SerializeField] NavMeshAgent agent;
+    GameManager gameManager;
     #endregion
    
     void Start()
@@ -49,6 +50,7 @@ public class EnemyRyan : MonoBehaviour
         finalDeath = false;
         GameObject gameMaster = GameObject.Find("Game Manager");
         WaveSpawnRyan waveSpawnRyan = gameMaster.GetComponent<WaveSpawnRyan>();
+        gameManager = gameMaster.GetComponent<GameManager>();
         enemyLeft = waveSpawnRyan.totalEnemies;
         target = WayPoint.points[0];
         buildManager = BuildManager.instance;
@@ -223,13 +225,15 @@ public class EnemyRyan : MonoBehaviour
         }
 
         Destroy(gameObject);
-
+        gameManager.enemyLeft -= 1;
+        /*
         if(enemyLeft <= 0)
         {
             finalDeath = true;
             Debug.Log("Final enemy died");
         }
         enemyLeft--;
+        */
     }
 
     void Raycast()
