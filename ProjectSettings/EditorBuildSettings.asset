@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GPS 2/Scenes/Actual Game Scene.unity
     guid: 965a79e26f793f144b0322375aaacbc3
+  - enabled: 1
+    path: Assets/GPS 2/Scenes/Credits.unity
+    guid: eaf08e8b7c6fcdf4fb51de6d4b1ac00e
   m_configObjects: {}
