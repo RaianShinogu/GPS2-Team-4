@@ -106,7 +106,7 @@ public class Turret : MonoBehaviour
 
             else if (BuildingType == "Building 2" )
             {
-                //building.Play("Attack");
+                building.Play("Attack");
                 Shoot();
                 fireCountDown = totalFireCountDown;
             }

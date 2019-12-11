@@ -6,14 +6,17 @@ using UnityEngine.SceneManagement;
 public class creditScript : MonoBehaviour
 {
     float countDown;
+    bool hadChange;
     public float secondBetween;
-    public GameObject thankYouUI;
+    public GameObject TeamUI;
     public GameObject theTeamUI;
+    public GameObject thankYouUI;
     // Start is called before the first frame update
     void Start()
     {
-        thankYouUI.SetActive(true);
+        TeamUI.SetActive(true);
         theTeamUI.SetActive(false);
+        thankYouUI.SetActive(false);
     }
 
     // Update is called once per frame
@@ -21,8 +24,21 @@ public class creditScript : MonoBehaviour
     {
         if(countDown >= secondBetween)
         {
-            thankYouUI.SetActive(false);
-            theTeamUI.SetActive(true);
+            if(hadChange == false)
+            {
+                TeamUI.SetActive(false);
+                theTeamUI.SetActive(true);
+                hadChange = true;
+                countDown = 0;
+            }
+
+            else
+            {
+                theTeamUI.SetActive(false);
+                thankYouUI.SetActive(true);
+            }
+            
+
         }
 
          if(countDown >= secondBetween*2)
