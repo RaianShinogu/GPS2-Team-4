@@ -334,8 +334,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 44, y: -49}
-  m_SizeDelta: {x: 514.4, y: 338.2}
+  m_AnchoredPosition: {x: 44, y: -106.5}
+  m_SizeDelta: {x: 514.4, y: 453.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &35702834
 MonoBehaviour:
@@ -635,8 +635,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 47.9, y: -116.1}
-  m_SizeDelta: {x: 150, y: 150}
+  m_AnchoredPosition: {x: 40.1, y: -110.3}
+  m_SizeDelta: {x: 178.64, y: 178.64}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &63509644
 MonoBehaviour:
@@ -1473,16 +1473,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Explaination: 'Welcome, to your very own haunted park! Where everyone''s nightmares
     come true... Tap on your screen and follow me! '
-  IntroSkipButton: Press me to skip tutorial.
+  IntroSkipButton: Tap on me anytime to skip the tutorial.
   BuildingUI: "This is your park! Hehe\u2026 A real ghost town isn\u2019t it? Let's
     get started on building something, shall we?"
-  BuildingExplaination: 'See this spot? This is where you can build an attraction.
-    Tap on it.  '
-  ChoosingBuilding: ' See an attraction you like? Tap on it to read the description
+  BuildingExplaination: 'See this spot? This is where you can build an attraction.                    Tap
+    on it.  '
+  ChoosingBuilding: 'See an attraction you like? Tap on it to read the description
     and do it again to build it. '
   Wave: "You can keep building attractions but remember, building costs money so keep
-    track of it! When you\u2019re ready to open up, just click on that button over
-    there and visitors will come flooding in! "
+    track of it! When you\u2019re ready to open up, just tap the button below and
+    visitors will come flooding in! "
   Demolish: "Not happy with an attraction? You can demolish them and you\u2019ll get
     some money back. Just tap on the attraction and then the \u201CDemolish\u201D
     button. "
@@ -3829,7 +3829,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 09d238a3316e34f4a8f9249d69e061f0, type: 3}
-    m_FontSize: 30
+    m_FontSize: 35
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -4167,8 +4167,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 47.9, y: -116.1}
-  m_SizeDelta: {x: 150, y: 150}
+  m_AnchoredPosition: {x: 31, y: -104.6}
+  m_SizeDelta: {x: 186.4, y: 186.4}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &647009741
 MonoBehaviour:
@@ -4294,7 +4294,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.79, y: -54.75}
+  m_AnchoredPosition: {x: 9.6, y: -27.6}
   m_SizeDelta: {x: 363.6, y: 231.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &662974691
@@ -4325,7 +4325,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 09d238a3316e34f4a8f9249d69e061f0, type: 3}
-    m_FontSize: 30
+    m_FontSize: 35
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -5476,8 +5476,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 39.8, y: 36.2}
-  m_SizeDelta: {x: 403.2, y: 186.2}
+  m_AnchoredPosition: {x: 75.3, y: 15.5}
+  m_SizeDelta: {x: 425.6, y: 245}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &865620185
 MonoBehaviour:
@@ -5833,7 +5833,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 39.8, y: -8.7}
+  m_AnchoredPosition: {x: 73, y: -8.7}
   m_SizeDelta: {x: 403.6, y: 299}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &939916381
@@ -7094,7 +7094,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 09d238a3316e34f4a8f9249d69e061f0, type: 3}
-    m_FontSize: 30
+    m_FontSize: 35
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -8316,7 +8316,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2, y: -96}
+  m_AnchoredPosition: {x: 2, y: -140.84}
   m_SizeDelta: {x: 1166.3, y: 515}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1395611656
@@ -8339,8 +8339,8 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 09d238a3316e34f4a8f9249d69e061f0, type: 3}
-    m_FontSize: 70
-    m_FontStyle: 0
+    m_FontSize: 65
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 100
@@ -8866,8 +8866,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00001049, y: -23}
-  m_SizeDelta: {x: 428.1, y: 270}
+  m_AnchoredPosition: {x: -0.00001049, y: -30.72}
+  m_SizeDelta: {x: 428.1, y: 361.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1546478488
 CanvasRenderer:
@@ -8897,7 +8897,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 09d238a3316e34f4a8f9249d69e061f0, type: 3}
-    m_FontSize: 30
+    m_FontSize: 35
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -9196,8 +9196,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 47.9, y: -116.1}
-  m_SizeDelta: {x: 150, y: 150}
+  m_AnchoredPosition: {x: 35.3, y: -107.4}
+  m_SizeDelta: {x: 184.47, y: 184.47}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1619232152
 MonoBehaviour:
@@ -10390,8 +10390,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 249}
-  m_SizeDelta: {x: 400, y: 400}
+  m_AnchoredPosition: {x: -0.000019073, y: 282}
+  m_SizeDelta: {x: 328.6, y: 328.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1836971761
 MonoBehaviour:
@@ -10464,7 +10464,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 39.8, y: 0.8999939}
+  m_AnchoredPosition: {x: 68.9, y: 9.29}
   m_SizeDelta: {x: 394.84, y: 251.62}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1838908831
@@ -10556,8 +10556,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 28, y: 40}
-  m_SizeDelta: {x: 150, y: 150}
+  m_AnchoredPosition: {x: 28, y: 64}
+  m_SizeDelta: {x: 178.64, y: 178.64}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1858786391
 MonoBehaviour:
@@ -12010,8 +12010,8 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 09d238a3316e34f4a8f9249d69e061f0, type: 3}
-    m_FontSize: 70
-    m_FontStyle: 0
+    m_FontSize: 65
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 100
@@ -12037,16 +12037,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7160238096448813466, guid: fe844cdfffd43904da8714001a5fe4e1,
-        type: 3}
-      propertyPath: m_Name
-      value: BuildCanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 7160238096448813466, guid: fe844cdfffd43904da8714001a5fe4e1,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7160238096448813469, guid: fe844cdfffd43904da8714001a5fe4e1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12166,6 +12156,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.034514
+      objectReference: {fileID: 0}
+    - target: {fileID: 7160238096448813466, guid: fe844cdfffd43904da8714001a5fe4e1,
+        type: 3}
+      propertyPath: m_Name
+      value: BuildCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7160238096448813466, guid: fe844cdfffd43904da8714001a5fe4e1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7160238096785829517, guid: fe844cdfffd43904da8714001a5fe4e1,
         type: 3}
