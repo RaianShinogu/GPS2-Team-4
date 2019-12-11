@@ -47,10 +47,7 @@ public class GameManager : MonoBehaviour
             loseGame();
         }
         VisitorCounter();
-        if (Input.GetKey("up"))
-        {
-            Debug.Log(enemyLeft);
-        }
+        
     }
 
     public void playInGameSFX()

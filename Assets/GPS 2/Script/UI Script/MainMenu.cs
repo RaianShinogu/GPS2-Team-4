@@ -33,4 +33,9 @@ public class MainMenu : MonoBehaviour
     {
         Global.audiomanager.getSFX("UIclick").play();
     }
+
+    public void Credits()
+    {
+        SceneManager.LoadScene("Credit");
+    }
 }

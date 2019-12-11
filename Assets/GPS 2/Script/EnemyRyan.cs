@@ -206,7 +206,7 @@ public class EnemyRyan : MonoBehaviour
 
     void EndPath()
     {        
-        Debug.Log("Enemies left = " + enemyLeft);
+        //Debug.Log("Enemies left = " + enemyLeft);
         if (health > 0 && health <= 20)
         {
             PlayerStats.spookPoint += 1;
@@ -219,7 +219,7 @@ public class EnemyRyan : MonoBehaviour
         {
             PlayerStats.spookPoint += 3;
         }
-        else if (health <= 0)
+         if (health <= 0)
         {
             PlayerStats.losePoint += 1;
         }
