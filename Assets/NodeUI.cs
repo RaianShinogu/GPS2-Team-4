@@ -56,8 +56,12 @@ public class NodeUI : MonoBehaviour
             buildUI.SetActive(true);
             buildUI.transform.position = node.transform.position + uiOffset;
             this.node = node;
+            circleSelector1.SetActive(false);
+            circleSelector2.SetActive(false);
+            circleSelector3.SetActive(false);
             upgradeDemolishUI.SetActive(false);
-        if(inTutorialLevel == true)
+            descriptionPanel.SetActive(false);
+        if (inTutorialLevel == true)
         {
             Blink.SetActive(false);
             dialogManager.setActiveOtherNode();
