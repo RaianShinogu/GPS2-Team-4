@@ -2794,6 +2794,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6069271090003304832, guid: a9a69d1dd04420c4db660f1f1a970b4f,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 22
+      objectReference: {fileID: 0}
     - target: {fileID: 9027160675800243540, guid: a9a69d1dd04420c4db660f1f1a970b4f,
         type: 3}
       propertyPath: m_IsActive
@@ -4003,10 +4008,12 @@ MonoBehaviour:
   wave: {fileID: 1330747687}
   timeBetweenWaves: 3
   dialogManager: {fileID: 0}
+  gameStart: 0
   isTutorial: 0
   totalEnemies: 20
   totalEnemiesEachWave: 10
   incomingWave: 2
+  totalEnemy: 0
 --- !u!1 &939221764
 GameObject:
   m_ObjectHideFlags: 0
@@ -5761,6 +5768,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 953735b34f27a4947887554d4c0693c9,
         type: 3}
+    - target: {fileID: 4316107421537646891, guid: 0f5f58d089596fe45a1650daad279f60,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f5f58d089596fe45a1650daad279f60, type: 3}
 --- !u!1001 &1327896988
