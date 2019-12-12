@@ -17,16 +17,16 @@ public class WaveSpawnRyan : MonoBehaviour
     public DialogManager dialogManager;
     private float countdown = 2f;
 
-    private bool gameStart = false;
+    public bool gameStart = false;
     public bool isTutorial;
     int StageCount;
 
     //private int waveIndex = 0;
     private int waveNumber = 1;
-    [HideInInspector] public int totalEnemies = 0;
+     public int totalEnemies = 0;
     public int totalEnemiesEachWave;
     public int incomingWave ;
-     int totalEnemy;
+     public int totalEnemy;
  
 
     private void Start()
@@ -49,10 +49,10 @@ public class WaveSpawnRyan : MonoBehaviour
                  //Debug.Log("Total enmies = " + totalEnemies);
                    StartCoroutine(SpawnWaveMulti());
                    totalEnemiesEachWave--;
-                   
-                   //SpawnWave();
-                   countdown = timeBetweenWaves;
-                    if(totalEnemies == totalEnemy / 2 && incomingWave >= 2)
+                    totalEnemies--;
+                    //SpawnWave();
+                    countdown = timeBetweenWaves;
+                    if(totalEnemies == totalEnemy / 2 && incomingWave >= 0)
                     {
                         wave.SetActive(true);
                         gameStart = false;
