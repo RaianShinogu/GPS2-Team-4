@@ -23,6 +23,11 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        //audio 
+        Global.audiomanager.getBGM("main_menu").stop();
+        Global.audiomanager.getBGM("pause_screen").stop();
+        Global.audiomanager.getBGM("main_BGM").play();
+
         Time.timeScale = 1f;
         gameOverUI.SetActive(false);
         finalDeath = false;
