@@ -50,7 +50,7 @@ public class PauseMenu : MonoBehaviour
 
         Global.audiomanager.getSFX("InGameClick").play();
         if (this.pauseMenuUI != null) { this.pauseMenuUI.SetActive(false); };
-       // if(gameManager.loseGameUI.activeSelf == true) {gameManager.loseGameUI.SetActive(false); }
+       
         Time.timeScale = 1f;
         if (GameIsPaused ==true ) 
         { 
@@ -68,7 +68,6 @@ public class PauseMenu : MonoBehaviour
 
     void Pause()
     {
-
 
         if (pauseMenuUI != null) pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
