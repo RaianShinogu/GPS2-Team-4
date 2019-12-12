@@ -96,7 +96,7 @@ MonoBehaviour:
   damage: 75
   WeakDamage: 30
   NutureDamage: 30
-  speed: 40
+  speed: 20
   explosionRadius: 0
   Building1: 0
   Building2: 1
