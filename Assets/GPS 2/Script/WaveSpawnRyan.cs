@@ -130,6 +130,7 @@ public class WaveSpawnRyan : MonoBehaviour
         if (isTutorial == true)
         {
             dialogManager.buildingDemolish = false;
+            isTutorial = false;
         }
 
 
