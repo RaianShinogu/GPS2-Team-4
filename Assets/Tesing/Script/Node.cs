@@ -232,7 +232,7 @@ public class Node : MonoBehaviour
         if (gold >= 20)
         {
             Destroy(buildingGhost);
-            building = (GameObject)Instantiate(buildManager.Building2, transform.position + positionOffset + Vector3.down* 5, buildManager.Building2.transform.rotation);
+            building = (GameObject)Instantiate(buildManager.Building2, transform.position + positionOffset + Vector3.down*2, buildManager.Building2.transform.rotation);
             buildManager.Building2Cost();
             canUpgrade = true;
         }

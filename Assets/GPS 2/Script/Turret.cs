@@ -127,9 +127,9 @@ public class Turret : MonoBehaviour
 
     private void Shoot()
     {//pool
-        if (bulletPool.Count < 100)
+        if (bulletPool.Count < 1000)
         {
-            GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+            GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, firePoint.position + Vector3.up, firePoint.rotation);
             
             Bullet bullet = bulletGO.GetComponent<Bullet>();
             bullet.originPos = this.firePoint.transform;

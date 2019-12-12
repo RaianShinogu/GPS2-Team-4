@@ -5748,7 +5748,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Building1: {fileID: 9187249510705318864, guid: 5d5b043009dfda7419ef0aa1cb3d00a9,
     type: 3}
-  Building2: {fileID: 5646126045520176458, guid: f24b9cefdeea12c4d841a72ab0620481,
+  Building2: {fileID: 6284899256882456644, guid: adac4663517663c40930c764cebdce03,
     type: 3}
   Building3: {fileID: 5759641067383170576, guid: 5fb504d59f1c5fe4cafa5065e8d20717,
     type: 3}

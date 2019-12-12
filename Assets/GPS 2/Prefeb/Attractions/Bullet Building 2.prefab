@@ -108,11 +108,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1634809021488462300}
     m_Modifications:
-    - target: {fileID: 3800182922532344410, guid: a856ca2e268f5b34b9ba86389d84dcbd,
-        type: 3}
-      propertyPath: m_Name
-      value: Bats
-      objectReference: {fileID: 0}
     - target: {fileID: 3800182922532344411, guid: a856ca2e268f5b34b9ba86389d84dcbd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -187,6 +182,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ApplyRootMotion
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3800182922532344410, guid: a856ca2e268f5b34b9ba86389d84dcbd,
+        type: 3}
+      propertyPath: m_Name
+      value: Bats
       objectReference: {fileID: 0}
     - target: {fileID: 8776129522471539405, guid: a856ca2e268f5b34b9ba86389d84dcbd,
         type: 3}
