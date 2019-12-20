@@ -2,7 +2,7 @@
 
 public class WayPoint : MonoBehaviour
 {
-    public static Transform[] points;
+    public  static Transform[] points;
 
     void Awake ()
     {

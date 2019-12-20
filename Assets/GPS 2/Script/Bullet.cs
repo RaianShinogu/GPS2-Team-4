@@ -6,12 +6,7 @@ public class Bullet : MonoBehaviour
     private Transform target;
     private bool isD = true, isS = false;
 
-    [Header ("Visitor 1")]
     public int strongDamage ;
-    [Header("Visitor 2")]
-    public int damage;
-    [Header("Visitor 3")]
-    public int WeakDamage;
     public int NutureDamage;
 
     public float speed = 70f;
@@ -115,11 +110,11 @@ public class Bullet : MonoBehaviour
                     }
                     else if (enemy.transform.name == "Visitor 2(Clone)")
                     {
-                        e.TakeDamage(damage);
+                        e.TakeDamage(NutureDamage);
                     }
                     else if (enemy.transform.name == "Visitor 3(Clone)")
                     {
-                        e.TakeDamage(WeakDamage);
+                        e.TakeDamage(NutureDamage);
                     }
                 }
 
